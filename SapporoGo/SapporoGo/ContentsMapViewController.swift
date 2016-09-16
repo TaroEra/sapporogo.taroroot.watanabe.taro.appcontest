@@ -34,6 +34,51 @@ class ContentsMapViewController: UIViewController {
             self.configureNursingHome()
             self.addNursingHomeAnnotations(realm)
         }
+        else if self.contentsItem?.fileName == "ward_office"
+        {
+            self.configureWordOffice()
+            self.addWordOfficeAnnotations(realm)
+        }
+    }
+    
+    func addWordOfficeAnnotations(realm:Realm){
+        for wardOffice in realm.objects(WardOffice){
+            let annotation:MKPointAnnotation = MKPointAnnotation();
+            annotation.coordinate = CLLocationCoordinate2DMake(wardOffice.latitude, wardOffice.longitude);
+            annotation.title = wardOffice.name;
+            annotation.subtitle = wardOffice.address;
+            self.mapView .addAnnotation(annotation)
+        }
+    }
+    
+    func configureWordOffice(){
+        let realm = try! Realm()
+        let sections = self.parseCSV()
+        
+        for sectionsItem in sections{
+            let array = sectionsItem as! NSArray
+            let name = array[2]
+            var address = "北海道"
+            address = address.stringByAppendingString(array[8] as! String)
+            address = address.stringByAppendingString(array[7] as! String)
+            address = address.stringByAppendingString(array[6] as! String)
+            
+            let latitude = array[3].doubleValue
+            let longitude = array[4].doubleValue
+            let type = array[1]
+            
+            let wardOffice = WardOffice(
+                value:
+                ["name":name,
+                    "address":address,
+                    "latitude":latitude,
+                    "longitude":longitude,
+                    "type":type]
+            )
+            try! realm.write{
+                realm.add(wardOffice, update: true)
+            }
+        }
     }
     
     func addNursingHomeAnnotations(realm:Realm){
@@ -68,7 +113,7 @@ class ContentsMapViewController: UIViewController {
                     "type":type]
             )
             try! realm.write{
-                realm.add(nursingHome)
+                realm.add(nursingHome, update: true)
             }
         }
     }
@@ -89,6 +134,9 @@ class ContentsMapViewController: UIViewController {
         let sections = self.parseCSV()
         
         for sectionsItem in sections{
+            
+            
+            
             let array = sectionsItem as! NSArray
             let name = array[2]
             var address = "北海道"
@@ -109,7 +157,7 @@ class ContentsMapViewController: UIViewController {
                     "type":type]
             )
             try! realm.write{
-                realm.add(policeStation)
+                realm.add(policeStation, update:true)
             }
         }
     }
@@ -136,6 +184,7 @@ class ContentsMapViewController: UIViewController {
             sections .addObject(array)
             scanner.scanCharactersFromSet(chSet, intoString:nil)
         }
+        sections.removeObjectAtIndex(0)
         return sections
     }
 }

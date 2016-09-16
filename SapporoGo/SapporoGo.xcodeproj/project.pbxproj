@@ -32,6 +32,7 @@
 		326383CA1D87DE8800DED761 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326383C91D87DE8800DED761 /* Accounts.framework */; };
 		326383CC1D87DE9000DED761 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326383CB1D87DE9000DED761 /* Social.framework */; };
 		326383CE1D87DEC200DED761 /* SnsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326383CD1D87DEC200DED761 /* SnsViewController.swift */; };
+		32BB23B71D8BD3DB00F8C7F5 /* WardOffice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB23B61D8BD3DB00F8C7F5 /* WardOffice.swift */; };
 		32DAF9771D7AC02500BCABCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DAF9751D7AC02500BCABCF /* Main.storyboard */; };
 		32DAF9791D7AC02500BCABCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DAF9781D7AC02500BCABCF /* Assets.xcassets */; };
 		32DAF97C1D7AC02500BCABCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DAF97A1D7AC02500BCABCF /* LaunchScreen.storyboard */; };
@@ -87,6 +88,7 @@
 		326383C91D87DE8800DED761 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		326383CB1D87DE9000DED761 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		326383CD1D87DEC200DED761 /* SnsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnsViewController.swift; sourceTree = "<group>"; };
+		32BB23B61D8BD3DB00F8C7F5 /* WardOffice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardOffice.swift; sourceTree = "<group>"; };
 		32DAF9691D7AC02400BCABCF /* SapporoGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SapporoGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DAF9761D7AC02500BCABCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32DAF9781D7AC02500BCABCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			children = (
 				3253A1171D8B97430081B1C2 /* PoliceStation.swift */,
 				3253A11A1D8BA8A40081B1C2 /* NursingHome.swift */,
+				32BB23B61D8BD3DB00F8C7F5 /* WardOffice.swift */,
 			);
 			name = RealmObjects;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				3253A1181D8B97430081B1C2 /* PoliceStation.swift in Sources */,
 				325162E71D8A7C620031E836 /* DisasterPack.swift in Sources */,
 				3253A11D1D8BAB590081B1C2 /* TabBarController.swift in Sources */,
+				32BB23B71D8BD3DB00F8C7F5 /* WardOffice.swift in Sources */,
 				326383C81D87D1F400DED761 /* ContentsTableViewController.swift in Sources */,
 				325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */,
 				325162E91D8A7C8A0031E836 /* Pack.swift in Sources */,
