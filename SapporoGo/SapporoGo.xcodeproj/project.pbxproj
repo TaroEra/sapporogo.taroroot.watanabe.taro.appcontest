@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		323CC14C1D88DFFD0099EAC7 /* nursing_home.csv in Resources */ = {isa = PBXBuildFile; fileRef = 323CC14B1D88DFFD0099EAC7 /* nursing_home.csv */; };
+		323CC14E1D88E0070099EAC7 /* police_station.csv in Resources */ = {isa = PBXBuildFile; fileRef = 323CC14D1D88E0070099EAC7 /* police_station.csv */; };
+		323CC1501D88E18C0099EAC7 /* fire_department.csv in Resources */ = {isa = PBXBuildFile; fileRef = 323CC14F1D88E18C0099EAC7 /* fire_department.csv */; };
+		323CC1521D88E19C0099EAC7 /* ward_office.csv in Resources */ = {isa = PBXBuildFile; fileRef = 323CC1511D88E19C0099EAC7 /* ward_office.csv */; };
+		325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DC1D8A796E0031E836 /* MedicalPack.swift */; };
+		325162DF1D8A7ADD0031E836 /* ResourcePack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DE1D8A7ADD0031E836 /* ResourcePack.swift */; };
+		325162E11D8A7AF50031E836 /* MunicipalityPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E01D8A7AF50031E836 /* MunicipalityPack.swift */; };
+		325162E31D8A7C2F0031E836 /* ChildcarePack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E21D8A7C2F0031E836 /* ChildcarePack.swift */; };
+		325162E51D8A7C450031E836 /* NursingPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E41D8A7C450031E836 /* NursingPack.swift */; };
+		325162E71D8A7C620031E836 /* DisasterPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E61D8A7C620031E836 /* DisasterPack.swift */; };
+		325162E91D8A7C8A0031E836 /* Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E81D8A7C8A0031E836 /* Pack.swift */; };
+		325162EF1D8A9AD30031E836 /* ContentsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162EE1D8A9AD30031E836 /* ContentsItem.swift */; };
+		325162F71D8AA3FD0031E836 /* ContentsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162F61D8AA3FD0031E836 /* ContentsMapViewController.swift */; };
+		3253A1141D8B95E00081B1C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3253A1131D8B95E00081B1C2 /* AppDelegate.m */; };
+		3253A1161D8B96300081B1C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3253A1151D8B96300081B1C2 /* main.m */; };
+		3253A1181D8B97430081B1C2 /* PoliceStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253A1171D8B97430081B1C2 /* PoliceStation.swift */; };
+		3253A11B1D8BA8A40081B1C2 /* NursingHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253A11A1D8BA8A40081B1C2 /* NursingHome.swift */; };
+		3253A11D1D8BAB590081B1C2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253A11C1D8BAB590081B1C2 /* TabBarController.swift */; };
+		3257AB911D829D8D0036E6E8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3257AB901D829D8D0036E6E8 /* HomeViewController.swift */; };
+		3257AB951D82A8BC0036E6E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3257AB941D82A8BC0036E6E8 /* MapKit.framework */; };
+		3257AB9B1D82ADF10036E6E8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3257AB9A1D82ADF10036E6E8 /* CoreFoundation.framework */; };
+		326383C81D87D1F400DED761 /* ContentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326383C71D87D1F400DED761 /* ContentsTableViewController.swift */; };
+		326383CA1D87DE8800DED761 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326383C91D87DE8800DED761 /* Accounts.framework */; };
+		326383CC1D87DE9000DED761 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326383CB1D87DE9000DED761 /* Social.framework */; };
+		326383CE1D87DEC200DED761 /* SnsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326383CD1D87DEC200DED761 /* SnsViewController.swift */; };
+		32DAF9771D7AC02500BCABCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DAF9751D7AC02500BCABCF /* Main.storyboard */; };
+		32DAF9791D7AC02500BCABCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DAF9781D7AC02500BCABCF /* Assets.xcassets */; };
+		32DAF97C1D7AC02500BCABCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DAF97A1D7AC02500BCABCF /* LaunchScreen.storyboard */; };
+		32DAF9871D7AC02500BCABCF /* SapporoGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DAF9861D7AC02500BCABCF /* SapporoGoTests.m */; };
+		32DAF9921D7AC02500BCABCF /* SapporoGoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DAF9911D7AC02500BCABCF /* SapporoGoUITests.m */; };
+		32E1EDC01D87F5EF004E3D35 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E1EDBF1D87F5EF004E3D35 /* FBSDKCoreKit.framework */; };
+		32E1EDC21D87F5FD004E3D35 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E1EDC11D87F5FD004E3D35 /* FBSDKLoginKit.framework */; };
+		D2FCB61743471612DA32D74D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8042449990A08F3CF43B0572 /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32DAF9831D7AC02500BCABCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32DAF9611D7AC02400BCABCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32DAF9681D7AC02400BCABCF;
+			remoteInfo = SapporoGo;
+		};
+		32DAF98E1D7AC02500BCABCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32DAF9611D7AC02400BCABCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32DAF9681D7AC02400BCABCF;
+			remoteInfo = SapporoGo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		323CC14B1D88DFFD0099EAC7 /* nursing_home.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = nursing_home.csv; path = CSV/nursing_home.csv; sourceTree = "<group>"; };
+		323CC14D1D88E0070099EAC7 /* police_station.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = police_station.csv; path = CSV/police_station.csv; sourceTree = "<group>"; };
+		323CC14F1D88E18C0099EAC7 /* fire_department.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fire_department.csv; path = CSV/fire_department.csv; sourceTree = "<group>"; };
+		323CC1511D88E19C0099EAC7 /* ward_office.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ward_office.csv; path = CSV/ward_office.csv; sourceTree = "<group>"; };
+		325162DC1D8A796E0031E836 /* MedicalPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalPack.swift; sourceTree = "<group>"; };
+		325162DE1D8A7ADD0031E836 /* ResourcePack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcePack.swift; sourceTree = "<group>"; };
+		325162E01D8A7AF50031E836 /* MunicipalityPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MunicipalityPack.swift; sourceTree = "<group>"; };
+		325162E21D8A7C2F0031E836 /* ChildcarePack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildcarePack.swift; sourceTree = "<group>"; };
+		325162E41D8A7C450031E836 /* NursingPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NursingPack.swift; sourceTree = "<group>"; };
+		325162E61D8A7C620031E836 /* DisasterPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterPack.swift; sourceTree = "<group>"; };
+		325162E81D8A7C8A0031E836 /* Pack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pack.swift; sourceTree = "<group>"; };
+		325162EE1D8A9AD30031E836 /* ContentsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsItem.swift; sourceTree = "<group>"; };
+		325162F61D8AA3FD0031E836 /* ContentsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsMapViewController.swift; sourceTree = "<group>"; };
+		3253A1121D8B95E00081B1C2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3253A1131D8B95E00081B1C2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3253A1151D8B96300081B1C2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3253A1171D8B97430081B1C2 /* PoliceStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliceStation.swift; sourceTree = "<group>"; };
+		3253A11A1D8BA8A40081B1C2 /* NursingHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NursingHome.swift; sourceTree = "<group>"; };
+		3253A11C1D8BAB590081B1C2 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		3257AB8F1D829D8D0036E6E8 /* SapporoGo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SapporoGo-Bridging-Header.h"; sourceTree = "<group>"; };
+		3257AB901D829D8D0036E6E8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3257AB941D82A8BC0036E6E8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3257AB9A1D82ADF10036E6E8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		326383C71D87D1F400DED761 /* ContentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsTableViewController.swift; sourceTree = "<group>"; };
+		326383C91D87DE8800DED761 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		326383CB1D87DE9000DED761 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		326383CD1D87DEC200DED761 /* SnsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnsViewController.swift; sourceTree = "<group>"; };
+		32DAF9691D7AC02400BCABCF /* SapporoGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SapporoGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32DAF9761D7AC02500BCABCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32DAF9781D7AC02500BCABCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32DAF97B1D7AC02500BCABCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32DAF97D1D7AC02500BCABCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32DAF9821D7AC02500BCABCF /* SapporoGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SapporoGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32DAF9861D7AC02500BCABCF /* SapporoGoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SapporoGoTests.m; sourceTree = "<group>"; };
+		32DAF9881D7AC02500BCABCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32DAF98D1D7AC02500BCABCF /* SapporoGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SapporoGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32DAF9911D7AC02500BCABCF /* SapporoGoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SapporoGoUITests.m; sourceTree = "<group>"; };
+		32DAF9931D7AC02500BCABCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32E1EDBF1D87F5EF004E3D35 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "FacebookSDKs-iOS-4.15.1/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		32E1EDC11D87F5FD004E3D35 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "FacebookSDKs-iOS-4.15.1/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		66105B7C68A80D039D8D7B0E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8042449990A08F3CF43B0572 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD222BC5BCB8A176EDEE6A8B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32DAF9661D7AC02400BCABCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				326383CC1D87DE9000DED761 /* Social.framework in Frameworks */,
+				32E1EDC01D87F5EF004E3D35 /* FBSDKCoreKit.framework in Frameworks */,
+				326383CA1D87DE8800DED761 /* Accounts.framework in Frameworks */,
+				3257AB9B1D82ADF10036E6E8 /* CoreFoundation.framework in Frameworks */,
+				32E1EDC21D87F5FD004E3D35 /* FBSDKLoginKit.framework in Frameworks */,
+				3257AB951D82A8BC0036E6E8 /* MapKit.framework in Frameworks */,
+				D2FCB61743471612DA32D74D /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32DAF97F1D7AC02500BCABCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32DAF98A1D7AC02500BCABCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3203E2E71D866738009C106E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				326383CD1D87DEC200DED761 /* SnsViewController.swift */,
+				3257AB901D829D8D0036E6E8 /* HomeViewController.swift */,
+				326383C71D87D1F400DED761 /* ContentsTableViewController.swift */,
+				325162F61D8AA3FD0031E836 /* ContentsMapViewController.swift */,
+				3253A11C1D8BAB590081B1C2 /* TabBarController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3224425D1D812C00009B03CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				32DAF9751D7AC02500BCABCF /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		323CC14A1D88DFB90099EAC7 /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				323CC14B1D88DFFD0099EAC7 /* nursing_home.csv */,
+				323CC14D1D88E0070099EAC7 /* police_station.csv */,
+				323CC14F1D88E18C0099EAC7 /* fire_department.csv */,
+				323CC1511D88E19C0099EAC7 /* ward_office.csv */,
+			);
+			name = CSV;
+			sourceTree = "<group>";
+		};
+		325162EA1D8A8FD70031E836 /* Packs */ = {
+			isa = PBXGroup;
+			children = (
+				325162E81D8A7C8A0031E836 /* Pack.swift */,
+				325162E01D8A7AF50031E836 /* MunicipalityPack.swift */,
+				325162DE1D8A7ADD0031E836 /* ResourcePack.swift */,
+				325162DC1D8A796E0031E836 /* MedicalPack.swift */,
+				325162E61D8A7C620031E836 /* DisasterPack.swift */,
+				325162E21D8A7C2F0031E836 /* ChildcarePack.swift */,
+				325162E41D8A7C450031E836 /* NursingPack.swift */,
+			);
+			name = Packs;
+			sourceTree = "<group>";
+		};
+		3253A1191D8BA5920081B1C2 /* RealmObjects */ = {
+			isa = PBXGroup;
+			children = (
+				3253A1171D8B97430081B1C2 /* PoliceStation.swift */,
+				3253A11A1D8BA8A40081B1C2 /* NursingHome.swift */,
+			);
+			name = RealmObjects;
+			sourceTree = "<group>";
+		};
+		3257AB961D82AC4D0036E6E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3253A1191D8BA5920081B1C2 /* RealmObjects */,
+				325162EA1D8A8FD70031E836 /* Packs */,
+				325162EE1D8A9AD30031E836 /* ContentsItem.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		32DAF9601D7AC02400BCABCF = {
+			isa = PBXGroup;
+			children = (
+				32DAF96B1D7AC02500BCABCF /* SapporoGo */,
+				32DAF9851D7AC02500BCABCF /* SapporoGoTests */,
+				32DAF9901D7AC02500BCABCF /* SapporoGoUITests */,
+				32DAF96A1D7AC02400BCABCF /* Products */,
+				6A5A453E5B131B50ED39F08E /* Frameworks */,
+				FDA460A2326282108C678A0E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		32DAF96A1D7AC02400BCABCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32DAF9691D7AC02400BCABCF /* SapporoGo.app */,
+				32DAF9821D7AC02500BCABCF /* SapporoGoTests.xctest */,
+				32DAF98D1D7AC02500BCABCF /* SapporoGoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32DAF96B1D7AC02500BCABCF /* SapporoGo */ = {
+			isa = PBXGroup;
+			children = (
+				3253A1121D8B95E00081B1C2 /* AppDelegate.h */,
+				3253A1131D8B95E00081B1C2 /* AppDelegate.m */,
+				3203E2E71D866738009C106E /* ViewControllers */,
+				3224425D1D812C00009B03CC /* Views */,
+				3257AB961D82AC4D0036E6E8 /* Models */,
+				32DAF96C1D7AC02500BCABCF /* Supporting Files */,
+			);
+			path = SapporoGo;
+			sourceTree = "<group>";
+		};
+		32DAF96C1D7AC02500BCABCF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3253A1151D8B96300081B1C2 /* main.m */,
+				323CC14A1D88DFB90099EAC7 /* CSV */,
+				32E1EDC11D87F5FD004E3D35 /* FBSDKLoginKit.framework */,
+				32E1EDBF1D87F5EF004E3D35 /* FBSDKCoreKit.framework */,
+				32DAF9781D7AC02500BCABCF /* Assets.xcassets */,
+				3257AB8F1D829D8D0036E6E8 /* SapporoGo-Bridging-Header.h */,
+				32DAF97A1D7AC02500BCABCF /* LaunchScreen.storyboard */,
+				32DAF97D1D7AC02500BCABCF /* Info.plist */,
+				3257AB941D82A8BC0036E6E8 /* MapKit.framework */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32DAF9851D7AC02500BCABCF /* SapporoGoTests */ = {
+			isa = PBXGroup;
+			children = (
+				32DAF9861D7AC02500BCABCF /* SapporoGoTests.m */,
+				32DAF9881D7AC02500BCABCF /* Info.plist */,
+			);
+			path = SapporoGoTests;
+			sourceTree = "<group>";
+		};
+		32DAF9901D7AC02500BCABCF /* SapporoGoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				32DAF9911D7AC02500BCABCF /* SapporoGoUITests.m */,
+				32DAF9931D7AC02500BCABCF /* Info.plist */,
+			);
+			path = SapporoGoUITests;
+			sourceTree = "<group>";
+		};
+		6A5A453E5B131B50ED39F08E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				326383CB1D87DE9000DED761 /* Social.framework */,
+				326383C91D87DE8800DED761 /* Accounts.framework */,
+				3257AB9A1D82ADF10036E6E8 /* CoreFoundation.framework */,
+				8042449990A08F3CF43B0572 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDA460A2326282108C678A0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD222BC5BCB8A176EDEE6A8B /* Pods.debug.xcconfig */,
+				66105B7C68A80D039D8D7B0E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32DAF9681D7AC02400BCABCF /* SapporoGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32DAF9961D7AC02500BCABCF /* Build configuration list for PBXNativeTarget "SapporoGo" */;
+			buildPhases = (
+				DB7A612271670E96941852DB /* Check Pods Manifest.lock */,
+				32DAF9651D7AC02400BCABCF /* Sources */,
+				32DAF9661D7AC02400BCABCF /* Frameworks */,
+				32DAF9671D7AC02400BCABCF /* Resources */,
+				D4DC19B41EEA64DCA6FA12D6 /* Embed Pods Frameworks */,
+				F8FC2169ADED8B2C4A18DCEB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SapporoGo;
+			productName = SapporoGo;
+			productReference = 32DAF9691D7AC02400BCABCF /* SapporoGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32DAF9811D7AC02500BCABCF /* SapporoGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32DAF9991D7AC02500BCABCF /* Build configuration list for PBXNativeTarget "SapporoGoTests" */;
+			buildPhases = (
+				32DAF97E1D7AC02500BCABCF /* Sources */,
+				32DAF97F1D7AC02500BCABCF /* Frameworks */,
+				32DAF9801D7AC02500BCABCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32DAF9841D7AC02500BCABCF /* PBXTargetDependency */,
+			);
+			name = SapporoGoTests;
+			productName = SapporoGoTests;
+			productReference = 32DAF9821D7AC02500BCABCF /* SapporoGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32DAF98C1D7AC02500BCABCF /* SapporoGoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32DAF99C1D7AC02500BCABCF /* Build configuration list for PBXNativeTarget "SapporoGoUITests" */;
+			buildPhases = (
+				32DAF9891D7AC02500BCABCF /* Sources */,
+				32DAF98A1D7AC02500BCABCF /* Frameworks */,
+				32DAF98B1D7AC02500BCABCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32DAF98F1D7AC02500BCABCF /* PBXTargetDependency */,
+			);
+			name = SapporoGoUITests;
+			productName = SapporoGoUITests;
+			productReference = 32DAF98D1D7AC02500BCABCF /* SapporoGoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32DAF9611D7AC02400BCABCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = com.era.watanabe.sapporo.go;
+				TargetAttributes = {
+					32DAF9681D7AC02400BCABCF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					32DAF9811D7AC02500BCABCF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 32DAF9681D7AC02400BCABCF;
+					};
+					32DAF98C1D7AC02500BCABCF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 32DAF9681D7AC02400BCABCF;
+					};
+				};
+			};
+			buildConfigurationList = 32DAF9641D7AC02400BCABCF /* Build configuration list for PBXProject "SapporoGo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32DAF9601D7AC02400BCABCF;
+			productRefGroup = 32DAF96A1D7AC02400BCABCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32DAF9681D7AC02400BCABCF /* SapporoGo */,
+				32DAF9811D7AC02500BCABCF /* SapporoGoTests */,
+				32DAF98C1D7AC02500BCABCF /* SapporoGoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32DAF9671D7AC02400BCABCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DAF97C1D7AC02500BCABCF /* LaunchScreen.storyboard in Resources */,
+				323CC14E1D88E0070099EAC7 /* police_station.csv in Resources */,
+				323CC1521D88E19C0099EAC7 /* ward_office.csv in Resources */,
+				323CC1501D88E18C0099EAC7 /* fire_department.csv in Resources */,
+				32DAF9791D7AC02500BCABCF /* Assets.xcassets in Resources */,
+				323CC14C1D88DFFD0099EAC7 /* nursing_home.csv in Resources */,
+				32DAF9771D7AC02500BCABCF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32DAF9801D7AC02500BCABCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32DAF98B1D7AC02500BCABCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D4DC19B41EEA64DCA6FA12D6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB7A612271670E96941852DB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F8FC2169ADED8B2C4A18DCEB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32DAF9651D7AC02400BCABCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				325162F71D8AA3FD0031E836 /* ContentsMapViewController.swift in Sources */,
+				325162E51D8A7C450031E836 /* NursingPack.swift in Sources */,
+				325162EF1D8A9AD30031E836 /* ContentsItem.swift in Sources */,
+				325162E11D8A7AF50031E836 /* MunicipalityPack.swift in Sources */,
+				3253A1181D8B97430081B1C2 /* PoliceStation.swift in Sources */,
+				325162E71D8A7C620031E836 /* DisasterPack.swift in Sources */,
+				3253A11D1D8BAB590081B1C2 /* TabBarController.swift in Sources */,
+				326383C81D87D1F400DED761 /* ContentsTableViewController.swift in Sources */,
+				325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */,
+				325162E91D8A7C8A0031E836 /* Pack.swift in Sources */,
+				326383CE1D87DEC200DED761 /* SnsViewController.swift in Sources */,
+				3253A1161D8B96300081B1C2 /* main.m in Sources */,
+				325162E31D8A7C2F0031E836 /* ChildcarePack.swift in Sources */,
+				3253A1141D8B95E00081B1C2 /* AppDelegate.m in Sources */,
+				3257AB911D829D8D0036E6E8 /* HomeViewController.swift in Sources */,
+				325162DF1D8A7ADD0031E836 /* ResourcePack.swift in Sources */,
+				3253A11B1D8BA8A40081B1C2 /* NursingHome.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32DAF97E1D7AC02500BCABCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DAF9871D7AC02500BCABCF /* SapporoGoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32DAF9891D7AC02500BCABCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DAF9921D7AC02500BCABCF /* SapporoGoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32DAF9841D7AC02500BCABCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32DAF9681D7AC02400BCABCF /* SapporoGo */;
+			targetProxy = 32DAF9831D7AC02500BCABCF /* PBXContainerItemProxy */;
+		};
+		32DAF98F1D7AC02500BCABCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32DAF9681D7AC02400BCABCF /* SapporoGo */;
+			targetProxy = 32DAF98E1D7AC02500BCABCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32DAF9751D7AC02500BCABCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32DAF9761D7AC02500BCABCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32DAF97A1D7AC02500BCABCF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32DAF97B1D7AC02500BCABCF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32DAF9941D7AC02500BCABCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32DAF9951D7AC02500BCABCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32DAF9971D7AC02500BCABCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD222BC5BCB8A176EDEE6A8B /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SapporoGo/FacebookSDKs-iOS-4.15.1",
+				);
+				INFOPLIST_FILE = SapporoGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.era.watanabe.sapporo.go.SapporoGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SapporoGo/SapporoGo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32DAF9981D7AC02500BCABCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66105B7C68A80D039D8D7B0E /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SapporoGo/FacebookSDKs-iOS-4.15.1",
+				);
+				INFOPLIST_FILE = SapporoGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.era.watanabe.sapporo.go.SapporoGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SapporoGo/SapporoGo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		32DAF99A1D7AC02500BCABCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SapporoGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.era.watanabe.sapporo.go.SapporoGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SapporoGo.app/SapporoGo";
+			};
+			name = Debug;
+		};
+		32DAF99B1D7AC02500BCABCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SapporoGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.era.watanabe.sapporo.go.SapporoGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SapporoGo.app/SapporoGo";
+			};
+			name = Release;
+		};
+		32DAF99D1D7AC02500BCABCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SapporoGoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.era.watanabe.sapporo.go.SapporoGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SapporoGo;
+			};
+			name = Debug;
+		};
+		32DAF99E1D7AC02500BCABCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SapporoGoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.era.watanabe.sapporo.go.SapporoGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SapporoGo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32DAF9641D7AC02400BCABCF /* Build configuration list for PBXProject "SapporoGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32DAF9941D7AC02500BCABCF /* Debug */,
+				32DAF9951D7AC02500BCABCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32DAF9961D7AC02500BCABCF /* Build configuration list for PBXNativeTarget "SapporoGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32DAF9971D7AC02500BCABCF /* Debug */,
+				32DAF9981D7AC02500BCABCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32DAF9991D7AC02500BCABCF /* Build configuration list for PBXNativeTarget "SapporoGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32DAF99A1D7AC02500BCABCF /* Debug */,
+				32DAF99B1D7AC02500BCABCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32DAF99C1D7AC02500BCABCF /* Build configuration list for PBXNativeTarget "SapporoGoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32DAF99D1D7AC02500BCABCF /* Debug */,
+				32DAF99E1D7AC02500BCABCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32DAF9611D7AC02400BCABCF /* Project object */;
+}
