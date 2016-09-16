@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 import MapKit
 
-class ContentsMapViewController: UIViewController {
+class ContentsMapViewController: UIViewController, MKMapViewDelegate {
     
     var contentsItem:ContentsItem?
     
@@ -19,16 +19,28 @@ class ContentsMapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.mapView.delegate = self
+        
+        let coordinate = CLLocationCoordinate2DMake(43.062096, 141.354376)
+        let span = MKCoordinateSpanMake(0.1, 0.1)
+        let region = MKCoordinateRegionMake(coordinate, span)
+        mapView.setRegion(region, animated:true)
+        
         self.mapView.removeAnnotations(self.mapView.annotations)
         
-        let realm = try! Realm();
+        addAnnotations()
+    }
+    
 
+    func addAnnotations(){
+        let realm = try! Realm();
+        
         if self.contentsItem?.fileName == "police_station"
         {
             self.configurePoliceStation()
             self.addPoliceStationAnnotations(realm)
         }
-        
+            
         else if self.contentsItem?.fileName == "nursing_home"
         {
             self.configureNursingHome()
@@ -186,5 +198,19 @@ class ContentsMapViewController: UIViewController {
         }
         sections.removeObjectAtIndex(0)
         return sections
+    }
+    
+    //MARK: - MapViewDelegate
+    func mapView(mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        
+        if mapView.region.span.latitudeDelta < 0.3
+        {
+            print("create annotations")
+            addAnnotations()
+        }else
+        {
+            print("remove annotations")
+            mapView.removeAnnotations(self.mapView.annotations)
+        }
     }
 }
