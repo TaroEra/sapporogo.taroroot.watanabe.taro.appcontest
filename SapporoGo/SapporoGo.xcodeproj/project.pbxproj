@@ -41,6 +41,8 @@
 		325409291D90D98D0022A20E /* InsuranceCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325409281D90D98D0022A20E /* InsuranceCenter.swift */; };
 		3254092B1D90DCD80022A20E /* PublicworksCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254092A1D90DCD80022A20E /* PublicworksCenter.swift */; };
 		3254092D1D90DD410022A20E /* TownPlanningCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254092C1D90DD410022A20E /* TownPlanningCenter.swift */; };
+		325409301D9100880022A20E /* ic_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 3254092F1D9100880022A20E /* ic_map.png */; };
+		325409331D9101E20022A20E /* UIImage(resize).swift in Sources */ = {isa = PBXBuildFile; fileRef = 325409321D9101E20022A20E /* UIImage(resize).swift */; };
 		3257AB911D829D8D0036E6E8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3257AB901D829D8D0036E6E8 /* HomeViewController.swift */; };
 		3257AB951D82A8BC0036E6E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3257AB941D82A8BC0036E6E8 /* MapKit.framework */; };
 		3257AB9B1D82ADF10036E6E8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3257AB9A1D82ADF10036E6E8 /* CoreFoundation.framework */; };
@@ -112,6 +114,8 @@
 		325409281D90D98D0022A20E /* InsuranceCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsuranceCenter.swift; sourceTree = "<group>"; };
 		3254092A1D90DCD80022A20E /* PublicworksCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicworksCenter.swift; sourceTree = "<group>"; };
 		3254092C1D90DD410022A20E /* TownPlanningCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TownPlanningCenter.swift; sourceTree = "<group>"; };
+		3254092F1D9100880022A20E /* ic_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_map.png; path = Images/ic_map.png; sourceTree = "<group>"; };
+		325409321D9101E20022A20E /* UIImage(resize).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage(resize).swift"; sourceTree = "<group>"; };
 		3257AB8F1D829D8D0036E6E8 /* SapporoGo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SapporoGo-Bridging-Header.h"; sourceTree = "<group>"; };
 		3257AB901D829D8D0036E6E8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3257AB941D82A8BC0036E6E8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -290,6 +294,22 @@
 			name = "金融機関";
 			sourceTree = "<group>";
 		};
+		3254092E1D9100370022A20E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3254092F1D9100880022A20E /* ic_map.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		325409311D9101B90022A20E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				325409321D9101E20022A20E /* UIImage(resize).swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		3257AB961D82AC4D0036E6E8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,7 +350,11 @@
 				3203E2E71D866738009C106E /* ViewControllers */,
 				3224425D1D812C00009B03CC /* Views */,
 				3257AB961D82AC4D0036E6E8 /* Models */,
+				325409311D9101B90022A20E /* Utility */,
 				32DAF96C1D7AC02500BCABCF /* Supporting Files */,
+				32E1EDC11D87F5FD004E3D35 /* FBSDKLoginKit.framework */,
+				32E1EDBF1D87F5EF004E3D35 /* FBSDKCoreKit.framework */,
+				3257AB941D82A8BC0036E6E8 /* MapKit.framework */,
 			);
 			path = SapporoGo;
 			sourceTree = "<group>";
@@ -339,14 +363,12 @@
 			isa = PBXGroup;
 			children = (
 				3253A1151D8B96300081B1C2 /* main.m */,
+				3254092E1D9100370022A20E /* Images */,
 				323CC14A1D88DFB90099EAC7 /* CSV,PDF */,
-				32E1EDC11D87F5FD004E3D35 /* FBSDKLoginKit.framework */,
-				32E1EDBF1D87F5EF004E3D35 /* FBSDKCoreKit.framework */,
 				32DAF9781D7AC02500BCABCF /* Assets.xcassets */,
 				3257AB8F1D829D8D0036E6E8 /* SapporoGo-Bridging-Header.h */,
 				32DAF97A1D7AC02500BCABCF /* LaunchScreen.storyboard */,
 				32DAF97D1D7AC02500BCABCF /* Info.plist */,
-				3257AB941D82A8BC0036E6E8 /* MapKit.framework */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -509,6 +531,7 @@
 				323CC1521D88E19C0099EAC7 /* ward_office.csv in Resources */,
 				323CC1501D88E18C0099EAC7 /* fire_department.csv in Resources */,
 				32DAF9791D7AC02500BCABCF /* Assets.xcassets in Resources */,
+				325409301D9100880022A20E /* ic_map.png in Resources */,
 				323CC14C1D88DFFD0099EAC7 /* nursing_home.csv in Resources */,
 				3254090C1D90C23D0022A20E /* public_works_center.csv in Resources */,
 				32DAF9771D7AC02500BCABCF /* Main.storyboard in Resources */,
@@ -597,6 +620,7 @@
 				3254092D1D90DD410022A20E /* TownPlanningCenter.swift in Sources */,
 				32BB23B71D8BD3DB00F8C7F5 /* WardOffice.swift in Sources */,
 				325409271D90D8660022A20E /* ComunityCenter.swift in Sources */,
+				325409331D9101E20022A20E /* UIImage(resize).swift in Sources */,
 				326383C81D87D1F400DED761 /* ContentsTableViewController.swift in Sources */,
 				325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */,
 				325162E91D8A7C8A0031E836 /* Pack.swift in Sources */,
