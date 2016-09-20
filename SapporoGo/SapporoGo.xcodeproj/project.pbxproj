@@ -24,8 +24,6 @@
 		325162F71D8AA3FD0031E836 /* ContentsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162F61D8AA3FD0031E836 /* ContentsMapViewController.swift */; };
 		3253A1141D8B95E00081B1C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3253A1131D8B95E00081B1C2 /* AppDelegate.m */; };
 		3253A1161D8B96300081B1C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3253A1151D8B96300081B1C2 /* main.m */; };
-		3253A1181D8B97430081B1C2 /* PoliceStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253A1171D8B97430081B1C2 /* PoliceStation.swift */; };
-		3253A11B1D8BA8A40081B1C2 /* NursingHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253A11A1D8BA8A40081B1C2 /* NursingHome.swift */; };
 		3253A11D1D8BAB590081B1C2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253A11C1D8BAB590081B1C2 /* TabBarController.swift */; };
 		325409091D90C23D0022A20E /* administration_all.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409011D90C23D0022A20E /* administration_all.csv */; };
 		3254090A1D90C23D0022A20E /* comunity_center.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409021D90C23D0022A20E /* comunity_center.csv */; };
@@ -37,10 +35,6 @@
 		325409191D90C4F80022A20E /* link_financial_institutions.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409171D90C4F80022A20E /* link_financial_institutions.csv */; };
 		3254091A1D90C4F80022A20E /* link_sappro_medical.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409181D90C4F80022A20E /* link_sappro_medical.csv */; };
 		325409251D90C72E0022A20E /* FinancialPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325409241D90C72E0022A20E /* FinancialPack.swift */; };
-		325409271D90D8660022A20E /* ComunityCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325409261D90D8660022A20E /* ComunityCenter.swift */; };
-		325409291D90D98D0022A20E /* InsuranceCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325409281D90D98D0022A20E /* InsuranceCenter.swift */; };
-		3254092B1D90DCD80022A20E /* PublicworksCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254092A1D90DCD80022A20E /* PublicworksCenter.swift */; };
-		3254092D1D90DD410022A20E /* TownPlanningCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254092C1D90DD410022A20E /* TownPlanningCenter.swift */; };
 		325409301D9100880022A20E /* ic_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 3254092F1D9100880022A20E /* ic_map.png */; };
 		325409331D9101E20022A20E /* UIImage(resize).swift in Sources */ = {isa = PBXBuildFile; fileRef = 325409321D9101E20022A20E /* UIImage(resize).swift */; };
 		3257AB911D829D8D0036E6E8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3257AB901D829D8D0036E6E8 /* HomeViewController.swift */; };
@@ -50,7 +44,7 @@
 		326383CA1D87DE8800DED761 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326383C91D87DE8800DED761 /* Accounts.framework */; };
 		326383CC1D87DE9000DED761 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326383CB1D87DE9000DED761 /* Social.framework */; };
 		326383CE1D87DEC200DED761 /* SnsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326383CD1D87DEC200DED761 /* SnsViewController.swift */; };
-		32BB23B71D8BD3DB00F8C7F5 /* WardOffice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB23B61D8BD3DB00F8C7F5 /* WardOffice.swift */; };
+		32BB23B71D8BD3DB00F8C7F5 /* MapObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB23B61D8BD3DB00F8C7F5 /* MapObject.swift */; };
 		32DAF9771D7AC02500BCABCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DAF9751D7AC02500BCABCF /* Main.storyboard */; };
 		32DAF9791D7AC02500BCABCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DAF9781D7AC02500BCABCF /* Assets.xcassets */; };
 		32DAF97C1D7AC02500BCABCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DAF97A1D7AC02500BCABCF /* LaunchScreen.storyboard */; };
@@ -97,8 +91,6 @@
 		3253A1121D8B95E00081B1C2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3253A1131D8B95E00081B1C2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3253A1151D8B96300081B1C2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3253A1171D8B97430081B1C2 /* PoliceStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliceStation.swift; sourceTree = "<group>"; };
-		3253A11A1D8BA8A40081B1C2 /* NursingHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NursingHome.swift; sourceTree = "<group>"; };
 		3253A11C1D8BAB590081B1C2 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		325409011D90C23D0022A20E /* administration_all.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = administration_all.csv; path = CSV/administration_all.csv; sourceTree = "<group>"; };
 		325409021D90C23D0022A20E /* comunity_center.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = comunity_center.csv; path = CSV/comunity_center.csv; sourceTree = "<group>"; };
@@ -110,10 +102,6 @@
 		325409171D90C4F80022A20E /* link_financial_institutions.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = link_financial_institutions.csv; path = CSV/link_financial_institutions.csv; sourceTree = "<group>"; };
 		325409181D90C4F80022A20E /* link_sappro_medical.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = link_sappro_medical.csv; path = CSV/link_sappro_medical.csv; sourceTree = "<group>"; };
 		325409241D90C72E0022A20E /* FinancialPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialPack.swift; sourceTree = "<group>"; };
-		325409261D90D8660022A20E /* ComunityCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComunityCenter.swift; sourceTree = "<group>"; };
-		325409281D90D98D0022A20E /* InsuranceCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsuranceCenter.swift; sourceTree = "<group>"; };
-		3254092A1D90DCD80022A20E /* PublicworksCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicworksCenter.swift; sourceTree = "<group>"; };
-		3254092C1D90DD410022A20E /* TownPlanningCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TownPlanningCenter.swift; sourceTree = "<group>"; };
 		3254092F1D9100880022A20E /* ic_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_map.png; path = Images/ic_map.png; sourceTree = "<group>"; };
 		325409321D9101E20022A20E /* UIImage(resize).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage(resize).swift"; sourceTree = "<group>"; };
 		3257AB8F1D829D8D0036E6E8 /* SapporoGo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SapporoGo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -124,7 +112,7 @@
 		326383C91D87DE8800DED761 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		326383CB1D87DE9000DED761 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		326383CD1D87DEC200DED761 /* SnsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnsViewController.swift; sourceTree = "<group>"; };
-		32BB23B61D8BD3DB00F8C7F5 /* WardOffice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WardOffice.swift; sourceTree = "<group>"; };
+		32BB23B61D8BD3DB00F8C7F5 /* MapObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapObject.swift; sourceTree = "<group>"; };
 		32DAF9691D7AC02400BCABCF /* SapporoGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SapporoGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DAF9761D7AC02500BCABCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32DAF9781D7AC02500BCABCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -226,13 +214,7 @@
 		3253A1191D8BA5920081B1C2 /* RealmObjects */ = {
 			isa = PBXGroup;
 			children = (
-				3253A1171D8B97430081B1C2 /* PoliceStation.swift */,
-				3253A11A1D8BA8A40081B1C2 /* NursingHome.swift */,
-				32BB23B61D8BD3DB00F8C7F5 /* WardOffice.swift */,
-				325409261D90D8660022A20E /* ComunityCenter.swift */,
-				325409281D90D98D0022A20E /* InsuranceCenter.swift */,
-				3254092A1D90DCD80022A20E /* PublicworksCenter.swift */,
-				3254092C1D90DD410022A20E /* TownPlanningCenter.swift */,
+				32BB23B61D8BD3DB00F8C7F5 /* MapObject.swift */,
 			);
 			name = RealmObjects;
 			sourceTree = "<group>";
@@ -610,16 +592,11 @@
 			files = (
 				325162F71D8AA3FD0031E836 /* ContentsMapViewController.swift in Sources */,
 				325162E51D8A7C450031E836 /* NursingPack.swift in Sources */,
-				325409291D90D98D0022A20E /* InsuranceCenter.swift in Sources */,
 				325162EF1D8A9AD30031E836 /* ContentsItem.swift in Sources */,
 				325162E11D8A7AF50031E836 /* MunicipalityPack.swift in Sources */,
-				3253A1181D8B97430081B1C2 /* PoliceStation.swift in Sources */,
 				325162E71D8A7C620031E836 /* DisasterPack.swift in Sources */,
 				3253A11D1D8BAB590081B1C2 /* TabBarController.swift in Sources */,
-				3254092B1D90DCD80022A20E /* PublicworksCenter.swift in Sources */,
-				3254092D1D90DD410022A20E /* TownPlanningCenter.swift in Sources */,
-				32BB23B71D8BD3DB00F8C7F5 /* WardOffice.swift in Sources */,
-				325409271D90D8660022A20E /* ComunityCenter.swift in Sources */,
+				32BB23B71D8BD3DB00F8C7F5 /* MapObject.swift in Sources */,
 				325409331D9101E20022A20E /* UIImage(resize).swift in Sources */,
 				326383C81D87D1F400DED761 /* ContentsTableViewController.swift in Sources */,
 				325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */,
@@ -631,7 +608,6 @@
 				3257AB911D829D8D0036E6E8 /* HomeViewController.swift in Sources */,
 				325409251D90C72E0022A20E /* FinancialPack.swift in Sources */,
 				325162DF1D8A7ADD0031E836 /* ResourcePack.swift in Sources */,
-				3253A11B1D8BA8A40081B1C2 /* NursingHome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

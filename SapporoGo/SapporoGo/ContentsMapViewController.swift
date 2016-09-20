@@ -28,197 +28,36 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         
         self.mapView.removeAnnotations(self.mapView.annotations)
         
-//        addAnnotations()
+//        TODO:基本フォーマット対応のCSVを取り込んでCO解除
+//        initalizeRealmObject()
+//        addAnotations()
     }
     
-//    func addAnnotations(){
-//    
-//        let realm = try! Realm();
-//        
-//        if self.contentsItem?.fileName == "police_station"
-//        {
-//            self.configurePoliceStation()
-//            for policeStation in realm.objects(PoliceStation){
-//                let annotation:MKPointAnnotation = MKPointAnnotation();
-//                annotation.coordinate = CLLocationCoordinate2DMake(policeStation.latitude, policeStation.longitude);
-//                annotation.title = policeStation.name;
-//                annotation.subtitle = policeStation.address;
-//                self.mapView .addAnnotation(annotation)
-//            }
-//        }
-//        else if self.contentsItem?.fileName == "nursing_home"
-//        {
-//            self.configureNursingHome()
-//            for nursingHome in realm.objects(NursingHome){
-//                let annotation:MKPointAnnotation = MKPointAnnotation();
-//                annotation.coordinate = CLLocationCoordinate2DMake(nursingHome.latitude, nursingHome.longitude);
-//                annotation.title = nursingHome.name;
-//                annotation.subtitle = nursingHome.address;
-//                self.mapView .addAnnotation(annotation)
-//            }        }
-//        else if self.contentsItem?.fileName == "ward_office"
-//        {
-//            self.configureWordOffice()
-//            for wardOffice in realm.objects(WardOffice){
-//                let annotation:MKPointAnnotation = MKPointAnnotation();
-//                annotation.coordinate = CLLocationCoordinate2DMake(wardOffice.latitude, wardOffice.longitude);
-//                annotation.title = wardOffice.name;
-//                annotation.subtitle = wardOffice.address;
-//                self.mapView .addAnnotation(annotation)
-//            }
-//        }
-//        else if self.contentsItem?.fileName == "comunity_center"
-//        {
-//            self.configureComunityCenter()
-//            for wardOffice in realm.objects(ComunityCenter){
-//                let annotation:MKPointAnnotation = MKPointAnnotation();
-//                annotation.coordinate = CLLocationCoordinate2DMake(wardOffice.latitude, wardOffice.longitude);
-//                annotation.title = wardOffice.name;
-//                annotation.subtitle = wardOffice.address;
-//                self.mapView .addAnnotation(annotation)
-//            }
-//        }
-//        else if self.contentsItem?.fileName == "insurance_center"
-//        {
-//            self.configureIsuranceCenter()
-//            for insuranceCenter in realm.objects(InsuranceCenter){
-//                let annotation:MKPointAnnotation = MKPointAnnotation();
-//                annotation.coordinate = CLLocationCoordinate2DMake(insuranceCenter.latitude, insuranceCenter.longitude);
-//                annotation.title = insuranceCenter.name;
-//                annotation.subtitle = insuranceCenter.address;
-//                self.mapView .addAnnotation(annotation)
-//            }
-//        }
-//        else if self.contentsItem?.fileName == "town_planning_center"
-//        {
-//            self.configureTownPlannningCenter()
-//            for insuranceCenter in realm.objects(TownPlanningCenter){
-//                let annotation:MKPointAnnotation = MKPointAnnotation();
-//                annotation.coordinate = CLLocationCoordinate2DMake(insuranceCenter.latitude, insuranceCenter.longitude);
-//                annotation.title = insuranceCenter.name;
-//                annotation.subtitle = insuranceCenter.address;
-//                self.mapView .addAnnotation(annotation)
-//            }
-//        }
-//        else if self.contentsItem?.fileName == "public_works_center"
-//        {
-//            self.configurePublicworksCenter()
-//            for insuranceCenter in realm.objects(PublicworksCenter){
-//                let annotation:MKPointAnnotation = MKPointAnnotation();
-//                annotation.coordinate = CLLocationCoordinate2DMake(insuranceCenter.latitude, insuranceCenter.longitude);
-//                annotation.title = insuranceCenter.name;
-//                annotation.subtitle = insuranceCenter.address;
-//                self.mapView .addAnnotation(annotation)
-//            }
-//        }
-//    }
+    func initalizeRealmObject(){
+        
+        let realm = try! Realm()
+        
+        let sections = parseCSV()
+        for sectionsItem in sections{
+            let mapObject = MapObject(value:createCsvObjectValue(sectionsItem as! NSArray))
+            try! realm.write{
+                realm.add(mapObject, update: true)
+            }
+        }
+    }
     
-//    func configurePublicworksCenter(){
-//        let realm = try! Realm()
-//        let sections = parseCSV()
-//        
-//        for sectionsItem in sections{
-//            
-//            let comunityCenter = PublicworksCenter(
-//                value:createObjectValue(sectionsItem as! NSArray)
-//            )
-//            try! realm.write{
-//                realm.add(comunityCenter, update: true)
-//            }
-//        }
-//    }
-    
-//    func configureTownPlannningCenter(){
-//        let realm = try! Realm()
-//        let sections = parseCSV()
-//        
-//        for sectionsItem in sections{
-//            
-//            let comunityCenter = TownPlanningCenter(
-//                value:createObjectValue(sectionsItem as! NSArray)
-//            )
-//            try! realm.write{
-//                realm.add(comunityCenter, update: true)
-//            }
-//        }
-//    }
-    
-//    func configureIsuranceCenter(){
-//        let realm = try! Realm()
-//        let sections = parseCSV()
-//        
-//        for sectionsItem in sections{
-//            
-//            let comunityCenter = InsuranceCenter(
-//                value:createObjectValue(sectionsItem as! NSArray)
-//            )
-//            try! realm.write{
-//                realm.add(comunityCenter, update: true)
-//            }
-//        }
-//    }
-    
-//    func configureComunityCenter(){
-//        let realm = try! Realm()
-//        let sections = parseCSV()
-//        
-//        for sectionsItem in sections{
-//            
-//            let comunityCenter = ComunityCenter(
-//                value:createObjectValue(sectionsItem as! NSArray)
-//            )
-//            try! realm.write{
-//                realm.add(comunityCenter, update: true)
-//            }
-//        }
-//    }
-    
-//    func configureWordOffice(){
-//        let realm = try! Realm()
-//        let sections = parseCSV()
-//        
-//        for sectionsItem in sections{
-//            
-//            let wardOffice = WardOffice(
-//                value:createObjectValue(sectionsItem as! NSArray)
-//            )
-//            try! realm.write{
-//                realm.add(wardOffice, update: true)
-//            }
-//        }
-//    }
-    
-//    func configureNursingHome(){
-//        
-//        let realm = try! Realm()
-//        let sections = self.parseCSV()
-//        
-//        for sectionsItem in sections{
-//            
-//            let nursingHome = NursingHome(
-//                value:createObjectValue(sectionsItem as! NSArray)
-//            )
-//            try! realm.write{
-//                realm.add(nursingHome, update: true)
-//            }
-//        }
-//    }
-    
-//    func configurePoliceStation(){
-//        
-//        let realm = try! Realm()
-//        let sections = parseCSV()
-//        
-//        for sectionsItem in sections{
-//            
-//            let policeStation = PoliceStation(
-//                value:createObjectValue(sectionsItem as! NSArray)
-//            )
-//            try! realm.write{
-//                realm.add(policeStation, update:true)
-//            }
-//        }
-//    }
+    func addAnotations(){
+        let realm = try! Realm();
+        
+        let query:String! = "file_name = '" + (contentsItem?.fileName)! + "'"
+        for mapObject in realm.objects(MapObject).filter(query){
+            let annotation:MKPointAnnotation = MKPointAnnotation();
+            annotation.coordinate = CLLocationCoordinate2DMake(mapObject.latitude, mapObject.longitude);
+            annotation.title = mapObject.name;
+            annotation.subtitle = mapObject.address;
+            self.mapView .addAnnotation(annotation)
+        }
+    }
     
     func createCsvObjectValue(let sectionItem:NSArray) -> NSDictionary{
         
@@ -228,18 +67,27 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         let name = array[2]
         let latitude = array[3].doubleValue
         let longitude = array[4].doubleValue
+        let fileName = contentsItem?.fileName
         
         var address = "北海道"
         address = address.stringByAppendingString(array[7] as! String)
         address = address.stringByAppendingString(array[6] as! String)
         address = address.stringByAppendingString(array[5] as! String)
         
-        let valule =    ["id":id,
-                         "type":type,
-                         "name":name,
-                         "latitude":latitude,
-                         "longitude":longitude,
-                         "address":address]
+        let addressNumber = array[8]
+        let phoneNumber = array[9]
+        let faxNumber = array[10]
+        
+        let valule = ["id":id,
+                      "type":type,
+                      "name":name,
+                      "latitude":latitude,
+                      "longitude":longitude,
+                      "address":address,
+                      "file_name":fileName!,
+                      "address_number":addressNumber,
+                      "phone_number":phoneNumber,
+                      "fax_number":faxNumber]
         return valule
     }
     
@@ -275,11 +123,11 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         if mapView.region.span.latitudeDelta < 0.3
         {
             print("create annotations")
-//            addAnnotations()
+            addAnotations()
         }else
         {
             print("remove annotations")
-//            mapView.removeAnnotations(self.mapView.annotations)
+            mapView.removeAnnotations(self.mapView.annotations)
         }
     }
 }
