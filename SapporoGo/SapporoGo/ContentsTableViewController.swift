@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ContentsTableViewController: UITableViewController {
     
@@ -24,8 +25,8 @@ class ContentsTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if let contents = self.pack!.contents{
-            return contents.count;
+        if let pack = self.pack{
+            return pack.contents!.count;
         }
         else {
             return 0
@@ -70,6 +71,22 @@ class ContentsTableViewController: UITableViewController {
             contentsMapViewController.contentsItem = self.pack?.contents![indexPath.row]
             self.navigationController?.pushViewController(contentsMapViewController, animated: true)
         }
+        
+        else if pack?.name == FinancialPack().name{
+            let realm = try! Realm()
+            let title:String! =  pack!.contents![indexPath.row].title
+            let query = "name ='" + title + "'"
+            let results = realm.objects(FinancialInstitutions).filter(query)
+            var contentsItems = Array<ContentsItem>()
+            
+            for result in results{
+                contentsItems.append(ContentsItem(title:result.sub_name, fileName:"", fileType:"", purposeType:"LINK"))
+            }
+            let contentsTableviewController:ContentsTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsTableViewController")) as! ContentsTableViewController
+            contentsTableviewController.pack = Pack(name:title!, contents:contentsItems)
+            self.navigationController?.pushViewController(contentsTableviewController, animated: true)
+        }
+        
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }
