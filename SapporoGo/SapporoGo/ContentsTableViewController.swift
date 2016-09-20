@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import SafariServices
 
 class ContentsTableViewController: UITableViewController {
     
@@ -71,7 +72,6 @@ class ContentsTableViewController: UITableViewController {
             contentsMapViewController.contentsItem = self.pack?.contents![indexPath.row]
             self.navigationController?.pushViewController(contentsMapViewController, animated: true)
         }
-        
         else if pack?.name == FinancialPack().name{
             let realm = try! Realm()
             let title:String! =  pack!.contents![indexPath.row].title
@@ -85,6 +85,16 @@ class ContentsTableViewController: UITableViewController {
             let contentsTableviewController:ContentsTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsTableViewController")) as! ContentsTableViewController
             contentsTableviewController.pack = Pack(name:title!, contents:contentsItems)
             self.navigationController?.pushViewController(contentsTableviewController, animated: true)
+        }
+        else if pack?.contents![indexPath.row].purposeType == "LINK"{
+            
+            let realm = try! Realm()
+            let selectedTitle = pack?.contents![indexPath.row].title
+            let query = "sub_name = '" + selectedTitle! + "'"
+            let financialInstitutions = realm.objects(FinancialInstitutions).filter(query).first
+            let url = NSURL(string:(financialInstitutions?.mobile_url)!)!
+            let safariViewController = SFSafariViewController(URL:url)
+            self.navigationController?.pushViewController(safariViewController, animated: true)
         }
         
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
