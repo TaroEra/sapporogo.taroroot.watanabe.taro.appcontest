@@ -120,7 +120,7 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         for sectionsItem in sections{
             
             let comunityCenter = PublicworksCenter(
-                value:createValue(sectionsItem as! NSArray)
+                value:createObjectValue(sectionsItem as! NSArray)
             )
             try! realm.write{
                 realm.add(comunityCenter, update: true)
@@ -135,7 +135,7 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         for sectionsItem in sections{
             
             let comunityCenter = TownPlanningCenter(
-                value:createValue(sectionsItem as! NSArray)
+                value:createObjectValue(sectionsItem as! NSArray)
             )
             try! realm.write{
                 realm.add(comunityCenter, update: true)
@@ -150,7 +150,7 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         for sectionsItem in sections{
             
             let comunityCenter = InsuranceCenter(
-                value:createValue(sectionsItem as! NSArray)
+                value:createObjectValue(sectionsItem as! NSArray)
             )
             try! realm.write{
                 realm.add(comunityCenter, update: true)
@@ -165,7 +165,7 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         for sectionsItem in sections{
             
             let comunityCenter = ComunityCenter(
-                value:createValue(sectionsItem as! NSArray)
+                value:createObjectValue(sectionsItem as! NSArray)
             )
             try! realm.write{
                 realm.add(comunityCenter, update: true)
@@ -180,7 +180,7 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         for sectionsItem in sections{
             
             let wardOffice = WardOffice(
-            value:createValue(sectionsItem as! NSArray)
+                value:createObjectValue(sectionsItem as! NSArray)
             )
             try! realm.write{
                 realm.add(wardOffice, update: true)
@@ -196,7 +196,7 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         for sectionsItem in sections{
             
             let nursingHome = NursingHome(
-                value:createValue(sectionsItem as! NSArray)
+                value:createObjectValue(sectionsItem as! NSArray)
             )
             try! realm.write{
                 realm.add(nursingHome, update: true)
@@ -212,7 +212,7 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         for sectionsItem in sections{
             
             let policeStation = PoliceStation(
-                value:createValue(sectionsItem as! NSArray)
+                value:createObjectValue(sectionsItem as! NSArray)
             )
             try! realm.write{
                 realm.add(policeStation, update:true)
@@ -220,24 +220,26 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         }
     }
     
-    func createValue(let sectionItem:NSArray) -> NSDictionary{
+    func createObjectValue(let sectionItem:NSArray) -> NSDictionary{
         
         let array = sectionItem
+        let id = array[0]
+        let type = array[1]
         let name = array[2]
-        var address = "北海道"
-        address = address.stringByAppendingString(array[8] as! String)
-        address = address.stringByAppendingString(array[7] as! String)
-        address = address.stringByAppendingString(array[6] as! String)
-        
         let latitude = array[3].doubleValue
         let longitude = array[4].doubleValue
-        let type = array[1]
         
-        let valule =    ["name":name,
-                         "address":address,
+        var address = "北海道"
+        address = address.stringByAppendingString(array[7] as! String)
+        address = address.stringByAppendingString(array[6] as! String)
+        address = address.stringByAppendingString(array[5] as! String)
+        
+        let valule =    ["id":id,
+                         "type":type,
+                         "name":name,
                          "latitude":latitude,
                          "longitude":longitude,
-                         "type":type]
+                         "address":address]
         return valule
     }
     

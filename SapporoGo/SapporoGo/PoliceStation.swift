@@ -11,13 +11,17 @@ import RealmSwift
 
 class PoliceStation:Object{
     
+    dynamic var id:Int = 0
     dynamic var name = ""
     dynamic var type = ""
     dynamic var latitude:Double=0.0
     dynamic var longitude:Double=0.0
     dynamic var address = ""
+    dynamic var address_number = ""
+    dynamic var phone_number = ""
+    dynamic var fax_number = ""
     
     override static func primaryKey() -> String? {
-        return "name"
+        return "id"
     }
 }
