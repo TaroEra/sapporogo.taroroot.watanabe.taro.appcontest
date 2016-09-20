@@ -14,10 +14,12 @@ class ContentsItem{
     var title:String?
     var fileName:String?
     var fileType:String?
+    var purposeType:String?
     
-    init (title:String?, fileName:String?, fileType:String?){
+    init (title:String?, fileName:String?, fileType:String?, purposeType:String?){
         self.title = title
         self.fileName = fileName
         self.fileType = fileType
+        self.purposeType = purposeType
     }
 }

@@ -38,7 +38,7 @@ class ContentsTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        if pack?.contents![indexPath.row].fileType == "csv"{
+        if pack?.contents![indexPath.row].purposeType == "MAP"{
             let contentsMapViewController:ContentsMapViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsMapViewController")) as! ContentsMapViewController
             contentsMapViewController.contentsItem = self.pack?.contents![indexPath.row]
             self.navigationController?.pushViewController(contentsMapViewController, animated: true)

@@ -11,6 +11,6 @@ import Foundation
 class FinancialPack: Pack {
     
     init() {
-        super.init(name: "金融基幹", contents:[ContentsItem(title:"金融機関リンク", fileName:"link_financial_institutions", fileType:"csv")])
+        super.init(name: "金融基幹", contents:[ContentsItem(title:"金融機関リンク", fileName:"link_financial_institutions", fileType:"csv", purposeType:"LIST")])
     }
 }
