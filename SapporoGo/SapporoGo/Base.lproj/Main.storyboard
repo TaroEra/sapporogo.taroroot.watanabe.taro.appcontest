@@ -198,5 +198,24 @@
             </objects>
             <point key="canvasLocation" x="2158" y="831"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="6eO-IY-M60">
+            <objects>
+                <viewController storyboardIdentifier="PDFViewController" id="EjN-Ft-My8" customClass="PDFViewController" customModule="SapporoGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cZj-Jw-QCg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wkt-Nb-VHt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hRt-XE-meJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Jq-5H-kxB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2501" y="1097"/>
+        </scene>
     </scenes>
 </document>

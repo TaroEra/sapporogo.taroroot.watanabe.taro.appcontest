@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320C28591D9173510064DBC5 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320C28581D9173510064DBC5 /* PDFViewController.swift */; };
+		320C285D1D91771B0064DBC5 /* garbage_chinese.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 320C285A1D91771B0064DBC5 /* garbage_chinese.pdf */; };
+		320C285E1D91771B0064DBC5 /* garbage_english.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 320C285B1D91771B0064DBC5 /* garbage_english.pdf */; };
+		320C285F1D91771B0064DBC5 /* garbage_korean.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 320C285C1D91771B0064DBC5 /* garbage_korean.pdf */; };
 		321CDFE91D8D21AA00164940 /* disaster_prevention_item.csv in Resources */ = {isa = PBXBuildFile; fileRef = 321CDFE51D8D21AA00164940 /* disaster_prevention_item.csv */; };
 		321CDFED1D8D229B00164940 /* shelter_core.csv in Resources */ = {isa = PBXBuildFile; fileRef = 321CDFEC1D8D229B00164940 /* shelter_core.csv */; };
 		323CC14C1D88DFFD0099EAC7 /* nursing_home.csv in Resources */ = {isa = PBXBuildFile; fileRef = 323CC14B1D88DFFD0099EAC7 /* nursing_home.csv */; };
@@ -78,6 +82,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		320C28581D9173510064DBC5 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		320C285A1D91771B0064DBC5 /* garbage_chinese.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = garbage_chinese.pdf; path = CSV/garbage_chinese.pdf; sourceTree = "<group>"; };
+		320C285B1D91771B0064DBC5 /* garbage_english.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = garbage_english.pdf; path = CSV/garbage_english.pdf; sourceTree = "<group>"; };
+		320C285C1D91771B0064DBC5 /* garbage_korean.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = garbage_korean.pdf; path = CSV/garbage_korean.pdf; sourceTree = "<group>"; };
 		321CDFE51D8D21AA00164940 /* disaster_prevention_item.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = disaster_prevention_item.csv; path = CSV/disaster_prevention_item.csv; sourceTree = "<group>"; };
 		321CDFEC1D8D229B00164940 /* shelter_core.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shelter_core.csv; path = CSV/shelter_core.csv; sourceTree = "<group>"; };
 		323CC14B1D88DFFD0099EAC7 /* nursing_home.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = nursing_home.csv; path = CSV/nursing_home.csv; sourceTree = "<group>"; };
@@ -181,6 +189,7 @@
 				326383C71D87D1F400DED761 /* ContentsTableViewController.swift */,
 				325162F61D8AA3FD0031E836 /* ContentsMapViewController.swift */,
 				3253A11C1D8BAB590081B1C2 /* TabBarController.swift */,
+				320C28581D9173510064DBC5 /* PDFViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -276,6 +285,9 @@
 		3254091C1D90C5F70022A20E /* ゴミ・資源 */ = {
 			isa = PBXGroup;
 			children = (
+				320C285A1D91771B0064DBC5 /* garbage_chinese.pdf */,
+				320C285B1D91771B0064DBC5 /* garbage_english.pdf */,
+				320C285C1D91771B0064DBC5 /* garbage_korean.pdf */,
 			);
 			name = "ゴミ・資源";
 			sourceTree = "<group>";
@@ -525,16 +537,19 @@
 				323CC14E1D88E0070099EAC7 /* police_station.csv in Resources */,
 				321CDFED1D8D229B00164940 /* shelter_core.csv in Resources */,
 				325409101D90C23D0022A20E /* town_planning_center.csv in Resources */,
+				320C285D1D91771B0064DBC5 /* garbage_chinese.pdf in Resources */,
 				3254090E1D90C23D0022A20E /* shelter_region.csv in Resources */,
 				323CC1521D88E19C0099EAC7 /* ward_office.csv in Resources */,
 				323CC1501D88E18C0099EAC7 /* fire_department.csv in Resources */,
 				32DAF9791D7AC02500BCABCF /* Assets.xcassets in Resources */,
 				3254093A1D910F3E0022A20E /* ic_map@2x.png in Resources */,
 				3254093B1D910F3E0022A20E /* ic_pdf@2x.png in Resources */,
+				320C285F1D91771B0064DBC5 /* garbage_korean.pdf in Resources */,
 				323CC14C1D88DFFD0099EAC7 /* nursing_home.csv in Resources */,
 				3254090C1D90C23D0022A20E /* public_works_center.csv in Resources */,
 				32DAF9771D7AC02500BCABCF /* Main.storyboard in Resources */,
 				3254090F1D90C23D0022A20E /* shelter_wide.csv in Resources */,
+				320C285E1D91771B0064DBC5 /* garbage_english.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +622,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320C28591D9173510064DBC5 /* PDFViewController.swift in Sources */,
 				325162F71D8AA3FD0031E836 /* ContentsMapViewController.swift in Sources */,
 				325162E51D8A7C450031E836 /* NursingPack.swift in Sources */,
 				325162EF1D8A9AD30031E836 /* ContentsItem.swift in Sources */,

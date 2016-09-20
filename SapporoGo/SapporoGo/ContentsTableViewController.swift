@@ -107,6 +107,12 @@ class ContentsTableViewController: UITableViewController {
             let safariViewController = SFSafariViewController(URL:url)
             self.navigationController?.pushViewController(safariViewController, animated: true)
         }
+        else if pack?.contents![indexPath.row].fileType == "pdf"{
+      let pdfViewController:PDFViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("PDFViewController")) as! PDFViewController
+            pdfViewController.view.frame = UIScreen.mainScreen().bounds
+            pdfViewController.contentsItem = pack?.contents![indexPath.row]
+            self.navigationController?.pushViewController(pdfViewController, animated: true)
+        }
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }
