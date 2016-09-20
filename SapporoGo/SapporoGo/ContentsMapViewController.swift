@@ -62,7 +62,8 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
     func createMapObjectValue(let sectionItem:NSArray) -> NSDictionary{
         
         let array = sectionItem
-        let id = array[0]
+        
+        let id:Int = array[0].integerValue
         let type = array[1]
         let name = array[2]
         let latitude = array[3].doubleValue

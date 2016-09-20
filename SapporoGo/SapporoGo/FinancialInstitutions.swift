@@ -12,14 +12,13 @@ import RealmSwift
 //ID,施設種類,名称,名称_区別,URL_PC,URL_Mobile,管轄,情報種類
 class FinancialInstitutions:Object{
     
-    dynamic var id:Int = 0
+    let id = RealmOptional<Int>()
     dynamic var type = ""
     dynamic var name = ""
     dynamic var sub_name = ""
     dynamic var pc_url = ""
     dynamic var mobile_url = ""
     dynamic var jurisdiction = ""
-    
     
     override static func primaryKey() -> String? {
         return "id"

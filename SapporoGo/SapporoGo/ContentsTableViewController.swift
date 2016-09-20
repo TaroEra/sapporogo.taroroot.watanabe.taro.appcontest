@@ -24,7 +24,13 @@ class ContentsTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return (self.pack?.contents?.count)!;
+        if let contents = self.pack!.contents{
+            return contents.count;
+        }
+        else {
+            return 0
+        }
+        
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -43,6 +49,9 @@ class ContentsTableViewController: UITableViewController {
         }
         else if contentsItem.purposeType == "PDF"{
             image = UIImage(named:"ic_pdf")
+        }
+        else if contentsItem.purposeType == "LINK"{
+            image = UIImage(named:"ic_link")
         }
         else{
             image = UIImage(named:"")

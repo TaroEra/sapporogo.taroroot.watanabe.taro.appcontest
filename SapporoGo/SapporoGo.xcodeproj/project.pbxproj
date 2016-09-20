@@ -41,6 +41,7 @@
 		3254093D1D9112EA0022A20E /* SapporoMedical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254093C1D9112EA0022A20E /* SapporoMedical.swift */; };
 		3254093F1D91132E0022A20E /* FinancialInstitutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254093E1D91132E0022A20E /* FinancialInstitutions.swift */; };
 		325409411D91169B0022A20E /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325409401D91169B0022A20E /* CSVParser.swift */; };
+		325409431D9134A60022A20E /* ic_link@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 325409421D9134A60022A20E /* ic_link@2x.png */; };
 		3257AB911D829D8D0036E6E8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3257AB901D829D8D0036E6E8 /* HomeViewController.swift */; };
 		3257AB951D82A8BC0036E6E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3257AB941D82A8BC0036E6E8 /* MapKit.framework */; };
 		3257AB9B1D82ADF10036E6E8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3257AB9A1D82ADF10036E6E8 /* CoreFoundation.framework */; };
@@ -112,6 +113,7 @@
 		3254093C1D9112EA0022A20E /* SapporoMedical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SapporoMedical.swift; sourceTree = "<group>"; };
 		3254093E1D91132E0022A20E /* FinancialInstitutions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialInstitutions.swift; sourceTree = "<group>"; };
 		325409401D91169B0022A20E /* CSVParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVParser.swift; sourceTree = "<group>"; };
+		325409421D9134A60022A20E /* ic_link@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_link@2x.png"; path = "Images/ic_link@2x.png"; sourceTree = "<group>"; };
 		3257AB8F1D829D8D0036E6E8 /* SapporoGo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SapporoGo-Bridging-Header.h"; sourceTree = "<group>"; };
 		3257AB901D829D8D0036E6E8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3257AB941D82A8BC0036E6E8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -291,6 +293,7 @@
 			children = (
 				325409381D910F3E0022A20E /* ic_map@2x.png */,
 				325409391D910F3E0022A20E /* ic_pdf@2x.png */,
+				325409421D9134A60022A20E /* ic_link@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 				3254090A1D90C23D0022A20E /* comunity_center.csv in Resources */,
 				3254090B1D90C23D0022A20E /* insurance_center.csv in Resources */,
 				321CDFE91D8D21AA00164940 /* disaster_prevention_item.csv in Resources */,
+				325409431D9134A60022A20E /* ic_link@2x.png in Resources */,
 				325409191D90C4F80022A20E /* link_financial_institutions.csv in Resources */,
 				3254091A1D90C4F80022A20E /* link_sappro_medical.csv in Resources */,
 				32DAF97C1D7AC02500BCABCF /* LaunchScreen.storyboard in Resources */,

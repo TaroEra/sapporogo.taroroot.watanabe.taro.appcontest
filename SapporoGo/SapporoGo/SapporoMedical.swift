@@ -12,7 +12,7 @@ import RealmSwift
 //ID,施設種類,名称,URL,情報種類
 class SapproMedicak:Object{
     
-    dynamic var id:Int = 0
+    let id = RealmOptional<Int>()
     dynamic var type = ""
     dynamic var name = ""
     dynamic var url = ""

@@ -11,7 +11,7 @@ import RealmSwift
 
 class MapObject:Object{
     
-    dynamic var id:Int = 0
+    let id = RealmOptional<Int>()
     dynamic var name = ""
     dynamic var type = ""
     dynamic var latitude:Double=0.0

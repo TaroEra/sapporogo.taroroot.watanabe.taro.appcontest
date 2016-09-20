@@ -7,10 +7,57 @@
 //
 
 import Foundation
+import RealmSwift
 
 class FinancialPack: Pack {
     
     init() {
-        super.init(name: "金融機関", contents:[ContentsItem(title:"金融機関リンク", fileName:"link_financial_institutions", fileType:"csv", purposeType:"LIST")])
+        super.init(name: "金融機関", contents:[])
+    }
+    
+    func initializeFinantialInstitutions(){
+        let realm = try! Realm()
+        let array = CSVParser.parse("link_financial_institutions")
+        
+        for contentsArray in array{
+            
+            let id = contentsArray[0].integerValue
+            let type = contentsArray[1]
+            let name = contentsArray[2]
+            let sub_name = contentsArray[3]
+            let pc_url = contentsArray[4]
+            let mobile_url = contentsArray[5]
+            let jurisdiction = contentsArray[6]
+            
+            let value = ["id":id,
+                         "type":type,
+                         "name":name,
+                         "sub_name":sub_name,
+                         "pc_url":pc_url,
+                         "mobile_url":mobile_url,
+                         "jurisdiction":jurisdiction]
+            
+            let object = FinancialInstitutions(value: value)
+            
+            try! realm.write{
+                realm.add(object, update: true)
+            }
+        }
+    }
+    
+    func createContents()->Array<ContentsItem>?{
+        
+        let realm = try! Realm()
+        
+        let titles = NSMutableOrderedSet()
+        var contents:Array<ContentsItem>! = Array()
+        
+        for object in realm.objects(FinancialInstitutions){
+            titles.addObject(object.name)
+        }
+        for title in titles{
+            contents!.append(ContentsItem(title:title as? String, fileName:"", fileType:"", purposeType:"LINK"))
+        }
+        return contents
     }
 }
