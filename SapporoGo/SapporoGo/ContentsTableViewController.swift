@@ -31,11 +31,24 @@ class ContentsTableViewController: UITableViewController {
         
         // 再利用するCellを取得する.
         let cell = tableView.dequeueReusableCellWithIdentifier("ContentsCell", forIndexPath: indexPath)
-        cell.textLabel?.text = pack?.contents![indexPath.row].title
-//        cell.textLabel!.font = UIFont(name: "HirakakuProN-W6",size: 14)
         
-        if pack?.contents![indexPath.row].purposeType == "MAP"{
-            let image:UIImage! = UIImage(named:"ic_map")
+        let contentsItem:ContentsItem = (pack?.contents![indexPath.row])!
+        let image:UIImage!
+        
+        cell.textLabel?.text = contentsItem.title
+        //        cell.textLabel!.font = UIFont(name: "HirakakuProN-W6",size: 14)
+        
+        if contentsItem.purposeType == "MAP"{
+            image = UIImage(named:"ic_map")
+        }
+        else if contentsItem.purposeType == "PDF"{
+            image = UIImage(named:"ic_pdf")
+        }
+        else{
+            image = UIImage(named:"")
+        }
+        
+        if let image = image{
             cell.imageView!.image = image.resize(CGSizeMake(20, 20))
         }
         return cell
