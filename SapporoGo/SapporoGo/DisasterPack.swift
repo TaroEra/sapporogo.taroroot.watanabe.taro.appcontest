@@ -11,6 +11,12 @@ import Foundation
 class DisasterPack:Pack {
     
     init() {
-        super.init(name: "災害対策", contents:[])
+        super.init(name: "災害対策", contents:[
+            ContentsItem(title:"", fileName:"", fileType:""),
+            ContentsItem(title:"", fileName:"", fileType:""),
+            ContentsItem(title:"", fileName:"", fileType:""),
+            ContentsItem(title:"", fileName:"", fileType:""),
+            ContentsItem(title:"", fileName:"", fileType:"")
+            ])
     }
 }

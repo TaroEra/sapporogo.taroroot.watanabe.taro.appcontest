@@ -11,6 +11,6 @@ import Foundation
 class Medicalpack: Pack {
     
     init() {
-        super.init(name: "医療", contents:[])
+        super.init(name: "医療", contents:[ContentsItem(title:"札幌医師会へのリンク", fileName:"link_sapporo_medical", fileType:"csv")])
     }
 }

@@ -11,6 +11,10 @@ import Foundation
 class ResourcePack: Pack {
     
     init(){
-        super.init(name: "ごみ・資源", contents:[])
+        super.init(name: "ごみ・資源", contents:[
+            ContentsItem(title:"ごみ情報（English）", fileName:"garbage_english", fileType:"pdf"),
+            ContentsItem(title:"ごみ情報（Korean）", fileName:"garbage_korean", fileType:"pdf"),
+            ContentsItem(title:"ごみ情報（Chinese）", fileName:"garbage_chinese", fileType:"pdf"),
+            ContentsItem(title:"札幌ごみアプリ", fileName:"", fileType:"")])
     }
 }

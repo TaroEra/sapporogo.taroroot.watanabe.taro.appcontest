@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		321CDFE91D8D21AA00164940 /* disaster_prevention_item.csv in Resources */ = {isa = PBXBuildFile; fileRef = 321CDFE51D8D21AA00164940 /* disaster_prevention_item.csv */; };
+		321CDFED1D8D229B00164940 /* shelter_core.csv in Resources */ = {isa = PBXBuildFile; fileRef = 321CDFEC1D8D229B00164940 /* shelter_core.csv */; };
 		323CC14C1D88DFFD0099EAC7 /* nursing_home.csv in Resources */ = {isa = PBXBuildFile; fileRef = 323CC14B1D88DFFD0099EAC7 /* nursing_home.csv */; };
 		323CC14E1D88E0070099EAC7 /* police_station.csv in Resources */ = {isa = PBXBuildFile; fileRef = 323CC14D1D88E0070099EAC7 /* police_station.csv */; };
 		323CC1501D88E18C0099EAC7 /* fire_department.csv in Resources */ = {isa = PBXBuildFile; fileRef = 323CC14F1D88E18C0099EAC7 /* fire_department.csv */; };
@@ -25,6 +27,20 @@
 		3253A1181D8B97430081B1C2 /* PoliceStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253A1171D8B97430081B1C2 /* PoliceStation.swift */; };
 		3253A11B1D8BA8A40081B1C2 /* NursingHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253A11A1D8BA8A40081B1C2 /* NursingHome.swift */; };
 		3253A11D1D8BAB590081B1C2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253A11C1D8BAB590081B1C2 /* TabBarController.swift */; };
+		325409091D90C23D0022A20E /* administration_all.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409011D90C23D0022A20E /* administration_all.csv */; };
+		3254090A1D90C23D0022A20E /* comunity_center.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409021D90C23D0022A20E /* comunity_center.csv */; };
+		3254090B1D90C23D0022A20E /* insurance_center.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409031D90C23D0022A20E /* insurance_center.csv */; };
+		3254090C1D90C23D0022A20E /* public_works_center.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409041D90C23D0022A20E /* public_works_center.csv */; };
+		3254090E1D90C23D0022A20E /* shelter_region.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409061D90C23D0022A20E /* shelter_region.csv */; };
+		3254090F1D90C23D0022A20E /* shelter_wide.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409071D90C23D0022A20E /* shelter_wide.csv */; };
+		325409101D90C23D0022A20E /* town_planning_center.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409081D90C23D0022A20E /* town_planning_center.csv */; };
+		325409191D90C4F80022A20E /* link_financial_institutions.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409171D90C4F80022A20E /* link_financial_institutions.csv */; };
+		3254091A1D90C4F80022A20E /* link_sappro_medical.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409181D90C4F80022A20E /* link_sappro_medical.csv */; };
+		325409251D90C72E0022A20E /* FinancialPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325409241D90C72E0022A20E /* FinancialPack.swift */; };
+		325409271D90D8660022A20E /* ComunityCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325409261D90D8660022A20E /* ComunityCenter.swift */; };
+		325409291D90D98D0022A20E /* InsuranceCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325409281D90D98D0022A20E /* InsuranceCenter.swift */; };
+		3254092B1D90DCD80022A20E /* PublicworksCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254092A1D90DCD80022A20E /* PublicworksCenter.swift */; };
+		3254092D1D90DD410022A20E /* TownPlanningCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254092C1D90DD410022A20E /* TownPlanningCenter.swift */; };
 		3257AB911D829D8D0036E6E8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3257AB901D829D8D0036E6E8 /* HomeViewController.swift */; };
 		3257AB951D82A8BC0036E6E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3257AB941D82A8BC0036E6E8 /* MapKit.framework */; };
 		3257AB9B1D82ADF10036E6E8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3257AB9A1D82ADF10036E6E8 /* CoreFoundation.framework */; };
@@ -61,6 +77,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		321CDFE51D8D21AA00164940 /* disaster_prevention_item.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = disaster_prevention_item.csv; path = CSV/disaster_prevention_item.csv; sourceTree = "<group>"; };
+		321CDFEC1D8D229B00164940 /* shelter_core.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shelter_core.csv; path = CSV/shelter_core.csv; sourceTree = "<group>"; };
 		323CC14B1D88DFFD0099EAC7 /* nursing_home.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = nursing_home.csv; path = CSV/nursing_home.csv; sourceTree = "<group>"; };
 		323CC14D1D88E0070099EAC7 /* police_station.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = police_station.csv; path = CSV/police_station.csv; sourceTree = "<group>"; };
 		323CC14F1D88E18C0099EAC7 /* fire_department.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fire_department.csv; path = CSV/fire_department.csv; sourceTree = "<group>"; };
@@ -80,6 +98,20 @@
 		3253A1171D8B97430081B1C2 /* PoliceStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliceStation.swift; sourceTree = "<group>"; };
 		3253A11A1D8BA8A40081B1C2 /* NursingHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NursingHome.swift; sourceTree = "<group>"; };
 		3253A11C1D8BAB590081B1C2 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		325409011D90C23D0022A20E /* administration_all.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = administration_all.csv; path = CSV/administration_all.csv; sourceTree = "<group>"; };
+		325409021D90C23D0022A20E /* comunity_center.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = comunity_center.csv; path = CSV/comunity_center.csv; sourceTree = "<group>"; };
+		325409031D90C23D0022A20E /* insurance_center.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = insurance_center.csv; path = CSV/insurance_center.csv; sourceTree = "<group>"; };
+		325409041D90C23D0022A20E /* public_works_center.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = public_works_center.csv; path = CSV/public_works_center.csv; sourceTree = "<group>"; };
+		325409061D90C23D0022A20E /* shelter_region.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shelter_region.csv; path = CSV/shelter_region.csv; sourceTree = "<group>"; };
+		325409071D90C23D0022A20E /* shelter_wide.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shelter_wide.csv; path = CSV/shelter_wide.csv; sourceTree = "<group>"; };
+		325409081D90C23D0022A20E /* town_planning_center.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = town_planning_center.csv; path = CSV/town_planning_center.csv; sourceTree = "<group>"; };
+		325409171D90C4F80022A20E /* link_financial_institutions.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = link_financial_institutions.csv; path = CSV/link_financial_institutions.csv; sourceTree = "<group>"; };
+		325409181D90C4F80022A20E /* link_sappro_medical.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = link_sappro_medical.csv; path = CSV/link_sappro_medical.csv; sourceTree = "<group>"; };
+		325409241D90C72E0022A20E /* FinancialPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialPack.swift; sourceTree = "<group>"; };
+		325409261D90D8660022A20E /* ComunityCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComunityCenter.swift; sourceTree = "<group>"; };
+		325409281D90D98D0022A20E /* InsuranceCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsuranceCenter.swift; sourceTree = "<group>"; };
+		3254092A1D90DCD80022A20E /* PublicworksCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicworksCenter.swift; sourceTree = "<group>"; };
+		3254092C1D90DD410022A20E /* TownPlanningCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TownPlanningCenter.swift; sourceTree = "<group>"; };
 		3257AB8F1D829D8D0036E6E8 /* SapporoGo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SapporoGo-Bridging-Header.h"; sourceTree = "<group>"; };
 		3257AB901D829D8D0036E6E8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3257AB941D82A8BC0036E6E8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -159,15 +191,17 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		323CC14A1D88DFB90099EAC7 /* CSV */ = {
+		323CC14A1D88DFB90099EAC7 /* CSV,PDF */ = {
 			isa = PBXGroup;
 			children = (
-				323CC14B1D88DFFD0099EAC7 /* nursing_home.csv */,
-				323CC14D1D88E0070099EAC7 /* police_station.csv */,
-				323CC14F1D88E18C0099EAC7 /* fire_department.csv */,
-				323CC1511D88E19C0099EAC7 /* ward_office.csv */,
+				325409131D90C2520022A20E /* 行政 */,
+				3254091B1D90C50C0022A20E /* 医療 */,
+				325409231D90C6900022A20E /* 金融機関 */,
+				3254091C1D90C5F70022A20E /* ゴミ・資源 */,
+				325409151D90C2A50022A20E /* 防災 */,
+				325409161D90C3510022A20E /* 介護 */,
 			);
-			name = CSV;
+			name = "CSV,PDF";
 			sourceTree = "<group>";
 		};
 		325162EA1D8A8FD70031E836 /* Packs */ = {
@@ -175,8 +209,9 @@
 			children = (
 				325162E81D8A7C8A0031E836 /* Pack.swift */,
 				325162E01D8A7AF50031E836 /* MunicipalityPack.swift */,
-				325162DE1D8A7ADD0031E836 /* ResourcePack.swift */,
 				325162DC1D8A796E0031E836 /* MedicalPack.swift */,
+				325409241D90C72E0022A20E /* FinancialPack.swift */,
+				325162DE1D8A7ADD0031E836 /* ResourcePack.swift */,
 				325162E61D8A7C620031E836 /* DisasterPack.swift */,
 				325162E21D8A7C2F0031E836 /* ChildcarePack.swift */,
 				325162E41D8A7C450031E836 /* NursingPack.swift */,
@@ -190,8 +225,69 @@
 				3253A1171D8B97430081B1C2 /* PoliceStation.swift */,
 				3253A11A1D8BA8A40081B1C2 /* NursingHome.swift */,
 				32BB23B61D8BD3DB00F8C7F5 /* WardOffice.swift */,
+				325409261D90D8660022A20E /* ComunityCenter.swift */,
+				325409281D90D98D0022A20E /* InsuranceCenter.swift */,
+				3254092A1D90DCD80022A20E /* PublicworksCenter.swift */,
+				3254092C1D90DD410022A20E /* TownPlanningCenter.swift */,
 			);
 			name = RealmObjects;
+			sourceTree = "<group>";
+		};
+		325409131D90C2520022A20E /* 行政 */ = {
+			isa = PBXGroup;
+			children = (
+				323CC1511D88E19C0099EAC7 /* ward_office.csv */,
+				323CC14F1D88E18C0099EAC7 /* fire_department.csv */,
+				325409021D90C23D0022A20E /* comunity_center.csv */,
+				325409031D90C23D0022A20E /* insurance_center.csv */,
+				323CC14D1D88E0070099EAC7 /* police_station.csv */,
+				325409041D90C23D0022A20E /* public_works_center.csv */,
+				325409081D90C23D0022A20E /* town_planning_center.csv */,
+				325409011D90C23D0022A20E /* administration_all.csv */,
+			);
+			name = "行政";
+			sourceTree = "<group>";
+		};
+		325409151D90C2A50022A20E /* 防災 */ = {
+			isa = PBXGroup;
+			children = (
+				325409061D90C23D0022A20E /* shelter_region.csv */,
+				325409071D90C23D0022A20E /* shelter_wide.csv */,
+				321CDFEC1D8D229B00164940 /* shelter_core.csv */,
+				321CDFE51D8D21AA00164940 /* disaster_prevention_item.csv */,
+			);
+			name = "防災";
+			sourceTree = "<group>";
+		};
+		325409161D90C3510022A20E /* 介護 */ = {
+			isa = PBXGroup;
+			children = (
+				323CC14B1D88DFFD0099EAC7 /* nursing_home.csv */,
+			);
+			name = "介護";
+			sourceTree = "<group>";
+		};
+		3254091B1D90C50C0022A20E /* 医療 */ = {
+			isa = PBXGroup;
+			children = (
+				325409181D90C4F80022A20E /* link_sappro_medical.csv */,
+			);
+			name = "医療";
+			sourceTree = "<group>";
+		};
+		3254091C1D90C5F70022A20E /* ゴミ・資源 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "ゴミ・資源";
+			sourceTree = "<group>";
+		};
+		325409231D90C6900022A20E /* 金融機関 */ = {
+			isa = PBXGroup;
+			children = (
+				325409171D90C4F80022A20E /* link_financial_institutions.csv */,
+			);
+			name = "金融機関";
 			sourceTree = "<group>";
 		};
 		3257AB961D82AC4D0036E6E8 /* Models */ = {
@@ -243,7 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				3253A1151D8B96300081B1C2 /* main.m */,
-				323CC14A1D88DFB90099EAC7 /* CSV */,
+				323CC14A1D88DFB90099EAC7 /* CSV,PDF */,
 				32E1EDC11D87F5FD004E3D35 /* FBSDKLoginKit.framework */,
 				32E1EDBF1D87F5EF004E3D35 /* FBSDKCoreKit.framework */,
 				32DAF9781D7AC02500BCABCF /* Assets.xcassets */,
@@ -399,13 +495,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325409091D90C23D0022A20E /* administration_all.csv in Resources */,
+				3254090A1D90C23D0022A20E /* comunity_center.csv in Resources */,
+				3254090B1D90C23D0022A20E /* insurance_center.csv in Resources */,
+				321CDFE91D8D21AA00164940 /* disaster_prevention_item.csv in Resources */,
+				325409191D90C4F80022A20E /* link_financial_institutions.csv in Resources */,
+				3254091A1D90C4F80022A20E /* link_sappro_medical.csv in Resources */,
 				32DAF97C1D7AC02500BCABCF /* LaunchScreen.storyboard in Resources */,
 				323CC14E1D88E0070099EAC7 /* police_station.csv in Resources */,
+				321CDFED1D8D229B00164940 /* shelter_core.csv in Resources */,
+				325409101D90C23D0022A20E /* town_planning_center.csv in Resources */,
+				3254090E1D90C23D0022A20E /* shelter_region.csv in Resources */,
 				323CC1521D88E19C0099EAC7 /* ward_office.csv in Resources */,
 				323CC1501D88E18C0099EAC7 /* fire_department.csv in Resources */,
 				32DAF9791D7AC02500BCABCF /* Assets.xcassets in Resources */,
 				323CC14C1D88DFFD0099EAC7 /* nursing_home.csv in Resources */,
+				3254090C1D90C23D0022A20E /* public_works_center.csv in Resources */,
 				32DAF9771D7AC02500BCABCF /* Main.storyboard in Resources */,
+				3254090F1D90C23D0022A20E /* shelter_wide.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,12 +587,16 @@
 			files = (
 				325162F71D8AA3FD0031E836 /* ContentsMapViewController.swift in Sources */,
 				325162E51D8A7C450031E836 /* NursingPack.swift in Sources */,
+				325409291D90D98D0022A20E /* InsuranceCenter.swift in Sources */,
 				325162EF1D8A9AD30031E836 /* ContentsItem.swift in Sources */,
 				325162E11D8A7AF50031E836 /* MunicipalityPack.swift in Sources */,
 				3253A1181D8B97430081B1C2 /* PoliceStation.swift in Sources */,
 				325162E71D8A7C620031E836 /* DisasterPack.swift in Sources */,
 				3253A11D1D8BAB590081B1C2 /* TabBarController.swift in Sources */,
+				3254092B1D90DCD80022A20E /* PublicworksCenter.swift in Sources */,
+				3254092D1D90DD410022A20E /* TownPlanningCenter.swift in Sources */,
 				32BB23B71D8BD3DB00F8C7F5 /* WardOffice.swift in Sources */,
+				325409271D90D8660022A20E /* ComunityCenter.swift in Sources */,
 				326383C81D87D1F400DED761 /* ContentsTableViewController.swift in Sources */,
 				325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */,
 				325162E91D8A7C8A0031E836 /* Pack.swift in Sources */,
@@ -494,6 +605,7 @@
 				325162E31D8A7C2F0031E836 /* ChildcarePack.swift in Sources */,
 				3253A1141D8B95E00081B1C2 /* AppDelegate.m in Sources */,
 				3257AB911D829D8D0036E6E8 /* HomeViewController.swift in Sources */,
+				325409251D90C72E0022A20E /* FinancialPack.swift in Sources */,
 				325162DF1D8A7ADD0031E836 /* ResourcePack.swift in Sources */,
 				3253A11B1D8BA8A40081B1C2 /* NursingHome.swift in Sources */,
 			);

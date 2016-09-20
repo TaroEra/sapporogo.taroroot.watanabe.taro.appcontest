@@ -19,7 +19,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.basicPacks = [MunicipalityPack(), Medicalpack(), ResourcePack(), DisasterPack()]
+        self.basicPacks = [MunicipalityPack(), Medicalpack(), FinancialPack(), ResourcePack(), DisasterPack()]
         self.supportPacks = [NursingPack(), ChildcarePack()]
         
         self.tableView.delegate = self
