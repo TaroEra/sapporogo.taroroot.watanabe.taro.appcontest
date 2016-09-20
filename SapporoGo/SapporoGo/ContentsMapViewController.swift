@@ -37,9 +37,9 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         
         let realm = try! Realm()
         
-        let sections = parseCSV()
+        let sections = CSVParser.parse(self.contentsItem?.fileName)
         for sectionsItem in sections{
-            let mapObject = MapObject(value:createCsvObjectValue(sectionsItem as! NSArray))
+            let mapObject = MapObject(value:createMapObjectValue(sectionsItem as! NSArray))
             try! realm.write{
                 realm.add(mapObject, update: true)
             }
@@ -59,7 +59,7 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         }
     }
     
-    func createCsvObjectValue(let sectionItem:NSArray) -> NSDictionary{
+    func createMapObjectValue(let sectionItem:NSArray) -> NSDictionary{
         
         let array = sectionItem
         let id = array[0]
@@ -91,31 +91,31 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         return valule
     }
     
-    func parseCSV()->NSArray{
-        
-        let csvFile = NSBundle.mainBundle().pathForResource(self.contentsItem?.fileName, ofType: self.contentsItem?.fileType)
-        
-        let csvData:NSData?
-        do {
-            csvData = try NSData(contentsOfFile:csvFile!, options: NSDataReadingOptions.DataReadingMappedAlways)
-        }catch{
-            csvData = nil
-        }
-        let csv = String.init(data:csvData!, encoding: NSUTF16StringEncoding)
-        let scanner = NSScanner(string: csv!)
-        let chSet = NSCharacterSet.newlineCharacterSet()
-        let sections = NSMutableArray()
-        var line:NSString?
-        
-        while !scanner.atEnd {
-            scanner.scanUpToCharactersFromSet(chSet, intoString: &line)
-            let array:NSArray = (line?.componentsSeparatedByString(","))!
-            sections .addObject(array)
-            scanner.scanCharactersFromSet(chSet, intoString:nil)
-        }
-        sections.removeObjectAtIndex(0)
-        return sections
-    }
+//    func parseCSV(fileName:String?)->NSArray{
+//        
+//        let csvFile = NSBundle.mainBundle().pathForResource(fileName, ofType:"csv")
+//        
+//        let csvData:NSData?
+//        do {
+//            csvData = try NSData(contentsOfFile:csvFile!, options: NSDataReadingOptions.DataReadingMappedAlways)
+//        }catch{
+//            csvData = nil
+//        }
+//        let csv = String.init(data:csvData!, encoding: NSUTF16StringEncoding)
+//        let scanner = NSScanner(string: csv!)
+//        let chSet = NSCharacterSet.newlineCharacterSet()
+//        let sections = NSMutableArray()
+//        var line:NSString?
+//        
+//        while !scanner.atEnd {
+//            scanner.scanUpToCharactersFromSet(chSet, intoString: &line)
+//            let array:NSArray = (line?.componentsSeparatedByString(","))!
+//            sections .addObject(array)
+//            scanner.scanCharactersFromSet(chSet, intoString:nil)
+//        }
+//        sections.removeObjectAtIndex(0)
+//        return sections
+//    }
     
     //MARK: - MapViewDelegate
     func mapView(mapView: MKMapView, regionDidChangeAnimated animated: Bool) {

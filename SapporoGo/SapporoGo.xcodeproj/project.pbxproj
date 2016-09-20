@@ -40,6 +40,7 @@
 		3254093B1D910F3E0022A20E /* ic_pdf@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 325409391D910F3E0022A20E /* ic_pdf@2x.png */; };
 		3254093D1D9112EA0022A20E /* SapporoMedical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254093C1D9112EA0022A20E /* SapporoMedical.swift */; };
 		3254093F1D91132E0022A20E /* FinancialInstitutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3254093E1D91132E0022A20E /* FinancialInstitutions.swift */; };
+		325409411D91169B0022A20E /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325409401D91169B0022A20E /* CSVParser.swift */; };
 		3257AB911D829D8D0036E6E8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3257AB901D829D8D0036E6E8 /* HomeViewController.swift */; };
 		3257AB951D82A8BC0036E6E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3257AB941D82A8BC0036E6E8 /* MapKit.framework */; };
 		3257AB9B1D82ADF10036E6E8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3257AB9A1D82ADF10036E6E8 /* CoreFoundation.framework */; };
@@ -110,6 +111,7 @@
 		325409391D910F3E0022A20E /* ic_pdf@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_pdf@2x.png"; path = "Images/ic_pdf@2x.png"; sourceTree = "<group>"; };
 		3254093C1D9112EA0022A20E /* SapporoMedical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SapporoMedical.swift; sourceTree = "<group>"; };
 		3254093E1D91132E0022A20E /* FinancialInstitutions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialInstitutions.swift; sourceTree = "<group>"; };
+		325409401D91169B0022A20E /* CSVParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVParser.swift; sourceTree = "<group>"; };
 		3257AB8F1D829D8D0036E6E8 /* SapporoGo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SapporoGo-Bridging-Header.h"; sourceTree = "<group>"; };
 		3257AB901D829D8D0036E6E8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3257AB941D82A8BC0036E6E8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -297,6 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				325409321D9101E20022A20E /* UIImage(resize).swift */,
+				325409401D91169B0022A20E /* CSVParser.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 				325162EF1D8A9AD30031E836 /* ContentsItem.swift in Sources */,
 				325162E11D8A7AF50031E836 /* MunicipalityPack.swift in Sources */,
 				3254093D1D9112EA0022A20E /* SapporoMedical.swift in Sources */,
+				325409411D91169B0022A20E /* CSVParser.swift in Sources */,
 				325162E71D8A7C620031E836 /* DisasterPack.swift in Sources */,
 				3253A11D1D8BAB590081B1C2 /* TabBarController.swift in Sources */,
 				32BB23B71D8BD3DB00F8C7F5 /* MapObject.swift in Sources */,
