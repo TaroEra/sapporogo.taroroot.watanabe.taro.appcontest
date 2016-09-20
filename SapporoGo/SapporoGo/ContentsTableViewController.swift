@@ -80,13 +80,13 @@ class ContentsTableViewController: UITableViewController {
             var contentsItems = Array<ContentsItem>()
             
             for result in results{
-                contentsItems.append(ContentsItem(title:result.sub_name, fileName:"", fileType:"", purposeType:"LINK"))
+                contentsItems.append(ContentsItem(title:result.sub_name, fileName:"", fileType:"", purposeType:"Financial_LINK"))
             }
             let contentsTableviewController:ContentsTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsTableViewController")) as! ContentsTableViewController
             contentsTableviewController.pack = Pack(name:title!, contents:contentsItems)
             self.navigationController?.pushViewController(contentsTableviewController, animated: true)
         }
-        else if pack?.contents![indexPath.row].purposeType == "LINK"{
+        else if pack?.contents![indexPath.row].purposeType == "Financial_LINK"{
             
             let realm = try! Realm()
             let selectedTitle = pack?.contents![indexPath.row].title
@@ -96,7 +96,17 @@ class ContentsTableViewController: UITableViewController {
             let safariViewController = SFSafariViewController(URL:url)
             self.navigationController?.pushViewController(safariViewController, animated: true)
         }
-        
+        else if pack?.name == Medicalpack().name{
+            
+            let realm = try! Realm()
+            Medicalpack().initalizeSapporoMedical()
+            let selectedTitle = pack?.contents![indexPath.row].title
+            let query = "name = '" + selectedTitle! + "'"
+            let sapporoMedical = realm.objects(SapproMedicak).filter(query).first
+            let url = NSURL(string:(sapporoMedical?.url)!)!
+            let safariViewController = SFSafariViewController(URL:url)
+            self.navigationController?.pushViewController(safariViewController, animated: true)
+        }
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }
