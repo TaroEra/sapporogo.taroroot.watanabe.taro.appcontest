@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <Realm/Realm.h>
 
 @interface AppDelegate ()
 
@@ -19,7 +18,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    NSLog(@"%@", [RLMRealmConfiguration defaultConfiguration].fileURL);
     return YES;
 }
 

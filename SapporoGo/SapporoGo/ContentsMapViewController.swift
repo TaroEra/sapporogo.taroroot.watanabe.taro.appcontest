@@ -10,9 +10,10 @@ import UIKit
 import RealmSwift
 import MapKit
 
-class ContentsMapViewController: UIViewController, MKMapViewDelegate {
+class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     var contentsItem:ContentsItem?
+    private var locationManager:CLLocationManager!
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -20,7 +21,8 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
         
         self.mapView.delegate = self
-        
+        mapView.userTrackingMode = MKUserTrackingMode.Follow
+
         let coordinate = CLLocationCoordinate2DMake(43.062096, 141.354376)
         let span = MKCoordinateSpanMake(0.1, 0.1)
         let region = MKCoordinateRegionMake(coordinate, span)
@@ -30,6 +32,26 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         
         initalizeRealmObject()
         addAnotations()
+        
+        //
+        //現在地表示処理
+        //
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.distanceFilter = 100.0//距離フィルタ
+        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        // セキュリティ認証のステータスを取得.
+        let status = CLLocationManager.authorizationStatus()
+        
+        // まだ認証が得られていない場合は、認証ダイアログを表示.
+        if(status == CLAuthorizationStatus.NotDetermined) {
+            
+            // まだ承認が得られていない場合は、認証ダイアログを表示.
+            locationManager.requestAlwaysAuthorization();
+        }
+        
+        // 位置情報の更新を開始.
+        locationManager.startUpdatingLocation()
     }
     
     func initalizeRealmObject(){
@@ -102,6 +124,44 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         {
             print("remove annotations")
             mapView.removeAnnotations(self.mapView.annotations)
+        }
+    }
+    
+    //CLLocationManagerDelegate
+    // GPSから値を取得した際に呼び出されるメソッド.
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        // 配列から現在座標を取得.
+        let myLocations: NSArray = locations as NSArray
+        let myLastLocation: CLLocation = myLocations.lastObject as! CLLocation
+        let myLocation:CLLocationCoordinate2D = myLastLocation.coordinate
+        
+        // 縮尺.
+        let myLatDist : CLLocationDistance = 500
+        let myLonDist : CLLocationDistance = 500
+        
+        // Regionを作成.
+        let myRegion: MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(myLocation, myLatDist, myLonDist);
+        
+        // MapViewに反映.
+        mapView.setRegion(myRegion, animated: true)
+    }
+    
+    // 認証が変更された時に呼び出されるメソッド.
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        switch status{
+        case .AuthorizedWhenInUse:
+            print("AuthorizedWhenInUse")
+        case .Authorized:
+            print("Authorized")
+        case .Denied:
+            print("Denied")
+        case .Restricted:
+            print("Restricted")
+        case .NotDetermined:
+            print("NotDetermined")
+            if locationManager.respondsToSelector(#selector(CLLocationManager.requestWhenInUseAuthorization)) { locationManager.requestWhenInUseAuthorization() }
         }
     }
 }
