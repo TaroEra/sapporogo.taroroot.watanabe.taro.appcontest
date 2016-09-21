@@ -26,6 +26,8 @@
 		3219E8BF1D920777009A3C66 /* shelter_region.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8AF1D920777009A3C66 /* shelter_region.csv */; };
 		3219E8C01D920777009A3C66 /* shelter_wide.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8B01D920777009A3C66 /* shelter_wide.csv */; };
 		3219E8C31D92099E009A3C66 /* admin_town.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8C21D92099E009A3C66 /* admin_town.csv */; };
+		3219E8C51D921AE1009A3C66 /* noimage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8C41D921AE1009A3C66 /* noimage@2x.png */; };
+		3219E8C71D922549009A3C66 /* UserDefaultSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */; };
 		325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DC1D8A796E0031E836 /* MedicalPack.swift */; };
 		325162DF1D8A7ADD0031E836 /* ResourcePack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DE1D8A7ADD0031E836 /* ResourcePack.swift */; };
 		325162E11D8A7AF50031E836 /* AdminPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E01D8A7AF50031E836 /* AdminPack.swift */; };
@@ -101,6 +103,8 @@
 		3219E8AF1D920777009A3C66 /* shelter_region.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shelter_region.csv; path = "CSV,PDF/shelter_region.csv"; sourceTree = "<group>"; };
 		3219E8B01D920777009A3C66 /* shelter_wide.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shelter_wide.csv; path = "CSV,PDF/shelter_wide.csv"; sourceTree = "<group>"; };
 		3219E8C21D92099E009A3C66 /* admin_town.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = admin_town.csv; path = "CSV,PDF/admin_town.csv"; sourceTree = "<group>"; };
+		3219E8C41D921AE1009A3C66 /* noimage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "noimage@2x.png"; path = "Images/noimage@2x.png"; sourceTree = "<group>"; };
+		3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultSupport.swift; sourceTree = "<group>"; };
 		325162DC1D8A796E0031E836 /* MedicalPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalPack.swift; sourceTree = "<group>"; };
 		325162DE1D8A7ADD0031E836 /* ResourcePack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcePack.swift; sourceTree = "<group>"; };
 		325162E01D8A7AF50031E836 /* AdminPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminPack.swift; sourceTree = "<group>"; };
@@ -303,6 +307,7 @@
 		3254092E1D9100370022A20E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3219E8C41D921AE1009A3C66 /* noimage@2x.png */,
 				325409381D910F3E0022A20E /* ic_map@2x.png */,
 				325409391D910F3E0022A20E /* ic_pdf@2x.png */,
 				325409421D9134A60022A20E /* ic_link@2x.png */,
@@ -315,6 +320,7 @@
 			children = (
 				325409321D9101E20022A20E /* UIImage(resize).swift */,
 				325409401D91169B0022A20E /* CSVParser.swift */,
+				3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -537,6 +543,7 @@
 				3219E8B41D920777009A3C66 /* admin_fire.csv in Resources */,
 				3219E89F1D920769009A3C66 /* garbage_chinese.pdf in Resources */,
 				325409431D9134A60022A20E /* ic_link@2x.png in Resources */,
+				3219E8C51D921AE1009A3C66 /* noimage@2x.png in Resources */,
 				3219E8BD1D920777009A3C66 /* shelter_core.csv in Resources */,
 				32DAF97C1D7AC02500BCABCF /* LaunchScreen.storyboard in Resources */,
 				3219E8BA1D920777009A3C66 /* garbage_app.csv in Resources */,
@@ -625,6 +632,7 @@
 				320C28591D9173510064DBC5 /* PDFViewController.swift in Sources */,
 				325162F71D8AA3FD0031E836 /* ContentsMapViewController.swift in Sources */,
 				325162E51D8A7C450031E836 /* NursingPack.swift in Sources */,
+				3219E8C71D922549009A3C66 /* UserDefaultSupport.swift in Sources */,
 				325162EF1D8A9AD30031E836 /* ContentsItem.swift in Sources */,
 				325162E11D8A7AF50031E836 /* AdminPack.swift in Sources */,
 				3254093D1D9112EA0022A20E /* SapporoMedical.swift in Sources */,

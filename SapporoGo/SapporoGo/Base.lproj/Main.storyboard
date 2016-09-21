@@ -19,34 +19,63 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kla-gi-ZW3">
-                                <rect key="frame" x="160" y="472" width="160" height="47"/>
+                                <rect key="frame" x="192" y="472" width="128" height="47"/>
                                 <color key="backgroundColor" red="0.47034001350402832" green="0.82580894231796265" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="SPコンテンツ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="35" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Avz-N6-jsr">
-                                <rect key="frame" x="160" y="64" width="160" height="408"/>
+                                <rect key="frame" x="192" y="64" width="128" height="408"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="nic-BR-0yU">
-                                        <rect key="frame" x="0.0" y="35" width="160" height="60"/>
+                                        <rect key="frame" x="0.0" y="35" width="128" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nic-BR-0yU" id="lH0-zT-nvB">
-                                            <rect key="frame" x="0.0" y="0.0" width="127" height="59"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="95" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noimage.png" translatesAutoresizingMaskIntoConstraints="NO" id="yus-G5-GKZ">
+                                <rect key="frame" x="0.0" y="121" width="192" height="170"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="さっぽろ太郎" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDN-Ku-sqk">
+                                <rect key="frame" x="0.0" y="64" width="192" height="57"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qf-xB-rG1">
+                                <rect key="frame" x="0.0" y="291" width="80" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="編集"/>
+                                <connections>
+                                    <action selector="onTapEditButton" destination="lbd-te-B1y" eventType="touchUpInside" id="mva-is-0lx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="yus-G5-GKZ" firstAttribute="leading" secondItem="ZVf-DJ-x7l" secondAttribute="leading" id="2Ls-aF-9KP"/>
+                            <constraint firstItem="ZDN-Ku-sqk" firstAttribute="top" secondItem="VFH-fO-pch" secondAttribute="bottom" id="51N-nA-GPI"/>
+                            <constraint firstItem="6Qf-xB-rG1" firstAttribute="leading" secondItem="ZVf-DJ-x7l" secondAttribute="leading" id="66f-C8-g7R"/>
                             <constraint firstAttribute="trailing" secondItem="Kla-gi-ZW3" secondAttribute="trailing" id="9Xt-es-iLK"/>
-                            <constraint firstItem="Avz-N6-jsr" firstAttribute="width" secondItem="ZVf-DJ-x7l" secondAttribute="width" multiplier="0.5" id="hp2-Js-h56"/>
+                            <constraint firstItem="ZDN-Ku-sqk" firstAttribute="width" secondItem="ZVf-DJ-x7l" secondAttribute="width" multiplier="0.6" id="HNj-Ht-leN"/>
+                            <constraint firstItem="yus-G5-GKZ" firstAttribute="height" secondItem="ZVf-DJ-x7l" secondAttribute="height" multiplier="0.3" id="IOU-rN-gDc"/>
+                            <constraint firstItem="yus-G5-GKZ" firstAttribute="top" secondItem="ZDN-Ku-sqk" secondAttribute="bottom" id="PNu-Qm-vuo"/>
+                            <constraint firstItem="ZDN-Ku-sqk" firstAttribute="leading" secondItem="ZVf-DJ-x7l" secondAttribute="leading" id="ZWR-5x-KtD"/>
+                            <constraint firstItem="6Qf-xB-rG1" firstAttribute="height" secondItem="ZVf-DJ-x7l" secondAttribute="height" multiplier="0.05" id="Zp3-vt-bLC"/>
+                            <constraint firstItem="Avz-N6-jsr" firstAttribute="width" secondItem="ZVf-DJ-x7l" secondAttribute="width" multiplier="0.4" id="hp2-Js-h56"/>
+                            <constraint firstItem="Avz-N6-jsr" firstAttribute="leading" secondItem="yus-G5-GKZ" secondAttribute="trailing" id="kzl-aa-1rW"/>
+                            <constraint firstItem="6Qf-xB-rG1" firstAttribute="width" secondItem="ZVf-DJ-x7l" secondAttribute="width" multiplier="0.25" id="lfO-BO-hQ7"/>
+                            <constraint firstItem="ZDN-Ku-sqk" firstAttribute="height" secondItem="ZVf-DJ-x7l" secondAttribute="height" multiplier="0.1" id="mEp-rc-vjh"/>
                             <constraint firstItem="Kla-gi-ZW3" firstAttribute="top" secondItem="Avz-N6-jsr" secondAttribute="bottom" id="qhz-pt-CxG"/>
-                            <constraint firstItem="Kla-gi-ZW3" firstAttribute="width" secondItem="ZVf-DJ-x7l" secondAttribute="width" multiplier="0.5" id="r0N-gc-kfG"/>
+                            <constraint firstItem="Kla-gi-ZW3" firstAttribute="width" secondItem="ZVf-DJ-x7l" secondAttribute="width" multiplier="0.4" id="r0N-gc-kfG"/>
+                            <constraint firstItem="6Qf-xB-rG1" firstAttribute="top" secondItem="yus-G5-GKZ" secondAttribute="bottom" id="rs5-Tb-YFI"/>
                             <constraint firstItem="Yup-8y-lAf" firstAttribute="top" secondItem="Avz-N6-jsr" secondAttribute="bottom" multiplier="1.1" id="sYP-Dq-3Ly"/>
                             <constraint firstItem="Avz-N6-jsr" firstAttribute="top" secondItem="VFH-fO-pch" secondAttribute="bottom" id="tZD-eJ-4ey"/>
                             <constraint firstAttribute="trailing" secondItem="Avz-N6-jsr" secondAttribute="trailing" id="xie-60-gQu"/>
@@ -57,6 +86,7 @@
                     <navigationItem key="navigationItem" title="ホーム" id="aQd-0l-EUH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="profileImageView" destination="yus-G5-GKZ" id="3aD-KR-Kju"/>
                         <outlet property="tableView" destination="Avz-N6-jsr" id="rkU-IP-rHH"/>
                     </connections>
                 </viewController>
@@ -218,4 +248,7 @@
             <point key="canvasLocation" x="2608" y="831"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="noimage.png" width="300" height="300"/>
+    </resources>
 </document>

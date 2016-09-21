@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Photos
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     private var selectedCellTiele:String = ""
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var profileImageView: UIImageView!
     
     private var basicPacks:Array<Pack> = []
     private var supportPacks:Array<Pack> = []
@@ -24,11 +26,41 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        changeprofileImage()
+    }
+    
+    func changeprofileImage(){
+        if UserDefaultSurpport.getProfileImagePath().absoluteString == ""{
+            
+        }
+        else{
+            let fetchResult: PHFetchResult = PHAsset.fetchAssetsWithALAssetURLs([UserDefaultSurpport.getProfileImagePath()], options: nil)
+            let asset: PHAsset = fetchResult.firstObject as! PHAsset
+            let manager = PHImageManager.defaultManager()
+            manager.requestImageForAsset(asset, targetSize: CGSize(width: 140, height: 140), contentMode: .AspectFill, options: nil) { (image, info) in
+                // imageをセットする
+                if image !== nil {
+                    self.profileImageView.image = image
+                }
+            }
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.hidden = false
+    }
+    
+    @IBAction func onTapEditButton(){
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary){
+            // フォトライブラリの画像・写真選択画面を表示
+            let imagePickerController = UIImagePickerController()
+            imagePickerController.sourceType = .PhotoLibrary
+            imagePickerController.allowsEditing = true
+            imagePickerController.delegate = self
+            presentViewController(imagePickerController, animated: true, completion: nil)
+        }
     }
     
     //MARK: - tableViewDelegate
@@ -83,5 +115,32 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
         self.navigationController?.pushViewController(contentsTableviewController, animated: true);
+    }
+    
+    //MARK : - UIImagePickerControllerDelegate
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        
+        // 選択した画像・写真を取得し、imageViewに表示
+        if let info = editingInfo, let editedImage = info[UIImagePickerControllerEditedImage] as? UIImage{
+            profileImageView.image = editedImage
+        }else{
+            profileImageView.image = image
+        }
+        
+        changeprofileImage()
+        // フォトライブラリの画像・写真選択画面を閉じる
+        picker.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: AnyObject]) {
+        if info[UIImagePickerControllerOriginalImage] != nil {
+            // 画像のパスを取得
+            let imageUrl = info[UIImagePickerControllerReferenceURL] as? NSURL
+            UserDefaultSurpport.setProfileImagePath(imageUrl!)
+        }
+        
+        changeprofileImage()
+        picker.dismissViewControllerAnimated(true, completion: nil)
+
     }
 }
