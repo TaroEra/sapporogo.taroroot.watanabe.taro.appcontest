@@ -15,6 +15,6 @@ class ResourcePack: Pack {
             ContentsItem(title:"ごみ情報（English）", fileName:"garbage_english", fileType:"pdf", purposeType:"PDF"),
             ContentsItem(title:"ごみ情報（Korean）", fileName:"garbage_korean", fileType:"pdf", purposeType:"PDF"),
             ContentsItem(title:"ごみ情報（Chinese）", fileName:"garbage_chinese", fileType:"pdf", purposeType:"PDF"),
-            ContentsItem(title:"札幌ごみアプリ", fileName:"", fileType:"", purposeType:"")])
+            ContentsItem(title:"札幌市ごみ分別アプリ", fileName:"", fileType:"", purposeType:"WEB")])
     }
 }

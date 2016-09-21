@@ -60,6 +60,9 @@ class ContentsTableViewController: UITableViewController {
         else if contentsItem.purposeType == "LIST"{
             image = UIImage(named:"ic_list")
         }
+        else if contentsItem.purposeType == "WEB"{
+            image = UIImage(named:"ic_web")
+        }
         else{
             image = UIImage(named:"")
         }
@@ -71,6 +74,14 @@ class ContentsTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if pack?.contents![indexPath.row].title == "札幌市ごみ分別アプリ"{
+            let targetString = "itms://itunes.com/app/札幌市ごみ分別アプリ"
+            let encodedString = targetString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
+            let url:NSURL! = NSURL(string:encodedString!)
+            UIApplication.sharedApplication().openURL(url)
+        }
+
         
         if pack?.contents![indexPath.row].purposeType == "MAP"{
             let contentsMapViewController:ContentsMapViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsMapViewController")) as! ContentsMapViewController

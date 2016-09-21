@@ -59,6 +59,7 @@
 		326383CE1D87DEC200DED761 /* SnsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326383CD1D87DEC200DED761 /* SnsViewController.swift */; };
 		32BB23B71D8BD3DB00F8C7F5 /* MapObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB23B61D8BD3DB00F8C7F5 /* MapObject.swift */; };
 		32D155AF1D92576100327805 /* ic_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D155AE1D92576100327805 /* ic_list@2x.png */; };
+		32D155B11D925FD800327805 /* ic_web@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D155B01D925FD800327805 /* ic_web@2x.png */; };
 		32DAF9771D7AC02500BCABCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DAF9751D7AC02500BCABCF /* Main.storyboard */; };
 		32DAF9791D7AC02500BCABCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DAF9781D7AC02500BCABCF /* Assets.xcassets */; };
 		32DAF97C1D7AC02500BCABCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DAF97A1D7AC02500BCABCF /* LaunchScreen.storyboard */; };
@@ -141,6 +142,7 @@
 		326383CD1D87DEC200DED761 /* SnsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnsViewController.swift; sourceTree = "<group>"; };
 		32BB23B61D8BD3DB00F8C7F5 /* MapObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapObject.swift; sourceTree = "<group>"; };
 		32D155AE1D92576100327805 /* ic_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_list@2x.png"; path = "Images/ic_list@2x.png"; sourceTree = "<group>"; };
+		32D155B01D925FD800327805 /* ic_web@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_web@2x.png"; path = "Images/ic_web@2x.png"; sourceTree = "<group>"; };
 		32DAF9691D7AC02400BCABCF /* SapporoGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SapporoGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DAF9761D7AC02500BCABCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32DAF9781D7AC02500BCABCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 				325409391D910F3E0022A20E /* ic_pdf@2x.png */,
 				325409421D9134A60022A20E /* ic_link@2x.png */,
 				32D155AE1D92576100327805 /* ic_list@2x.png */,
+				32D155B01D925FD800327805 /* ic_web@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				3254093B1D910F3E0022A20E /* ic_pdf@2x.png in Resources */,
 				3219E8B81D920777009A3C66 /* admin_ward.csv in Resources */,
 				32DAF9771D7AC02500BCABCF /* Main.storyboard in Resources */,
+				32D155B11D925FD800327805 /* ic_web@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
