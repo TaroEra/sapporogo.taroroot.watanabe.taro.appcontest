@@ -30,6 +30,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         changeprofileImage()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.hidden = false
+        self.navigationController?.visibleViewController?.navigationItem.title = "ホーム"
+    }
+    
     func changeprofileImage(){
         if UserDefaultSurpport.profileImage === nil{
             
@@ -50,10 +56,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        self.tabBarController?.tabBar.hidden = false
-    }
+
     
     @IBAction func onTapEditButton(){
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary){

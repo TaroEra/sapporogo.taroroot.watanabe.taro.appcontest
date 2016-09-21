@@ -26,6 +26,11 @@ class SnsViewController: UIViewController {
         self.view.addSubview(facebookButton)
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.visibleViewController?.navigationItem.title = "共有"
+
+    }
     @IBAction func onTapTwitter(sender: AnyObject) {
         postTweet()
     }
