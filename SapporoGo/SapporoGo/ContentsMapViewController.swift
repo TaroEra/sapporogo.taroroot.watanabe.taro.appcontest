@@ -28,7 +28,6 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate {
         
         self.mapView.removeAnnotations(self.mapView.annotations)
         
-//        TODO:基本フォーマット対応のCSVを取り込んでCO解除
         initalizeRealmObject()
         addAnotations()
     }
