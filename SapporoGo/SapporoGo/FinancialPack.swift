@@ -17,7 +17,7 @@ class FinancialPack: Pack {
     
     func initializeFinantialInstitutions(){
         let realm = try! Realm()
-        let array = CSVParser.parse("financial_link")
+        let array = CSVParser.parse("finance_link")
         
         for contents in array{
             let contentsArray = contents as! NSArray
