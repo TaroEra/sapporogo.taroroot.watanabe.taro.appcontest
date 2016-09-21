@@ -16,11 +16,14 @@ class ContentsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.tabBarController?.tabBar.hidden = true
         
         self.navigationItem.title = pack?.name
+        
+        let backButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
+        navigationItem.backBarButtonItem = backButtonItem
     }
-    
     
     //MARK: - tableViewDelegate
     
@@ -44,7 +47,6 @@ class ContentsTableViewController: UITableViewController {
         let image:UIImage!
         
         cell.textLabel?.text = contentsItem.title
-        //        cell.textLabel!.font = UIFont(name: "HirakakuProN-W6",size: 14)
         
         if contentsItem.purposeType == "MAP"{
             image = UIImage(named:"ic_map")
@@ -108,10 +110,15 @@ class ContentsTableViewController: UITableViewController {
             self.navigationController?.pushViewController(safariViewController, animated: true)
         }
         else if pack?.contents![indexPath.row].fileType == "pdf"{
-      let pdfViewController:PDFViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("PDFViewController")) as! PDFViewController
+            let pdfViewController:PDFViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("PDFViewController")) as! PDFViewController
             pdfViewController.view.frame = UIScreen.mainScreen().bounds
             pdfViewController.contentsItem = pack?.contents![indexPath.row]
             self.navigationController?.pushViewController(pdfViewController, animated: true)
+        }
+        else if pack?.contents![indexPath.row].purposeType == "LIST"{
+            
+            let contentsTableviewController:ShelterItemTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ShelterItemTableViewController")) as! ShelterItemTableViewController
+            self.navigationController?.pushViewController(contentsTableviewController, animated: true)
         }
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }

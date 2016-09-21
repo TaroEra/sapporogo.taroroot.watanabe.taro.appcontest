@@ -28,12 +28,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tableView.dataSource = self
         
         changeprofileImage()
+        
+        
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.hidden = false
         self.navigationController?.visibleViewController?.navigationItem.title = "ホーム"
+        navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "HiraKakuProN-W6", size: 14)!]
     }
     
     func changeprofileImage(){
@@ -56,7 +59,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
-
+    
     
     @IBAction func onTapEditButton(){
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary){
@@ -118,6 +121,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         contentsTableviewController.pack = pack;
         if pack.name == FinancialPack().name{
             contentsTableviewController.pack?.contents = FinancialPack().createContents()
+            
         }
         
         self.navigationController?.pushViewController(contentsTableviewController, animated: true);

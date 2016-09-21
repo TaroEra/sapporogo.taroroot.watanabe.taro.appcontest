@@ -28,6 +28,8 @@
 		3219E8C31D92099E009A3C66 /* admin_town.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8C21D92099E009A3C66 /* admin_town.csv */; };
 		3219E8C51D921AE1009A3C66 /* noimage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8C41D921AE1009A3C66 /* noimage@2x.png */; };
 		3219E8C71D922549009A3C66 /* UserDefaultSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */; };
+		3219E8C91D923A70009A3C66 /* ShelterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8C81D923A70009A3C66 /* ShelterItem.swift */; };
+		3219E8CB1D923D7E009A3C66 /* ShelterItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */; };
 		325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DC1D8A796E0031E836 /* MedicalPack.swift */; };
 		325162DF1D8A7ADD0031E836 /* ResourcePack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DE1D8A7ADD0031E836 /* ResourcePack.swift */; };
 		325162E11D8A7AF50031E836 /* AdminPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E01D8A7AF50031E836 /* AdminPack.swift */; };
@@ -105,6 +107,8 @@
 		3219E8C21D92099E009A3C66 /* admin_town.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = admin_town.csv; path = "CSV,PDF/admin_town.csv"; sourceTree = "<group>"; };
 		3219E8C41D921AE1009A3C66 /* noimage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "noimage@2x.png"; path = "Images/noimage@2x.png"; sourceTree = "<group>"; };
 		3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultSupport.swift; sourceTree = "<group>"; };
+		3219E8C81D923A70009A3C66 /* ShelterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelterItem.swift; sourceTree = "<group>"; };
+		3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelterItemTableViewController.swift; sourceTree = "<group>"; };
 		325162DC1D8A796E0031E836 /* MedicalPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalPack.swift; sourceTree = "<group>"; };
 		325162DE1D8A7ADD0031E836 /* ResourcePack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcePack.swift; sourceTree = "<group>"; };
 		325162E01D8A7AF50031E836 /* AdminPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminPack.swift; sourceTree = "<group>"; };
@@ -194,6 +198,7 @@
 				325162F61D8AA3FD0031E836 /* ContentsMapViewController.swift */,
 				3253A11C1D8BAB590081B1C2 /* TabBarController.swift */,
 				320C28581D9173510064DBC5 /* PDFViewController.swift */,
+				3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 				32BB23B61D8BD3DB00F8C7F5 /* MapObject.swift */,
 				3254093C1D9112EA0022A20E /* SapporoMedical.swift */,
 				3254093E1D91132E0022A20E /* FinancialInstitutions.swift */,
+				3219E8C81D923A70009A3C66 /* ShelterItem.swift */,
 			);
 			name = RealmObjects;
 			sourceTree = "<group>";
@@ -637,6 +643,7 @@
 				325162E11D8A7AF50031E836 /* AdminPack.swift in Sources */,
 				3254093D1D9112EA0022A20E /* SapporoMedical.swift in Sources */,
 				325409411D91169B0022A20E /* CSVParser.swift in Sources */,
+				3219E8CB1D923D7E009A3C66 /* ShelterItemTableViewController.swift in Sources */,
 				325162E71D8A7C620031E836 /* DisasterPack.swift in Sources */,
 				3253A11D1D8BAB590081B1C2 /* TabBarController.swift in Sources */,
 				32BB23B71D8BD3DB00F8C7F5 /* MapObject.swift in Sources */,
@@ -647,6 +654,7 @@
 				3254093F1D91132E0022A20E /* FinancialInstitutions.swift in Sources */,
 				326383CE1D87DEC200DED761 /* SnsViewController.swift in Sources */,
 				3253A1161D8B96300081B1C2 /* main.m in Sources */,
+				3219E8C91D923A70009A3C66 /* ShelterItem.swift in Sources */,
 				325162E31D8A7C2F0031E836 /* ChildcarePack.swift in Sources */,
 				3253A1141D8B95E00081B1C2 /* AppDelegate.m in Sources */,
 				3257AB911D829D8D0036E6E8 /* HomeViewController.swift in Sources */,
