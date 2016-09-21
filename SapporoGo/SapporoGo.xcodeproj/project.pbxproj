@@ -8,18 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		320C28591D9173510064DBC5 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320C28581D9173510064DBC5 /* PDFViewController.swift */; };
-		320C285D1D91771B0064DBC5 /* garbage_chinese.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 320C285A1D91771B0064DBC5 /* garbage_chinese.pdf */; };
-		320C285E1D91771B0064DBC5 /* garbage_english.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 320C285B1D91771B0064DBC5 /* garbage_english.pdf */; };
-		320C285F1D91771B0064DBC5 /* garbage_korean.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 320C285C1D91771B0064DBC5 /* garbage_korean.pdf */; };
-		321CDFE91D8D21AA00164940 /* disaster_prevention_item.csv in Resources */ = {isa = PBXBuildFile; fileRef = 321CDFE51D8D21AA00164940 /* disaster_prevention_item.csv */; };
-		321CDFED1D8D229B00164940 /* shelter_core.csv in Resources */ = {isa = PBXBuildFile; fileRef = 321CDFEC1D8D229B00164940 /* shelter_core.csv */; };
-		323CC14C1D88DFFD0099EAC7 /* nursing_home.csv in Resources */ = {isa = PBXBuildFile; fileRef = 323CC14B1D88DFFD0099EAC7 /* nursing_home.csv */; };
-		323CC14E1D88E0070099EAC7 /* police_station.csv in Resources */ = {isa = PBXBuildFile; fileRef = 323CC14D1D88E0070099EAC7 /* police_station.csv */; };
-		323CC1501D88E18C0099EAC7 /* fire_department.csv in Resources */ = {isa = PBXBuildFile; fileRef = 323CC14F1D88E18C0099EAC7 /* fire_department.csv */; };
-		323CC1521D88E19C0099EAC7 /* ward_office.csv in Resources */ = {isa = PBXBuildFile; fileRef = 323CC1511D88E19C0099EAC7 /* ward_office.csv */; };
+		3219E89F1D920769009A3C66 /* garbage_chinese.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3219E89C1D920769009A3C66 /* garbage_chinese.pdf */; };
+		3219E8A01D920769009A3C66 /* garbage_english.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3219E89D1D920769009A3C66 /* garbage_english.pdf */; };
+		3219E8A11D920769009A3C66 /* garbage_korean.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3219E89E1D920769009A3C66 /* garbage_korean.pdf */; };
+		3219E8B21D920777009A3C66 /* admin_all.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8A21D920777009A3C66 /* admin_all.csv */; };
+		3219E8B31D920777009A3C66 /* admin_comunity.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8A31D920777009A3C66 /* admin_comunity.csv */; };
+		3219E8B41D920777009A3C66 /* admin_fire.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8A41D920777009A3C66 /* admin_fire.csv */; };
+		3219E8B51D920777009A3C66 /* admin_insurance.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8A51D920777009A3C66 /* admin_insurance.csv */; };
+		3219E8B61D920777009A3C66 /* admin_police.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8A61D920777009A3C66 /* admin_police.csv */; };
+		3219E8B71D920777009A3C66 /* admin_publicworks.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8A71D920777009A3C66 /* admin_publicworks.csv */; };
+		3219E8B81D920777009A3C66 /* admin_ward.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8A81D920777009A3C66 /* admin_ward.csv */; };
+		3219E8B91D920777009A3C66 /* finance_link.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8A91D920777009A3C66 /* finance_link.csv */; };
+		3219E8BA1D920777009A3C66 /* garbage_app.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8AA1D920777009A3C66 /* garbage_app.csv */; };
+		3219E8BB1D920777009A3C66 /* medical_link.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8AB1D920777009A3C66 /* medical_link.csv */; };
+		3219E8BD1D920777009A3C66 /* shelter_core.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8AD1D920777009A3C66 /* shelter_core.csv */; };
+		3219E8BE1D920777009A3C66 /* shelter_item.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8AE1D920777009A3C66 /* shelter_item.csv */; };
+		3219E8BF1D920777009A3C66 /* shelter_region.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8AF1D920777009A3C66 /* shelter_region.csv */; };
+		3219E8C01D920777009A3C66 /* shelter_wide.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8B01D920777009A3C66 /* shelter_wide.csv */; };
+		3219E8C31D92099E009A3C66 /* admin_town.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8C21D92099E009A3C66 /* admin_town.csv */; };
 		325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DC1D8A796E0031E836 /* MedicalPack.swift */; };
 		325162DF1D8A7ADD0031E836 /* ResourcePack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DE1D8A7ADD0031E836 /* ResourcePack.swift */; };
-		325162E11D8A7AF50031E836 /* MunicipalityPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E01D8A7AF50031E836 /* MunicipalityPack.swift */; };
+		325162E11D8A7AF50031E836 /* AdminPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E01D8A7AF50031E836 /* AdminPack.swift */; };
 		325162E31D8A7C2F0031E836 /* ChildcarePack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E21D8A7C2F0031E836 /* ChildcarePack.swift */; };
 		325162E51D8A7C450031E836 /* NursingPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E41D8A7C450031E836 /* NursingPack.swift */; };
 		325162E71D8A7C620031E836 /* DisasterPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E61D8A7C620031E836 /* DisasterPack.swift */; };
@@ -29,15 +38,6 @@
 		3253A1141D8B95E00081B1C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3253A1131D8B95E00081B1C2 /* AppDelegate.m */; };
 		3253A1161D8B96300081B1C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3253A1151D8B96300081B1C2 /* main.m */; };
 		3253A11D1D8BAB590081B1C2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253A11C1D8BAB590081B1C2 /* TabBarController.swift */; };
-		325409091D90C23D0022A20E /* administration_all.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409011D90C23D0022A20E /* administration_all.csv */; };
-		3254090A1D90C23D0022A20E /* comunity_center.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409021D90C23D0022A20E /* comunity_center.csv */; };
-		3254090B1D90C23D0022A20E /* insurance_center.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409031D90C23D0022A20E /* insurance_center.csv */; };
-		3254090C1D90C23D0022A20E /* public_works_center.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409041D90C23D0022A20E /* public_works_center.csv */; };
-		3254090E1D90C23D0022A20E /* shelter_region.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409061D90C23D0022A20E /* shelter_region.csv */; };
-		3254090F1D90C23D0022A20E /* shelter_wide.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409071D90C23D0022A20E /* shelter_wide.csv */; };
-		325409101D90C23D0022A20E /* town_planning_center.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409081D90C23D0022A20E /* town_planning_center.csv */; };
-		325409191D90C4F80022A20E /* link_financial_institutions.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409171D90C4F80022A20E /* link_financial_institutions.csv */; };
-		3254091A1D90C4F80022A20E /* link_sappro_medical.csv in Resources */ = {isa = PBXBuildFile; fileRef = 325409181D90C4F80022A20E /* link_sappro_medical.csv */; };
 		325409251D90C72E0022A20E /* FinancialPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325409241D90C72E0022A20E /* FinancialPack.swift */; };
 		325409331D9101E20022A20E /* UIImage(resize).swift in Sources */ = {isa = PBXBuildFile; fileRef = 325409321D9101E20022A20E /* UIImage(resize).swift */; };
 		3254093A1D910F3E0022A20E /* ic_map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 325409381D910F3E0022A20E /* ic_map@2x.png */; };
@@ -83,18 +83,27 @@
 
 /* Begin PBXFileReference section */
 		320C28581D9173510064DBC5 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
-		320C285A1D91771B0064DBC5 /* garbage_chinese.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = garbage_chinese.pdf; path = CSV/garbage_chinese.pdf; sourceTree = "<group>"; };
-		320C285B1D91771B0064DBC5 /* garbage_english.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = garbage_english.pdf; path = CSV/garbage_english.pdf; sourceTree = "<group>"; };
-		320C285C1D91771B0064DBC5 /* garbage_korean.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = garbage_korean.pdf; path = CSV/garbage_korean.pdf; sourceTree = "<group>"; };
-		321CDFE51D8D21AA00164940 /* disaster_prevention_item.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = disaster_prevention_item.csv; path = CSV/disaster_prevention_item.csv; sourceTree = "<group>"; };
-		321CDFEC1D8D229B00164940 /* shelter_core.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shelter_core.csv; path = CSV/shelter_core.csv; sourceTree = "<group>"; };
-		323CC14B1D88DFFD0099EAC7 /* nursing_home.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = nursing_home.csv; path = CSV/nursing_home.csv; sourceTree = "<group>"; };
-		323CC14D1D88E0070099EAC7 /* police_station.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = police_station.csv; path = CSV/police_station.csv; sourceTree = "<group>"; };
-		323CC14F1D88E18C0099EAC7 /* fire_department.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fire_department.csv; path = CSV/fire_department.csv; sourceTree = "<group>"; };
-		323CC1511D88E19C0099EAC7 /* ward_office.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ward_office.csv; path = CSV/ward_office.csv; sourceTree = "<group>"; };
+		3219E89C1D920769009A3C66 /* garbage_chinese.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = garbage_chinese.pdf; path = "CSV,PDF/garbage_chinese.pdf"; sourceTree = "<group>"; };
+		3219E89D1D920769009A3C66 /* garbage_english.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = garbage_english.pdf; path = "CSV,PDF/garbage_english.pdf"; sourceTree = "<group>"; };
+		3219E89E1D920769009A3C66 /* garbage_korean.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = garbage_korean.pdf; path = "CSV,PDF/garbage_korean.pdf"; sourceTree = "<group>"; };
+		3219E8A21D920777009A3C66 /* admin_all.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = admin_all.csv; path = "CSV,PDF/admin_all.csv"; sourceTree = "<group>"; };
+		3219E8A31D920777009A3C66 /* admin_comunity.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = admin_comunity.csv; path = "CSV,PDF/admin_comunity.csv"; sourceTree = "<group>"; };
+		3219E8A41D920777009A3C66 /* admin_fire.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = admin_fire.csv; path = "CSV,PDF/admin_fire.csv"; sourceTree = "<group>"; };
+		3219E8A51D920777009A3C66 /* admin_insurance.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = admin_insurance.csv; path = "CSV,PDF/admin_insurance.csv"; sourceTree = "<group>"; };
+		3219E8A61D920777009A3C66 /* admin_police.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = admin_police.csv; path = "CSV,PDF/admin_police.csv"; sourceTree = "<group>"; };
+		3219E8A71D920777009A3C66 /* admin_publicworks.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = admin_publicworks.csv; path = "CSV,PDF/admin_publicworks.csv"; sourceTree = "<group>"; };
+		3219E8A81D920777009A3C66 /* admin_ward.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = admin_ward.csv; path = "CSV,PDF/admin_ward.csv"; sourceTree = "<group>"; };
+		3219E8A91D920777009A3C66 /* finance_link.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = finance_link.csv; path = "CSV,PDF/finance_link.csv"; sourceTree = "<group>"; };
+		3219E8AA1D920777009A3C66 /* garbage_app.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = garbage_app.csv; path = "CSV,PDF/garbage_app.csv"; sourceTree = "<group>"; };
+		3219E8AB1D920777009A3C66 /* medical_link.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = medical_link.csv; path = "CSV,PDF/medical_link.csv"; sourceTree = "<group>"; };
+		3219E8AD1D920777009A3C66 /* shelter_core.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shelter_core.csv; path = "CSV,PDF/shelter_core.csv"; sourceTree = "<group>"; };
+		3219E8AE1D920777009A3C66 /* shelter_item.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shelter_item.csv; path = "CSV,PDF/shelter_item.csv"; sourceTree = "<group>"; };
+		3219E8AF1D920777009A3C66 /* shelter_region.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shelter_region.csv; path = "CSV,PDF/shelter_region.csv"; sourceTree = "<group>"; };
+		3219E8B01D920777009A3C66 /* shelter_wide.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shelter_wide.csv; path = "CSV,PDF/shelter_wide.csv"; sourceTree = "<group>"; };
+		3219E8C21D92099E009A3C66 /* admin_town.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = admin_town.csv; path = "CSV,PDF/admin_town.csv"; sourceTree = "<group>"; };
 		325162DC1D8A796E0031E836 /* MedicalPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalPack.swift; sourceTree = "<group>"; };
 		325162DE1D8A7ADD0031E836 /* ResourcePack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcePack.swift; sourceTree = "<group>"; };
-		325162E01D8A7AF50031E836 /* MunicipalityPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MunicipalityPack.swift; sourceTree = "<group>"; };
+		325162E01D8A7AF50031E836 /* AdminPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminPack.swift; sourceTree = "<group>"; };
 		325162E21D8A7C2F0031E836 /* ChildcarePack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildcarePack.swift; sourceTree = "<group>"; };
 		325162E41D8A7C450031E836 /* NursingPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NursingPack.swift; sourceTree = "<group>"; };
 		325162E61D8A7C620031E836 /* DisasterPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterPack.swift; sourceTree = "<group>"; };
@@ -105,15 +114,6 @@
 		3253A1131D8B95E00081B1C2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3253A1151D8B96300081B1C2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3253A11C1D8BAB590081B1C2 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		325409011D90C23D0022A20E /* administration_all.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = administration_all.csv; path = CSV/administration_all.csv; sourceTree = "<group>"; };
-		325409021D90C23D0022A20E /* comunity_center.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = comunity_center.csv; path = CSV/comunity_center.csv; sourceTree = "<group>"; };
-		325409031D90C23D0022A20E /* insurance_center.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = insurance_center.csv; path = CSV/insurance_center.csv; sourceTree = "<group>"; };
-		325409041D90C23D0022A20E /* public_works_center.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = public_works_center.csv; path = CSV/public_works_center.csv; sourceTree = "<group>"; };
-		325409061D90C23D0022A20E /* shelter_region.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shelter_region.csv; path = CSV/shelter_region.csv; sourceTree = "<group>"; };
-		325409071D90C23D0022A20E /* shelter_wide.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shelter_wide.csv; path = CSV/shelter_wide.csv; sourceTree = "<group>"; };
-		325409081D90C23D0022A20E /* town_planning_center.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = town_planning_center.csv; path = CSV/town_planning_center.csv; sourceTree = "<group>"; };
-		325409171D90C4F80022A20E /* link_financial_institutions.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = link_financial_institutions.csv; path = CSV/link_financial_institutions.csv; sourceTree = "<group>"; };
-		325409181D90C4F80022A20E /* link_sappro_medical.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = link_sappro_medical.csv; path = CSV/link_sappro_medical.csv; sourceTree = "<group>"; };
 		325409241D90C72E0022A20E /* FinancialPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialPack.swift; sourceTree = "<group>"; };
 		325409321D9101E20022A20E /* UIImage(resize).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage(resize).swift"; sourceTree = "<group>"; };
 		325409381D910F3E0022A20E /* ic_map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_map@2x.png"; path = "Images/ic_map@2x.png"; sourceTree = "<group>"; };
@@ -219,7 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				325162E81D8A7C8A0031E836 /* Pack.swift */,
-				325162E01D8A7AF50031E836 /* MunicipalityPack.swift */,
+				325162E01D8A7AF50031E836 /* AdminPack.swift */,
 				325162DC1D8A796E0031E836 /* MedicalPack.swift */,
 				325409241D90C72E0022A20E /* FinancialPack.swift */,
 				325162DE1D8A7ADD0031E836 /* ResourcePack.swift */,
@@ -243,14 +243,14 @@
 		325409131D90C2520022A20E /* 行政 */ = {
 			isa = PBXGroup;
 			children = (
-				323CC1511D88E19C0099EAC7 /* ward_office.csv */,
-				323CC14F1D88E18C0099EAC7 /* fire_department.csv */,
-				325409021D90C23D0022A20E /* comunity_center.csv */,
-				325409031D90C23D0022A20E /* insurance_center.csv */,
-				323CC14D1D88E0070099EAC7 /* police_station.csv */,
-				325409041D90C23D0022A20E /* public_works_center.csv */,
-				325409081D90C23D0022A20E /* town_planning_center.csv */,
-				325409011D90C23D0022A20E /* administration_all.csv */,
+				3219E8A21D920777009A3C66 /* admin_all.csv */,
+				3219E8A31D920777009A3C66 /* admin_comunity.csv */,
+				3219E8A41D920777009A3C66 /* admin_fire.csv */,
+				3219E8A51D920777009A3C66 /* admin_insurance.csv */,
+				3219E8A61D920777009A3C66 /* admin_police.csv */,
+				3219E8A71D920777009A3C66 /* admin_publicworks.csv */,
+				3219E8A81D920777009A3C66 /* admin_ward.csv */,
+				3219E8C21D92099E009A3C66 /* admin_town.csv */,
 			);
 			name = "行政";
 			sourceTree = "<group>";
@@ -258,10 +258,10 @@
 		325409151D90C2A50022A20E /* 防災 */ = {
 			isa = PBXGroup;
 			children = (
-				325409061D90C23D0022A20E /* shelter_region.csv */,
-				325409071D90C23D0022A20E /* shelter_wide.csv */,
-				321CDFEC1D8D229B00164940 /* shelter_core.csv */,
-				321CDFE51D8D21AA00164940 /* disaster_prevention_item.csv */,
+				3219E8AD1D920777009A3C66 /* shelter_core.csv */,
+				3219E8AF1D920777009A3C66 /* shelter_region.csv */,
+				3219E8B01D920777009A3C66 /* shelter_wide.csv */,
+				3219E8AE1D920777009A3C66 /* shelter_item.csv */,
 			);
 			name = "防災";
 			sourceTree = "<group>";
@@ -269,7 +269,6 @@
 		325409161D90C3510022A20E /* 介護 */ = {
 			isa = PBXGroup;
 			children = (
-				323CC14B1D88DFFD0099EAC7 /* nursing_home.csv */,
 			);
 			name = "介護";
 			sourceTree = "<group>";
@@ -277,7 +276,7 @@
 		3254091B1D90C50C0022A20E /* 医療 */ = {
 			isa = PBXGroup;
 			children = (
-				325409181D90C4F80022A20E /* link_sappro_medical.csv */,
+				3219E8AB1D920777009A3C66 /* medical_link.csv */,
 			);
 			name = "医療";
 			sourceTree = "<group>";
@@ -285,9 +284,10 @@
 		3254091C1D90C5F70022A20E /* ゴミ・資源 */ = {
 			isa = PBXGroup;
 			children = (
-				320C285A1D91771B0064DBC5 /* garbage_chinese.pdf */,
-				320C285B1D91771B0064DBC5 /* garbage_english.pdf */,
-				320C285C1D91771B0064DBC5 /* garbage_korean.pdf */,
+				3219E89C1D920769009A3C66 /* garbage_chinese.pdf */,
+				3219E89D1D920769009A3C66 /* garbage_english.pdf */,
+				3219E89E1D920769009A3C66 /* garbage_korean.pdf */,
+				3219E8AA1D920777009A3C66 /* garbage_app.csv */,
 			);
 			name = "ゴミ・資源";
 			sourceTree = "<group>";
@@ -295,7 +295,7 @@
 		325409231D90C6900022A20E /* 金融機関 */ = {
 			isa = PBXGroup;
 			children = (
-				325409171D90C4F80022A20E /* link_financial_institutions.csv */,
+				3219E8A91D920777009A3C66 /* finance_link.csv */,
 			);
 			name = "金融機関";
 			sourceTree = "<group>";
@@ -526,30 +526,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				325409091D90C23D0022A20E /* administration_all.csv in Resources */,
-				3254090A1D90C23D0022A20E /* comunity_center.csv in Resources */,
-				3254090B1D90C23D0022A20E /* insurance_center.csv in Resources */,
-				321CDFE91D8D21AA00164940 /* disaster_prevention_item.csv in Resources */,
+				3219E8B61D920777009A3C66 /* admin_police.csv in Resources */,
+				3219E8B91D920777009A3C66 /* finance_link.csv in Resources */,
+				3219E8B31D920777009A3C66 /* admin_comunity.csv in Resources */,
+				3219E8BF1D920777009A3C66 /* shelter_region.csv in Resources */,
+				3219E8B21D920777009A3C66 /* admin_all.csv in Resources */,
+				3219E8B71D920777009A3C66 /* admin_publicworks.csv in Resources */,
+				3219E8BB1D920777009A3C66 /* medical_link.csv in Resources */,
+				3219E8B51D920777009A3C66 /* admin_insurance.csv in Resources */,
+				3219E8B41D920777009A3C66 /* admin_fire.csv in Resources */,
+				3219E89F1D920769009A3C66 /* garbage_chinese.pdf in Resources */,
 				325409431D9134A60022A20E /* ic_link@2x.png in Resources */,
-				325409191D90C4F80022A20E /* link_financial_institutions.csv in Resources */,
-				3254091A1D90C4F80022A20E /* link_sappro_medical.csv in Resources */,
+				3219E8BD1D920777009A3C66 /* shelter_core.csv in Resources */,
 				32DAF97C1D7AC02500BCABCF /* LaunchScreen.storyboard in Resources */,
-				323CC14E1D88E0070099EAC7 /* police_station.csv in Resources */,
-				321CDFED1D8D229B00164940 /* shelter_core.csv in Resources */,
-				325409101D90C23D0022A20E /* town_planning_center.csv in Resources */,
-				320C285D1D91771B0064DBC5 /* garbage_chinese.pdf in Resources */,
-				3254090E1D90C23D0022A20E /* shelter_region.csv in Resources */,
-				323CC1521D88E19C0099EAC7 /* ward_office.csv in Resources */,
-				323CC1501D88E18C0099EAC7 /* fire_department.csv in Resources */,
+				3219E8BA1D920777009A3C66 /* garbage_app.csv in Resources */,
+				3219E8A11D920769009A3C66 /* garbage_korean.pdf in Resources */,
 				32DAF9791D7AC02500BCABCF /* Assets.xcassets in Resources */,
+				3219E8C01D920777009A3C66 /* shelter_wide.csv in Resources */,
+				3219E8C31D92099E009A3C66 /* admin_town.csv in Resources */,
 				3254093A1D910F3E0022A20E /* ic_map@2x.png in Resources */,
+				3219E8BE1D920777009A3C66 /* shelter_item.csv in Resources */,
+				3219E8A01D920769009A3C66 /* garbage_english.pdf in Resources */,
 				3254093B1D910F3E0022A20E /* ic_pdf@2x.png in Resources */,
-				320C285F1D91771B0064DBC5 /* garbage_korean.pdf in Resources */,
-				323CC14C1D88DFFD0099EAC7 /* nursing_home.csv in Resources */,
-				3254090C1D90C23D0022A20E /* public_works_center.csv in Resources */,
+				3219E8B81D920777009A3C66 /* admin_ward.csv in Resources */,
 				32DAF9771D7AC02500BCABCF /* Main.storyboard in Resources */,
-				3254090F1D90C23D0022A20E /* shelter_wide.csv in Resources */,
-				320C285E1D91771B0064DBC5 /* garbage_english.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,7 +626,7 @@
 				325162F71D8AA3FD0031E836 /* ContentsMapViewController.swift in Sources */,
 				325162E51D8A7C450031E836 /* NursingPack.swift in Sources */,
 				325162EF1D8A9AD30031E836 /* ContentsItem.swift in Sources */,
-				325162E11D8A7AF50031E836 /* MunicipalityPack.swift in Sources */,
+				325162E11D8A7AF50031E836 /* AdminPack.swift in Sources */,
 				3254093D1D9112EA0022A20E /* SapporoMedical.swift in Sources */,
 				325409411D91169B0022A20E /* CSVParser.swift in Sources */,
 				325162E71D8A7C620031E836 /* DisasterPack.swift in Sources */,

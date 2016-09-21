@@ -11,8 +11,6 @@ import Foundation
 class NursingPack: Pack {
     
     init() {
-        super.init(name: "介護", contents:[
-            ContentsItem(title:"介護施設マップ", fileName:"nursing_home", fileType:"csv", purposeType:"MAP")
-            ])
+        super.init(name: "介護", contents:[])
     }
 }

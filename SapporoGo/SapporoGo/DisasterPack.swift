@@ -15,7 +15,7 @@ class DisasterPack:Pack {
             ContentsItem(title:"基幹避難所", fileName:"shelter_core", fileType:"csv", purposeType:"MAP"),
             ContentsItem(title:"広域避難所", fileName:"shelter_wide", fileType:"csv", purposeType:"MAP"),
             ContentsItem(title:"地域避難所", fileName:"shelter_region", fileType:"csv", purposeType:"MAP"),
-            ContentsItem(title:"災害時の持ち物リスト", fileName:"disaster_prevention", fileType:"csv", purposeType:"LIST")
+            ContentsItem(title:"災害時の持ち物リスト", fileName:"shelter_item", fileType:"csv", purposeType:"LIST")
             ])
     }
 }

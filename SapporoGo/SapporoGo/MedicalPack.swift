@@ -22,7 +22,7 @@ class Medicalpack: Pack {
     
     func initalizeSapporoMedical(){
         let realm = try! Realm()
-        let parseArray = CSVParser.parse("link_sappro_medical")
+        let parseArray = CSVParser.parse("medical_link")
         for parseItem in parseArray{
             
                 let contentsArray = parseItem as! NSArray
