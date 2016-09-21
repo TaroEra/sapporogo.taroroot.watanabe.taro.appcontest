@@ -41,7 +41,7 @@
                                 <sections/>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noimage.png" translatesAutoresizingMaskIntoConstraints="NO" id="yus-G5-GKZ">
-                                <rect key="frame" x="0.0" y="121" width="192" height="170"/>
+                                <rect key="frame" x="0.0" y="121" width="192" height="199"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="さっぽろ太郎" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDN-Ku-sqk">
                                 <rect key="frame" x="0.0" y="64" width="192" height="57"/>
@@ -50,7 +50,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qf-xB-rG1">
-                                <rect key="frame" x="0.0" y="291" width="80" height="28"/>
+                                <rect key="frame" x="0.0" y="320" width="80" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="編集"/>
                                 <connections>
@@ -65,7 +65,7 @@
                             <constraint firstItem="6Qf-xB-rG1" firstAttribute="leading" secondItem="ZVf-DJ-x7l" secondAttribute="leading" id="66f-C8-g7R"/>
                             <constraint firstAttribute="trailing" secondItem="Kla-gi-ZW3" secondAttribute="trailing" id="9Xt-es-iLK"/>
                             <constraint firstItem="ZDN-Ku-sqk" firstAttribute="width" secondItem="ZVf-DJ-x7l" secondAttribute="width" multiplier="0.6" id="HNj-Ht-leN"/>
-                            <constraint firstItem="yus-G5-GKZ" firstAttribute="height" secondItem="ZVf-DJ-x7l" secondAttribute="height" multiplier="0.3" id="IOU-rN-gDc"/>
+                            <constraint firstItem="yus-G5-GKZ" firstAttribute="height" secondItem="ZVf-DJ-x7l" secondAttribute="height" multiplier="0.35" id="IOU-rN-gDc"/>
                             <constraint firstItem="yus-G5-GKZ" firstAttribute="top" secondItem="ZDN-Ku-sqk" secondAttribute="bottom" id="PNu-Qm-vuo"/>
                             <constraint firstItem="ZDN-Ku-sqk" firstAttribute="leading" secondItem="ZVf-DJ-x7l" secondAttribute="leading" id="ZWR-5x-KtD"/>
                             <constraint firstItem="6Qf-xB-rG1" firstAttribute="height" secondItem="ZVf-DJ-x7l" secondAttribute="height" multiplier="0.05" id="Zp3-vt-bLC"/>

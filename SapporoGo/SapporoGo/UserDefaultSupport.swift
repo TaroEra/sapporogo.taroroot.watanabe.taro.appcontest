@@ -10,20 +10,19 @@ import Foundation
 
 class UserDefaultSurpport{
     
-    static let userDefault = NSUserDefaults.standardUserDefaults()
-    
-    static func setProfileImagePath(imagePath:NSURL){
-        userDefault.setURL(imagePath, forKey:"profileImage")
+    class var userDefoults: NSUserDefaults {
+        get{
+            return NSUserDefaults.standardUserDefaults()
+        }
     }
     
-    static func getProfileImagePath()->NSURL{
-        
-        if userDefault.URLForKey("profileImage") !== nil{
-            if let url:NSURL =  userDefault.URLForKey("profileImage")!{
-                return url
-            }
-        }else{
-            return NSURL(string:"")!
+    private static let profileImageKey = "profileImage"
+    class var profileImage:NSURL?{
+        get{
+            return self.userDefoults.URLForKey(profileImageKey)
+        }
+        set{
+            self.userDefoults.setURL(newValue, forKey: profileImageKey)
         }
     }
 }

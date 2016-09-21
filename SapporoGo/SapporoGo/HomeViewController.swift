@@ -31,17 +31,20 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func changeprofileImage(){
-        if UserDefaultSurpport.getProfileImagePath().absoluteString == ""{
+        if UserDefaultSurpport.profileImage === nil{
             
         }
         else{
-            let fetchResult: PHFetchResult = PHAsset.fetchAssetsWithALAssetURLs([UserDefaultSurpport.getProfileImagePath()], options: nil)
-            let asset: PHAsset = fetchResult.firstObject as! PHAsset
-            let manager = PHImageManager.defaultManager()
-            manager.requestImageForAsset(asset, targetSize: CGSize(width: 140, height: 140), contentMode: .AspectFill, options: nil) { (image, info) in
-                // imageをセットする
-                if image !== nil {
-                    self.profileImageView.image = image
+            let fetchResult: PHFetchResult = PHAsset.fetchAssetsWithALAssetURLs([UserDefaultSurpport.profileImage!], options: nil)
+            
+            if fetchResult.firstObject != nil{
+                let asset: PHAsset = fetchResult.firstObject as! PHAsset
+                let manager = PHImageManager.defaultManager()
+                manager.requestImageForAsset(asset, targetSize: CGSize(width: 140, height: 140), contentMode: .AspectFill, options: nil) { (image, info) in
+                    // imageをセットする
+                    if image !== nil {
+                        self.profileImageView.image = image
+                    }
                 }
             }
         }
@@ -136,11 +139,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         if info[UIImagePickerControllerOriginalImage] != nil {
             // 画像のパスを取得
             let imageUrl = info[UIImagePickerControllerReferenceURL] as? NSURL
-            UserDefaultSurpport.setProfileImagePath(imageUrl!)
+            UserDefaultSurpport.profileImage = imageUrl!
         }
         
         changeprofileImage()
         picker.dismissViewControllerAnimated(true, completion: nil)
-
+        
     }
 }
