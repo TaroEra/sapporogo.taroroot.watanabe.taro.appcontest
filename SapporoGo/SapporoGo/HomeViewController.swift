@@ -28,8 +28,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tableView.dataSource = self
         
         changeprofileImage()
-        
-        
     }
     
     override func viewWillAppear(animated: Bool) {

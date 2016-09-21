@@ -155,7 +155,7 @@
                             <outlet property="delegate" destination="Hw0-h5-FT2" id="SUP-xj-2gK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="4I9-7c-eBY"/>
+                    <navigationItem key="navigationItem" title="Title" id="EMs-jT-2ah"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4eV-qn-Ocp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -171,6 +171,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GMz-tz-30Q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="W4w-nW-qjc" kind="relationship" relationship="rootViewController" id="rd9-Kx-eBf"/>
