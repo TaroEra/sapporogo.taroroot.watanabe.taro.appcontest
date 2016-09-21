@@ -54,8 +54,11 @@ class ContentsTableViewController: UITableViewController {
         else if contentsItem.purposeType == "PDF"{
             image = UIImage(named:"ic_pdf")
         }
-        else if contentsItem.purposeType == "LINK"{
+        else if contentsItem.purposeType == "LINK" || contentsItem.purposeType == "Financial_LINK"{
             image = UIImage(named:"ic_link")
+        }
+        else if contentsItem.purposeType == "LIST"{
+            image = UIImage(named:"ic_list")
         }
         else{
             image = UIImage(named:"")
@@ -72,6 +75,7 @@ class ContentsTableViewController: UITableViewController {
         if pack?.contents![indexPath.row].purposeType == "MAP"{
             let contentsMapViewController:ContentsMapViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsMapViewController")) as! ContentsMapViewController
             contentsMapViewController.contentsItem = self.pack?.contents![indexPath.row]
+            contentsMapViewController.navigationItem.title = self.pack?.contents![indexPath.row].title
             self.navigationController?.pushViewController(contentsMapViewController, animated: true)
         }
         else if pack?.name == FinancialPack().name{
@@ -86,6 +90,7 @@ class ContentsTableViewController: UITableViewController {
             }
             let contentsTableviewController:ContentsTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsTableViewController")) as! ContentsTableViewController
             contentsTableviewController.pack = Pack(name:title!, contents:contentsItems)
+            contentsTableviewController.navigationItem.title = self.pack?.contents![indexPath.row].title
             self.navigationController?.pushViewController(contentsTableviewController, animated: true)
         }
         else if pack?.contents![indexPath.row].purposeType == "Financial_LINK"{
@@ -96,6 +101,7 @@ class ContentsTableViewController: UITableViewController {
             let financialInstitutions = realm.objects(FinancialInstitutions).filter(query).first
             let url = NSURL(string:(financialInstitutions?.mobile_url)!)!
             let safariViewController = SFSafariViewController(URL:url)
+            safariViewController.navigationItem.title = self.pack?.contents![indexPath.row].title
             self.navigationController?.pushViewController(safariViewController, animated: true)
         }
         else if pack?.name == Medicalpack().name{
@@ -107,17 +113,20 @@ class ContentsTableViewController: UITableViewController {
             let sapporoMedical = realm.objects(SapproMedicak).filter(query).first
             let url = NSURL(string:(sapporoMedical?.url)!)!
             let safariViewController = SFSafariViewController(URL:url)
+            safariViewController.navigationItem.title = self.pack?.contents![indexPath.row].title
             self.navigationController?.pushViewController(safariViewController, animated: true)
         }
         else if pack?.contents![indexPath.row].fileType == "pdf"{
             let pdfViewController:PDFViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("PDFViewController")) as! PDFViewController
             pdfViewController.view.frame = UIScreen.mainScreen().bounds
             pdfViewController.contentsItem = pack?.contents![indexPath.row]
+            pdfViewController.navigationItem.title = self.pack?.contents![indexPath.row].title
             self.navigationController?.pushViewController(pdfViewController, animated: true)
         }
         else if pack?.contents![indexPath.row].purposeType == "LIST"{
             
             let contentsTableviewController:ShelterItemTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ShelterItemTableViewController")) as! ShelterItemTableViewController
+            contentsTableviewController.navigationItem.title = self.pack?.contents![indexPath.row].title
             self.navigationController?.pushViewController(contentsTableviewController, animated: true)
         }
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)

@@ -118,8 +118,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         contentsTableviewController.pack = pack;
         if pack.name == FinancialPack().name{
+            FinancialPack().initializeFinantialInstitutions()
             contentsTableviewController.pack?.contents = FinancialPack().createContents()
-            
         }
         
         self.navigationController?.pushViewController(contentsTableviewController, animated: true);

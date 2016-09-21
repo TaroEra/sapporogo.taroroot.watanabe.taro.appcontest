@@ -247,7 +247,7 @@
             </objects>
             <point key="canvasLocation" x="2608" y="70"/>
         </scene>
-        <!--Shelter Item Table View Controller-->
+        <!--災害時の持ち物リスト-->
         <scene sceneID="13o-kw-DPq">
             <objects>
                 <tableViewController storyboardIdentifier="ShelterItemTableViewController" id="zNL-G2-LFn" customClass="ShelterItemTableViewController" customModule="SapporoGo" customModuleProvider="target" sceneMemberID="viewController">
@@ -286,6 +286,7 @@
                             <outlet property="delegate" destination="zNL-G2-LFn" id="T4A-KG-GsB"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="災害時の持ち物リスト" id="kRO-lx-b2I"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qph-tp-GXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
