@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SapporoGo/HomeViewController.swift"
-            timestampString = "496284107.958912"
+            timestampString = "496285312.840911"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
             landmarkType = "5">
             <Locations>
@@ -26,11 +26,11 @@
                   moduleName = "SapporoGo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/taroera/sapporogo.taroroot.watanabe.taro.appcontest/SapporoGo/SapporoGo/HomeViewController.swift"
-                  timestampString = "496284108.537269"
+                  timestampString = "496285386.375707"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "147"
-                  endingLineNumber = "147"
+                  startingLineNumber = "156"
+                  endingLineNumber = "156"
                   offsetFromSymbolStart = "84">
                </Location>
                <Location
@@ -41,11 +41,11 @@
                   moduleName = "SapporoGo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/taroera/sapporogo.taroroot.watanabe.taro.appcontest/SapporoGo/SapporoGo/HomeViewController.swift"
-                  timestampString = "496284108.538632"
+                  timestampString = "496285386.376016"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "147"
-                  endingLineNumber = "147"
+                  startingLineNumber = "156"
+                  endingLineNumber = "156"
                   offsetFromSymbolStart = "1308">
                </Location>
             </Locations>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SapporoGo/HomeViewController.swift"
-            timestampString = "496284110.607471"
+            timestampString = "496285312.840911"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
             landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
