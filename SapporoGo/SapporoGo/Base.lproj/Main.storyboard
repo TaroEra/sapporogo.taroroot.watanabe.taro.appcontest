@@ -7,7 +7,7 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--home-->
         <scene sceneID="37T-vg-xUh">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" automaticallyAdjustsScrollViewInsets="NO" id="lbd-te-B1y" customClass="HomeViewController" customModule="SapporoGo" customModuleProvider="target" sceneMemberID="viewController">
@@ -193,7 +193,7 @@
                             <constraint firstItem="Yup-8y-lAf" firstAttribute="top" secondItem="Kla-gi-ZW3" secondAttribute="bottom" id="yGW-h2-7Yy"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="eBy-yF-rkW"/>
+                    <tabBarItem key="tabBarItem" title="home" image="ic_home.png" id="eBy-yF-rkW"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="profileImageView" destination="yus-G5-GKZ" id="3aD-KR-Kju"/>
@@ -205,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBu-cq-nP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1723" y="65"/>
+            <point key="canvasLocation" x="1862" y="-82"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pst-Uj-vek">
@@ -221,6 +221,7 @@
                     <connections>
                         <segue destination="63r-m3-RtP" kind="relationship" relationship="viewControllers" id="jvi-iN-nhA"/>
                         <segue destination="lbd-te-B1y" kind="relationship" relationship="viewControllers" id="rL5-sG-Qls"/>
+                        <segue destination="x9F-DV-ncg" kind="relationship" relationship="viewControllers" id="Y71-gM-IYw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCJ-kt-W23" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -246,7 +247,7 @@
             </objects>
             <point key="canvasLocation" x="783" y="70"/>
         </scene>
-        <!--SNS-->
+        <!--share-->
         <scene sceneID="N28-Yc-zPW">
             <objects>
                 <viewController storyboardIdentifier="SnsViewController" id="63r-m3-RtP" customClass="SnsViewController" customModule="SapporoGo" customModuleProvider="target" sceneMemberID="viewController">
@@ -279,12 +280,12 @@
                             <constraint firstItem="OJ9-Fk-ug0" firstAttribute="centerX" secondItem="E4E-wc-mgd" secondAttribute="centerX" id="t5D-rs-9N0"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="SNS" id="gGo-ey-qiq"/>
+                    <tabBarItem key="tabBarItem" title="share" image="ic_share.png" id="gGo-ey-qiq"/>
                     <navigationItem key="navigationItem" id="ByG-wD-adh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qEl-d7-VfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1723" y="831"/>
+            <point key="canvasLocation" x="1862" y="-728"/>
         </scene>
         <!--Contents Table View Controller-->
         <scene sceneID="nlj-0M-iwK">
@@ -348,7 +349,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ecf-ZO-WkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2211" y="65"/>
+            <point key="canvasLocation" x="2237" y="-82"/>
         </scene>
         <!--Contents Map View Controller-->
         <scene sceneID="9ly-Rq-ojO">
@@ -381,7 +382,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ZB-BT-dOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2608" y="70"/>
+            <point key="canvasLocation" x="2610" y="-82"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6eO-IY-M60">
@@ -415,7 +416,93 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Jq-5H-kxB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2608" y="831"/>
+            <point key="canvasLocation" x="2826" y="-341"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="f8R-tN-qb4">
+            <objects>
+                <viewController storyboardIdentifier="SettingTableViewController" id="x9F-DV-ncg" customClass="SettingTableViewController" customModule="SapporoGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VCp-9Z-cX4"/>
+                        <viewControllerLayoutGuide type="bottom" id="7JN-Ci-NTL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6VZ-t6-4Gq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_app" translatesAutoresizingMaskIntoConstraints="NO" id="dGf-lt-yLb">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gzO-cf-aNQ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="settingCell" textLabel="lA3-3R-XOb" style="IBUITableViewCellStyleDefault" id="rdB-9c-EUz">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rdB-9c-EUz" id="DfG-an-Bf2">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="ライセンス情報" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lA3-3R-XOb">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="0Bi-Rh-rRM" kind="show" id="pU4-iH-n2p"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="a4v-oe-AhO">
+                                        <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a4v-oe-AhO" id="nuq-Q9-pbg">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="uxW-lj-jwf">
+                                        <rect key="frame" x="0.0" y="116" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uxW-lj-jwf" id="g5Z-SS-RKf">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dGf-lt-yLb" firstAttribute="leading" secondItem="6VZ-t6-4Gq" secondAttribute="leading" id="7vx-Vx-NYd"/>
+                            <constraint firstAttribute="trailing" secondItem="dGf-lt-yLb" secondAttribute="trailing" id="EZF-pa-MzT"/>
+                            <constraint firstItem="7JN-Ci-NTL" firstAttribute="top" secondItem="dGf-lt-yLb" secondAttribute="bottom" id="Hzr-Tp-eIG"/>
+                            <constraint firstItem="gzO-cf-aNQ" firstAttribute="top" secondItem="VCp-9Z-cX4" secondAttribute="bottom" id="VFt-8Z-ImS"/>
+                            <constraint firstItem="7JN-Ci-NTL" firstAttribute="top" secondItem="gzO-cf-aNQ" secondAttribute="bottom" id="f3f-gn-ZzR"/>
+                            <constraint firstItem="dGf-lt-yLb" firstAttribute="top" secondItem="VCp-9Z-cX4" secondAttribute="bottom" id="hnn-Ty-bFb"/>
+                            <constraint firstAttribute="trailing" secondItem="gzO-cf-aNQ" secondAttribute="trailing" id="wI0-B7-pK2"/>
+                            <constraint firstItem="gzO-cf-aNQ" firstAttribute="leading" secondItem="6VZ-t6-4Gq" secondAttribute="leading" id="yzO-dG-zC1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Setting" image="ic_settings.png" id="fV7-OX-LHs"/>
+                    <connections>
+                        <outlet property="tableView" destination="gzO-cf-aNQ" id="WkZ-Wa-55y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hiJ-RT-w2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862" y="568"/>
         </scene>
         <!--Shelter Item Table View Controller-->
         <scene sceneID="gpF-0U-RZ1">
@@ -475,11 +562,115 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0PC-29-LmL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2178" y="831"/>
+            <point key="canvasLocation" x="2719" y="-231"/>
+        </scene>
+        <!--クレジット-->
+        <scene sceneID="cmI-A7-OHZ">
+            <objects>
+                <viewController id="0Bi-Rh-rRM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9E9-KP-QBI"/>
+                        <viewControllerLayoutGuide type="bottom" id="2n6-qe-Y1H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oql-Wh-ova">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ULK-dJ-43E">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Realm 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="11" name="TimesNewRomanPSMT"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="13" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Copyright 2016 Realm Inc. 
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at 
+http://www.apache.org/licenses/LICENSE-2.0 
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="11" name="TimesNewRomanPSMT"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="12" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Copyright (c) 2015 Charles Scalesse.
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="11" name="TimesNewRomanPSMT"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2n6-qe-Y1H" firstAttribute="top" secondItem="ULK-dJ-43E" secondAttribute="bottom" id="AIV-dr-yKC"/>
+                            <constraint firstItem="ULK-dJ-43E" firstAttribute="leading" secondItem="oql-Wh-ova" secondAttribute="leading" id="IHl-mu-RJX"/>
+                            <constraint firstItem="ULK-dJ-43E" firstAttribute="top" secondItem="9E9-KP-QBI" secondAttribute="bottom" id="dtk-OE-EJc"/>
+                            <constraint firstAttribute="trailing" secondItem="ULK-dJ-43E" secondAttribute="trailing" id="rMK-qz-m4H"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="クレジット" id="avs-BD-84K"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6i-Li-PF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2340" y="568"/>
         </scene>
     </scenes>
     <resources>
+        <image name="bg_app" width="1150" height="750"/>
         <image name="bg_app.jpg" width="1150" height="750"/>
+        <image name="ic_home.png" width="24" height="24"/>
+        <image name="ic_settings.png" width="24" height="24"/>
+        <image name="ic_share.png" width="24" height="24"/>
         <image name="noimage.png" width="300" height="300"/>
     </resources>
 </document>

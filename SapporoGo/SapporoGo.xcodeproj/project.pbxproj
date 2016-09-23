@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		320874C71D94CD5000240A56 /* ヒラギノ角ゴシック_W4.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 320874C61D94CD5000240A56 /* ヒラギノ角ゴシック_W4.ttc */; };
+		320874CD1D9512A400240A56 /* ic_settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320874CC1D9512A400240A56 /* ic_settings@2x.png */; };
+		320874D11D9513E400240A56 /* ic_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320874CE1D9513E400240A56 /* ic_home@2x.png */; };
+		320874D21D9513E400240A56 /* ic_lock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320874CF1D9513E400240A56 /* ic_lock@2x.png */; };
+		320874D31D9513E500240A56 /* ic_unlock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320874D01D9513E400240A56 /* ic_unlock@2x.png */; };
+		320874D51D9514EB00240A56 /* ic_share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320874D41D9514EB00240A56 /* ic_share@2x.png */; };
+		320874D71D95175100240A56 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320874D61D95175100240A56 /* SettingTableViewController.swift */; };
+		320874D91D951DD600240A56 /* ic_copyright@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320874D81D951DD600240A56 /* ic_copyright@2x.png */; };
 		320C28591D9173510064DBC5 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320C28581D9173510064DBC5 /* PDFViewController.swift */; };
 		3219E89F1D920769009A3C66 /* garbage_chinese.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3219E89C1D920769009A3C66 /* garbage_chinese.pdf */; };
 		3219E8A01D920769009A3C66 /* garbage_english.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3219E89D1D920769009A3C66 /* garbage_english.pdf */; };
@@ -93,6 +100,13 @@
 		320874C61D94CD5000240A56 /* ヒラギノ角ゴシック_W4.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ヒラギノ角ゴシック_W4.ttc"; sourceTree = "<group>"; };
 		320874C81D94D0B500240A56 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos/RealmSwift.framework"; sourceTree = "<group>"; };
 		320874CA1D94D0CC00240A56 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos/Realm.framework"; sourceTree = "<group>"; };
+		320874CC1D9512A400240A56 /* ic_settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_settings@2x.png"; path = "Images/ic_settings@2x.png"; sourceTree = "<group>"; };
+		320874CE1D9513E400240A56 /* ic_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_home@2x.png"; path = "Images/ic_home@2x.png"; sourceTree = "<group>"; };
+		320874CF1D9513E400240A56 /* ic_lock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_lock@2x.png"; path = "Images/ic_lock@2x.png"; sourceTree = "<group>"; };
+		320874D01D9513E400240A56 /* ic_unlock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_unlock@2x.png"; path = "Images/ic_unlock@2x.png"; sourceTree = "<group>"; };
+		320874D41D9514EB00240A56 /* ic_share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_share@2x.png"; path = "Images/ic_share@2x.png"; sourceTree = "<group>"; };
+		320874D61D95175100240A56 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		320874D81D951DD600240A56 /* ic_copyright@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_copyright@2x.png"; path = "Images/ic_copyright@2x.png"; sourceTree = "<group>"; };
 		320C28581D9173510064DBC5 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		3219E89C1D920769009A3C66 /* garbage_chinese.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = garbage_chinese.pdf; path = "CSV,PDF/garbage_chinese.pdf"; sourceTree = "<group>"; };
 		3219E89D1D920769009A3C66 /* garbage_english.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = garbage_english.pdf; path = "CSV,PDF/garbage_english.pdf"; sourceTree = "<group>"; };
@@ -209,6 +223,7 @@
 				3253A11C1D8BAB590081B1C2 /* TabBarController.swift */,
 				320C28581D9173510064DBC5 /* PDFViewController.swift */,
 				3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */,
+				320874D61D95175100240A56 /* SettingTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -330,6 +345,12 @@
 				325409421D9134A60022A20E /* ic_link@2x.png */,
 				32D155AE1D92576100327805 /* ic_list@2x.png */,
 				32D155B01D925FD800327805 /* ic_web@2x.png */,
+				320874CC1D9512A400240A56 /* ic_settings@2x.png */,
+				320874CE1D9513E400240A56 /* ic_home@2x.png */,
+				320874CF1D9513E400240A56 /* ic_lock@2x.png */,
+				320874D01D9513E400240A56 /* ic_unlock@2x.png */,
+				320874D41D9514EB00240A56 /* ic_share@2x.png */,
+				320874D81D951DD600240A56 /* ic_copyright@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -555,12 +576,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3219E8B61D920777009A3C66 /* admin_police.csv in Resources */,
+				320874D11D9513E400240A56 /* ic_home@2x.png in Resources */,
 				3219E8B91D920777009A3C66 /* finance_link.csv in Resources */,
 				3219E8B31D920777009A3C66 /* admin_comunity.csv in Resources */,
 				3219E8BF1D920777009A3C66 /* shelter_region.csv in Resources */,
 				3219E8B21D920777009A3C66 /* admin_all.csv in Resources */,
 				3219E8B71D920777009A3C66 /* admin_publicworks.csv in Resources */,
+				320874D31D9513E500240A56 /* ic_unlock@2x.png in Resources */,
 				3219E8BB1D920777009A3C66 /* medical_link.csv in Resources */,
+				320874CD1D9512A400240A56 /* ic_settings@2x.png in Resources */,
 				3219E8B51D920777009A3C66 /* admin_insurance.csv in Resources */,
 				3219E8B41D920777009A3C66 /* admin_fire.csv in Resources */,
 				3219E89F1D920769009A3C66 /* garbage_chinese.pdf in Resources */,
@@ -573,6 +597,7 @@
 				3219E8A11D920769009A3C66 /* garbage_korean.pdf in Resources */,
 				32DAF9791D7AC02500BCABCF /* Assets.xcassets in Resources */,
 				3219E8C01D920777009A3C66 /* shelter_wide.csv in Resources */,
+				320874D91D951DD600240A56 /* ic_copyright@2x.png in Resources */,
 				3219E8C31D92099E009A3C66 /* admin_town.csv in Resources */,
 				3254093A1D910F3E0022A20E /* ic_map@2x.png in Resources */,
 				3219E8BE1D920777009A3C66 /* shelter_item.csv in Resources */,
@@ -583,6 +608,8 @@
 				32D155B91D927D1D00327805 /* bg_app@2x.jpg in Resources */,
 				32DAF9771D7AC02500BCABCF /* Main.storyboard in Resources */,
 				32D155B11D925FD800327805 /* ic_web@2x.png in Resources */,
+				320874D51D9514EB00240A56 /* ic_share@2x.png in Resources */,
+				320874D21D9513E400240A56 /* ic_lock@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +696,7 @@
 				32BB23B71D8BD3DB00F8C7F5 /* MapObject.swift in Sources */,
 				325409331D9101E20022A20E /* UIImage(resize).swift in Sources */,
 				326383C81D87D1F400DED761 /* ContentsTableViewController.swift in Sources */,
+				320874D71D95175100240A56 /* SettingTableViewController.swift in Sources */,
 				325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */,
 				325162E91D8A7C8A0031E836 /* Pack.swift in Sources */,
 				3254093F1D91132E0022A20E /* FinancialInstitutions.swift in Sources */,
