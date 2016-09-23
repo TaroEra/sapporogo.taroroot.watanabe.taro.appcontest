@@ -45,4 +45,20 @@ class UserDefaultSurpport{
             self.userDefoults.setInteger(newValue, forKey:userPointKey)
         }
     }
+    
+    class var userTitle:String?{
+        get{
+            if 0...9 ~= self.userPoint{
+                return "駆け出しの市民"
+            }else if 10...19 ~= self.userPoint{
+                return "そこそこの市民"
+            }else if 20...29 ~= self.userPoint{
+                return "物知りな市民"
+            }else if 30...49 ~= self.userPoint{
+                return "市民代表"
+            }
+            return "伝説の市民"
+        }set{
+        }
+    }
 }

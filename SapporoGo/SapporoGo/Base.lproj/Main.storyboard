@@ -200,6 +200,7 @@
                         <outlet property="tableView" destination="Avz-N6-jsr" id="rkU-IP-rHH"/>
                         <outlet property="userNameLabel" destination="ZDN-Ku-sqk" id="o1X-1S-oKp"/>
                         <outlet property="userPointLabel" destination="AaZ-eu-bRy" id="psc-xx-jJe"/>
+                        <outlet property="userTitleLabel" destination="0lR-14-OW4" id="ZVW-xy-JHc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBu-cq-nP9" userLabel="First Responder" sceneMemberID="firstResponder"/>

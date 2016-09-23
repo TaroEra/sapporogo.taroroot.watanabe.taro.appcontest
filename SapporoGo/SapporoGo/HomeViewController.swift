@@ -20,6 +20,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     private var basicPacks:Array<Pack> = []
     private var supportPacks:Array<Pack> = []
     
+    @IBOutlet weak var userTitleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,6 +37,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewWillAppear(animated)
         
         userPointLabel.text = String(UserDefaultSurpport.userPoint)
+        userTitleLabel.text = UserDefaultSurpport.userTitle
         
         self.tabBarController?.tabBar.hidden = false
         self.navigationController?.visibleViewController?.navigationItem.title = "ホーム"
