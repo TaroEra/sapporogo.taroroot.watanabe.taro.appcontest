@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320874C71D94CD5000240A56 /* ヒラギノ角ゴシック_W4.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 320874C61D94CD5000240A56 /* ヒラギノ角ゴシック_W4.ttc */; };
 		320C28591D9173510064DBC5 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320C28581D9173510064DBC5 /* PDFViewController.swift */; };
 		3219E89F1D920769009A3C66 /* garbage_chinese.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3219E89C1D920769009A3C66 /* garbage_chinese.pdf */; };
 		3219E8A01D920769009A3C66 /* garbage_english.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3219E89D1D920769009A3C66 /* garbage_english.pdf */; };
@@ -89,6 +90,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		320874C61D94CD5000240A56 /* ヒラギノ角ゴシック_W4.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ヒラギノ角ゴシック_W4.ttc"; sourceTree = "<group>"; };
 		320C28581D9173510064DBC5 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		3219E89C1D920769009A3C66 /* garbage_chinese.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = garbage_chinese.pdf; path = "CSV,PDF/garbage_chinese.pdf"; sourceTree = "<group>"; };
 		3219E89D1D920769009A3C66 /* garbage_english.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = garbage_english.pdf; path = "CSV,PDF/garbage_english.pdf"; sourceTree = "<group>"; };
@@ -392,6 +394,7 @@
 		32DAF96C1D7AC02500BCABCF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				320874C61D94CD5000240A56 /* ヒラギノ角ゴシック_W4.ttc */,
 				3253A1151D8B96300081B1C2 /* main.m */,
 				3254092E1D9100370022A20E /* Images */,
 				323CC14A1D88DFB90099EAC7 /* CSV,PDF */,
@@ -569,6 +572,7 @@
 				3219E8C31D92099E009A3C66 /* admin_town.csv in Resources */,
 				3254093A1D910F3E0022A20E /* ic_map@2x.png in Resources */,
 				3219E8BE1D920777009A3C66 /* shelter_item.csv in Resources */,
+				320874C71D94CD5000240A56 /* ヒラギノ角ゴシック_W4.ttc in Resources */,
 				3219E8A01D920769009A3C66 /* garbage_english.pdf in Resources */,
 				3254093B1D910F3E0022A20E /* ic_pdf@2x.png in Resources */,
 				3219E8B81D920777009A3C66 /* admin_ward.csv in Resources */,

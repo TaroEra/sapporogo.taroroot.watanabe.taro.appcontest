@@ -10,24 +10,27 @@ import UIKit
 import RealmSwift
 import SafariServices
 
-class ContentsTableViewController: UITableViewController {
+class ContentsTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var tableView: UITableView!
     var pack:Pack?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tabBarController?.tabBar.hidden = true
-        
         self.navigationItem.title = pack?.name
         
         let backButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
         navigationItem.backBarButtonItem = backButtonItem
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
     }
     
     //MARK: - tableViewDelegate
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if let pack = self.pack{
             return pack.contents!.count;
@@ -38,7 +41,7 @@ class ContentsTableViewController: UITableViewController {
         
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         // 再利用するCellを取得する.
         let cell = tableView.dequeueReusableCellWithIdentifier("ContentsCell", forIndexPath: indexPath)
@@ -73,7 +76,7 @@ class ContentsTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         if pack?.contents![indexPath.row].title == "札幌市ごみ分別アプリ"{
             let targetString = "itms://itunes.com/app/札幌市ごみ分別アプリ"

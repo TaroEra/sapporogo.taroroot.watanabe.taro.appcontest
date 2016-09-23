@@ -35,9 +35,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.hidden = false
         self.navigationController?.visibleViewController?.navigationItem.title = "ホーム"
-        navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "HiraKakuProN-W6", size: 14)!]
-        
-        
+        navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name:"HiraginoSans-W4", size: 14)!]
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -117,15 +115,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     //MARK: - tableViewDelegate
     
+    var sections = ["基本パック", "特殊パック"] // セクション名を格納しておく
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
     }
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
-        if section == 0 {return "基本パック"}
-        if section == 1 {return "特殊パック"}
-        return ""
+        return sections[section]
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -169,8 +167,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         self.navigationController?.pushViewController(contentsTableviewController, animated: true);
     }
-    
-    var sections = ["基本パック", "特殊パック"] // セクション名を格納しておく
     
     //この関数内でセクションの設定を行う
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
