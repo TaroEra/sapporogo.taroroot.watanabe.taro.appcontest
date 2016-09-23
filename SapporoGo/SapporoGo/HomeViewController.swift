@@ -161,6 +161,21 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.navigationController?.pushViewController(contentsTableviewController, animated: true);
     }
     
+    var sections = ["基本パック", "特殊パック"] // セクション名を格納しておく
+    
+    //この関数内でセクションの設定を行う
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label : UILabel = UILabel()
+        label.backgroundColor = UIColor(red:0/256, green:0/256, blue:0/256, alpha:0.1)
+        label.textColor = UIColor.whiteColor()
+        if(section == 0){
+            label.text = sections[section]
+        } else if (section == 1){
+            label.text = sections[section]
+        }
+        return label
+    }
+    
     //MARK : - UIImagePickerControllerDelegate
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         
