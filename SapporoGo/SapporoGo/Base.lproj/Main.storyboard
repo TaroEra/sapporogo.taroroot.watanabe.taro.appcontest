@@ -199,6 +199,7 @@
                         <outlet property="profileImageView" destination="yus-G5-GKZ" id="3aD-KR-Kju"/>
                         <outlet property="tableView" destination="Avz-N6-jsr" id="rkU-IP-rHH"/>
                         <outlet property="userNameLabel" destination="ZDN-Ku-sqk" id="o1X-1S-oKp"/>
+                        <outlet property="userPointLabel" destination="AaZ-eu-bRy" id="psc-xx-jJe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBu-cq-nP9" userLabel="First Responder" sceneMemberID="firstResponder"/>

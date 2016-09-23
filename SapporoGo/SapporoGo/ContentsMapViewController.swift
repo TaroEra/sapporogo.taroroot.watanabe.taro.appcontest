@@ -20,6 +20,8 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UserDefaultSurpport.userPoint += 1
+        
         self.mapView.delegate = self
         mapView.userTrackingMode = MKUserTrackingMode.Follow
 

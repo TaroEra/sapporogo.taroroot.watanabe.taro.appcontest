@@ -14,6 +14,8 @@ class PDFViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UserDefaultSurpport.userPoint += 1
     }
     
     override func viewWillAppear(animated: Bool) {

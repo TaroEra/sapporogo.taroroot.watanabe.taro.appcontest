@@ -120,6 +120,8 @@ class ContentsTableViewController: UIViewController, UITableViewDelegate, UITabl
         }
         else if pack?.name == Medicalpack().name{
             
+            UserDefaultSurpport.userPoint += 1
+            
             let realm = try! Realm()
             Medicalpack().initalizeSapporoMedical()
             let selectedTitle = pack?.contents![indexPath.row].title

@@ -14,6 +14,7 @@ class ShelterItemTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UserDefaultSurpport.userPoint += 1
         initializeShelterItem()
     }
     
