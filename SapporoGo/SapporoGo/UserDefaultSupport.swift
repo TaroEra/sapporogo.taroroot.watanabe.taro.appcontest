@@ -25,4 +25,24 @@ class UserDefaultSurpport{
             self.userDefoults.setURL(newValue, forKey: profileImageKey)
         }
     }
+    
+    private static let userNameKey = "userName"
+    class var userName:String?{
+        get{
+            return self.userDefoults.stringForKey(userNameKey)
+        }
+        set{
+            self.userDefoults.setObject(newValue, forKey: userNameKey)
+        }
+    }
+    
+    private static let userPointKey = "userPoint"
+    class var userPoint:Int{
+        get{
+            return self.userDefoults.integerForKey(userPointKey)
+        }
+        set{
+            self.userDefoults.setInteger(newValue, forKey:userPointKey)
+        }
+    }
 }

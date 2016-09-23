@@ -14,6 +14,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     private var selectedCellTiele:String = ""
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var userNameLabel: UILabel!
     
     private var basicPacks:Array<Pack> = []
     private var supportPacks:Array<Pack> = []
@@ -26,6 +27,41 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        if UserDefaultSurpport.userName == nil{
+            //textの表示はalertのみ。ActionSheetだとtextfiledを表示させようとすると
+            //落ちます。
+            let alert:UIAlertController = UIAlertController(title:"ようこそ！！",
+                                                            message: "ユーザー名を入力してください",
+                                                            preferredStyle: UIAlertControllerStyle.Alert)
+            
+            let defaultAction:UIAlertAction = UIAlertAction(title: "OK",
+                                                            style: UIAlertActionStyle.Default,
+                                                            handler:{
+                                                                (action:UIAlertAction!) -> Void in
+                                                                let textFields:Array<UITextField>? =  alert.textFields as Array<UITextField>?
+                                                                if textFields != nil {
+                                                                    for textField:UITextField in textFields! {
+                                                                        //各textにアクセス
+                                                                        print(textField.text)
+                                                                        if textField.text == ""{
+                                                                            textField.text = "ゲスト"
+                                                                        }
+                                                                            UserDefaultSurpport.userName = textField.text
+                                                                            self.userNameLabel.text = textField.text
+                                                                            self.navigationController?.visibleViewController?.navigationItem.title = "ホーム"
+                                                                            self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "HiraKakuProN-W6", size: 14)!]
+                                                                    }
+                                                                }
+            })
+            alert.addAction(defaultAction)
+            
+            //textfiledの追加
+            alert.addTextFieldWithConfigurationHandler({(text:UITextField!) -> Void in
+            })
+            presentViewController(alert, animated: true, completion: nil)
+        }
+        self.userNameLabel.text = UserDefaultSurpport.userName
         
         changeprofileImage()
     }
