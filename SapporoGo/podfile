@@ -3,10 +3,10 @@ platform :ios, "8.0"
 use_frameworks!
 
 pod 'RealmSwift'
+pod 'Toast-Swift'
 #pod 'SDWebImage/WebP', '3.8.1'
 #pod 'Fabric', '1.6.7'
 #pod 'Crashlytics', '3.7.2'
 #pod 'AFNetworking', '3.1.0'
 #pod 'IDMPhotoBrowser', '1.8.4'
 #pod 'SGNavigationProgress', '1.2'
- 

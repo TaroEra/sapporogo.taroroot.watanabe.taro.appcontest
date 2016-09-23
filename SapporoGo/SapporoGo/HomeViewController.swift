@@ -8,6 +8,8 @@
 
 import UIKit
 import Photos
+import Toast_Swift
+import RealmSwift
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
@@ -23,6 +25,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var userTitleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let realm = try! Realm()
+        print(realm.configuration.fileURL)
         
         self.basicPacks = [AdminPack(), Medicalpack(), FinancialPack(), ResourcePack(), DisasterPack()]
         self.supportPacks = [NursingPack(), ChildcarePack()]

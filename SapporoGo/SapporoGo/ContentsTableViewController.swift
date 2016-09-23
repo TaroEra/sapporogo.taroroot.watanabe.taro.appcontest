@@ -84,7 +84,7 @@ class ContentsTableViewController: UIViewController, UITableViewDelegate, UITabl
             let url:NSURL! = NSURL(string:encodedString!)
             UIApplication.sharedApplication().openURL(url)
         }
-
+        
         
         if pack?.contents![indexPath.row].purposeType == "MAP"{
             let contentsMapViewController:ContentsMapViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsMapViewController")) as! ContentsMapViewController
@@ -131,6 +131,9 @@ class ContentsTableViewController: UIViewController, UITableViewDelegate, UITabl
             let safariViewController = SFSafariViewController(URL:url)
             safariViewController.navigationItem.title = self.pack?.contents![indexPath.row].title
             self.navigationController?.pushViewController(safariViewController, animated: true)
+            
+            self.view.window?.makeToast("get 1pt", duration: 1.0, position:CGPointMake((UIScreen.mainScreen().bounds.width)/2, (UIScreen.mainScreen().bounds.height)-80))
+
         }
         else if pack?.contents![indexPath.row].fileType == "pdf"{
             let pdfViewController:PDFViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("PDFViewController")) as! PDFViewController

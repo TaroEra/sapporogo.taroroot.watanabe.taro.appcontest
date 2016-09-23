@@ -9,12 +9,19 @@
 import UIKit
 import RealmSwift
 
-class ShelterItemTableViewController: UITableViewController {
+class ShelterItemTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         UserDefaultSurpport.userPoint += 1
+        self.view.makeToast("get 1pt", duration: 1.0, position:.Bottom)
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        
         initializeShelterItem()
     }
     
@@ -38,12 +45,12 @@ class ShelterItemTableViewController: UITableViewController {
         }
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let count = try! Realm().objects(ShelterItem).count
         return count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
         let realm = try! Realm()
         
@@ -55,14 +62,11 @@ class ShelterItemTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 100 // 適当なセルの高さ
     }
     
-    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 10 // セルの上部のスペース
-    }
-    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 10 // セルの下部のスペース
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.0
     }
 }

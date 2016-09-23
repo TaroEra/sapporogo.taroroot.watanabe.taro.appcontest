@@ -21,10 +21,11 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
         super.viewDidLoad()
         
         UserDefaultSurpport.userPoint += 1
+        self.view.makeToast("get 1pt", duration: 1.0, position:.Bottom)
         
         self.mapView.delegate = self
         mapView.userTrackingMode = MKUserTrackingMode.Follow
-
+        
         let coordinate = CLLocationCoordinate2DMake(43.062096, 141.354376)
         let span = MKCoordinateSpanMake(0.1, 0.1)
         let region = MKCoordinateRegionMake(coordinate, span)
