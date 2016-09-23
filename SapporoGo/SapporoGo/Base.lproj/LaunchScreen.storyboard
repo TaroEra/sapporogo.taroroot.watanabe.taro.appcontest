@@ -14,14 +14,39 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_app.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nBj-oG-dVH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sapporogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQY-HE-jzL">
+                                <rect key="frame" x="98" y="268" width="125" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="nBj-oG-dVH" secondAttribute="bottom" id="4WY-MK-7KY"/>
+                            <constraint firstAttribute="trailing" secondItem="nBj-oG-dVH" secondAttribute="trailing" id="4xE-ND-Qbf"/>
+                            <constraint firstItem="nBj-oG-dVH" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="MfV-BX-ysu"/>
+                            <constraint firstItem="LQY-HE-jzL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SrZ-tI-Y3M"/>
+                            <constraint firstItem="nBj-oG-dVH" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="cER-4q-RdR"/>
+                            <constraint firstItem="LQY-HE-jzL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="pCU-Gg-cJR"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg_app.jpg" width="1150" height="750"/>
+    </resources>
 </document>
