@@ -91,6 +91,8 @@
 
 /* Begin PBXFileReference section */
 		320874C61D94CD5000240A56 /* ヒラギノ角ゴシック_W4.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ヒラギノ角ゴシック_W4.ttc"; sourceTree = "<group>"; };
+		320874C81D94D0B500240A56 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos/RealmSwift.framework"; sourceTree = "<group>"; };
+		320874CA1D94D0CC00240A56 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos/Realm.framework"; sourceTree = "<group>"; };
 		320C28581D9173510064DBC5 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		3219E89C1D920769009A3C66 /* garbage_chinese.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = garbage_chinese.pdf; path = "CSV,PDF/garbage_chinese.pdf"; sourceTree = "<group>"; };
 		3219E89D1D920769009A3C66 /* garbage_english.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = garbage_english.pdf; path = "CSV,PDF/garbage_english.pdf"; sourceTree = "<group>"; };
@@ -170,11 +172,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				326383CC1D87DE9000DED761 /* Social.framework in Frameworks */,
 				32E1EDC01D87F5EF004E3D35 /* FBSDKCoreKit.framework in Frameworks */,
+				32E1EDC21D87F5FD004E3D35 /* FBSDKLoginKit.framework in Frameworks */,
+				326383CC1D87DE9000DED761 /* Social.framework in Frameworks */,
 				326383CA1D87DE8800DED761 /* Accounts.framework in Frameworks */,
 				3257AB9B1D82ADF10036E6E8 /* CoreFoundation.framework in Frameworks */,
-				32E1EDC21D87F5FD004E3D35 /* FBSDKLoginKit.framework in Frameworks */,
 				3257AB951D82A8BC0036E6E8 /* MapKit.framework in Frameworks */,
 				D2FCB61743471612DA32D74D /* Pods.framework in Frameworks */,
 			);
@@ -427,6 +429,8 @@
 		6A5A453E5B131B50ED39F08E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				320874CA1D94D0CC00240A56 /* Realm.framework */,
+				320874C81D94D0B500240A56 /* RealmSwift.framework */,
 				326383CB1D87DE9000DED761 /* Social.framework */,
 				326383C91D87DE8800DED761 /* Accounts.framework */,
 				3257AB9A1D82ADF10036E6E8 /* CoreFoundation.framework */,
@@ -830,6 +834,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SapporoGo/SapporoGo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -848,6 +853,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.era.watanabe.sapporo.go.SapporoGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SapporoGo/SapporoGo-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
