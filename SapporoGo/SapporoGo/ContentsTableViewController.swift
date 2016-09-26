@@ -92,32 +92,6 @@ class ContentsTableViewController: UIViewController, UITableViewDelegate, UITabl
             contentsMapViewController.navigationItem.title = self.pack?.contents![indexPath.row].title
             self.navigationController?.pushViewController(contentsMapViewController, animated: true)
         }
-        else if pack?.name == FinancialPack().name{
-            let realm = try! Realm()
-            let title:String! =  pack!.contents![indexPath.row].title
-            let query = "name ='" + title + "'"
-            let results = realm.objects(FinancialInstitutions).filter(query)
-            var contentsItems = Array<ContentsItem>()
-            
-            for result in results{
-                contentsItems.append(ContentsItem(title:result.sub_name, fileName:"", fileType:"", purposeType:"Financial_LINK"))
-            }
-            let contentsTableviewController:ContentsTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsTableViewController")) as! ContentsTableViewController
-            contentsTableviewController.pack = Pack(name:title!, contents:contentsItems)
-            contentsTableviewController.navigationItem.title = self.pack?.contents![indexPath.row].title
-            self.navigationController?.pushViewController(contentsTableviewController, animated: true)
-        }
-        else if pack?.contents![indexPath.row].purposeType == "Financial_LINK"{
-            
-            let realm = try! Realm()
-            let selectedTitle = pack?.contents![indexPath.row].title
-            let query = "sub_name = '" + selectedTitle! + "'"
-            let financialInstitutions = realm.objects(FinancialInstitutions).filter(query).first
-            let url = NSURL(string:(financialInstitutions?.mobile_url)!)!
-            let safariViewController = SFSafariViewController(URL:url)
-            safariViewController.navigationItem.title = self.pack?.contents![indexPath.row].title
-            self.navigationController?.pushViewController(safariViewController, animated: true)
-        }
         else if pack?.name == Medicalpack().name{
             
             UserDefaultSurpport.userPoint += 1

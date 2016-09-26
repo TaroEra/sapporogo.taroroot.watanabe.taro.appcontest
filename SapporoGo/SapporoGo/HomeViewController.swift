@@ -28,7 +28,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let realm = try! Realm()
         print(realm.configuration.fileURL)
         
-        self.basicPacks = [AdminPack(), Medicalpack(), FinancialPack(), ResourcePack(), DisasterPack()]
+        self.basicPacks = [AdminPack(), Medicalpack(), ResourcePack(), DisasterPack()]
         self.supportPacks = [NursingPack(), ChildcarePack()]
         
         self.tableView.delegate = self
@@ -170,10 +170,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             pack = self.supportPacks[indexPath.row]
         }
         contentsTableviewController.pack = pack;
-        if pack.name == FinancialPack().name{
-            FinancialPack().initializeFinantialInstitutions()
-            contentsTableviewController.pack?.contents = FinancialPack().createContents()
-        }
         
         self.navigationController?.pushViewController(contentsTableviewController, animated: true);
     }
