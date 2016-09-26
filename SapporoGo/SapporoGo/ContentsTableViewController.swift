@@ -78,14 +78,6 @@ class ContentsTableViewController: UIViewController, UITableViewDelegate, UITabl
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        if pack?.contents![indexPath.row].title == "札幌市ごみ分別アプリ"{
-            let targetString = "itms://itunes.com/app/札幌市ごみ分別アプリ"
-            let encodedString = targetString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
-            let url:NSURL! = NSURL(string:encodedString!)
-            UIApplication.sharedApplication().openURL(url)
-        }
-        
-        
         if pack?.contents![indexPath.row].purposeType == "MAP"{
             let contentsMapViewController:ContentsMapViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsMapViewController")) as! ContentsMapViewController
             contentsMapViewController.contentsItem = self.pack?.contents![indexPath.row]
@@ -96,17 +88,17 @@ class ContentsTableViewController: UIViewController, UITableViewDelegate, UITabl
             
             UserDefaultSurpport.userPoint += 1
             
-            let realm = try! Realm()
-            Medicalpack().initalizeSapporoMedical()
-            let selectedTitle = pack?.contents![indexPath.row].title
-            let query = "name = '" + selectedTitle! + "'"
-            let sapporoMedical = realm.objects(SapproMedicak).filter(query).first
-            let url = NSURL(string:(sapporoMedical?.url)!)!
-            let safariViewController = SFSafariViewController(URL:url)
-            safariViewController.navigationItem.title = self.pack?.contents![indexPath.row].title
-            self.navigationController?.pushViewController(safariViewController, animated: true)
-            
-            self.view.window?.makeToast("get 1pt", duration: 1.0, position:CGPointMake((UIScreen.mainScreen().bounds.width)/2, (UIScreen.mainScreen().bounds.height)-80))
+//            let realm = try! Realm()
+//            Medicalpack().initalizeSapporoMedical()
+//            let selectedTitle = pack?.contents![indexPath.row].title
+//            let query = "name = '" + selectedTitle! + "'"
+//            let sapporoMedical = realm.objects(SapproMedicak).filter(query).first
+//            let url = NSURL(string:(sapporoMedical?.url)!)!
+//            let safariViewController = SFSafariViewController(URL:url)
+//            safariViewController.navigationItem.title = self.pack?.contents![indexPath.row].title
+//            self.navigationController?.pushViewController(safariViewController, animated: true)
+//            
+//            self.view.window?.makeToast("get 1pt", duration: 1.0, position:CGPointMake((UIScreen.mainScreen().bounds.width)/2, (UIScreen.mainScreen().bounds.height)-80))
 
         }
         else if pack?.contents![indexPath.row].fileType == "pdf"{
