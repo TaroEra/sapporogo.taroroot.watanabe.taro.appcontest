@@ -83,7 +83,7 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
         }
     }
     
-    func createMapObjectValue(let sectionItem:NSArray) -> NSDictionary{
+    func createMapObjectValue( sectionItem:NSArray) -> NSDictionary{
         
         let array = sectionItem
         
