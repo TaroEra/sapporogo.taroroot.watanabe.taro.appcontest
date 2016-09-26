@@ -103,7 +103,6 @@ class ContentsTableViewController: UIViewController, UITableViewDelegate, UITabl
         }
         else if pack?.contents![indexPath.row].fileType == "pdf"{
             let pdfViewController:PDFViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("PDFViewController")) as! PDFViewController
-            pdfViewController.view.frame = UIScreen.mainScreen().bounds
             pdfViewController.contentsItem = pack?.contents![indexPath.row]
             pdfViewController.navigationItem.title = self.pack?.contents![indexPath.row].title
             self.navigationController?.pushViewController(pdfViewController, animated: true)

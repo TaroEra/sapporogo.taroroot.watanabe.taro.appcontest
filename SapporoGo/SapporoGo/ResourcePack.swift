@@ -12,9 +12,15 @@ class ResourcePack: Pack {
     
     init(){
         super.init(name: "ごみ・資源", contents:[
-            ContentsItem(title:"ごみ情報（English）", fileName:"garbage_english", fileType:"pdf", purposeType:"PDF"),
-            ContentsItem(title:"ごみ情報（Korean）", fileName:"garbage_korean", fileType:"pdf", purposeType:"PDF"),
-            ContentsItem(title:"ごみ情報（Chinese）", fileName:"garbage_chinese", fileType:"pdf", purposeType:"PDF"),
-            ContentsItem(title:"札幌市ごみ分別アプリ", fileName:"", fileType:"", purposeType:"WEB")])
+            
+            ContentsItem(title:"ごみ情報（English）", fileName:"garbage_english", fileType:"pdf", purposeType:"PDF",
+                contentsName:"ごみ分けガイド外国語版", contentsUrl:"http://www.city.sapporo.jp/seiso/gomi/gomiwake_guide/foreign.html"),
+            
+            ContentsItem(title:"ごみ情報（Korean）", fileName:"garbage_korean", fileType:"pdf", purposeType:"PDF",
+                contentsName:"ごみ分けガイド外国語版", contentsUrl:"http://www.city.sapporo.jp/seiso/gomi/gomiwake_guide/foreign.html"),
+            
+            ContentsItem(title:"ごみ情報（Chinese）", fileName:"garbage_chinese", fileType:"pdf", purposeType:"PDF",
+                contentsName:"ごみ分けガイド外国語版", contentsUrl:"http://www.city.sapporo.jp/seiso/gomi/gomiwake_guide/foreign.html")
+        ])
     }
 }

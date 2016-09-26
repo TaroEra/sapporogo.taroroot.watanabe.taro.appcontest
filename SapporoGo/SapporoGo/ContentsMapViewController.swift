@@ -9,17 +9,20 @@
 import UIKit
 import RealmSwift
 import MapKit
+import SafariServices
 
 class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     var contentsItem:ContentsItem?
     private var locationManager:CLLocationManager!
+    @IBOutlet weak var contentsLinkButton: UIButton!
     
     @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.contentsLinkButton.setTitle(contentsItem!.contentsName, forState: UIControlState.Normal)
         UserDefaultSurpport.userPoint += 1
         self.view.makeToast("get 1pt", duration: 1.0, position:.Bottom)
         
@@ -114,6 +117,11 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
                       "phone_number":phoneNumber,
                       "fax_number":faxNumber]
         return valule
+    }
+    
+    @IBAction func onTapCreditbutton(sender: AnyObject) {
+        let safariViewController = SFSafariViewController(URL:NSURL(string:contentsItem!.contentsUrl!)!)
+        self.navigationController?.pushViewController(safariViewController, animated: true)
     }
     
     //MARK: - MapViewDelegate

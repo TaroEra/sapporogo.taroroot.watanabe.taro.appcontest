@@ -15,11 +15,21 @@ class ContentsItem{
     var fileName:String?
     var fileType:String?
     var purposeType:String?
+    var contentsName:String?
+    var contentsUrl:String?
     
-    init (title:String?, fileName:String?, fileType:String?, purposeType:String?){
+    init (title:String?,
+          fileName:String?,
+          fileType:String?,
+          purposeType:String?,
+          contentsName:String?,
+          contentsUrl:String?){
+        
         self.title = title
         self.fileName = fileName
         self.fileType = fileType
         self.purposeType = purposeType
+        self.contentsName = contentsName
+        self.contentsUrl = contentsUrl;
     }
 }
