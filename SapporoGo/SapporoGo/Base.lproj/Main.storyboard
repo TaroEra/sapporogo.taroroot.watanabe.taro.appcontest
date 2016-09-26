@@ -196,7 +196,7 @@
         <scene sceneID="dmD-Hx-fH2">
             <objects>
                 <navigationController storyboardIdentifier="HomeNavigationController" id="LeL-Au-cNN" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Zpb-we-ep3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zpb-we-ep3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

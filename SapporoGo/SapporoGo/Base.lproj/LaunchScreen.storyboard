@@ -15,31 +15,45 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_app.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nBj-oG-dVH"/>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4t-5W-liv">
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="札幌" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4t-5W-liv">
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="100"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="shadowColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="3" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="市民" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdg-Vx-zYF">
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="即効!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OV-j2-Frp">
+                                <fontDescription key="fontDescription" name="Osaka" family="Osaka" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="nBj-oG-dVH" secondAttribute="bottom" id="4WY-MK-7KY"/>
                             <constraint firstAttribute="trailing" secondItem="nBj-oG-dVH" secondAttribute="trailing" id="4xE-ND-Qbf"/>
+                            <constraint firstItem="a4t-5W-liv" firstAttribute="top" secondItem="5OV-j2-Frp" secondAttribute="bottom" id="5Hh-WC-UEJ"/>
+                            <constraint firstItem="mdg-Vx-zYF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DQ5-UQ-6gX"/>
                             <constraint firstItem="a4t-5W-liv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Lk0-Lx-rdT"/>
                             <constraint firstItem="nBj-oG-dVH" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="MfV-BX-ysu"/>
                             <constraint firstItem="nBj-oG-dVH" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="cER-4q-RdR"/>
+                            <constraint firstItem="mdg-Vx-zYF" firstAttribute="top" secondItem="a4t-5W-liv" secondAttribute="bottom" id="fhd-0G-N5U"/>
+                            <constraint firstItem="5OV-j2-Frp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kpA-uP-1iS"/>
                             <constraint firstItem="a4t-5W-liv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="uY4-PE-jO7"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
     <resources>
