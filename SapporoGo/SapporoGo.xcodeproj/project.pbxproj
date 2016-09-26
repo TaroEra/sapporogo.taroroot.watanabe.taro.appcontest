@@ -61,6 +61,35 @@
 		326383CC1D87DE9000DED761 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326383CB1D87DE9000DED761 /* Social.framework */; };
 		326383CE1D87DEC200DED761 /* SnsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326383CD1D87DEC200DED761 /* SnsViewController.swift */; };
 		328A9B5A1D992B12006203D6 /* ic_copyright_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B591D992B12006203D6 /* ic_copyright_black@2x.png */; };
+		328A9B611D992CB5006203D6 /* 301_医療情報_高齢予防接種.csv in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B5F1D992CB5006203D6 /* 301_医療情報_高齢予防接種.csv */; };
+		328A9B621D992CB5006203D6 /* 330_医療情報_病院_カテゴリーなし.csv in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B601D992CB5006203D6 /* 330_医療情報_病院_カテゴリーなし.csv */; };
+		328A9B641D992CC7006203D6 /* 505_防災_給水_調整前.csv in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B631D992CC7006203D6 /* 505_防災_給水_調整前.csv */; };
+		328A9B661D992CD3006203D6 /* 600_育児_認可保育所.csv in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B651D992CD3006203D6 /* 600_育児_認可保育所.csv */; };
+		328A9B681D992CDB006203D6 /* 700_施設情報_有料老人ホーム.csv in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B671D992CDB006203D6 /* 700_施設情報_有料老人ホーム.csv */; };
+		328A9B6D1D992CE6006203D6 /* 900_エクストラ_札幌交通機関.csv in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B691D992CE6006203D6 /* 900_エクストラ_札幌交通機関.csv */; };
+		328A9B6E1D992CE6006203D6 /* 901_エクストラ_道有林語録.csv in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B6A1D992CE6006203D6 /* 901_エクストラ_道有林語録.csv */; };
+		328A9B6F1D992CE6006203D6 /* 902_エクストラ_札幌市内スーパー銭湯.csv in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B6B1D992CE6006203D6 /* 902_エクストラ_札幌市内スーパー銭湯.csv */; };
+		328A9B701D992CE6006203D6 /* 905_エクストラ_公園トイレ中央区.csv in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B6C1D992CE6006203D6 /* 905_エクストラ_公園トイレ中央区.csv */; };
+		328A9B741D99315D006203D6 /* ExtraPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A9B731D99315D006203D6 /* ExtraPack.swift */; };
+		328A9B881D993320006203D6 /* 201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B751D993320006203D6 /* 201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf */; };
+		328A9B891D993320006203D6 /* 201_02_【特集】ごみを減らす。未来を創造する。.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B761D993320006203D6 /* 201_02_【特集】ごみを減らす。未来を創造する。.pdf */; };
+		328A9B8A1D993320006203D6 /* 201_03_資源とごみの分け方・出し方一覧.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B771D993320006203D6 /* 201_03_資源とごみの分け方・出し方一覧.pdf */; };
+		328A9B8B1D993320006203D6 /* 201_04_指定ごみ袋まるわかり解説／排出ルール.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B781D993320006203D6 /* 201_04_指定ごみ袋まるわかり解説／排出ルール.pdf */; };
+		328A9B8C1D993320006203D6 /* 201_05_燃やせるごみ（有料）週2回.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B791D993320006203D6 /* 201_05_燃やせるごみ（有料）週2回.pdf */; };
+		328A9B8D1D993320006203D6 /* 201_06_燃やせないごみ（有料）4週1回.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B7A1D993320006203D6 /* 201_06_燃やせないごみ（有料）4週1回.pdf */; };
+		328A9B8E1D993320006203D6 /* 201_07_容器包装プラスチック（無料）週1回.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B7B1D993320006203D6 /* 201_07_容器包装プラスチック（無料）週1回.pdf */; };
+		328A9B8F1D993320006203D6 /* 201_08_びん・缶・ペットボトル（無料）週1回／枝・葉・草（無料）.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B7C1D993320006203D6 /* 201_08_びん・缶・ペットボトル（無料）週1回／枝・葉・草（無料）.pdf */; };
+		328A9B901D993320006203D6 /* 201_09_雑がみ（無料）2週1回.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B7D1D993320006203D6 /* 201_09_雑がみ（無料）2週1回.pdf */; };
+		328A9B911D993320006203D6 /* 201_10_大型ごみ（有料）週1回.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B7E1D993320006203D6 /* 201_10_大型ごみ（有料）週1回.pdf */; };
+		328A9B921D993320006203D6 /* 201_11_大型ごみの申込方法と手順／主な大型ごみの処理手数料.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B7F1D993320006203D6 /* 201_11_大型ごみの申込方法と手順／主な大型ごみの処理手数料.pdf */; };
+		328A9B931D993320006203D6 /* 201_12_集団資源回収／資源物の回収拠点.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B801D993320006203D6 /* 201_12_集団資源回収／資源物の回収拠点.pdf */; };
+		328A9B941D993320006203D6 /* 201_13_小型家電リサイクル地区リサイクルセンター／家庭系古紙引取案内.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B811D993320006203D6 /* 201_13_小型家電リサイクル地区リサイクルセンター／家庭系古紙引取案内.pdf */; };
+		328A9B951D993320006203D6 /* 201_14_生ごみリサイクル／さわやか収集／ライターのガスの抜き方.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B821D993320006203D6 /* 201_14_生ごみリサイクル／さわやか収集／ライターのガスの抜き方.pdf */; };
+		328A9B961D993320006203D6 /* 201_15_資源のゆくえ（札幌市のリサイクル）.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B831D993320006203D6 /* 201_15_資源のゆくえ（札幌市のリサイクル）.pdf */; };
+		328A9B971D993320006203D6 /* 201_16_自己搬入（家庭ごみを自分で持ち込むこともできます）／市が収集しないもの(処理が困難なもの・危険物など).pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B841D993320006203D6 /* 201_16_自己搬入（家庭ごみを自分で持ち込むこともできます）／市が収集しないもの(処理が困難なもの・危険物など).pdf */; };
+		328A9B981D993320006203D6 /* 201_17_市が収集しないもの(家電4品目・パソコン）.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B851D993320006203D6 /* 201_17_市が収集しないもの(家電4品目・パソコン）.pdf */; };
+		328A9B991D993320006203D6 /* 201_18_資源物の回収拠点一覧.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B861D993320006203D6 /* 201_18_資源物の回収拠点一覧.pdf */; };
+		328A9B9A1D993320006203D6 /* 201_19_資源とごみの分別辞典.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B871D993320006203D6 /* 201_19_資源とごみの分別辞典.pdf */; };
 		32BB23B71D8BD3DB00F8C7F5 /* MapObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB23B61D8BD3DB00F8C7F5 /* MapObject.swift */; };
 		32D155AF1D92576100327805 /* ic_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D155AE1D92576100327805 /* ic_list@2x.png */; };
 		32D155B11D925FD800327805 /* ic_web@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D155B01D925FD800327805 /* ic_web@2x.png */; };
@@ -149,6 +178,35 @@
 		326383CB1D87DE9000DED761 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		326383CD1D87DEC200DED761 /* SnsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnsViewController.swift; sourceTree = "<group>"; };
 		328A9B591D992B12006203D6 /* ic_copyright_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_copyright_black@2x.png"; path = "Images/ic_copyright_black@2x.png"; sourceTree = "<group>"; };
+		328A9B5F1D992CB5006203D6 /* 301_医療情報_高齢予防接種.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "301_医療情報_高齢予防接種.csv"; path = "CSV,PDF/301_医療情報_高齢予防接種.csv"; sourceTree = "<group>"; };
+		328A9B601D992CB5006203D6 /* 330_医療情報_病院_カテゴリーなし.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "330_医療情報_病院_カテゴリーなし.csv"; path = "CSV,PDF/330_医療情報_病院_カテゴリーなし.csv"; sourceTree = "<group>"; };
+		328A9B631D992CC7006203D6 /* 505_防災_給水_調整前.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "505_防災_給水_調整前.csv"; path = "CSV,PDF/505_防災_給水_調整前.csv"; sourceTree = "<group>"; };
+		328A9B651D992CD3006203D6 /* 600_育児_認可保育所.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "600_育児_認可保育所.csv"; path = "CSV,PDF/600_育児_認可保育所.csv"; sourceTree = "<group>"; };
+		328A9B671D992CDB006203D6 /* 700_施設情報_有料老人ホーム.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "700_施設情報_有料老人ホーム.csv"; path = "CSV,PDF/700_施設情報_有料老人ホーム.csv"; sourceTree = "<group>"; };
+		328A9B691D992CE6006203D6 /* 900_エクストラ_札幌交通機関.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "900_エクストラ_札幌交通機関.csv"; path = "CSV,PDF/900_エクストラ_札幌交通機関.csv"; sourceTree = "<group>"; };
+		328A9B6A1D992CE6006203D6 /* 901_エクストラ_道有林語録.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "901_エクストラ_道有林語録.csv"; path = "CSV,PDF/901_エクストラ_道有林語録.csv"; sourceTree = "<group>"; };
+		328A9B6B1D992CE6006203D6 /* 902_エクストラ_札幌市内スーパー銭湯.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "902_エクストラ_札幌市内スーパー銭湯.csv"; path = "CSV,PDF/902_エクストラ_札幌市内スーパー銭湯.csv"; sourceTree = "<group>"; };
+		328A9B6C1D992CE6006203D6 /* 905_エクストラ_公園トイレ中央区.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "905_エクストラ_公園トイレ中央区.csv"; path = "CSV,PDF/905_エクストラ_公園トイレ中央区.csv"; sourceTree = "<group>"; };
+		328A9B731D99315D006203D6 /* ExtraPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraPack.swift; sourceTree = "<group>"; };
+		328A9B751D993320006203D6 /* 201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf"; path = "CSV,PDF/201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf"; sourceTree = "<group>"; };
+		328A9B761D993320006203D6 /* 201_02_【特集】ごみを減らす。未来を創造する。.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_02_【特集】ごみを減らす。未来を創造する。.pdf"; path = "CSV,PDF/201_02_【特集】ごみを減らす。未来を創造する。.pdf"; sourceTree = "<group>"; };
+		328A9B771D993320006203D6 /* 201_03_資源とごみの分け方・出し方一覧.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_03_資源とごみの分け方・出し方一覧.pdf"; path = "CSV,PDF/201_03_資源とごみの分け方・出し方一覧.pdf"; sourceTree = "<group>"; };
+		328A9B781D993320006203D6 /* 201_04_指定ごみ袋まるわかり解説／排出ルール.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_04_指定ごみ袋まるわかり解説／排出ルール.pdf"; path = "CSV,PDF/201_04_指定ごみ袋まるわかり解説／排出ルール.pdf"; sourceTree = "<group>"; };
+		328A9B791D993320006203D6 /* 201_05_燃やせるごみ（有料）週2回.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_05_燃やせるごみ（有料）週2回.pdf"; path = "CSV,PDF/201_05_燃やせるごみ（有料）週2回.pdf"; sourceTree = "<group>"; };
+		328A9B7A1D993320006203D6 /* 201_06_燃やせないごみ（有料）4週1回.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_06_燃やせないごみ（有料）4週1回.pdf"; path = "CSV,PDF/201_06_燃やせないごみ（有料）4週1回.pdf"; sourceTree = "<group>"; };
+		328A9B7B1D993320006203D6 /* 201_07_容器包装プラスチック（無料）週1回.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_07_容器包装プラスチック（無料）週1回.pdf"; path = "CSV,PDF/201_07_容器包装プラスチック（無料）週1回.pdf"; sourceTree = "<group>"; };
+		328A9B7C1D993320006203D6 /* 201_08_びん・缶・ペットボトル（無料）週1回／枝・葉・草（無料）.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_08_びん・缶・ペットボトル（無料）週1回／枝・葉・草（無料）.pdf"; path = "CSV,PDF/201_08_びん・缶・ペットボトル（無料）週1回／枝・葉・草（無料）.pdf"; sourceTree = "<group>"; };
+		328A9B7D1D993320006203D6 /* 201_09_雑がみ（無料）2週1回.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_09_雑がみ（無料）2週1回.pdf"; path = "CSV,PDF/201_09_雑がみ（無料）2週1回.pdf"; sourceTree = "<group>"; };
+		328A9B7E1D993320006203D6 /* 201_10_大型ごみ（有料）週1回.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_10_大型ごみ（有料）週1回.pdf"; path = "CSV,PDF/201_10_大型ごみ（有料）週1回.pdf"; sourceTree = "<group>"; };
+		328A9B7F1D993320006203D6 /* 201_11_大型ごみの申込方法と手順／主な大型ごみの処理手数料.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_11_大型ごみの申込方法と手順／主な大型ごみの処理手数料.pdf"; path = "CSV,PDF/201_11_大型ごみの申込方法と手順／主な大型ごみの処理手数料.pdf"; sourceTree = "<group>"; };
+		328A9B801D993320006203D6 /* 201_12_集団資源回収／資源物の回収拠点.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_12_集団資源回収／資源物の回収拠点.pdf"; path = "CSV,PDF/201_12_集団資源回収／資源物の回収拠点.pdf"; sourceTree = "<group>"; };
+		328A9B811D993320006203D6 /* 201_13_小型家電リサイクル地区リサイクルセンター／家庭系古紙引取案内.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_13_小型家電リサイクル地区リサイクルセンター／家庭系古紙引取案内.pdf"; path = "CSV,PDF/201_13_小型家電リサイクル地区リサイクルセンター／家庭系古紙引取案内.pdf"; sourceTree = "<group>"; };
+		328A9B821D993320006203D6 /* 201_14_生ごみリサイクル／さわやか収集／ライターのガスの抜き方.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_14_生ごみリサイクル／さわやか収集／ライターのガスの抜き方.pdf"; path = "CSV,PDF/201_14_生ごみリサイクル／さわやか収集／ライターのガスの抜き方.pdf"; sourceTree = "<group>"; };
+		328A9B831D993320006203D6 /* 201_15_資源のゆくえ（札幌市のリサイクル）.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_15_資源のゆくえ（札幌市のリサイクル）.pdf"; path = "CSV,PDF/201_15_資源のゆくえ（札幌市のリサイクル）.pdf"; sourceTree = "<group>"; };
+		328A9B841D993320006203D6 /* 201_16_自己搬入（家庭ごみを自分で持ち込むこともできます）／市が収集しないもの(処理が困難なもの・危険物など).pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_16_自己搬入（家庭ごみを自分で持ち込むこともできます）／市が収集しないもの(処理が困難なもの・危険物など).pdf"; path = "CSV,PDF/201_16_自己搬入（家庭ごみを自分で持ち込むこともできます）／市が収集しないもの(処理が困難なもの・危険物など).pdf"; sourceTree = "<group>"; };
+		328A9B851D993320006203D6 /* 201_17_市が収集しないもの(家電4品目・パソコン）.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_17_市が収集しないもの(家電4品目・パソコン）.pdf"; path = "CSV,PDF/201_17_市が収集しないもの(家電4品目・パソコン）.pdf"; sourceTree = "<group>"; };
+		328A9B861D993320006203D6 /* 201_18_資源物の回収拠点一覧.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_18_資源物の回収拠点一覧.pdf"; path = "CSV,PDF/201_18_資源物の回収拠点一覧.pdf"; sourceTree = "<group>"; };
+		328A9B871D993320006203D6 /* 201_19_資源とごみの分別辞典.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_19_資源とごみの分別辞典.pdf"; path = "CSV,PDF/201_19_資源とごみの分別辞典.pdf"; sourceTree = "<group>"; };
 		32BB23B61D8BD3DB00F8C7F5 /* MapObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapObject.swift; sourceTree = "<group>"; };
 		32D155AE1D92576100327805 /* ic_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_list@2x.png"; path = "Images/ic_list@2x.png"; sourceTree = "<group>"; };
 		32D155B01D925FD800327805 /* ic_web@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_web@2x.png"; path = "Images/ic_web@2x.png"; sourceTree = "<group>"; };
@@ -227,6 +285,8 @@
 		323CC14A1D88DFB90099EAC7 /* CSV,PDF */ = {
 			isa = PBXGroup;
 			children = (
+				328A9B721D992D00006203D6 /* エクストラ */,
+				328A9B711D992CF1006203D6 /* 育児 */,
 				325409131D90C2520022A20E /* 行政 */,
 				3254091B1D90C50C0022A20E /* 医療 */,
 				3254091C1D90C5F70022A20E /* ゴミ・資源 */,
@@ -246,6 +306,7 @@
 				325162E61D8A7C620031E836 /* DisasterPack.swift */,
 				325162E21D8A7C2F0031E836 /* ChildcarePack.swift */,
 				325162E41D8A7C450031E836 /* NursingPack.swift */,
+				328A9B731D99315D006203D6 /* ExtraPack.swift */,
 			);
 			name = Packs;
 			sourceTree = "<group>";
@@ -278,6 +339,7 @@
 		325409151D90C2A50022A20E /* 防災 */ = {
 			isa = PBXGroup;
 			children = (
+				328A9B631D992CC7006203D6 /* 505_防災_給水_調整前.csv */,
 				3219E8AD1D920777009A3C66 /* shelter_core.csv */,
 				3219E8AF1D920777009A3C66 /* shelter_region.csv */,
 				3219E8B01D920777009A3C66 /* shelter_wide.csv */,
@@ -289,6 +351,7 @@
 		325409161D90C3510022A20E /* 介護 */ = {
 			isa = PBXGroup;
 			children = (
+				328A9B671D992CDB006203D6 /* 700_施設情報_有料老人ホーム.csv */,
 			);
 			name = "介護";
 			sourceTree = "<group>";
@@ -296,6 +359,8 @@
 		3254091B1D90C50C0022A20E /* 医療 */ = {
 			isa = PBXGroup;
 			children = (
+				328A9B5F1D992CB5006203D6 /* 301_医療情報_高齢予防接種.csv */,
+				328A9B601D992CB5006203D6 /* 330_医療情報_病院_カテゴリーなし.csv */,
 			);
 			name = "医療";
 			sourceTree = "<group>";
@@ -303,6 +368,25 @@
 		3254091C1D90C5F70022A20E /* ゴミ・資源 */ = {
 			isa = PBXGroup;
 			children = (
+				328A9B751D993320006203D6 /* 201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf */,
+				328A9B761D993320006203D6 /* 201_02_【特集】ごみを減らす。未来を創造する。.pdf */,
+				328A9B771D993320006203D6 /* 201_03_資源とごみの分け方・出し方一覧.pdf */,
+				328A9B781D993320006203D6 /* 201_04_指定ごみ袋まるわかり解説／排出ルール.pdf */,
+				328A9B791D993320006203D6 /* 201_05_燃やせるごみ（有料）週2回.pdf */,
+				328A9B7A1D993320006203D6 /* 201_06_燃やせないごみ（有料）4週1回.pdf */,
+				328A9B7B1D993320006203D6 /* 201_07_容器包装プラスチック（無料）週1回.pdf */,
+				328A9B7C1D993320006203D6 /* 201_08_びん・缶・ペットボトル（無料）週1回／枝・葉・草（無料）.pdf */,
+				328A9B7D1D993320006203D6 /* 201_09_雑がみ（無料）2週1回.pdf */,
+				328A9B7E1D993320006203D6 /* 201_10_大型ごみ（有料）週1回.pdf */,
+				328A9B7F1D993320006203D6 /* 201_11_大型ごみの申込方法と手順／主な大型ごみの処理手数料.pdf */,
+				328A9B801D993320006203D6 /* 201_12_集団資源回収／資源物の回収拠点.pdf */,
+				328A9B811D993320006203D6 /* 201_13_小型家電リサイクル地区リサイクルセンター／家庭系古紙引取案内.pdf */,
+				328A9B821D993320006203D6 /* 201_14_生ごみリサイクル／さわやか収集／ライターのガスの抜き方.pdf */,
+				328A9B831D993320006203D6 /* 201_15_資源のゆくえ（札幌市のリサイクル）.pdf */,
+				328A9B841D993320006203D6 /* 201_16_自己搬入（家庭ごみを自分で持ち込むこともできます）／市が収集しないもの(処理が困難なもの・危険物など).pdf */,
+				328A9B851D993320006203D6 /* 201_17_市が収集しないもの(家電4品目・パソコン）.pdf */,
+				328A9B861D993320006203D6 /* 201_18_資源物の回収拠点一覧.pdf */,
+				328A9B871D993320006203D6 /* 201_19_資源とごみの分別辞典.pdf */,
 				3219E89C1D920769009A3C66 /* garbage_chinese.pdf */,
 				3219E89D1D920769009A3C66 /* garbage_english.pdf */,
 				3219E89E1D920769009A3C66 /* garbage_korean.pdf */,
@@ -349,6 +433,25 @@
 				325162EE1D8A9AD30031E836 /* ContentsItem.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		328A9B711D992CF1006203D6 /* 育児 */ = {
+			isa = PBXGroup;
+			children = (
+				328A9B651D992CD3006203D6 /* 600_育児_認可保育所.csv */,
+			);
+			name = "育児";
+			sourceTree = "<group>";
+		};
+		328A9B721D992D00006203D6 /* エクストラ */ = {
+			isa = PBXGroup;
+			children = (
+				328A9B691D992CE6006203D6 /* 900_エクストラ_札幌交通機関.csv */,
+				328A9B6A1D992CE6006203D6 /* 901_エクストラ_道有林語録.csv */,
+				328A9B6B1D992CE6006203D6 /* 902_エクストラ_札幌市内スーパー銭湯.csv */,
+				328A9B6C1D992CE6006203D6 /* 905_エクストラ_公園トイレ中央区.csv */,
+			);
+			name = "エクストラ";
 			sourceTree = "<group>";
 		};
 		32DAF9601D7AC02400BCABCF = {
@@ -556,38 +659,66 @@
 			buildActionMask = 2147483647;
 			files = (
 				3219E8B61D920777009A3C66 /* admin_police.csv in Resources */,
+				328A9B8F1D993320006203D6 /* 201_08_びん・缶・ペットボトル（無料）週1回／枝・葉・草（無料）.pdf in Resources */,
 				320874D11D9513E400240A56 /* ic_home@2x.png in Resources */,
 				3219E8B31D920777009A3C66 /* admin_comunity.csv in Resources */,
 				3219E8BF1D920777009A3C66 /* shelter_region.csv in Resources */,
+				328A9B991D993320006203D6 /* 201_18_資源物の回収拠点一覧.pdf in Resources */,
 				3219E8B21D920777009A3C66 /* admin_all.csv in Resources */,
 				328A9B5A1D992B12006203D6 /* ic_copyright_black@2x.png in Resources */,
 				3219E8B71D920777009A3C66 /* admin_publicworks.csv in Resources */,
+				328A9B931D993320006203D6 /* 201_12_集団資源回収／資源物の回収拠点.pdf in Resources */,
 				320874D31D9513E500240A56 /* ic_unlock@2x.png in Resources */,
 				320874CD1D9512A400240A56 /* ic_settings@2x.png in Resources */,
 				3219E8B51D920777009A3C66 /* admin_insurance.csv in Resources */,
 				3219E8B41D920777009A3C66 /* admin_fire.csv in Resources */,
 				3219E89F1D920769009A3C66 /* garbage_chinese.pdf in Resources */,
+				328A9B8D1D993320006203D6 /* 201_06_燃やせないごみ（有料）4週1回.pdf in Resources */,
 				325409431D9134A60022A20E /* ic_link@2x.png in Resources */,
+				328A9B9A1D993320006203D6 /* 201_19_資源とごみの分別辞典.pdf in Resources */,
 				3219E8C51D921AE1009A3C66 /* noimage@2x.png in Resources */,
+				328A9B8A1D993320006203D6 /* 201_03_資源とごみの分け方・出し方一覧.pdf in Resources */,
 				32D155AF1D92576100327805 /* ic_list@2x.png in Resources */,
+				328A9B641D992CC7006203D6 /* 505_防災_給水_調整前.csv in Resources */,
 				3219E8BD1D920777009A3C66 /* shelter_core.csv in Resources */,
+				328A9B921D993320006203D6 /* 201_11_大型ごみの申込方法と手順／主な大型ごみの処理手数料.pdf in Resources */,
 				32DAF97C1D7AC02500BCABCF /* LaunchScreen.storyboard in Resources */,
+				328A9B891D993320006203D6 /* 201_02_【特集】ごみを減らす。未来を創造する。.pdf in Resources */,
 				3219E8A11D920769009A3C66 /* garbage_korean.pdf in Resources */,
+				328A9B681D992CDB006203D6 /* 700_施設情報_有料老人ホーム.csv in Resources */,
+				328A9B971D993320006203D6 /* 201_16_自己搬入（家庭ごみを自分で持ち込むこともできます）／市が収集しないもの(処理が困難なもの・危険物など).pdf in Resources */,
 				32DAF9791D7AC02500BCABCF /* Assets.xcassets in Resources */,
+				328A9B8B1D993320006203D6 /* 201_04_指定ごみ袋まるわかり解説／排出ルール.pdf in Resources */,
 				3219E8C01D920777009A3C66 /* shelter_wide.csv in Resources */,
+				328A9B951D993320006203D6 /* 201_14_生ごみリサイクル／さわやか収集／ライターのガスの抜き方.pdf in Resources */,
 				320874D91D951DD600240A56 /* ic_copyright@2x.png in Resources */,
+				328A9B6D1D992CE6006203D6 /* 900_エクストラ_札幌交通機関.csv in Resources */,
+				328A9B8C1D993320006203D6 /* 201_05_燃やせるごみ（有料）週2回.pdf in Resources */,
 				3219E8C31D92099E009A3C66 /* admin_town.csv in Resources */,
+				328A9B881D993320006203D6 /* 201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf in Resources */,
 				3254093A1D910F3E0022A20E /* ic_map@2x.png in Resources */,
 				3219E8BE1D920777009A3C66 /* shelter_item.csv in Resources */,
 				320874C71D94CD5000240A56 /* ヒラギノ角ゴシック_W4.ttc in Resources */,
+				328A9B941D993320006203D6 /* 201_13_小型家電リサイクル地区リサイクルセンター／家庭系古紙引取案内.pdf in Resources */,
 				3219E8A01D920769009A3C66 /* garbage_english.pdf in Resources */,
 				3254093B1D910F3E0022A20E /* ic_pdf@2x.png in Resources */,
+				328A9B911D993320006203D6 /* 201_10_大型ごみ（有料）週1回.pdf in Resources */,
 				3219E8B81D920777009A3C66 /* admin_ward.csv in Resources */,
 				32D155B91D927D1D00327805 /* bg_app@2x.jpg in Resources */,
+				328A9B621D992CB5006203D6 /* 330_医療情報_病院_カテゴリーなし.csv in Resources */,
+				328A9B6E1D992CE6006203D6 /* 901_エクストラ_道有林語録.csv in Resources */,
+				328A9B661D992CD3006203D6 /* 600_育児_認可保育所.csv in Resources */,
 				32DAF9771D7AC02500BCABCF /* Main.storyboard in Resources */,
 				32D155B11D925FD800327805 /* ic_web@2x.png in Resources */,
+				328A9B611D992CB5006203D6 /* 301_医療情報_高齢予防接種.csv in Resources */,
+				328A9B901D993320006203D6 /* 201_09_雑がみ（無料）2週1回.pdf in Resources */,
 				320874D51D9514EB00240A56 /* ic_share@2x.png in Resources */,
 				320874D21D9513E400240A56 /* ic_lock@2x.png in Resources */,
+				328A9B961D993320006203D6 /* 201_15_資源のゆくえ（札幌市のリサイクル）.pdf in Resources */,
+				328A9B8E1D993320006203D6 /* 201_07_容器包装プラスチック（無料）週1回.pdf in Resources */,
+				328A9B701D992CE6006203D6 /* 905_エクストラ_公園トイレ中央区.csv in Resources */,
+				328A9B981D993320006203D6 /* 201_17_市が収集しないもの(家電4品目・パソコン）.pdf in Resources */,
+				328A9B6F1D992CE6006203D6 /* 902_エクストラ_札幌市内スーパー銭湯.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,6 +809,7 @@
 				325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */,
 				325162E91D8A7C8A0031E836 /* Pack.swift in Sources */,
 				326383CE1D87DEC200DED761 /* SnsViewController.swift in Sources */,
+				328A9B741D99315D006203D6 /* ExtraPack.swift in Sources */,
 				3253A1161D8B96300081B1C2 /* main.m in Sources */,
 				3219E8C91D923A70009A3C66 /* ShelterItem.swift in Sources */,
 				325162E31D8A7C2F0031E836 /* ChildcarePack.swift in Sources */,

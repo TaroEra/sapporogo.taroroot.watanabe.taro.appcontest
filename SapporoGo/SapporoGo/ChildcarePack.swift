@@ -11,6 +11,15 @@ import Foundation
 class ChildcarePack: Pack {
     
     init() {
-        super.init(name: "育児", contents:[])
+        super.init(name: "育児", contents:[
+            
+            ContentsItem(
+                title:"保育園マップ（認可）",
+                fileName:"600_育児_認可保育所",
+                fileType:"csv",
+                purposeType:"MAP",
+                contentsName:"保育所について",
+                contentsUrl:"http://www.city.sapporo.jp/kodomo/kosodate/l4_01.html")
+            ])
     }
 }
