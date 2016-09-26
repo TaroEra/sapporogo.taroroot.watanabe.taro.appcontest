@@ -9,8 +9,6 @@
 import UIKit
 import Accounts
 import Social
-import FBSDKCoreKit
-import FBSDKLoginKit
 
 class SnsViewController: UIViewController {
     
@@ -20,11 +18,6 @@ class SnsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         selectTwitterAccount()
-        
-        let facebookButton:FBSDKLoginButton = FBSDKLoginButton()
-        facebookButton.center = self.view.center
-        self.view.addSubview(facebookButton)
-        
     }
     
     override func viewWillAppear(animated: Bool) {

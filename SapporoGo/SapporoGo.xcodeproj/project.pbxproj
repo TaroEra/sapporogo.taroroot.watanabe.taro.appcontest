@@ -74,8 +74,6 @@
 		32DAF97C1D7AC02500BCABCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DAF97A1D7AC02500BCABCF /* LaunchScreen.storyboard */; };
 		32DAF9871D7AC02500BCABCF /* SapporoGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DAF9861D7AC02500BCABCF /* SapporoGoTests.m */; };
 		32DAF9921D7AC02500BCABCF /* SapporoGoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DAF9911D7AC02500BCABCF /* SapporoGoUITests.m */; };
-		32E1EDC01D87F5EF004E3D35 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E1EDBF1D87F5EF004E3D35 /* FBSDKCoreKit.framework */; };
-		32E1EDC21D87F5FD004E3D35 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E1EDC11D87F5FD004E3D35 /* FBSDKLoginKit.framework */; };
 		D2FCB61743471612DA32D74D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8042449990A08F3CF43B0572 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -186,8 +184,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32E1EDC01D87F5EF004E3D35 /* FBSDKCoreKit.framework in Frameworks */,
-				32E1EDC21D87F5FD004E3D35 /* FBSDKLoginKit.framework in Frameworks */,
 				326383CC1D87DE9000DED761 /* Social.framework in Frameworks */,
 				326383CA1D87DE8800DED761 /* Accounts.framework in Frameworks */,
 				3257AB9B1D82ADF10036E6E8 /* CoreFoundation.framework in Frameworks */,
