@@ -25,8 +25,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var userTitleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let realm = try! Realm()
-        print(realm.configuration.fileURL)
         
         self.basicPacks = [AdminPack(), Medicalpack(), ResourcePack(), DisasterPack()]
         self.supportPacks = [NursingPack(), ChildcarePack()]
@@ -90,7 +88,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                                                                 if textFields != nil {
                                                                     for textField:UITextField in textFields! {
                                                                         //各textにアクセス
-                                                                        print(textField.text)
                                                                         if textField.text == ""{
                                                                             textField.text = "ゲスト"
                                                                         }

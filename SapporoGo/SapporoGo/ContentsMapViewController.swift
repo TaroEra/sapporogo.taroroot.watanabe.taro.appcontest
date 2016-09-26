@@ -129,11 +129,9 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
         
         if mapView.region.span.latitudeDelta < 0.3
         {
-            print("create annotations")
             addAnotations()
         }else
         {
-            print("remove annotations")
             mapView.removeAnnotations(self.mapView.annotations)
         }
     }
@@ -163,15 +161,19 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         switch status{
         case .AuthorizedWhenInUse:
-            print("AuthorizedWhenInUse")
+//            print("AuthorizedWhenInUse")
+            break
         case .Authorized:
-            print("Authorized")
+//            print("Authorized")
+            break
         case .Denied:
-            print("Denied")
+//            print("Denied")
+            break
         case .Restricted:
-            print("Restricted")
+//            print("Restricted")
+            break
         case .NotDetermined:
-            print("NotDetermined")
+//            print("NotDetermined")
             if locationManager.respondsToSelector(#selector(CLLocationManager.requestWhenInUseAuthorization)) { locationManager.requestWhenInUseAuthorization() }
         }
     }
