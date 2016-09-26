@@ -32,7 +32,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>4</string>
+	<string>5</string>
 	<key>FacebookAppID</key>
 	<string>339007133104665</string>
 	<key>FacebookDisplayName</key>
@@ -48,6 +48,8 @@
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>現在地周辺の施設を表示します。</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>プロフィールとして扱う画像を取得します。</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>ヒラギノ角ゴシック_W4.ttc</string>
@@ -73,7 +75,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>プロフィールとして扱う画像を取得します。</string>
 </dict>
 </plist>
