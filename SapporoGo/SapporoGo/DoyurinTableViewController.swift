@@ -40,14 +40,14 @@ class DoyurinTableViewController: UIViewController, UITableViewDelegate, UITable
             let kana_word = arrayItem[2]
             let mean = arrayItem[3]
             
-            let shelterItem:DoyurinItem = DoyurinItem(value:
+            let doyurinItem:DoyurinItem = DoyurinItem(value:
                 ["id":id,
                     "word":word,
                     "kana_word":kana_word,
                     "mean":mean])
             
             try! realm.write{
-                realm.add(shelterItem, update:true)
+                realm.add(doyurinItem, update:true)
             }
         }
     }
@@ -59,7 +59,7 @@ class DoyurinTableViewController: UIViewController, UITableViewDelegate, UITable
 
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let count = try! Realm().objects(ShelterItem).count
+        let count = try! Realm().objects(DoyurinItem).count
         return count
     }
     
