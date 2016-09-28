@@ -23,7 +23,10 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
         super.viewDidLoad()
         
         self.contentsLinkButton.setTitle(contentsItem!.contentsName, forState: UIControlState.Normal)
+        
+        UserDefaultSurpport.userTotalPoint += 1
         UserDefaultSurpport.userPoint += 1
+        
         self.view.makeToast("get 1pt", duration: 1.0, position:.Bottom)
         
         self.mapView.delegate = self

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class ExtraContentsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -109,7 +110,7 @@ class ExtraContentsViewController: UIViewController, UITableViewDelegate, UITabl
         }
             //ポイントがなくてlock
         else if UserDefaultSurpport.userPoint < point{
-            
+            self.view.makeToast("ptが不足しています。", duration: 1.0, position:.Center)
         }
     }
 }

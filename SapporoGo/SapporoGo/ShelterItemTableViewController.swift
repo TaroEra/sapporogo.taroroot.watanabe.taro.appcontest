@@ -17,6 +17,8 @@ class ShelterItemTableViewController: UIViewController, UITableViewDelegate, UIT
         super.viewDidLoad()
 
         UserDefaultSurpport.userPoint += 1
+        UserDefaultSurpport.userTotalPoint += 1
+
         self.view.makeToast("get 1pt", duration: 1.0, position:.Bottom)
         
         tableView.dataSource = self

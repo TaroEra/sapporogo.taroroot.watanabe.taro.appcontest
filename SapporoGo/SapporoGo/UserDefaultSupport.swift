@@ -36,6 +36,16 @@ class UserDefaultSurpport{
         }
     }
     
+    private static let userTotalPointKey = "userTotalPoint"
+    class var userTotalPoint:Int{
+        get{
+            return self.userDefoults.integerForKey(userTotalPointKey)
+        }
+        set{
+            self.userDefoults.setInteger(newValue, forKey:userTotalPointKey)
+        }
+    }
+    
     private static let userPointKey = "userPoint"
     class var userPoint:Int{
         get{
@@ -48,13 +58,13 @@ class UserDefaultSurpport{
     
     class var userTitle:String?{
         get{
-            if 0...9 ~= self.userPoint{
+            if 0...9 ~= self.userTotalPoint{
                 return "駆け出しの市民"
-            }else if 10...19 ~= self.userPoint{
+            }else if 10...19 ~= self.userTotalPoint{
                 return "そこそこの市民"
-            }else if 20...29 ~= self.userPoint{
+            }else if 20...29 ~= self.userTotalPoint{
                 return "物知りな市民"
-            }else if 30...49 ~= self.userPoint{
+            }else if 30...49 ~= self.userTotalPoint{
                 return "市民代表"
             }
             return "伝説の市民"

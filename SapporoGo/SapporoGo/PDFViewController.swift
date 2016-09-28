@@ -26,6 +26,8 @@ class PDFViewController: UIViewController {
         super.viewWillAppear(animated)
         
         UserDefaultSurpport.userPoint += 1
+        UserDefaultSurpport.userTotalPoint += 1
+
         self.view.makeToast("get 1pt", duration: 1.0, position:.Bottom)
         
         let pdfFileName = contentsItem!.fileName! + "." + contentsItem!.fileType!
