@@ -31,7 +31,6 @@
 		3219E8BF1D920777009A3C66 /* shelter_region.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8AF1D920777009A3C66 /* shelter_region.csv */; };
 		3219E8C01D920777009A3C66 /* shelter_wide.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8B01D920777009A3C66 /* shelter_wide.csv */; };
 		3219E8C31D92099E009A3C66 /* admin_town.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8C21D92099E009A3C66 /* admin_town.csv */; };
-		3219E8C51D921AE1009A3C66 /* noimage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8C41D921AE1009A3C66 /* noimage@2x.png */; };
 		3219E8C71D922549009A3C66 /* UserDefaultSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */; };
 		3219E8C91D923A70009A3C66 /* ShelterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8C81D923A70009A3C66 /* ShelterItem.swift */; };
 		3219E8CB1D923D7E009A3C66 /* ShelterItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */; };
@@ -41,6 +40,7 @@
 		324A14791D9B4B3C00E3592C /* ExtraContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A14781D9B4B3C00E3592C /* ExtraContentsViewController.swift */; };
 		324A147B1D9B737700E3592C /* DoyurinTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A147A1D9B737700E3592C /* DoyurinTableViewController.swift */; };
 		324A147D1D9B786200E3592C /* DoyurinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A147C1D9B786200E3592C /* DoyurinItem.swift */; };
+		324A147F1D9B7DBB00E3592C /* noimage@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 324A147E1D9B7DBB00E3592C /* noimage@2x.jpg */; };
 		325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DC1D8A796E0031E836 /* MedicalPack.swift */; };
 		325162DF1D8A7ADD0031E836 /* ResourcePack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DE1D8A7ADD0031E836 /* ResourcePack.swift */; };
 		325162E11D8A7AF50031E836 /* AdminPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E01D8A7AF50031E836 /* AdminPack.swift */; };
@@ -152,7 +152,6 @@
 		3219E8AF1D920777009A3C66 /* shelter_region.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shelter_region.csv; path = "CSV,PDF/shelter_region.csv"; sourceTree = "<group>"; };
 		3219E8B01D920777009A3C66 /* shelter_wide.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shelter_wide.csv; path = "CSV,PDF/shelter_wide.csv"; sourceTree = "<group>"; };
 		3219E8C21D92099E009A3C66 /* admin_town.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = admin_town.csv; path = "CSV,PDF/admin_town.csv"; sourceTree = "<group>"; };
-		3219E8C41D921AE1009A3C66 /* noimage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "noimage@2x.png"; path = "Images/noimage@2x.png"; sourceTree = "<group>"; };
 		3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultSupport.swift; sourceTree = "<group>"; };
 		3219E8C81D923A70009A3C66 /* ShelterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelterItem.swift; sourceTree = "<group>"; };
 		3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelterItemTableViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +161,7 @@
 		324A14781D9B4B3C00E3592C /* ExtraContentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraContentsViewController.swift; sourceTree = "<group>"; };
 		324A147A1D9B737700E3592C /* DoyurinTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoyurinTableViewController.swift; sourceTree = "<group>"; };
 		324A147C1D9B786200E3592C /* DoyurinItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoyurinItem.swift; sourceTree = "<group>"; };
+		324A147E1D9B7DBB00E3592C /* noimage@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "noimage@2x.jpg"; path = "Images/noimage@2x.jpg"; sourceTree = "<group>"; };
 		325162DC1D8A796E0031E836 /* MedicalPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalPack.swift; sourceTree = "<group>"; };
 		325162DE1D8A7ADD0031E836 /* ResourcePack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcePack.swift; sourceTree = "<group>"; };
 		325162E01D8A7AF50031E836 /* AdminPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminPack.swift; sourceTree = "<group>"; };
@@ -414,8 +414,8 @@
 		3254092E1D9100370022A20E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				324A147E1D9B7DBB00E3592C /* noimage@2x.jpg */,
 				32D155B81D927D1D00327805 /* bg_app@2x.jpg */,
-				3219E8C41D921AE1009A3C66 /* noimage@2x.png */,
 				325409381D910F3E0022A20E /* ic_map@2x.png */,
 				328A9B591D992B12006203D6 /* ic_copyright_black@2x.png */,
 				325409391D910F3E0022A20E /* ic_pdf@2x.png */,
@@ -694,10 +694,10 @@
 				328A9B8D1D993320006203D6 /* 201_06_燃やせないごみ（有料）4週1回.pdf in Resources */,
 				325409431D9134A60022A20E /* ic_link@2x.png in Resources */,
 				328A9B9A1D993320006203D6 /* 201_19_資源とごみの分別辞典.pdf in Resources */,
-				3219E8C51D921AE1009A3C66 /* noimage@2x.png in Resources */,
 				328A9B8A1D993320006203D6 /* 201_03_資源とごみの分け方・出し方一覧.pdf in Resources */,
 				32D155AF1D92576100327805 /* ic_list@2x.png in Resources */,
 				328A9B641D992CC7006203D6 /* 505_防災_給水_調整前.csv in Resources */,
+				324A147F1D9B7DBB00E3592C /* noimage@2x.jpg in Resources */,
 				3219E8BD1D920777009A3C66 /* shelter_core.csv in Resources */,
 				328A9B921D993320006203D6 /* 201_11_大型ごみの申込方法と手順／主な大型ごみの処理手数料.pdf in Resources */,
 				32DAF97C1D7AC02500BCABCF /* LaunchScreen.storyboard in Resources */,

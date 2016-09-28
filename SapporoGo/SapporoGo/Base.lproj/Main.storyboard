@@ -92,7 +92,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noimage.png" translatesAutoresizingMaskIntoConstraints="NO" id="yus-G5-GKZ">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noimage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yus-G5-GKZ">
                                         <color key="backgroundColor" red="0.1861122533" green="0.65833162010000001" blue="0.89044510690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -808,6 +808,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         <image name="ic_home.png" width="24" height="24"/>
         <image name="ic_settings.png" width="24" height="24"/>
         <image name="ic_share.png" width="24" height="24"/>
-        <image name="noimage.png" width="300" height="300"/>
+        <image name="noimage.jpg" width="800" height="533"/>
     </resources>
 </document>
