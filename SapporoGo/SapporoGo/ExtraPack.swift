@@ -42,6 +42,16 @@ class ExtraPack: Pack {
                 contentsUrl:"",
                 point:10,
                 isUnlock:ExtraPack.isUnLock("スーパー銭湯マップ")),
+
+            ExtraContentsItem(
+                title:"道有林語録",
+                fileName:"901_エクストラ_道有林語録",
+                fileType:"csv",
+                purposeType:"LIST",
+                contentsName:"道有林語録",
+                contentsUrl:"http://www.pref.hokkaido.lg.jp/sr/dyr/doyurinka/goroku.htm",
+                point:10,
+                isUnlock:ExtraPack.isUnLock("スーパー銭湯マップ")),
             
             ExtraContentsItem(
                 title:"公園のトイレマップ（中央区）",
@@ -53,5 +63,7 @@ class ExtraPack: Pack {
                 point:10,
                 isUnlock:ExtraPack.isUnLock("公園のトイレマップ（中央区）"))
             ])
+        
+        
     }
 }

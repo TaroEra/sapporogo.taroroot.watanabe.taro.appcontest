@@ -39,6 +39,8 @@
 		324A14751D9B47CF00E3592C /* ExtraCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A14741D9B47CF00E3592C /* ExtraCellView.swift */; };
 		324A14771D9B48BE00E3592C /* ExtraContentsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A14761D9B48BE00E3592C /* ExtraContentsItem.swift */; };
 		324A14791D9B4B3C00E3592C /* ExtraContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A14781D9B4B3C00E3592C /* ExtraContentsViewController.swift */; };
+		324A147B1D9B737700E3592C /* DoyurinTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A147A1D9B737700E3592C /* DoyurinTableViewController.swift */; };
+		324A147D1D9B786200E3592C /* DoyurinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A147C1D9B786200E3592C /* DoyurinItem.swift */; };
 		325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DC1D8A796E0031E836 /* MedicalPack.swift */; };
 		325162DF1D8A7ADD0031E836 /* ResourcePack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DE1D8A7ADD0031E836 /* ResourcePack.swift */; };
 		325162E11D8A7AF50031E836 /* AdminPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E01D8A7AF50031E836 /* AdminPack.swift */; };
@@ -158,6 +160,8 @@
 		324A14741D9B47CF00E3592C /* ExtraCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraCellView.swift; sourceTree = "<group>"; };
 		324A14761D9B48BE00E3592C /* ExtraContentsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraContentsItem.swift; sourceTree = "<group>"; };
 		324A14781D9B4B3C00E3592C /* ExtraContentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraContentsViewController.swift; sourceTree = "<group>"; };
+		324A147A1D9B737700E3592C /* DoyurinTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoyurinTableViewController.swift; sourceTree = "<group>"; };
+		324A147C1D9B786200E3592C /* DoyurinItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoyurinItem.swift; sourceTree = "<group>"; };
 		325162DC1D8A796E0031E836 /* MedicalPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalPack.swift; sourceTree = "<group>"; };
 		325162DE1D8A7ADD0031E836 /* ResourcePack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcePack.swift; sourceTree = "<group>"; };
 		325162E01D8A7AF50031E836 /* AdminPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminPack.swift; sourceTree = "<group>"; };
@@ -279,6 +283,7 @@
 				3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */,
 				320874D61D95175100240A56 /* SettingTableViewController.swift */,
 				324A14781D9B4B3C00E3592C /* ExtraContentsViewController.swift */,
+				324A147A1D9B737700E3592C /* DoyurinTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -328,6 +333,7 @@
 				32BB23B61D8BD3DB00F8C7F5 /* MapObject.swift */,
 				3254093C1D9112EA0022A20E /* SapporoMedical.swift */,
 				3219E8C81D923A70009A3C66 /* ShelterItem.swift */,
+				324A147C1D9B786200E3592C /* DoyurinItem.swift */,
 			);
 			name = RealmObjects;
 			sourceTree = "<group>";
@@ -813,7 +819,9 @@
 				3254093D1D9112EA0022A20E /* SapporoMedical.swift in Sources */,
 				325409411D91169B0022A20E /* CSVParser.swift in Sources */,
 				3219E8CB1D923D7E009A3C66 /* ShelterItemTableViewController.swift in Sources */,
+				324A147D1D9B786200E3592C /* DoyurinItem.swift in Sources */,
 				324A14771D9B48BE00E3592C /* ExtraContentsItem.swift in Sources */,
+				324A147B1D9B737700E3592C /* DoyurinTableViewController.swift in Sources */,
 				325162E71D8A7C620031E836 /* DisasterPack.swift in Sources */,
 				3253A11D1D8BAB590081B1C2 /* TabBarController.swift in Sources */,
 				32BB23B71D8BD3DB00F8C7F5 /* MapObject.swift in Sources */,

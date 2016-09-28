@@ -16,14 +16,22 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
     var contentsItem:ContentsItem?
     private var locationManager:CLLocationManager!
     @IBOutlet weak var contentsLinkButton: UIButton!
+    @IBOutlet weak var sapporoLabel: UILabel!
+    @IBOutlet weak var creditImageView: UIImageView!
     
     @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.contentsLinkButton.setTitle(contentsItem!.contentsName, forState: UIControlState.Normal)
-        
+        if contentsItem?.contentsName == ""{
+            contentsLinkButton.hidden = true
+            sapporoLabel.hidden = true
+            creditImageView.hidden = true
+        }else{
+            
+            self.contentsLinkButton.setTitle(contentsItem!.contentsName, forState: UIControlState.Normal)
+        }
         UserDefaultSurpport.userTotalPoint += 1
         UserDefaultSurpport.userPoint += 1
         
@@ -164,19 +172,19 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         switch status{
         case .AuthorizedWhenInUse:
-//            print("AuthorizedWhenInUse")
+            //            print("AuthorizedWhenInUse")
             break
         case .Authorized:
-//            print("Authorized")
+            //            print("Authorized")
             break
         case .Denied:
-//            print("Denied")
+            //            print("Denied")
             break
         case .Restricted:
-//            print("Restricted")
+            //            print("Restricted")
             break
         case .NotDetermined:
-//            print("NotDetermined")
+            //            print("NotDetermined")
             if locationManager.respondsToSelector(#selector(CLLocationManager.requestWhenInUseAuthorization)) { locationManager.requestWhenInUseAuthorization() }
         }
     }

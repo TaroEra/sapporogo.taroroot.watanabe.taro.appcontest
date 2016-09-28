@@ -63,6 +63,13 @@ class ExtraContentsViewController: UIViewController, UITableViewDelegate, UITabl
                 contentsMapViewController.navigationItem.title = item.title!
                 self.navigationController?.pushViewController(contentsMapViewController, animated: true)
             }
+            else if item.purposeType == "LIST"{
+                
+                let contentsTableviewController:DoyurinTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("DoyurinTableViewController")) as! DoyurinTableViewController
+                contentsTableviewController.navigationItem.title = item.title
+                self.navigationController?.pushViewController(contentsTableviewController, animated: true)
+            }
+            
             return
         }
         
