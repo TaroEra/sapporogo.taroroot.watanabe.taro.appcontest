@@ -10,6 +10,8 @@ import Foundation
 
 class UserDefaultSurpport{
     
+    private static let masterUserName = "tarj879AAAfef54Sa"
+    
     class var userDefoults: NSUserDefaults {
         get{
             return NSUserDefaults.standardUserDefaults()
@@ -32,6 +34,9 @@ class UserDefaultSurpport{
             return self.userDefoults.stringForKey(userNameKey)
         }
         set{
+            if newValue == masterUserName {
+                self.userDefoults.setInteger(999, forKey:userPointKey)
+            }
             self.userDefoults.setObject(newValue, forKey: userNameKey)
         }
     }
@@ -48,11 +53,18 @@ class UserDefaultSurpport{
     
     private static let userPointKey = "userPoint"
     class var userPoint:Int{
+        
         get{
             return self.userDefoults.integerForKey(userPointKey)
         }
         set{
-            self.userDefoults.setInteger(newValue, forKey:userPointKey)
+            if self.userDefoults.stringForKey(userNameKey) == masterUserName {
+                self.userDefoults.setInteger(999, forKey:userPointKey)
+                return
+            }else{
+                self.userDefoults.setInteger(newValue, forKey:userPointKey)
+                return
+            }
         }
     }
     

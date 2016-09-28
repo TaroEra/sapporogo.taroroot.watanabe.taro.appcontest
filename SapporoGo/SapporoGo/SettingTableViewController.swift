@@ -14,7 +14,6 @@ class SettingTableViewController: UIViewController, UITableViewDataSource, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -90,8 +89,7 @@ class SettingTableViewController: UIViewController, UITableViewDataSource, UITab
                                                                 }
             })
             alert.addAction(defaultAction)
-            
-            
+            alert.view.setNeedsLayout()
             presentViewController(alert, animated: true, completion: nil)
         }
     }

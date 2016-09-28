@@ -61,7 +61,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                                                            handler:{
                                                             (action:UIAlertAction!) -> Void in
                                                             self.configureProfileLabel()
-
                                                             }
             )
             alert.addAction(cancelAction)
@@ -113,6 +112,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                                                                         }
                                                                         UserDefaultSurpport.userName = textField.text
                                                                         self.userNameLabel.text = textField.text
+                                                                        self.userPointLabel.text = String(UserDefaultSurpport.userPoint)
+                                                                        self.userTitleLabel.text = UserDefaultSurpport.userTitle
                                                                         self.navigationController?.visibleViewController?.navigationItem.title = "ホーム"
                                                                         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "HiraKakuProN-W6", size: 14)!]
                                                                     }
@@ -125,6 +126,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             })
             presentViewController(alert, animated: true, completion: nil)
         }else{
+            userPointLabel.text = String(UserDefaultSurpport.userPoint)
+            userTitleLabel.text = UserDefaultSurpport.userTitle
             self.userNameLabel.text = UserDefaultSurpport.userName
         }
     }
