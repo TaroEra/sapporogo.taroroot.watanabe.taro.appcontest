@@ -35,6 +35,10 @@
 		3219E8C71D922549009A3C66 /* UserDefaultSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */; };
 		3219E8C91D923A70009A3C66 /* ShelterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8C81D923A70009A3C66 /* ShelterItem.swift */; };
 		3219E8CB1D923D7E009A3C66 /* ShelterItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */; };
+		324A14731D9B463200E3592C /* ExtraCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 324A14721D9B463200E3592C /* ExtraCellView.xib */; };
+		324A14751D9B47CF00E3592C /* ExtraCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A14741D9B47CF00E3592C /* ExtraCellView.swift */; };
+		324A14771D9B48BE00E3592C /* ExtraContentsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A14761D9B48BE00E3592C /* ExtraContentsItem.swift */; };
+		324A14791D9B4B3C00E3592C /* ExtraContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A14781D9B4B3C00E3592C /* ExtraContentsViewController.swift */; };
 		325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DC1D8A796E0031E836 /* MedicalPack.swift */; };
 		325162DF1D8A7ADD0031E836 /* ResourcePack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DE1D8A7ADD0031E836 /* ResourcePack.swift */; };
 		325162E11D8A7AF50031E836 /* AdminPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E01D8A7AF50031E836 /* AdminPack.swift */; };
@@ -150,6 +154,10 @@
 		3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultSupport.swift; sourceTree = "<group>"; };
 		3219E8C81D923A70009A3C66 /* ShelterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelterItem.swift; sourceTree = "<group>"; };
 		3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelterItemTableViewController.swift; sourceTree = "<group>"; };
+		324A14721D9B463200E3592C /* ExtraCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExtraCellView.xib; sourceTree = "<group>"; };
+		324A14741D9B47CF00E3592C /* ExtraCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraCellView.swift; sourceTree = "<group>"; };
+		324A14761D9B48BE00E3592C /* ExtraContentsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraContentsItem.swift; sourceTree = "<group>"; };
+		324A14781D9B4B3C00E3592C /* ExtraContentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraContentsViewController.swift; sourceTree = "<group>"; };
 		325162DC1D8A796E0031E836 /* MedicalPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalPack.swift; sourceTree = "<group>"; };
 		325162DE1D8A7ADD0031E836 /* ResourcePack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcePack.swift; sourceTree = "<group>"; };
 		325162E01D8A7AF50031E836 /* AdminPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminPack.swift; sourceTree = "<group>"; };
@@ -270,6 +278,7 @@
 				320C28581D9173510064DBC5 /* PDFViewController.swift */,
 				3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */,
 				320874D61D95175100240A56 /* SettingTableViewController.swift */,
+				324A14781D9B4B3C00E3592C /* ExtraContentsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -278,6 +287,8 @@
 			isa = PBXGroup;
 			children = (
 				32DAF9751D7AC02500BCABCF /* Main.storyboard */,
+				324A14721D9B463200E3592C /* ExtraCellView.xib */,
+				324A14741D9B47CF00E3592C /* ExtraCellView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -431,6 +442,7 @@
 				3253A1191D8BA5920081B1C2 /* RealmObjects */,
 				325162EA1D8A8FD70031E836 /* Packs */,
 				325162EE1D8A9AD30031E836 /* ContentsItem.swift */,
+				324A14761D9B48BE00E3592C /* ExtraContentsItem.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -707,6 +719,7 @@
 				32D155B91D927D1D00327805 /* bg_app@2x.jpg in Resources */,
 				328A9B621D992CB5006203D6 /* 330_医療情報_病院_カテゴリーなし.csv in Resources */,
 				328A9B6E1D992CE6006203D6 /* 901_エクストラ_道有林語録.csv in Resources */,
+				324A14731D9B463200E3592C /* ExtraCellView.xib in Resources */,
 				328A9B661D992CD3006203D6 /* 600_育児_認可保育所.csv in Resources */,
 				32DAF9771D7AC02500BCABCF /* Main.storyboard in Resources */,
 				32D155B11D925FD800327805 /* ic_web@2x.png in Resources */,
@@ -800,10 +813,12 @@
 				3254093D1D9112EA0022A20E /* SapporoMedical.swift in Sources */,
 				325409411D91169B0022A20E /* CSVParser.swift in Sources */,
 				3219E8CB1D923D7E009A3C66 /* ShelterItemTableViewController.swift in Sources */,
+				324A14771D9B48BE00E3592C /* ExtraContentsItem.swift in Sources */,
 				325162E71D8A7C620031E836 /* DisasterPack.swift in Sources */,
 				3253A11D1D8BAB590081B1C2 /* TabBarController.swift in Sources */,
 				32BB23B71D8BD3DB00F8C7F5 /* MapObject.swift in Sources */,
 				325409331D9101E20022A20E /* UIImage(resize).swift in Sources */,
+				324A14751D9B47CF00E3592C /* ExtraCellView.swift in Sources */,
 				326383C81D87D1F400DED761 /* ContentsTableViewController.swift in Sources */,
 				320874D71D95175100240A56 /* SettingTableViewController.swift in Sources */,
 				325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */,
@@ -816,6 +831,7 @@
 				3253A1141D8B95E00081B1C2 /* AppDelegate.m in Sources */,
 				3257AB911D829D8D0036E6E8 /* HomeViewController.swift in Sources */,
 				325162DF1D8A7ADD0031E836 /* ResourcePack.swift in Sources */,
+				324A14791D9B4B3C00E3592C /* ExtraContentsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
