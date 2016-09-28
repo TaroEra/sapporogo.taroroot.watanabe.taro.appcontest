@@ -271,7 +271,6 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="63r-m3-RtP" kind="relationship" relationship="viewControllers" id="jvi-iN-nhA"/>
                         <segue destination="lbd-te-B1y" kind="relationship" relationship="viewControllers" id="rL5-sG-Qls"/>
                         <segue destination="x9F-DV-ncg" kind="relationship" relationship="viewControllers" id="Y71-gM-IYw"/>
                     </connections>
@@ -279,43 +278,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCJ-kt-W23" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1209" y="35"/>
-        </scene>
-        <!--share-->
-        <scene sceneID="N28-Yc-zPW">
-            <objects>
-                <viewController storyboardIdentifier="SnsViewController" id="63r-m3-RtP" customClass="SnsViewController" customModule="SapporoGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2R4-4l-apt"/>
-                        <viewControllerLayoutGuide type="bottom" id="GsN-O9-EDJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="E4E-wc-mgd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_app.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8Z0-K0-SOM"/>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJ9-Fk-ug0">
-                                <state key="normal" title="Twitter"/>
-                                <connections>
-                                    <action selector="onTapTwitter:" destination="63r-m3-RtP" eventType="touchDown" id="Vd4-5Q-ZNv"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="8Z0-K0-SOM" secondAttribute="bottom" id="JE8-zS-wJM"/>
-                            <constraint firstItem="8Z0-K0-SOM" firstAttribute="leading" secondItem="E4E-wc-mgd" secondAttribute="leading" id="NCj-fv-nVx"/>
-                            <constraint firstItem="8Z0-K0-SOM" firstAttribute="top" secondItem="E4E-wc-mgd" secondAttribute="top" id="QuJ-9z-QfQ"/>
-                            <constraint firstAttribute="trailing" secondItem="8Z0-K0-SOM" secondAttribute="trailing" id="c6a-DG-Pwr"/>
-                            <constraint firstItem="OJ9-Fk-ug0" firstAttribute="centerY" secondItem="E4E-wc-mgd" secondAttribute="centerY" constant="60" id="pZ3-8Z-Y94"/>
-                            <constraint firstItem="OJ9-Fk-ug0" firstAttribute="centerX" secondItem="E4E-wc-mgd" secondAttribute="centerX" id="t5D-rs-9N0"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="share" image="ic_share.png" id="gGo-ey-qiq"/>
-                    <navigationItem key="navigationItem" id="ByG-wD-adh"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qEl-d7-VfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2012" y="-704"/>
         </scene>
         <!--Contents Table View Controller-->
         <scene sceneID="nlj-0M-iwK">
@@ -833,7 +795,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         <image name="ic_copyright_black.png" width="48" height="48"/>
         <image name="ic_home.png" width="24" height="24"/>
         <image name="ic_settings.png" width="24" height="24"/>
-        <image name="ic_share.png" width="24" height="24"/>
         <image name="noimage.jpg" width="800" height="533"/>
     </resources>
 </document>

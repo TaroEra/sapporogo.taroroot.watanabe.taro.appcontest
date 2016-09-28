@@ -44,12 +44,32 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tabBarController?.tabBar.hidden = false
         self.navigationController?.visibleViewController?.navigationItem.title = "ホーム"
         navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name:"HiraginoSans-W4", size: 14)!]
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
         
-        configureProfileLabel()
+        if !UserDefaultSurpport.UserTutorial{
+            
+            UserDefaultSurpport.UserTutorial = true
+            
+            // Alert の場合
+            let alert:UIAlertController = UIAlertController(title:"「即効！札幌市民」って？",
+                                                            message: "このアプリは札幌に関する様々な情報を確認することができます。\n\n情報を閲覧するたびにポイントがたまり、それを使うことによってSPコンテンツにある情報を解禁することができます。\n\nたくさんの情報を閲覧し、札幌市民に必要な情報を入手しましょう",
+                                                            preferredStyle: UIAlertControllerStyle.Alert
+            )
+            
+            // Cancel 一つだけしか指定できない
+            let cancelAction:UIAlertAction = UIAlertAction(title:"OK",
+                                                           style: UIAlertActionStyle.Cancel,
+                                                           handler:{
+                                                            (action:UIAlertAction!) -> Void in
+                                                            self.configureProfileLabel()
+
+                                                            }
+            )
+            alert.addAction(cancelAction)
+            self.presentViewController(alert, animated: true, completion:nil)
+        }
+        else{
+            configureProfileLabel()
+        }
     }
     
     func changeprofileImage(){
@@ -76,7 +96,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         if UserDefaultSurpport.userName == nil{
             //textの表示はalertのみ。ActionSheetだとtextfiledを表示させようとすると
             //落ちます。
-            let alert:UIAlertController = UIAlertController(title:"ようこそ！！",
+            let alert:UIAlertController = UIAlertController(title:"はじめましょう！！",
                                                             message: "ユーザー名を入力してください",
                                                             preferredStyle: UIAlertControllerStyle.Alert)
             

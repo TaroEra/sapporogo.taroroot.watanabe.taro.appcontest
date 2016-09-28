@@ -66,7 +66,6 @@
 		326383C81D87D1F400DED761 /* ContentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326383C71D87D1F400DED761 /* ContentsTableViewController.swift */; };
 		326383CA1D87DE8800DED761 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326383C91D87DE8800DED761 /* Accounts.framework */; };
 		326383CC1D87DE9000DED761 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326383CB1D87DE9000DED761 /* Social.framework */; };
-		326383CE1D87DEC200DED761 /* SnsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326383CD1D87DEC200DED761 /* SnsViewController.swift */; };
 		328A9B5A1D992B12006203D6 /* ic_copyright_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B591D992B12006203D6 /* ic_copyright_black@2x.png */; };
 		328A9B611D992CB5006203D6 /* 301_医療情報_高齢予防接種.csv in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B5F1D992CB5006203D6 /* 301_医療情報_高齢予防接種.csv */; };
 		328A9B621D992CB5006203D6 /* 330_医療情報_病院_カテゴリーなし.csv in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B601D992CB5006203D6 /* 330_医療情報_病院_カテゴリーなし.csv */; };
@@ -190,7 +189,6 @@
 		326383C71D87D1F400DED761 /* ContentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsTableViewController.swift; sourceTree = "<group>"; };
 		326383C91D87DE8800DED761 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		326383CB1D87DE9000DED761 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		326383CD1D87DEC200DED761 /* SnsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnsViewController.swift; sourceTree = "<group>"; };
 		328A9B591D992B12006203D6 /* ic_copyright_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_copyright_black@2x.png"; path = "Images/ic_copyright_black@2x.png"; sourceTree = "<group>"; };
 		328A9B5F1D992CB5006203D6 /* 301_医療情報_高齢予防接種.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "301_医療情報_高齢予防接種.csv"; path = "CSV,PDF/301_医療情報_高齢予防接種.csv"; sourceTree = "<group>"; };
 		328A9B601D992CB5006203D6 /* 330_医療情報_病院_カテゴリーなし.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "330_医療情報_病院_カテゴリーなし.csv"; path = "CSV,PDF/330_医療情報_病院_カテゴリーなし.csv"; sourceTree = "<group>"; };
@@ -236,8 +234,6 @@
 		32DAF98D1D7AC02500BCABCF /* SapporoGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SapporoGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DAF9911D7AC02500BCABCF /* SapporoGoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SapporoGoUITests.m; sourceTree = "<group>"; };
 		32DAF9931D7AC02500BCABCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32E1EDBF1D87F5EF004E3D35 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "FacebookSDKs-iOS-4.15.1/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
-		32E1EDC11D87F5FD004E3D35 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "FacebookSDKs-iOS-4.15.1/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		66105B7C68A80D039D8D7B0E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8042449990A08F3CF43B0572 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD222BC5BCB8A176EDEE6A8B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -276,7 +272,6 @@
 		3203E2E71D866738009C106E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				326383CD1D87DEC200DED761 /* SnsViewController.swift */,
 				3253A11C1D8BAB590081B1C2 /* TabBarController.swift */,
 				3257AB901D829D8D0036E6E8 /* HomeViewController.swift */,
 				326383C71D87D1F400DED761 /* ContentsTableViewController.swift */,
@@ -507,8 +502,6 @@
 				3257AB961D82AC4D0036E6E8 /* Models */,
 				325409311D9101B90022A20E /* Utility */,
 				32DAF96C1D7AC02500BCABCF /* Supporting Files */,
-				32E1EDC11D87F5FD004E3D35 /* FBSDKLoginKit.framework */,
-				32E1EDBF1D87F5EF004E3D35 /* FBSDKCoreKit.framework */,
 				3257AB941D82A8BC0036E6E8 /* MapKit.framework */,
 			);
 			path = SapporoGo;
@@ -835,7 +828,6 @@
 				320874D71D95175100240A56 /* SettingTableViewController.swift in Sources */,
 				325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */,
 				325162E91D8A7C8A0031E836 /* Pack.swift in Sources */,
-				326383CE1D87DEC200DED761 /* SnsViewController.swift in Sources */,
 				328A9B741D99315D006203D6 /* ExtraPack.swift in Sources */,
 				3253A1161D8B96300081B1C2 /* main.m in Sources */,
 				3219E8C91D923A70009A3C66 /* ShelterItem.swift in Sources */,

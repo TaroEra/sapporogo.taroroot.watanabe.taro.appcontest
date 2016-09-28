@@ -71,4 +71,14 @@ class UserDefaultSurpport{
         }set{
         }
     }
+    
+    private static let userTutorialKey = "userTutorial"
+    class var UserTutorial:Bool{
+        get{
+            return self.userDefoults.boolForKey(userTutorialKey)
+        }
+        set{
+            self.userDefoults.setBool(newValue, forKey:userTutorialKey)
+        }
+    }
 }
