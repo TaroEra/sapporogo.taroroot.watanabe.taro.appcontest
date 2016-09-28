@@ -42,6 +42,7 @@
 		324A147D1D9B786200E3592C /* DoyurinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A147C1D9B786200E3592C /* DoyurinItem.swift */; };
 		324A147F1D9B7DBB00E3592C /* noimage@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 324A147E1D9B7DBB00E3592C /* noimage@2x.jpg */; };
 		324A14811D9B803600E3592C /* ic_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 324A14801D9B803600E3592C /* ic_info@2x.png */; };
+		324A14831D9B894700E3592C /* ic_user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 324A14821D9B894700E3592C /* ic_user@2x.png */; };
 		325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DC1D8A796E0031E836 /* MedicalPack.swift */; };
 		325162DF1D8A7ADD0031E836 /* ResourcePack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DE1D8A7ADD0031E836 /* ResourcePack.swift */; };
 		325162E11D8A7AF50031E836 /* AdminPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E01D8A7AF50031E836 /* AdminPack.swift */; };
@@ -163,6 +164,7 @@
 		324A147C1D9B786200E3592C /* DoyurinItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoyurinItem.swift; sourceTree = "<group>"; };
 		324A147E1D9B7DBB00E3592C /* noimage@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "noimage@2x.jpg"; path = "Images/noimage@2x.jpg"; sourceTree = "<group>"; };
 		324A14801D9B803600E3592C /* ic_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_info@2x.png"; path = "Images/ic_info@2x.png"; sourceTree = "<group>"; };
+		324A14821D9B894700E3592C /* ic_user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_user@2x.png"; path = "Images/ic_user@2x.png"; sourceTree = "<group>"; };
 		325162DC1D8A796E0031E836 /* MedicalPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalPack.swift; sourceTree = "<group>"; };
 		325162DE1D8A7ADD0031E836 /* ResourcePack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcePack.swift; sourceTree = "<group>"; };
 		325162E01D8A7AF50031E836 /* AdminPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminPack.swift; sourceTree = "<group>"; };
@@ -416,6 +418,7 @@
 				325409381D910F3E0022A20E /* ic_map@2x.png */,
 				328A9B591D992B12006203D6 /* ic_copyright_black@2x.png */,
 				325409391D910F3E0022A20E /* ic_pdf@2x.png */,
+				324A14821D9B894700E3592C /* ic_user@2x.png */,
 				325409421D9134A60022A20E /* ic_link@2x.png */,
 				324A14801D9B803600E3592C /* ic_info@2x.png */,
 				32D155AE1D92576100327805 /* ic_list@2x.png */,
@@ -693,6 +696,7 @@
 				328A9B8A1D993320006203D6 /* 201_03_資源とごみの分け方・出し方一覧.pdf in Resources */,
 				32D155AF1D92576100327805 /* ic_list@2x.png in Resources */,
 				328A9B641D992CC7006203D6 /* 505_防災_給水_調整前.csv in Resources */,
+				324A14831D9B894700E3592C /* ic_user@2x.png in Resources */,
 				324A147F1D9B7DBB00E3592C /* noimage@2x.jpg in Resources */,
 				3219E8BD1D920777009A3C66 /* shelter_core.csv in Resources */,
 				328A9B921D993320006203D6 /* 201_11_大型ごみの申込方法と手順／主な大型ごみの処理手数料.pdf in Resources */,
