@@ -38,12 +38,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        userPointLabel.text = String(UserDefaultSurpport.userPoint)
-        userTitleLabel.text = UserDefaultSurpport.userTitle
-        
         self.tabBarController?.tabBar.hidden = false
         self.navigationController?.visibleViewController?.navigationItem.title = "ホーム"
         navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name:"HiraginoSans-W4", size: 14)!]
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         
         if !UserDefaultSurpport.UserTutorial{
             
@@ -61,9 +62,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                                                            handler:{
                                                             (action:UIAlertAction!) -> Void in
                                                             self.configureProfileLabel()
-                                                            }
+                }
             )
             alert.addAction(cancelAction)
+            alert.view.setNeedsLayout()
             self.presentViewController(alert, animated: true, completion:nil)
         }
         else{
@@ -124,7 +126,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             //textfiledの追加
             alert.addTextFieldWithConfigurationHandler({(text:UITextField!) -> Void in
             })
-            presentViewController(alert, animated: true, completion: nil)
+            alert.view.setNeedsLayout()
+            self.presentViewController(alert, animated:true, completion: nil)
         }else{
             userPointLabel.text = String(UserDefaultSurpport.userPoint)
             userTitleLabel.text = UserDefaultSurpport.userTitle
