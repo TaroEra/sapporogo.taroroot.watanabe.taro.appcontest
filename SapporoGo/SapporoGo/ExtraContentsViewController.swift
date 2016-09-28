@@ -49,6 +49,8 @@ class ExtraContentsViewController: UIViewController, UITableViewDelegate, UITabl
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
         //選択したセルのコンテンツのポイントを表示
         let item:ExtraContentsItem = (extraPack.contents![indexPath.row] as? ExtraContentsItem)!
         let point = item.point
