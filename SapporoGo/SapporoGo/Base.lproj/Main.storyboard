@@ -193,7 +193,64 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBu-cq-nP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2012" y="35"/>
+            <point key="canvasLocation" x="2042" y="35"/>
+        </scene>
+        <!--SNS-->
+        <scene sceneID="MKM-u1-JXI">
+            <objects>
+                <viewController storyboardIdentifier="SnsViewController" id="dHh-bx-t9L" customClass="SnsViewController" customModule="SapporoGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I7J-hy-p9a"/>
+                        <viewControllerLayoutGuide type="bottom" id="mIv-SA-k10"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ids-nF-kTg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_app" translatesAutoresizingMaskIntoConstraints="NO" id="tT5-9s-oig"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iTo-zc-a2q">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeLineCell" textLabel="3mU-Rt-jbC" style="IBUITableViewCellStyleDefault" id="H3z-Nt-04f">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H3z-Nt-04f" id="7D3-oP-7gR">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3mU-Rt-jbC">
+                                                    <frame key="frameInset" minX="15" width="345" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mIv-SA-k10" firstAttribute="top" secondItem="iTo-zc-a2q" secondAttribute="bottom" id="5DP-xZ-8Lz"/>
+                            <constraint firstAttribute="trailing" secondItem="iTo-zc-a2q" secondAttribute="trailing" id="7vn-gM-CdQ"/>
+                            <constraint firstItem="iTo-zc-a2q" firstAttribute="leading" secondItem="Ids-nF-kTg" secondAttribute="leading" id="M1C-xd-Ks0"/>
+                            <constraint firstAttribute="trailing" secondItem="tT5-9s-oig" secondAttribute="trailing" id="Pg7-a9-3dG"/>
+                            <constraint firstAttribute="bottom" secondItem="tT5-9s-oig" secondAttribute="bottom" id="VXD-Cn-mzl"/>
+                            <constraint firstItem="tT5-9s-oig" firstAttribute="top" secondItem="Ids-nF-kTg" secondAttribute="top" id="Xjs-Ly-jv7"/>
+                            <constraint firstItem="tT5-9s-oig" firstAttribute="leading" secondItem="Ids-nF-kTg" secondAttribute="leading" id="a45-j4-mKQ"/>
+                            <constraint firstItem="iTo-zc-a2q" firstAttribute="top" secondItem="I7J-hy-p9a" secondAttribute="bottom" id="kdp-ja-DEB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SNS" image="ic_share.png" id="TKq-ML-pHI"/>
+                    <connections>
+                        <outlet property="timelineTableView" destination="iTo-zc-a2q" id="10j-gM-Hs9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UHL-1e-bR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2012" y="-649.02548725637189"/>
         </scene>
         <!--SPコンテンツ-->
         <scene sceneID="Bmb-9p-Jj3">
@@ -271,8 +328,9 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="lbd-te-B1y" kind="relationship" relationship="viewControllers" id="rL5-sG-Qls"/>
-                        <segue destination="x9F-DV-ncg" kind="relationship" relationship="viewControllers" id="Y71-gM-IYw"/>
+                        <segue destination="dHh-bx-t9L" kind="relationship" relationship="viewControllers" id="ccH-At-QDo"/>
+                        <segue destination="lbd-te-B1y" kind="relationship" relationship="viewControllers" id="vmM-d8-Wl8"/>
+                        <segue destination="x9F-DV-ncg" kind="relationship" relationship="viewControllers" id="i0S-wD-ofn"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCJ-kt-W23" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -821,6 +879,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         <image name="ic_copyright_black.png" width="48" height="48"/>
         <image name="ic_home.png" width="24" height="24"/>
         <image name="ic_settings.png" width="24" height="24"/>
+        <image name="ic_share.png" width="24" height="24"/>
         <image name="noimage.jpg" width="800" height="533"/>
     </resources>
 </document>

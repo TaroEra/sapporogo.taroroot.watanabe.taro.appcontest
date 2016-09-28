@@ -43,6 +43,7 @@
 		324A147F1D9B7DBB00E3592C /* noimage@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 324A147E1D9B7DBB00E3592C /* noimage@2x.jpg */; };
 		324A14811D9B803600E3592C /* ic_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 324A14801D9B803600E3592C /* ic_info@2x.png */; };
 		324A14831D9B894700E3592C /* ic_user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 324A14821D9B894700E3592C /* ic_user@2x.png */; };
+		324A14851D9BBA6800E3592C /* SnsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A14841D9BBA6800E3592C /* SnsViewController.swift */; };
 		325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DC1D8A796E0031E836 /* MedicalPack.swift */; };
 		325162DF1D8A7ADD0031E836 /* ResourcePack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162DE1D8A7ADD0031E836 /* ResourcePack.swift */; };
 		325162E11D8A7AF50031E836 /* AdminPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E01D8A7AF50031E836 /* AdminPack.swift */; };
@@ -165,6 +166,7 @@
 		324A147E1D9B7DBB00E3592C /* noimage@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "noimage@2x.jpg"; path = "Images/noimage@2x.jpg"; sourceTree = "<group>"; };
 		324A14801D9B803600E3592C /* ic_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_info@2x.png"; path = "Images/ic_info@2x.png"; sourceTree = "<group>"; };
 		324A14821D9B894700E3592C /* ic_user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_user@2x.png"; path = "Images/ic_user@2x.png"; sourceTree = "<group>"; };
+		324A14841D9BBA6800E3592C /* SnsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnsViewController.swift; sourceTree = "<group>"; };
 		325162DC1D8A796E0031E836 /* MedicalPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalPack.swift; sourceTree = "<group>"; };
 		325162DE1D8A7ADD0031E836 /* ResourcePack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcePack.swift; sourceTree = "<group>"; };
 		325162E01D8A7AF50031E836 /* AdminPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminPack.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 				320874D61D95175100240A56 /* SettingTableViewController.swift */,
 				324A14781D9B4B3C00E3592C /* ExtraContentsViewController.swift */,
 				324A147A1D9B737700E3592C /* DoyurinTableViewController.swift */,
+				324A14841D9BBA6800E3592C /* SnsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -838,6 +841,7 @@
 				325162E31D8A7C2F0031E836 /* ChildcarePack.swift in Sources */,
 				3253A1141D8B95E00081B1C2 /* AppDelegate.m in Sources */,
 				3257AB911D829D8D0036E6E8 /* HomeViewController.swift in Sources */,
+				324A14851D9BBA6800E3592C /* SnsViewController.swift in Sources */,
 				325162DF1D8A7ADD0031E836 /* ResourcePack.swift in Sources */,
 				324A14791D9B4B3C00E3592C /* ExtraContentsViewController.swift in Sources */,
 			);
