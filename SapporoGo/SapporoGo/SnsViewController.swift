@@ -10,9 +10,11 @@ import UIKit
 import Social
 import Accounts
 
-class SnsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SnsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     @IBOutlet weak var timelineTableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     let accountStore:ACAccountStore! = ACAccountStore()
     var twitterAccount:ACAccount?
     var timeLines:[String] = []
@@ -22,6 +24,8 @@ class SnsViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         
         self.tabBarController?.tabBar.hidden = false
         self.navigationController?.visibleViewController?.navigationItem.title = "SNS"
+        
+        searchBar.delegate = self
         
         timelineTableView.delegate = self
         timelineTableView.dataSource = self
@@ -72,7 +76,7 @@ class SnsViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                                             //
                                             print("your select account is \(account)")
                                             self.twitterAccount = account
-                                            self.getTimeline()
+                                            self.getTimeline("#即効札幌市民")
             }))
         }
         
@@ -86,8 +90,9 @@ class SnsViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     // タイムラインを取得する
-    private func getTimeline() {
-        let targetString = "https://api.twitter.com/1.1/search/tweets.json?q=#即効札幌市民&count=20"
+    private func getTimeline(searchString:String) {
+        self.timeLines.removeAll()
+        let targetString = "https://api.twitter.com/1.1/search/tweets.json?q=\(searchString)&count=20"
         let encodedString = targetString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
         let URL = NSURL(string: encodedString!)//"https://api.twitter.com/1.1/statuses/home_timeline.json")
         
@@ -123,6 +128,7 @@ class SnsViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                     dispatch_async(dispatch_get_main_queue(), {Void in
                         self.timelineTableView.reloadData()
                         self.timelineTableView.setNeedsLayout()
+                        self.searchBar.text = "#即効札幌市民"
                     })
                     
                 }catch{
@@ -132,6 +138,7 @@ class SnsViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         }
     }
     
+    //MARK: - TableViewDelegate & DataSource
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return timeLines.count
     }
@@ -146,4 +153,15 @@ class SnsViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 100.0
     }
+    
+    //MARK: - SearchBarDelegate
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        getTimeline(searchBar.text!)
+    }
+
 }
