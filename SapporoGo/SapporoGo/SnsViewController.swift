@@ -87,7 +87,9 @@ class SnsViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     // タイムラインを取得する
     private func getTimeline() {
-        let URL = NSURL(string: "https://api.twitter.com/1.1/statuses/home_timeline.json")
+        let targetString = "https://api.twitter.com/1.1/search/tweets.json?q=#即効札幌市民&count=20"
+        let encodedString = targetString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
+        let URL = NSURL(string: encodedString!)//"https://api.twitter.com/1.1/statuses/home_timeline.json")
         
         // GET/POSTやパラメータに気をつけてリクエスト情報を生成
         let request = SLRequest(forServiceType: SLServiceTypeTwitter,
@@ -107,18 +109,22 @@ class SnsViewController: UIViewController, UITableViewDelegate, UITableViewDataS
             else {
                 // 結果の表示
                 do{
-                    let result = try NSJSONSerialization.JSONObjectWithData(
-                        responseData,
-                        options:.AllowFragments) as! NSArray
+                    let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(responseData, options:.AllowFragments) as! NSDictionary
+                    let result = jsonDictionary.objectForKey("statuses") as! NSArray
+                    //                    let result = try NSJSONSerialization.JSONObjectWithData(responseData, options:.AllowFragments) as! NSArray
+                    print(result)
                     for array in result{
-                        print("result is \(array.objectForKey("text")!)")
-                        self.timeLines.append(String(array.objectForKey("text")!))
+                        var timeline = array.objectForKey("text")!
+                        timeline =  timeline.stringByReplacingOccurrencesOfString("#即効札幌市民", withString:"")
+                        print("result is \(timeline)")
+                        // -> あいうえお
+                        self.timeLines.append(timeline as! String)
                     }
                     dispatch_async(dispatch_get_main_queue(), {Void in
                         self.timelineTableView.reloadData()
                         self.timelineTableView.setNeedsLayout()
                     })
-
+                    
                 }catch{
                     print("sns service error")
                 }
