@@ -56,6 +56,14 @@ class SnsViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         }
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if twitterAccount != nil {
+            getTimeline("#即効札幌市民")
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
