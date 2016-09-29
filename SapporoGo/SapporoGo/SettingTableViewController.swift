@@ -16,6 +16,12 @@ class SettingTableViewController: UIViewController, UITableViewDataSource, UITab
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.visibleViewController?.navigationItem.title = "設定"
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,10 +47,14 @@ class SettingTableViewController: UIViewController, UITableViewDataSource, UITab
             return cell!
         }
         else{
+            
+            let version: String! = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
+            let build: String! = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleVersion") as! String
+            
             let cell = tableView.dequeueReusableCellWithIdentifier("versionCell")
             cell?.textLabel?.text = "バージョン"
             let image:UIImage!
-            cell?.detailTextLabel?.text = "1.0.0(6)"
+            cell?.detailTextLabel?.text = "\(version)(\(build))"
             image = UIImage(named:"ic_info")
             cell!.imageView!.image = image.resize(CGSizeMake(20, 20))
             return cell!

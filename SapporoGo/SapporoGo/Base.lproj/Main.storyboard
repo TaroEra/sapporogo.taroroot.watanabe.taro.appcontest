@@ -313,7 +313,7 @@
         <scene sceneID="dmD-Hx-fH2">
             <objects>
                 <navigationController storyboardIdentifier="HomeNavigationController" id="LeL-Au-cNN" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Zpb-we-ep3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zpb-we-ep3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -623,10 +623,10 @@
                         <constraints>
                             <constraint firstItem="dGf-lt-yLb" firstAttribute="leading" secondItem="6VZ-t6-4Gq" secondAttribute="leading" id="7vx-Vx-NYd"/>
                             <constraint firstAttribute="trailing" secondItem="dGf-lt-yLb" secondAttribute="trailing" id="EZF-pa-MzT"/>
-                            <constraint firstItem="7JN-Ci-NTL" firstAttribute="top" secondItem="dGf-lt-yLb" secondAttribute="bottom" id="Hzr-Tp-eIG"/>
+                            <constraint firstAttribute="bottom" secondItem="dGf-lt-yLb" secondAttribute="bottom" id="LCk-fh-45I"/>
                             <constraint firstItem="gzO-cf-aNQ" firstAttribute="top" secondItem="VCp-9Z-cX4" secondAttribute="bottom" id="VFt-8Z-ImS"/>
                             <constraint firstItem="7JN-Ci-NTL" firstAttribute="top" secondItem="gzO-cf-aNQ" secondAttribute="bottom" id="f3f-gn-ZzR"/>
-                            <constraint firstItem="dGf-lt-yLb" firstAttribute="top" secondItem="VCp-9Z-cX4" secondAttribute="bottom" id="hnn-Ty-bFb"/>
+                            <constraint firstItem="dGf-lt-yLb" firstAttribute="top" secondItem="6VZ-t6-4Gq" secondAttribute="top" id="iJT-W7-dvb"/>
                             <constraint firstAttribute="trailing" secondItem="gzO-cf-aNQ" secondAttribute="trailing" id="wI0-B7-pK2"/>
                             <constraint firstItem="gzO-cf-aNQ" firstAttribute="leading" secondItem="6VZ-t6-4Gq" secondAttribute="leading" id="yzO-dG-zC1"/>
                         </constraints>
@@ -638,7 +638,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hiJ-RT-w2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756" y="810"/>
+            <point key="canvasLocation" x="1756" y="809.14542728635683"/>
         </scene>
         <!--Shelter Item Table View Controller-->
         <scene sceneID="gpF-0U-RZ1">
