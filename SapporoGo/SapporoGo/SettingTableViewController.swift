@@ -16,6 +16,12 @@ class SettingTableViewController: UIViewController, UITableViewDataSource, UITab
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.visibleViewController?.navigationItem.title = "設定"
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
