@@ -136,7 +136,7 @@ class SnsViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                     dispatch_async(dispatch_get_main_queue(), {Void in
                         self.timelineTableView.reloadData()
                         self.timelineTableView.setNeedsLayout()
-                        self.searchBar.text = "#即効札幌市民"
+                        self.searchBar.text = searchString
                     })
                     
                 }catch{
