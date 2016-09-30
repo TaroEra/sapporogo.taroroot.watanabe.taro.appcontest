@@ -23,7 +23,6 @@
 		3219E8B31D920777009A3C66 /* admin_comunity.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8A31D920777009A3C66 /* admin_comunity.csv */; };
 		3219E8B41D920777009A3C66 /* admin_fire.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8A41D920777009A3C66 /* admin_fire.csv */; };
 		3219E8B51D920777009A3C66 /* admin_insurance.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8A51D920777009A3C66 /* admin_insurance.csv */; };
-		3219E8B61D920777009A3C66 /* admin_police.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8A61D920777009A3C66 /* admin_police.csv */; };
 		3219E8B71D920777009A3C66 /* admin_publicworks.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8A71D920777009A3C66 /* admin_publicworks.csv */; };
 		3219E8B81D920777009A3C66 /* admin_ward.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8A81D920777009A3C66 /* admin_ward.csv */; };
 		3219E8BD1D920777009A3C66 /* shelter_core.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3219E8AD1D920777009A3C66 /* shelter_core.csv */; };
@@ -145,7 +144,6 @@
 		3219E8A31D920777009A3C66 /* admin_comunity.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = admin_comunity.csv; path = "CSV,PDF/admin_comunity.csv"; sourceTree = "<group>"; };
 		3219E8A41D920777009A3C66 /* admin_fire.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = admin_fire.csv; path = "CSV,PDF/admin_fire.csv"; sourceTree = "<group>"; };
 		3219E8A51D920777009A3C66 /* admin_insurance.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = admin_insurance.csv; path = "CSV,PDF/admin_insurance.csv"; sourceTree = "<group>"; };
-		3219E8A61D920777009A3C66 /* admin_police.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = admin_police.csv; path = "CSV,PDF/admin_police.csv"; sourceTree = "<group>"; };
 		3219E8A71D920777009A3C66 /* admin_publicworks.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = admin_publicworks.csv; path = "CSV,PDF/admin_publicworks.csv"; sourceTree = "<group>"; };
 		3219E8A81D920777009A3C66 /* admin_ward.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = admin_ward.csv; path = "CSV,PDF/admin_ward.csv"; sourceTree = "<group>"; };
 		3219E8AD1D920777009A3C66 /* shelter_core.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shelter_core.csv; path = "CSV,PDF/shelter_core.csv"; sourceTree = "<group>"; };
@@ -300,13 +298,13 @@
 		323CC14A1D88DFB90099EAC7 /* CSV,PDF */ = {
 			isa = PBXGroup;
 			children = (
-				328A9B721D992D00006203D6 /* エクストラ */,
-				328A9B711D992CF1006203D6 /* 育児 */,
 				325409131D90C2520022A20E /* 行政 */,
 				3254091B1D90C50C0022A20E /* 医療 */,
 				3254091C1D90C5F70022A20E /* ゴミ・資源 */,
 				325409151D90C2A50022A20E /* 防災 */,
 				325409161D90C3510022A20E /* 介護 */,
+				328A9B711D992CF1006203D6 /* 育児 */,
+				328A9B721D992D00006203D6 /* エクストラ */,
 			);
 			name = "CSV,PDF";
 			sourceTree = "<group>";
@@ -344,7 +342,6 @@
 				3219E8A31D920777009A3C66 /* admin_comunity.csv */,
 				3219E8A41D920777009A3C66 /* admin_fire.csv */,
 				3219E8A51D920777009A3C66 /* admin_insurance.csv */,
-				3219E8A61D920777009A3C66 /* admin_police.csv */,
 				3219E8A71D920777009A3C66 /* admin_publicworks.csv */,
 				3219E8A81D920777009A3C66 /* admin_ward.csv */,
 				3219E8C21D92099E009A3C66 /* admin_town.csv */,
@@ -675,7 +672,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3219E8B61D920777009A3C66 /* admin_police.csv in Resources */,
 				328A9B8F1D993320006203D6 /* 201_08_びん・缶・ペットボトル（無料）週1回／枝・葉・草（無料）.pdf in Resources */,
 				320874D11D9513E400240A56 /* ic_home@2x.png in Resources */,
 				3219E8B31D920777009A3C66 /* admin_comunity.csv in Resources */,

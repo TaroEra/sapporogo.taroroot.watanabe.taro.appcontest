@@ -14,14 +14,6 @@ class AdminPack: Pack {
         let contents = [
             
             ContentsItem(
-                title:"警察署、交番マップ",
-                fileName:"admin_police",
-                fileType:"csv",
-                purposeType:"MAP",
-                contentsName:"札幌市内交番一覧",
-                contentsUrl:"http://www.city.sapporo.jp/shimin/chiiki-bohan/policebox/index.html"),
-            
-            ContentsItem(
                 title:"消防施設マップ",
                 fileName:"admin_fire",
                 fileType:"csv",

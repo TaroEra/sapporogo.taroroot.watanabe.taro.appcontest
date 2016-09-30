@@ -31,29 +31,4 @@ class Medicalpack: Pack {
                 contentsUrl:"http://www.city.sapporo.jp/hokenjo/f1kansen/koureimeibo.html")
             ])
     }
-    
-//    func initalizeSapporoMedical(){
-//        let realm = try! Realm()
-//        let parseArray = CSVParser.parse("medical_link")
-//        for parseItem in parseArray{
-//            
-//                let contentsArray = parseItem as! NSArray
-//                
-//                let id = contentsArray[0].integerValue
-//                let type = contentsArray[1]
-//                let name = contentsArray[2]
-//                let url = contentsArray[3]
-//                
-//                let value = ["id":id,
-//                             "type":type,
-//                             "name":name,
-//                             "url":url]
-//                
-//                let object = SapproMedicak(value:value)
-//                
-//                try! realm.write{
-//                    realm.add(object, update: true)
-//                }
-//            }
-//        }
 }
