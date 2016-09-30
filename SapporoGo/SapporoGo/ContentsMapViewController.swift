@@ -24,6 +24,9 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let backButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
+        navigationItem.backBarButtonItem = backButtonItem
+        
         if contentsItem?.contentsName == ""{
             contentsLinkButton.hidden = true
             sapporoLabel.hidden = true
@@ -113,9 +116,9 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
         address = address.stringByAppendingString(array[6] as! String)
         address = address.stringByAppendingString(array[5] as! String)
         
-        let addressNumber = array[8]
-        let phoneNumber = array[9]
-        let faxNumber = array[10]
+        let addressNumber = array[9]
+        let phoneNumber = array[10]
+        let faxNumber = array[11]
         
         let valule = ["id":id,
                       "type":type,
@@ -144,6 +147,42 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
         }else
         {
             mapView.removeAnnotations(self.mapView.annotations)
+        }
+    }
+    
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is MKUserLocation{
+            return nil
+        }
+        
+        let reuseIdentifier = "pin"
+        var pinView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseIdentifier)
+        if pinView == nil {
+            pinView = MKPinAnnotationView(annotation:annotation, reuseIdentifier:reuseIdentifier)
+            pinView?.canShowCallout = true
+            
+            if contentsItem!.fileName!.containsString("admin") {
+                let rightButton: AnyObject! = UIButton(type: UIButtonType.DetailDisclosure)
+                pinView?.rightCalloutAccessoryView = rightButton as? UIView
+            }
+        }else{
+            pinView?.annotation = annotation
+        }
+        return pinView
+    }
+    
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        print(#function)
+        if contentsItem!.fileName!.containsString("admin"){
+            
+            let mapObjectTableViewController:MapObjectTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("MapObjectTableViewController")) as! MapObjectTableViewController
+            
+            let defaultRealm = try! Realm()
+            let name:String! = view.annotation!.title!
+            let mapObject = defaultRealm.objects(MapObject).filter("name == %@", name).first
+            mapObjectTableViewController.mapObject = mapObject
+            mapObjectTableViewController.navigationItem.title = mapObject?.name
+            self.navigationController?.pushViewController(mapObjectTableViewController, animated: true)
         }
     }
     

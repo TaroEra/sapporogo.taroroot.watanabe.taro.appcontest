@@ -96,6 +96,7 @@
 		328A9B981D993320006203D6 /* 201_17_市が収集しないもの(家電4品目・パソコン）.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B851D993320006203D6 /* 201_17_市が収集しないもの(家電4品目・パソコン）.pdf */; };
 		328A9B991D993320006203D6 /* 201_18_資源物の回収拠点一覧.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B861D993320006203D6 /* 201_18_資源物の回収拠点一覧.pdf */; };
 		328A9B9A1D993320006203D6 /* 201_19_資源とごみの分別辞典.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B871D993320006203D6 /* 201_19_資源とごみの分別辞典.pdf */; };
+		32A7FDEC1D9DEEA700845EFF /* MapObjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7FDEB1D9DEEA700845EFF /* MapObjectTableViewController.swift */; };
 		32BB23B71D8BD3DB00F8C7F5 /* MapObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB23B61D8BD3DB00F8C7F5 /* MapObject.swift */; };
 		32D155AF1D92576100327805 /* ic_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D155AE1D92576100327805 /* ic_list@2x.png */; };
 		32D155B11D925FD800327805 /* ic_web@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D155B01D925FD800327805 /* ic_web@2x.png */; };
@@ -219,6 +220,7 @@
 		328A9B851D993320006203D6 /* 201_17_市が収集しないもの(家電4品目・パソコン）.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_17_市が収集しないもの(家電4品目・パソコン）.pdf"; path = "CSV,PDF/201_17_市が収集しないもの(家電4品目・パソコン）.pdf"; sourceTree = "<group>"; };
 		328A9B861D993320006203D6 /* 201_18_資源物の回収拠点一覧.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_18_資源物の回収拠点一覧.pdf"; path = "CSV,PDF/201_18_資源物の回収拠点一覧.pdf"; sourceTree = "<group>"; };
 		328A9B871D993320006203D6 /* 201_19_資源とごみの分別辞典.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_19_資源とごみの分別辞典.pdf"; path = "CSV,PDF/201_19_資源とごみの分別辞典.pdf"; sourceTree = "<group>"; };
+		32A7FDEB1D9DEEA700845EFF /* MapObjectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapObjectTableViewController.swift; sourceTree = "<group>"; };
 		32BB23B61D8BD3DB00F8C7F5 /* MapObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapObject.swift; sourceTree = "<group>"; };
 		32D155AE1D92576100327805 /* ic_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_list@2x.png"; path = "Images/ic_list@2x.png"; sourceTree = "<group>"; };
 		32D155B01D925FD800327805 /* ic_web@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_web@2x.png"; path = "Images/ic_web@2x.png"; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				320874D61D95175100240A56 /* SettingTableViewController.swift */,
 				324A14781D9B4B3C00E3592C /* ExtraContentsViewController.swift */,
 				324A147A1D9B737700E3592C /* DoyurinTableViewController.swift */,
+				32A7FDEB1D9DEEA700845EFF /* MapObjectTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -813,6 +816,7 @@
 				3219E8C71D922549009A3C66 /* UserDefaultSupport.swift in Sources */,
 				325162EF1D8A9AD30031E836 /* ContentsItem.swift in Sources */,
 				325162E11D8A7AF50031E836 /* AdminPack.swift in Sources */,
+				32A7FDEC1D9DEEA700845EFF /* MapObjectTableViewController.swift in Sources */,
 				3254093D1D9112EA0022A20E /* SapporoMedical.swift in Sources */,
 				325409411D91169B0022A20E /* CSVParser.swift in Sources */,
 				3219E8CB1D923D7E009A3C66 /* ShelterItemTableViewController.swift in Sources */,

@@ -14,14 +14,6 @@ class AdminPack: Pack {
         let contents = [
             
             ContentsItem(
-                title:"消防施設マップ",
-                fileName:"admin_fire",
-                fileType:"csv",
-                purposeType:"MAP",
-                contentsName:"消防局・消防署（所）一覧",
-                contentsUrl:"http://www.city.sapporo.jp/shobo/shokai/about/renraku/renrakul.html"),
-            
-            ContentsItem(
                 title:"区役所、区民センターマップ",
                 fileName:"admin_ward",
                 fileType:"csv",
@@ -60,6 +52,14 @@ class AdminPack: Pack {
                 purposeType:"MAP",
                 contentsName:"札幌市の区勢",
                 contentsUrl:"http://www.city.sapporo.jp/shimin/shinko/kusei-suishin/sasshi-kusei/"),
+            
+            ContentsItem(
+                title:"消防施設マップ",
+                fileName:"admin_fire",
+                fileType:"csv",
+                purposeType:"MAP",
+                contentsName:"消防局・消防署（所）一覧",
+                contentsUrl:"http://www.city.sapporo.jp/shobo/shokai/about/renraku/renrakul.html")
             ]
         
         super.init(name: "行政", contents:contents)
