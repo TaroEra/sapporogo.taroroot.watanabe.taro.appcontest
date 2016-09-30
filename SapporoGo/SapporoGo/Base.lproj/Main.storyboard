@@ -419,16 +419,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PrF-Lh-voC">
-                                                    <frame key="frameInset" minX="15" minY="4" width="34" height="21"/>
+                                                    <frame key="frameInset" minX="15" minY="4" width="25" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gtg-JM-npR">
-                                                    <frame key="frameInset" minX="15" minY="25" width="44" height="15"/>
+                                                    <frame key="frameInset" minX="15" minY="19" width="56" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -439,42 +439,52 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="電話番号" id="rgZ-Il-4ev">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="naJ-qd-Hba" style="IBUITableViewCellStyleDefault" id="LNq-rR-fXR">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="LNq-rR-fXR">
                                         <rect key="frame" x="0.0" y="100" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LNq-rR-fXR" id="IGV-M0-RnF">
                                             <frame key="frameInset" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="naJ-qd-Hba">
-                                                    <frame key="frameInset" minX="15" width="345" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="xxx-xxx-xxx" translatesAutoresizingMaskIntoConstraints="NO" id="XK6-RQ-RC3">
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                                                </textView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="XK6-RQ-RC3" secondAttribute="trailing" id="JVu-PG-R3W"/>
+                                                <constraint firstItem="XK6-RQ-RC3" firstAttribute="leading" secondItem="IGV-M0-RnF" secondAttribute="leading" constant="12" id="KMc-oK-CEd"/>
+                                                <constraint firstItem="XK6-RQ-RC3" firstAttribute="top" secondItem="IGV-M0-RnF" secondAttribute="top" id="e0O-CI-JUZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="XK6-RQ-RC3" secondAttribute="bottom" id="uJS-WW-iap"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="ファックス" id="XQL-Rn-xi2">
+                            <tableViewSection headerTitle="FAX" id="XQL-Rn-xi2">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="X0I-CK-6ZA" style="IBUITableViewCellStyleDefault" id="4FM-F4-Vso">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4FM-F4-Vso">
                                         <rect key="frame" x="0.0" y="172" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4FM-F4-Vso" id="3jj-oX-fjR">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="4FM-F4-Vso" id="3jj-oX-fjR">
                                             <frame key="frameInset" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X0I-CK-6ZA">
-                                                    <frame key="frameInset" minX="15" width="345" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="xxx-xxx-xxx" translatesAutoresizingMaskIntoConstraints="NO" id="aNe-6I-Kwk">
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                                                </textView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aNe-6I-Kwk" firstAttribute="leading" secondItem="3jj-oX-fjR" secondAttribute="leading" constant="12" id="Ie7-aR-tv3"/>
+                                                <constraint firstAttribute="trailing" secondItem="aNe-6I-Kwk" secondAttribute="trailing" id="Pyq-f1-oYY"/>
+                                                <constraint firstAttribute="bottom" secondItem="aNe-6I-Kwk" secondAttribute="bottom" id="eqM-an-g4N"/>
+                                                <constraint firstItem="aNe-6I-Kwk" firstAttribute="top" secondItem="3jj-oX-fjR" secondAttribute="top" id="xeD-fl-3Ag"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -487,13 +497,13 @@
                     </tableView>
                     <connections>
                         <outlet property="addressCell" destination="S03-75-I6U" id="otg-h0-OEI"/>
-                        <outlet property="faxNumCell" destination="4FM-F4-Vso" id="dmr-rc-FzZ"/>
-                        <outlet property="phoneNumCell" destination="LNq-rR-fXR" id="19i-nl-sI2"/>
+                        <outlet property="faxNumTextView" destination="aNe-6I-Kwk" id="www-58-ztS"/>
+                        <outlet property="phoneNumTextView" destination="XK6-RQ-RC3" id="bW5-0p-HXF"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nlJ-ay-2BZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5670" y="343"/>
+            <point key="canvasLocation" x="5669.6000000000004" y="342.27886056971516"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6eO-IY-M60">

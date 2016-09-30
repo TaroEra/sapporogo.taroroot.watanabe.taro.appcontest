@@ -11,9 +11,9 @@ import UIKit
 class MapObjectTableViewController: UITableViewController {
     
     @IBOutlet weak var addressCell: UITableViewCell!
-    @IBOutlet weak var phoneNumCell: UITableViewCell!
-    @IBOutlet weak var faxNumCell: UITableViewCell!
-    
+    @IBOutlet weak var phoneNumTextView: UITextView!
+    @IBOutlet weak var faxNumTextView: UITextView!
+
     var mapObject:MapObject!
     
     override func viewDidLoad() {
@@ -29,8 +29,8 @@ class MapObjectTableViewController: UITableViewController {
             addressCell.textLabel?.text  = "〒\(mapObject.address_number)"
             addressCell.detailTextLabel?.text = mapObject.address
             
-            phoneNumCell.textLabel?.text = mapObject.phone_number
-            faxNumCell.textLabel?.text = mapObject.fax_number
+            phoneNumTextView.text = mapObject!.phone_number
+            faxNumTextView.text = mapObject!.fax_number
         }
     }
     
