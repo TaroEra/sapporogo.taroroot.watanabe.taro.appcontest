@@ -44,7 +44,7 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
         mapView.userTrackingMode = MKUserTrackingMode.Follow
         
         let coordinate = CLLocationCoordinate2DMake(43.062096, 141.354376)
-        let span = MKCoordinateSpanMake(0.1, 0.1)
+        let span = MKCoordinateSpanMake(0.3, 0.3)
         let region = MKCoordinateRegionMake(coordinate, span)
         mapView.setRegion(region, animated:true)
         
