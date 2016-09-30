@@ -188,7 +188,6 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
     }
     
     func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        print(#function)
         
         let mapObjectTableViewController:MapObjectTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("MapObjectTableViewController")) as! MapObjectTableViewController
         
