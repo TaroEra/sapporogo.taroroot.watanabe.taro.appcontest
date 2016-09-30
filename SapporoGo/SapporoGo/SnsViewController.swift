@@ -22,9 +22,6 @@ class SnsViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tabBarController?.tabBar.hidden = false
-        self.navigationController?.visibleViewController?.navigationItem.title = "SNS"
-        
         searchBar.delegate = self
         
         timelineTableView.delegate = self
@@ -59,9 +56,57 @@ class SnsViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+        self.tabBarController?.tabBar.hidden = false
+        self.navigationController?.visibleViewController?.navigationItem.title = "SNS"
+        
+        let barButtonItem:UIBarButtonItem = UIBarButtonItem()
+        barButtonItem.title = "投稿"
+        barButtonItem.style = UIBarButtonItemStyle.Plain
+        barButtonItem.target = self
+        barButtonItem.action = #selector(showTweetAlert)
+        
+        
+        self.navigationController?.visibleViewController?.navigationItem.rightBarButtonItems = [barButtonItem]
+        
         if twitterAccount != nil {
             getTimeline("#即効札幌市民")
         }
+    }
+    
+    func showTweetAlert(){
+        
+        let alert:UIAlertController = UIAlertController(title:"Tweet",
+                                                        message: "札幌市民としての投稿をしくよろっす",
+                                                        preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let defaultAction:UIAlertAction = UIAlertAction(title: "OK",
+                                                        style: UIAlertActionStyle.Default,
+                                                        handler:{
+                                                            (action:UIAlertAction!) -> Void in
+                                                            let textFields:Array<UITextField>? =  alert.textFields as Array<UITextField>?
+                                                            if textFields != nil {
+                                                                for textField:UITextField in textFields! {
+                                                                    //各textにアクセス
+                                                                    self.postTweet(textField.text!)
+                                                                }
+                                                            }
+        })
+        alert.addAction(defaultAction)
+        
+        //textfiledの追加
+        alert.addTextFieldWithConfigurationHandler({(text:UITextField!) -> Void in
+        })
+        alert.view.setNeedsLayout()
+        self.presentViewController(alert, animated:true, completion: nil)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        //        for let navigationItem in self.navigationController?.visibleViewController?.navigationItem.rightBarButtonItems{
+        //        }
+        
+        self.navigationController?.visibleViewController?.navigationItem.rightBarButtonItems?.removeAll()
     }
     
     override func didReceiveMemoryWarning() {
@@ -79,12 +124,11 @@ class SnsViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         // アカウント選択のActionSheetを表示するボタン
         for account in accounts {
             alert.addAction(UIAlertAction(title: account.username,
-                                          style: .Default,
-                                          handler: { (action) -> Void in
-                                            //
-                                            print("your select account is \(account)")
-                                            self.twitterAccount = account
-                                            self.getTimeline("#即効札幌市民")
+                style: .Default,
+                handler: { (action) -> Void in
+                    print("your select account is \(account)")
+                    self.twitterAccount = account
+                    self.getTimeline("#即効札幌市民")
             }))
         }
         
@@ -146,6 +190,37 @@ class SnsViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         }
     }
     
+    // ツイートを投稿
+    private func postTweet(tweetText:String!) {
+        
+        let URL = NSURL(string: "https://api.twitter.com/1.1/statuses/update.json")
+        
+        // ツイートしたい文章をセット
+        let params = ["status" : tweetText]
+        
+        // リクエストを生成
+        let request = SLRequest(forServiceType: SLServiceTypeTwitter,
+                                requestMethod: .POST,
+                                URL: URL,
+                                parameters: params)
+        
+        // 取得したアカウントをセット
+        request.account = twitterAccount
+        
+        // APIコールを実行
+        request.performRequestWithHandler { (responseData, urlResponse, error) -> Void in
+            
+            if error != nil {
+                print("error is \(error)")
+            }
+            else {
+                // 結果の表示
+                let result = try! NSJSONSerialization.JSONObjectWithData(responseData, options: .AllowFragments) as! NSDictionary
+                print("result is \(result)")
+            }
+        }
+    }
+    
     //MARK: - TableViewDelegate & DataSource
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return timeLines.count
@@ -171,5 +246,5 @@ class SnsViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         getTimeline(searchBar.text!)
     }
-
+    
 }
