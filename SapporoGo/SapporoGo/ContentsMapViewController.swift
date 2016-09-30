@@ -112,13 +112,31 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
         let fileName = contentsItem?.fileName
         
         var address = "北海道"
-        address = address.stringByAppendingString(array[7] as! String)
-        address = address.stringByAppendingString(array[6] as! String)
-        address = address.stringByAppendingString(array[5] as! String)
         
-        let addressNumber = array[9]
-        let phoneNumber = array[10]
-        let faxNumber = array[11]
+        let all_address = array[5] as! String
+        if all_address.containsString("札幌市"){
+            address = address.stringByAppendingString(all_address)
+        }
+        else if all_address.containsString("区"){
+            address = address.stringByAppendingString(array[7] as! String)
+            address = address.stringByAppendingString(all_address)
+        }
+        else{
+            address = address.stringByAppendingString(array[7] as! String)
+            address = address.stringByAppendingString(array[6] as! String)
+            address = address.stringByAppendingString(all_address)
+        }
+        
+        let addressNumber = array[8]
+        var phoneNumber = array[9]
+        if phoneNumber as! String == " "{
+            phoneNumber = "なし"
+        }
+        
+        var faxNumber = array[10]
+        if faxNumber as! String == " "{
+            faxNumber = "なし"
+        }
         
         let valule = ["id":id,
                       "type":type,
@@ -161,10 +179,8 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
             pinView = MKPinAnnotationView(annotation:annotation, reuseIdentifier:reuseIdentifier)
             pinView?.canShowCallout = true
             
-            if contentsItem!.fileName!.containsString("admin") {
-                let rightButton: AnyObject! = UIButton(type: UIButtonType.DetailDisclosure)
-                pinView?.rightCalloutAccessoryView = rightButton as? UIView
-            }
+            let rightButton: AnyObject! = UIButton(type: UIButtonType.DetailDisclosure)
+            pinView?.rightCalloutAccessoryView = rightButton as? UIView
         }else{
             pinView?.annotation = annotation
         }
@@ -173,17 +189,15 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
     
     func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         print(#function)
-        if contentsItem!.fileName!.containsString("admin"){
-            
-            let mapObjectTableViewController:MapObjectTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("MapObjectTableViewController")) as! MapObjectTableViewController
-            
-            let defaultRealm = try! Realm()
-            let name:String! = view.annotation!.title!
-            let mapObject = defaultRealm.objects(MapObject).filter("name == %@", name).first
-            mapObjectTableViewController.mapObject = mapObject
-            mapObjectTableViewController.navigationItem.title = mapObject?.name
-            self.navigationController?.pushViewController(mapObjectTableViewController, animated: true)
-        }
+        
+        let mapObjectTableViewController:MapObjectTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("MapObjectTableViewController")) as! MapObjectTableViewController
+        
+        let defaultRealm = try! Realm()
+        let name:String! = view.annotation!.title!
+        let mapObject = defaultRealm.objects(MapObject).filter("name == %@", name).first
+        mapObjectTableViewController.mapObject = mapObject
+        mapObjectTableViewController.navigationItem.title = mapObject?.name
+        self.navigationController?.pushViewController(mapObjectTableViewController, animated: true)
     }
     
     //CLLocationManagerDelegate

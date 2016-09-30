@@ -13,7 +13,7 @@ class MapObjectTableViewController: UITableViewController {
     @IBOutlet weak var addressCell: UITableViewCell!
     @IBOutlet weak var phoneNumTextView: UITextView!
     @IBOutlet weak var faxNumTextView: UITextView!
-
+    
     var mapObject:MapObject!
     
     override func viewDidLoad() {
@@ -25,13 +25,13 @@ class MapObjectTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        if mapObject != nil{
+        if mapObject.address_number != " " {
             addressCell.textLabel?.text  = "〒\(mapObject.address_number)"
-            addressCell.detailTextLabel?.text = mapObject.address
-            
-            phoneNumTextView.text = mapObject!.phone_number
-            faxNumTextView.text = mapObject!.fax_number
         }
+        addressCell.detailTextLabel?.text = mapObject.address
+        
+        phoneNumTextView.text = mapObject!.phone_number
+        faxNumTextView.text = mapObject!.fax_number
     }
     
     override func didReceiveMemoryWarning() {
