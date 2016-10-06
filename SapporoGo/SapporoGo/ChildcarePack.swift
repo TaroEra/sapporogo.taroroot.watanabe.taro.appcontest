@@ -19,7 +19,15 @@ class ChildcarePack: Pack {
                 fileType:"csv",
                 purposeType:"MAP",
                 contentsName:"保育所について",
-                contentsUrl:"http://www.city.sapporo.jp/kodomo/kosodate/l4_01.html")
+                contentsUrl:"http://www.city.sapporo.jp/kodomo/kosodate/l4_01.html"),
+            
+            ContentsItem(
+                title:"子供運動カード",
+                fileName:"601_子供運動カード",
+                fileType:"pdf",
+                purposeType:"PDF",
+                contentsName:"幼児向けの学習教材を作成しました",
+                contentsUrl:"http://www.pref.hokkaido.lg.jp/hf/kth/kak/youzi2.htm")
             ])
     }
 }
