@@ -49,6 +49,15 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         RealmSupport.initalizeRealmObject((contentsItem?.fileName)!)
         configureLocationManager()
         initializeMapView()
+        
+        let rightBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target: self, action:#selector(launchLocation))
+        rightBarButtonItem.image = UIImage(named: "ic_location")
+        navigationItem.rightBarButtonItem = rightBarButtonItem
+    }
+    
+    func launchLocation(){
+        configureLocationManager()
+        locationManager.startUpdatingLocation()
     }
     
     func configureLocationManager(){

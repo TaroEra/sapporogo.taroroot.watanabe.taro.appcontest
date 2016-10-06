@@ -31,6 +31,7 @@
 		3211178C1DA6249200E3CEF4 /* 347_医療情報_歯科医院_南区.csv in Resources */ = {isa = PBXBuildFile; fileRef = 321117821DA6249100E3CEF4 /* 347_医療情報_歯科医院_南区.csv */; };
 		3211178D1DA6249200E3CEF4 /* 348_医療情報_歯科医院_西区.csv in Resources */ = {isa = PBXBuildFile; fileRef = 321117831DA6249200E3CEF4 /* 348_医療情報_歯科医院_西区.csv */; };
 		3211178E1DA6249200E3CEF4 /* 349_医療情報_歯科医院_手稲区.csv in Resources */ = {isa = PBXBuildFile; fileRef = 321117841DA6249200E3CEF4 /* 349_医療情報_歯科医院_手稲区.csv */; };
+		321117901DA62BCB00E3CEF4 /* ic_location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3211178F1DA62BCB00E3CEF4 /* ic_location@2x.png */; };
 		3219E8C71D922549009A3C66 /* UserDefaultSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */; };
 		3219E8C91D923A70009A3C66 /* ShelterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8C81D923A70009A3C66 /* ShelterItem.swift */; };
 		3219E8CB1D923D7E009A3C66 /* ShelterItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */; };
@@ -179,6 +180,7 @@
 		321117821DA6249100E3CEF4 /* 347_医療情報_歯科医院_南区.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "347_医療情報_歯科医院_南区.csv"; path = "CSV,PDF/医療/347_医療情報_歯科医院_南区.csv"; sourceTree = "<group>"; };
 		321117831DA6249200E3CEF4 /* 348_医療情報_歯科医院_西区.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "348_医療情報_歯科医院_西区.csv"; path = "CSV,PDF/医療/348_医療情報_歯科医院_西区.csv"; sourceTree = "<group>"; };
 		321117841DA6249200E3CEF4 /* 349_医療情報_歯科医院_手稲区.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "349_医療情報_歯科医院_手稲区.csv"; path = "CSV,PDF/医療/349_医療情報_歯科医院_手稲区.csv"; sourceTree = "<group>"; };
+		3211178F1DA62BCB00E3CEF4 /* ic_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_location@2x.png"; path = "Images/ic_location@2x.png"; sourceTree = "<group>"; };
 		3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultSupport.swift; sourceTree = "<group>"; };
 		3219E8C81D923A70009A3C66 /* ShelterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelterItem.swift; sourceTree = "<group>"; };
 		3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelterItemTableViewController.swift; sourceTree = "<group>"; };
@@ -489,6 +491,7 @@
 		3254092E1D9100370022A20E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3211178F1DA62BCB00E3CEF4 /* ic_location@2x.png */,
 				324A147E1D9B7DBB00E3592C /* noimage@2x.jpg */,
 				32D155B81D927D1D00327805 /* bg_app@2x.jpg */,
 				325409381D910F3E0022A20E /* ic_map@2x.png */,
@@ -814,6 +817,7 @@
 				32A52A721D9E26AE0043403B /* 101_行政情報_コミュニティ_地区センター_集会施設.csv in Resources */,
 				321117861DA6249200E3CEF4 /* 341_医療情報_歯科医院_北区.csv in Resources */,
 				3211178C1DA6249200E3CEF4 /* 347_医療情報_歯科医院_南区.csv in Resources */,
+				321117901DA62BCB00E3CEF4 /* ic_location@2x.png in Resources */,
 				32A52A5D1D9E221F0043403B /* 201_13_小型家電リサイクル地区リサイクルセンター／家庭系古紙引取案内.pdf in Resources */,
 				320874C71D94CD5000240A56 /* ヒラギノ角ゴシック_W4.ttc in Resources */,
 				32A52A731D9E26AE0043403B /* 102_行政情報_まちづくり地区センター_地区会館.csv in Resources */,
