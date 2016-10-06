@@ -47,8 +47,11 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         self.view.makeToast("get 1pt", duration: 1.0, position:.Bottom)
         
         RealmSupport.initalizeRealmObject((contentsItem?.fileName)!)
+        configureLocationManager()
         initializeMapView()
-
+    }
+    
+    func configureLocationManager(){
         //
         //現在地表示処理
         //
@@ -65,16 +68,48 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             // まだ承認が得られていない場合は、認証ダイアログを表示.
             locationManager.requestAlwaysAuthorization();
         }
-        
-        // 位置情報の更新を開始.
-        locationManager.startUpdatingLocation()
     }
     
     func initializeMapView(){
         self.mapView.delegate = self
         mapView.userTrackingMode = MKUserTrackingMode.Follow
         
-        let coordinate = CLLocationCoordinate2DMake(43.062096, 141.354376)
+        var coordinate = CLLocationCoordinate2DMake(43.062096, 141.354376)
+        
+        if contentsItem!.title!.containsString("中央区"){
+            coordinate = LocationSuppurt.Chuo
+        }
+        else if contentsItem!.title!.containsString("北区"){
+            coordinate = LocationSuppurt.Kita
+        }
+        else if contentsItem!.title!.containsString("東区"){
+            coordinate = LocationSuppurt.Higashi
+        }
+        else if contentsItem!.title!.containsString("白石区"){
+            coordinate = LocationSuppurt.Shiroishi
+        }
+        else if contentsItem!.title!.containsString("豊平区"){
+            coordinate = LocationSuppurt.Toyohira
+        }
+        else if contentsItem!.title!.containsString("南区"){
+            coordinate = LocationSuppurt.Minami
+        }
+        else if contentsItem!.title!.containsString("西区"){
+            coordinate = LocationSuppurt.Nishi
+        }
+        else if contentsItem!.title!.containsString("厚別区"){
+            coordinate = LocationSuppurt.Atubetu
+        }
+        else if contentsItem!.title!.containsString("手稲区"){
+            coordinate = LocationSuppurt.Teine
+        }
+        else if contentsItem!.title!.containsString("清田区"){
+            coordinate = LocationSuppurt.Kiyota
+        }else{
+            // 位置情報の更新を開始.
+            locationManager.startUpdatingLocation()
+        }
+        
         let span = MKCoordinateSpanMake(0.3, 0.3)
         let region = MKCoordinateRegionMake(coordinate, span)
         mapView.setRegion(region, animated:true)
@@ -82,18 +117,18 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         addAnotations()
     }
     
-//    func initalizeRealmObject(){
-//        
-//        let realm = try! Realm()
-//        
-//        let sections = CSVParser.parse(self.contentsItem?.fileName)
-//        for sectionsItem in sections{
-//            let mapObject = MapObject(value:createMapObjectValue(sectionsItem as! NSArray))
-//            try! realm.write{
-//                realm.add(mapObject, update: true)
-//            }
-//        }
-//    }
+    //    func initalizeRealmObject(){
+    //
+    //        let realm = try! Realm()
+    //
+    //        let sections = CSVParser.parse(self.contentsItem?.fileName)
+    //        for sectionsItem in sections{
+    //            let mapObject = MapObject(value:createMapObjectValue(sectionsItem as! NSArray))
+    //            try! realm.write{
+    //                realm.add(mapObject, update: true)
+    //            }
+    //        }
+    //    }
     
     func addAnotations(){
         let realm = try! Realm();
@@ -108,56 +143,56 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         }
     }
     
-//    func createMapObjectValue( sectionItem:NSArray) -> NSDictionary{
-//        
-//        let array = sectionItem
-//        
-//        let id:Int = array[0].integerValue
-//        let type = array[1]
-//        let name = array[2]
-//        let latitude = array[3].doubleValue
-//        let longitude = array[4].doubleValue
-//        let fileName = contentsItem?.fileName
-//        
-//        var address = "北海道"
-//        
-//        let all_address = array[5] as! String
-//        if all_address.containsString("札幌市"){
-//            address = address.stringByAppendingString(all_address)
-//        }
-//        else if all_address.containsString("区"){
-//            address = address.stringByAppendingString(array[7] as! String)
-//            address = address.stringByAppendingString(all_address)
-//        }
-//        else{
-//            address = address.stringByAppendingString(array[7] as! String)
-//            address = address.stringByAppendingString(array[6] as! String)
-//            address = address.stringByAppendingString(all_address)
-//        }
-//        
-//        let addressNumber = array[8]
-//        var phoneNumber = array[9]
-//        if phoneNumber as! String == " "{
-//            phoneNumber = "なし"
-//        }
-//        
-//        var faxNumber = array[10]
-//        if faxNumber as! String == " "{
-//            faxNumber = "なし"
-//        }
-//        
-//        let valule = ["id":id,
-//                      "type":type,
-//                      "name":name,
-//                      "latitude":latitude,
-//                      "longitude":longitude,
-//                      "address":address,
-//                      "file_name":fileName!,
-//                      "address_number":addressNumber,
-//                      "phone_number":phoneNumber,
-//                      "fax_number":faxNumber]
-//        return valule
-//    }
+    //    func createMapObjectValue( sectionItem:NSArray) -> NSDictionary{
+    //
+    //        let array = sectionItem
+    //
+    //        let id:Int = array[0].integerValue
+    //        let type = array[1]
+    //        let name = array[2]
+    //        let latitude = array[3].doubleValue
+    //        let longitude = array[4].doubleValue
+    //        let fileName = contentsItem?.fileName
+    //
+    //        var address = "北海道"
+    //
+    //        let all_address = array[5] as! String
+    //        if all_address.containsString("札幌市"){
+    //            address = address.stringByAppendingString(all_address)
+    //        }
+    //        else if all_address.containsString("区"){
+    //            address = address.stringByAppendingString(array[7] as! String)
+    //            address = address.stringByAppendingString(all_address)
+    //        }
+    //        else{
+    //            address = address.stringByAppendingString(array[7] as! String)
+    //            address = address.stringByAppendingString(array[6] as! String)
+    //            address = address.stringByAppendingString(all_address)
+    //        }
+    //
+    //        let addressNumber = array[8]
+    //        var phoneNumber = array[9]
+    //        if phoneNumber as! String == " "{
+    //            phoneNumber = "なし"
+    //        }
+    //
+    //        var faxNumber = array[10]
+    //        if faxNumber as! String == " "{
+    //            faxNumber = "なし"
+    //        }
+    //
+    //        let valule = ["id":id,
+    //                      "type":type,
+    //                      "name":name,
+    //                      "latitude":latitude,
+    //                      "longitude":longitude,
+    //                      "address":address,
+    //                      "file_name":fileName!,
+    //                      "address_number":addressNumber,
+    //                      "phone_number":phoneNumber,
+    //                      "fax_number":faxNumber]
+    //        return valule
+    //    }
     
     @IBAction func onTapCreditbutton(sender: AnyObject) {
         let safariViewController = SFSafariViewController(URL:NSURL(string:contentsItem!.contentsUrl!)!)

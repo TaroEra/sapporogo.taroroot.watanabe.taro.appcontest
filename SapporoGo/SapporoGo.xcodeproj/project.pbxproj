@@ -18,6 +18,7 @@
 		320C28591D9173510064DBC5 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320C28581D9173510064DBC5 /* PDFViewController.swift */; };
 		321117721DA6103000E3CEF4 /* LinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321117711DA6103000E3CEF4 /* LinkCell.swift */; };
 		321117741DA6104000E3CEF4 /* LinkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321117731DA6104000E3CEF4 /* LinkCell.xib */; };
+		321117761DA6177600E3CEF4 /* LocationSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321117751DA6177600E3CEF4 /* LocationSupport.swift */; };
 		3219E8C71D922549009A3C66 /* UserDefaultSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */; };
 		3219E8C91D923A70009A3C66 /* ShelterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8C81D923A70009A3C66 /* ShelterItem.swift */; };
 		3219E8CB1D923D7E009A3C66 /* ShelterItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */; };
@@ -153,6 +154,7 @@
 		320C28581D9173510064DBC5 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		321117711DA6103000E3CEF4 /* LinkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkCell.swift; sourceTree = "<group>"; };
 		321117731DA6104000E3CEF4 /* LinkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinkCell.xib; sourceTree = "<group>"; };
+		321117751DA6177600E3CEF4 /* LocationSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSupport.swift; sourceTree = "<group>"; };
 		3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultSupport.swift; sourceTree = "<group>"; };
 		3219E8C81D923A70009A3C66 /* ShelterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelterItem.swift; sourceTree = "<group>"; };
 		3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelterItemTableViewController.swift; sourceTree = "<group>"; };
@@ -478,6 +480,7 @@
 				325409401D91169B0022A20E /* CSVParser.swift */,
 				3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */,
 				32A52AA41D9E4E970043403B /* RealmSupport.swift */,
+				321117751DA6177600E3CEF4 /* LocationSupport.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -880,6 +883,7 @@
 				325409331D9101E20022A20E /* UIImage(resize).swift in Sources */,
 				324A14751D9B47CF00E3592C /* ExtraCellView.swift in Sources */,
 				326383C81D87D1F400DED761 /* ContentsTableViewController.swift in Sources */,
+				321117761DA6177600E3CEF4 /* LocationSupport.swift in Sources */,
 				320874D71D95175100240A56 /* SettingTableViewController.swift in Sources */,
 				325162DD1D8A796E0031E836 /* MedicalPack.swift in Sources */,
 				325162E91D8A7C8A0031E836 /* Pack.swift in Sources */,
