@@ -24,6 +24,9 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //
+        //ナビゲーションバーについて
+        //
         let backButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
         navigationItem.backBarButtonItem = backButtonItem
         
@@ -35,24 +38,17 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
             
             self.contentsLinkButton.setTitle(contentsItem!.contentsName, forState: UIControlState.Normal)
         }
+        
+        //
+        //ユーザーデフォルトについて
+        //
         UserDefaultSurpport.userTotalPoint += 1
         UserDefaultSurpport.userPoint += 1
-        
         self.view.makeToast("get 1pt", duration: 1.0, position:.Bottom)
         
-        self.mapView.delegate = self
-        mapView.userTrackingMode = MKUserTrackingMode.Follow
-        
-        let coordinate = CLLocationCoordinate2DMake(43.062096, 141.354376)
-        let span = MKCoordinateSpanMake(0.3, 0.3)
-        let region = MKCoordinateRegionMake(coordinate, span)
-        mapView.setRegion(region, animated:true)
-        
-        self.mapView.removeAnnotations(self.mapView.annotations)
-        
-        initalizeRealmObject()
-        addAnotations()
-        
+        RealmSupport.initalizeRealmObject((contentsItem?.fileName)!)
+        initializeMapView()
+
         //
         //現在地表示処理
         //
@@ -74,18 +70,30 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
         locationManager.startUpdatingLocation()
     }
     
-    func initalizeRealmObject(){
+    func initializeMapView(){
+        self.mapView.delegate = self
+        mapView.userTrackingMode = MKUserTrackingMode.Follow
         
-        let realm = try! Realm()
-        
-        let sections = CSVParser.parse(self.contentsItem?.fileName)
-        for sectionsItem in sections{
-            let mapObject = MapObject(value:createMapObjectValue(sectionsItem as! NSArray))
-            try! realm.write{
-                realm.add(mapObject, update: true)
-            }
-        }
+        let coordinate = CLLocationCoordinate2DMake(43.062096, 141.354376)
+        let span = MKCoordinateSpanMake(0.3, 0.3)
+        let region = MKCoordinateRegionMake(coordinate, span)
+        mapView.setRegion(region, animated:true)
+        self.mapView.removeAnnotations(self.mapView.annotations)
+        addAnotations()
     }
+    
+//    func initalizeRealmObject(){
+//        
+//        let realm = try! Realm()
+//        
+//        let sections = CSVParser.parse(self.contentsItem?.fileName)
+//        for sectionsItem in sections{
+//            let mapObject = MapObject(value:createMapObjectValue(sectionsItem as! NSArray))
+//            try! realm.write{
+//                realm.add(mapObject, update: true)
+//            }
+//        }
+//    }
     
     func addAnotations(){
         let realm = try! Realm();
@@ -100,56 +108,56 @@ class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocation
         }
     }
     
-    func createMapObjectValue( sectionItem:NSArray) -> NSDictionary{
-        
-        let array = sectionItem
-        
-        let id:Int = array[0].integerValue
-        let type = array[1]
-        let name = array[2]
-        let latitude = array[3].doubleValue
-        let longitude = array[4].doubleValue
-        let fileName = contentsItem?.fileName
-        
-        var address = "北海道"
-        
-        let all_address = array[5] as! String
-        if all_address.containsString("札幌市"){
-            address = address.stringByAppendingString(all_address)
-        }
-        else if all_address.containsString("区"){
-            address = address.stringByAppendingString(array[7] as! String)
-            address = address.stringByAppendingString(all_address)
-        }
-        else{
-            address = address.stringByAppendingString(array[7] as! String)
-            address = address.stringByAppendingString(array[6] as! String)
-            address = address.stringByAppendingString(all_address)
-        }
-        
-        let addressNumber = array[8]
-        var phoneNumber = array[9]
-        if phoneNumber as! String == " "{
-            phoneNumber = "なし"
-        }
-        
-        var faxNumber = array[10]
-        if faxNumber as! String == " "{
-            faxNumber = "なし"
-        }
-        
-        let valule = ["id":id,
-                      "type":type,
-                      "name":name,
-                      "latitude":latitude,
-                      "longitude":longitude,
-                      "address":address,
-                      "file_name":fileName!,
-                      "address_number":addressNumber,
-                      "phone_number":phoneNumber,
-                      "fax_number":faxNumber]
-        return valule
-    }
+//    func createMapObjectValue( sectionItem:NSArray) -> NSDictionary{
+//        
+//        let array = sectionItem
+//        
+//        let id:Int = array[0].integerValue
+//        let type = array[1]
+//        let name = array[2]
+//        let latitude = array[3].doubleValue
+//        let longitude = array[4].doubleValue
+//        let fileName = contentsItem?.fileName
+//        
+//        var address = "北海道"
+//        
+//        let all_address = array[5] as! String
+//        if all_address.containsString("札幌市"){
+//            address = address.stringByAppendingString(all_address)
+//        }
+//        else if all_address.containsString("区"){
+//            address = address.stringByAppendingString(array[7] as! String)
+//            address = address.stringByAppendingString(all_address)
+//        }
+//        else{
+//            address = address.stringByAppendingString(array[7] as! String)
+//            address = address.stringByAppendingString(array[6] as! String)
+//            address = address.stringByAppendingString(all_address)
+//        }
+//        
+//        let addressNumber = array[8]
+//        var phoneNumber = array[9]
+//        if phoneNumber as! String == " "{
+//            phoneNumber = "なし"
+//        }
+//        
+//        var faxNumber = array[10]
+//        if faxNumber as! String == " "{
+//            faxNumber = "なし"
+//        }
+//        
+//        let valule = ["id":id,
+//                      "type":type,
+//                      "name":name,
+//                      "latitude":latitude,
+//                      "longitude":longitude,
+//                      "address":address,
+//                      "file_name":fileName!,
+//                      "address_number":addressNumber,
+//                      "phone_number":phoneNumber,
+//                      "fax_number":faxNumber]
+//        return valule
+//    }
     
     @IBAction func onTapCreditbutton(sender: AnyObject) {
         let safariViewController = SFSafariViewController(URL:NSURL(string:contentsItem!.contentsUrl!)!)

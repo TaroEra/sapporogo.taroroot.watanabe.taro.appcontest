@@ -38,7 +38,7 @@ class AdminPack: Pack {
                 contentsUrl:"http://www.city.sapporo.jp/shimin/shinko/kusei-suishin/sasshi-kusei/"),
             
             ContentsItem(
-                title:"保険センターマップ",
+                title:"保健センターマップ",
                 fileName:"104_行政情報_保健センター",
                 fileType:"csv",
                 purposeType:"MAP",

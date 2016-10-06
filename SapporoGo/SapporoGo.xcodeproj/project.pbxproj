@@ -104,6 +104,7 @@
 		32A52AA11D9E353C0043403B /* 901_エクストラ_道有林語録.csv in Resources */ = {isa = PBXBuildFile; fileRef = 32A52A9D1D9E353C0043403B /* 901_エクストラ_道有林語録.csv */; };
 		32A52AA21D9E353C0043403B /* 902_エクストラ_札幌市内スーパー銭湯.csv in Resources */ = {isa = PBXBuildFile; fileRef = 32A52A9E1D9E353C0043403B /* 902_エクストラ_札幌市内スーパー銭湯.csv */; };
 		32A52AA31D9E353C0043403B /* 905_エクストラ_公園トイレ中央区.csv in Resources */ = {isa = PBXBuildFile; fileRef = 32A52A9F1D9E353C0043403B /* 905_エクストラ_公園トイレ中央区.csv */; };
+		32A52AA51D9E4E970043403B /* RealmSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A52AA41D9E4E970043403B /* RealmSupport.swift */; };
 		32A7FDEC1D9DEEA700845EFF /* MapObjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7FDEB1D9DEEA700845EFF /* MapObjectTableViewController.swift */; };
 		32BB23B71D8BD3DB00F8C7F5 /* MapObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB23B61D8BD3DB00F8C7F5 /* MapObject.swift */; };
 		32D155AF1D92576100327805 /* ic_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D155AE1D92576100327805 /* ic_list@2x.png */; };
@@ -236,6 +237,7 @@
 		32A52A9D1D9E353C0043403B /* 901_エクストラ_道有林語録.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "901_エクストラ_道有林語録.csv"; path = "CSV,PDF/エクストラ/901_エクストラ_道有林語録.csv"; sourceTree = "<group>"; };
 		32A52A9E1D9E353C0043403B /* 902_エクストラ_札幌市内スーパー銭湯.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "902_エクストラ_札幌市内スーパー銭湯.csv"; path = "CSV,PDF/エクストラ/902_エクストラ_札幌市内スーパー銭湯.csv"; sourceTree = "<group>"; };
 		32A52A9F1D9E353C0043403B /* 905_エクストラ_公園トイレ中央区.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "905_エクストラ_公園トイレ中央区.csv"; path = "CSV,PDF/エクストラ/905_エクストラ_公園トイレ中央区.csv"; sourceTree = "<group>"; };
+		32A52AA41D9E4E970043403B /* RealmSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmSupport.swift; sourceTree = "<group>"; };
 		32A7FDEB1D9DEEA700845EFF /* MapObjectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapObjectTableViewController.swift; sourceTree = "<group>"; };
 		32BB23B61D8BD3DB00F8C7F5 /* MapObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapObject.swift; sourceTree = "<group>"; };
 		32D155AE1D92576100327805 /* ic_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_list@2x.png"; path = "Images/ic_list@2x.png"; sourceTree = "<group>"; };
@@ -295,8 +297,8 @@
 				326383C71D87D1F400DED761 /* ContentsTableViewController.swift */,
 				325162F61D8AA3FD0031E836 /* ContentsMapViewController.swift */,
 				320C28581D9173510064DBC5 /* PDFViewController.swift */,
-				3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */,
 				320874D61D95175100240A56 /* SettingTableViewController.swift */,
+				3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */,
 				324A14781D9B4B3C00E3592C /* ExtraContentsViewController.swift */,
 				324A147A1D9B737700E3592C /* DoyurinTableViewController.swift */,
 				32A7FDEB1D9DEEA700845EFF /* MapObjectTableViewController.swift */,
@@ -463,6 +465,7 @@
 				325409321D9101E20022A20E /* UIImage(resize).swift */,
 				325409401D91169B0022A20E /* CSVParser.swift */,
 				3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */,
+				32A52AA41D9E4E970043403B /* RealmSupport.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -871,6 +874,7 @@
 				3253A1141D8B95E00081B1C2 /* AppDelegate.m in Sources */,
 				3257AB911D829D8D0036E6E8 /* HomeViewController.swift in Sources */,
 				325162DF1D8A7ADD0031E836 /* ResourcePack.swift in Sources */,
+				32A52AA51D9E4E970043403B /* RealmSupport.swift in Sources */,
 				324A14791D9B4B3C00E3592C /* ExtraContentsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
