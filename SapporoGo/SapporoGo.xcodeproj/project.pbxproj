@@ -19,6 +19,18 @@
 		321117721DA6103000E3CEF4 /* LinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321117711DA6103000E3CEF4 /* LinkCell.swift */; };
 		321117741DA6104000E3CEF4 /* LinkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321117731DA6104000E3CEF4 /* LinkCell.xib */; };
 		321117761DA6177600E3CEF4 /* LocationSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321117751DA6177600E3CEF4 /* LocationSupport.swift */; };
+		321117781DA61E6800E3CEF4 /* MedicalSeniorVaccicationPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321117771DA61E6800E3CEF4 /* MedicalSeniorVaccicationPack.swift */; };
+		3211177A1DA61E9400E3CEF4 /* MedicalDentalClinicPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321117791DA61E9400E3CEF4 /* MedicalDentalClinicPack.swift */; };
+		321117851DA6249200E3CEF4 /* 340_医療情報_歯科医院_中央区.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3211177B1DA6249100E3CEF4 /* 340_医療情報_歯科医院_中央区.csv */; };
+		321117861DA6249200E3CEF4 /* 341_医療情報_歯科医院_北区.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3211177C1DA6249100E3CEF4 /* 341_医療情報_歯科医院_北区.csv */; };
+		321117871DA6249200E3CEF4 /* 342_医療情報_歯科医院_東区.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3211177D1DA6249100E3CEF4 /* 342_医療情報_歯科医院_東区.csv */; };
+		321117881DA6249200E3CEF4 /* 343_医療情報_歯科医院_白石区.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3211177E1DA6249100E3CEF4 /* 343_医療情報_歯科医院_白石区.csv */; };
+		321117891DA6249200E3CEF4 /* 344_医療情報_歯科医院_厚別区.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3211177F1DA6249100E3CEF4 /* 344_医療情報_歯科医院_厚別区.csv */; };
+		3211178A1DA6249200E3CEF4 /* 345_医療情報_歯科医院_豊平区.csv in Resources */ = {isa = PBXBuildFile; fileRef = 321117801DA6249100E3CEF4 /* 345_医療情報_歯科医院_豊平区.csv */; };
+		3211178B1DA6249200E3CEF4 /* 346_医療情報_歯科医院_清田区.csv in Resources */ = {isa = PBXBuildFile; fileRef = 321117811DA6249100E3CEF4 /* 346_医療情報_歯科医院_清田区.csv */; };
+		3211178C1DA6249200E3CEF4 /* 347_医療情報_歯科医院_南区.csv in Resources */ = {isa = PBXBuildFile; fileRef = 321117821DA6249100E3CEF4 /* 347_医療情報_歯科医院_南区.csv */; };
+		3211178D1DA6249200E3CEF4 /* 348_医療情報_歯科医院_西区.csv in Resources */ = {isa = PBXBuildFile; fileRef = 321117831DA6249200E3CEF4 /* 348_医療情報_歯科医院_西区.csv */; };
+		3211178E1DA6249200E3CEF4 /* 349_医療情報_歯科医院_手稲区.csv in Resources */ = {isa = PBXBuildFile; fileRef = 321117841DA6249200E3CEF4 /* 349_医療情報_歯科医院_手稲区.csv */; };
 		3219E8C71D922549009A3C66 /* UserDefaultSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */; };
 		3219E8C91D923A70009A3C66 /* ShelterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8C81D923A70009A3C66 /* ShelterItem.swift */; };
 		3219E8CB1D923D7E009A3C66 /* ShelterItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */; };
@@ -155,6 +167,18 @@
 		321117711DA6103000E3CEF4 /* LinkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkCell.swift; sourceTree = "<group>"; };
 		321117731DA6104000E3CEF4 /* LinkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinkCell.xib; sourceTree = "<group>"; };
 		321117751DA6177600E3CEF4 /* LocationSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSupport.swift; sourceTree = "<group>"; };
+		321117771DA61E6800E3CEF4 /* MedicalSeniorVaccicationPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalSeniorVaccicationPack.swift; sourceTree = "<group>"; };
+		321117791DA61E9400E3CEF4 /* MedicalDentalClinicPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalDentalClinicPack.swift; sourceTree = "<group>"; };
+		3211177B1DA6249100E3CEF4 /* 340_医療情報_歯科医院_中央区.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "340_医療情報_歯科医院_中央区.csv"; path = "CSV,PDF/医療/340_医療情報_歯科医院_中央区.csv"; sourceTree = "<group>"; };
+		3211177C1DA6249100E3CEF4 /* 341_医療情報_歯科医院_北区.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "341_医療情報_歯科医院_北区.csv"; path = "CSV,PDF/医療/341_医療情報_歯科医院_北区.csv"; sourceTree = "<group>"; };
+		3211177D1DA6249100E3CEF4 /* 342_医療情報_歯科医院_東区.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "342_医療情報_歯科医院_東区.csv"; path = "CSV,PDF/医療/342_医療情報_歯科医院_東区.csv"; sourceTree = "<group>"; };
+		3211177E1DA6249100E3CEF4 /* 343_医療情報_歯科医院_白石区.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "343_医療情報_歯科医院_白石区.csv"; path = "CSV,PDF/医療/343_医療情報_歯科医院_白石区.csv"; sourceTree = "<group>"; };
+		3211177F1DA6249100E3CEF4 /* 344_医療情報_歯科医院_厚別区.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "344_医療情報_歯科医院_厚別区.csv"; path = "CSV,PDF/医療/344_医療情報_歯科医院_厚別区.csv"; sourceTree = "<group>"; };
+		321117801DA6249100E3CEF4 /* 345_医療情報_歯科医院_豊平区.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "345_医療情報_歯科医院_豊平区.csv"; path = "CSV,PDF/医療/345_医療情報_歯科医院_豊平区.csv"; sourceTree = "<group>"; };
+		321117811DA6249100E3CEF4 /* 346_医療情報_歯科医院_清田区.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "346_医療情報_歯科医院_清田区.csv"; path = "CSV,PDF/医療/346_医療情報_歯科医院_清田区.csv"; sourceTree = "<group>"; };
+		321117821DA6249100E3CEF4 /* 347_医療情報_歯科医院_南区.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "347_医療情報_歯科医院_南区.csv"; path = "CSV,PDF/医療/347_医療情報_歯科医院_南区.csv"; sourceTree = "<group>"; };
+		321117831DA6249200E3CEF4 /* 348_医療情報_歯科医院_西区.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "348_医療情報_歯科医院_西区.csv"; path = "CSV,PDF/医療/348_医療情報_歯科医院_西区.csv"; sourceTree = "<group>"; };
+		321117841DA6249200E3CEF4 /* 349_医療情報_歯科医院_手稲区.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "349_医療情報_歯科医院_手稲区.csv"; path = "CSV,PDF/医療/349_医療情報_歯科医院_手稲区.csv"; sourceTree = "<group>"; };
 		3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultSupport.swift; sourceTree = "<group>"; };
 		3219E8C81D923A70009A3C66 /* ShelterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelterItem.swift; sourceTree = "<group>"; };
 		3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelterItemTableViewController.swift; sourceTree = "<group>"; };
@@ -348,6 +372,8 @@
 				325162E81D8A7C8A0031E836 /* Pack.swift */,
 				325162E01D8A7AF50031E836 /* AdminPack.swift */,
 				325162DC1D8A796E0031E836 /* MedicalPack.swift */,
+				321117771DA61E6800E3CEF4 /* MedicalSeniorVaccicationPack.swift */,
+				321117791DA61E9400E3CEF4 /* MedicalDentalClinicPack.swift */,
 				325162DE1D8A7ADD0031E836 /* ResourcePack.swift */,
 				325162E61D8A7C620031E836 /* DisasterPack.swift */,
 				325162E21D8A7C2F0031E836 /* ChildcarePack.swift */,
@@ -406,6 +432,16 @@
 		3254091B1D90C50C0022A20E /* 医療 */ = {
 			isa = PBXGroup;
 			children = (
+				3211177B1DA6249100E3CEF4 /* 340_医療情報_歯科医院_中央区.csv */,
+				3211177C1DA6249100E3CEF4 /* 341_医療情報_歯科医院_北区.csv */,
+				3211177D1DA6249100E3CEF4 /* 342_医療情報_歯科医院_東区.csv */,
+				3211177E1DA6249100E3CEF4 /* 343_医療情報_歯科医院_白石区.csv */,
+				3211177F1DA6249100E3CEF4 /* 344_医療情報_歯科医院_厚別区.csv */,
+				321117801DA6249100E3CEF4 /* 345_医療情報_歯科医院_豊平区.csv */,
+				321117811DA6249100E3CEF4 /* 346_医療情報_歯科医院_清田区.csv */,
+				321117821DA6249100E3CEF4 /* 347_医療情報_歯科医院_南区.csv */,
+				321117831DA6249200E3CEF4 /* 348_医療情報_歯科医院_西区.csv */,
+				321117841DA6249200E3CEF4 /* 349_医療情報_歯科医院_手稲区.csv */,
 				32A52A781D9E2BC60043403B /* 301_医療情報_高齢予防接種中央区.csv */,
 				32A52A791D9E2BC60043403B /* 302_医療情報_高齢予防接種北区.csv */,
 				32A52A7A1D9E2BC60043403B /* 303_医療情報_高齢予防接種東区.csv */,
@@ -728,6 +764,7 @@
 				32A52A5B1D9E221F0043403B /* 201_11_大型ごみの申込方法と手順／主な大型ごみの処理手数料.pdf in Resources */,
 				32A52AA21D9E353C0043403B /* 902_エクストラ_札幌市内スーパー銭湯.csv in Resources */,
 				32A52A5F1D9E221F0043403B /* 201_15_資源のゆくえ（札幌市のリサイクル）.pdf in Resources */,
+				3211178B1DA6249200E3CEF4 /* 346_医療情報_歯科医院_清田区.csv in Resources */,
 				32A52A581D9E221F0043403B /* 201_08_びん・缶・ペットボトル（無料）週1回／枝・葉・草（無料）.pdf in Resources */,
 				32A52A921D9E33A30043403B /* 500_避難所_広域避難所.csv in Resources */,
 				32A52A681D9E223E0043403B /* garbage_english.pdf in Resources */,
@@ -741,6 +778,7 @@
 				32A52A8B1D9E2BC60043403B /* 309_医療情報_高齢予防接種西区.csv in Resources */,
 				32A52A621D9E221F0043403B /* 201_18_資源物の回収拠点一覧.pdf in Resources */,
 				32A52A571D9E221F0043403B /* 201_07_容器包装プラスチック（無料）週1回.pdf in Resources */,
+				3211178E1DA6249200E3CEF4 /* 349_医療情報_歯科医院_手稲区.csv in Resources */,
 				32A52A861D9E2BC60043403B /* 304_医療情報_高齢予防接種白石区.csv in Resources */,
 				320874CD1D9512A400240A56 /* ic_settings@2x.png in Resources */,
 				325409431D9134A60022A20E /* ic_link@2x.png in Resources */,
@@ -749,9 +787,12 @@
 				324A14831D9B894700E3592C /* ic_user@2x.png in Resources */,
 				324A147F1D9B7DBB00E3592C /* noimage@2x.jpg in Resources */,
 				32A52A8A1D9E2BC60043403B /* 308_医療情報_高齢予防接種南区.csv in Resources */,
+				321117891DA6249200E3CEF4 /* 344_医療情報_歯科医院_厚別区.csv in Resources */,
+				321117851DA6249200E3CEF4 /* 340_医療情報_歯科医院_中央区.csv in Resources */,
 				32A52A941D9E33A30043403B /* 502_避難所_地域避難所.csv in Resources */,
 				32A52A9B1D9E35130043403B /* 600_育児_認可保育所.csv in Resources */,
 				32A52A951D9E33A30043403B /* 505_防災_給水_調整前.csv in Resources */,
+				321117881DA6249200E3CEF4 /* 343_医療情報_歯科医院_白石区.csv in Resources */,
 				32A52A741D9E26AE0043403B /* 103_行政情報_土木センター.csv in Resources */,
 				32A52AA01D9E353C0043403B /* 900_エクストラ_札幌交通機関.csv in Resources */,
 				32DAF97C1D7AC02500BCABCF /* LaunchScreen.storyboard in Resources */,
@@ -761,6 +802,7 @@
 				32DAF9791D7AC02500BCABCF /* Assets.xcassets in Resources */,
 				32A52A711D9E26AE0043403B /* 100_行政情報_区役所_区民センター.csv in Resources */,
 				32A52A591D9E221F0043403B /* 201_09_雑がみ（無料）2週1回.pdf in Resources */,
+				3211178D1DA6249200E3CEF4 /* 348_医療情報_歯科医院_西区.csv in Resources */,
 				320874D91D951DD600240A56 /* ic_copyright@2x.png in Resources */,
 				32A52A891D9E2BC60043403B /* 307_医療情報_高齢予防接種清田区.csv in Resources */,
 				32A52A931D9E33A30043403B /* 501_避難所_基幹避難所.csv in Resources */,
@@ -770,6 +812,8 @@
 				32A52A991D9E34D10043403B /* 700_介護_有料老人ホーム.csv in Resources */,
 				32A52A871D9E2BC60043403B /* 305_医療情報_高齢予防接種厚別区.csv in Resources */,
 				32A52A721D9E26AE0043403B /* 101_行政情報_コミュニティ_地区センター_集会施設.csv in Resources */,
+				321117861DA6249200E3CEF4 /* 341_医療情報_歯科医院_北区.csv in Resources */,
+				3211178C1DA6249200E3CEF4 /* 347_医療情報_歯科医院_南区.csv in Resources */,
 				32A52A5D1D9E221F0043403B /* 201_13_小型家電リサイクル地区リサイクルセンター／家庭系古紙引取案内.pdf in Resources */,
 				320874C71D94CD5000240A56 /* ヒラギノ角ゴシック_W4.ttc in Resources */,
 				32A52A731D9E26AE0043403B /* 102_行政情報_まちづくり地区センター_地区会館.csv in Resources */,
@@ -782,6 +826,8 @@
 				32DAF9771D7AC02500BCABCF /* Main.storyboard in Resources */,
 				32A52AA31D9E353C0043403B /* 905_エクストラ_公園トイレ中央区.csv in Resources */,
 				32D155B11D925FD800327805 /* ic_web@2x.png in Resources */,
+				3211178A1DA6249200E3CEF4 /* 345_医療情報_歯科医院_豊平区.csv in Resources */,
+				321117871DA6249200E3CEF4 /* 342_医療情報_歯科医院_東区.csv in Resources */,
 				324A14811D9B803600E3592C /* ic_info@2x.png in Resources */,
 				320874D51D9514EB00240A56 /* ic_share@2x.png in Resources */,
 				320874D21D9513E400240A56 /* ic_lock@2x.png in Resources */,
@@ -872,7 +918,9 @@
 				325162E11D8A7AF50031E836 /* AdminPack.swift in Sources */,
 				32A7FDEC1D9DEEA700845EFF /* MapObjectTableViewController.swift in Sources */,
 				3254093D1D9112EA0022A20E /* SapporoMedical.swift in Sources */,
+				3211177A1DA61E9400E3CEF4 /* MedicalDentalClinicPack.swift in Sources */,
 				325409411D91169B0022A20E /* CSVParser.swift in Sources */,
+				321117781DA61E6800E3CEF4 /* MedicalSeniorVaccicationPack.swift in Sources */,
 				3219E8CB1D923D7E009A3C66 /* ShelterItemTableViewController.swift in Sources */,
 				324A147D1D9B786200E3592C /* DoyurinItem.swift in Sources */,
 				324A14771D9B48BE00E3592C /* ExtraContentsItem.swift in Sources */,

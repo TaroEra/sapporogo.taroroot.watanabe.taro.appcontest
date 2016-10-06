@@ -110,7 +110,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             locationManager.startUpdatingLocation()
         }
         
-        let span = MKCoordinateSpanMake(0.3, 0.3)
+        let span = MKCoordinateSpanMake(0.1, 0.1)
         let region = MKCoordinateRegionMake(coordinate, span)
         mapView.setRegion(region, animated:true)
         self.mapView.removeAnnotations(self.mapView.annotations)

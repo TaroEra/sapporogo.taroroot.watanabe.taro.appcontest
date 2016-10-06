@@ -78,7 +78,25 @@ class ContentsTableViewController: UIViewController, UITableViewDelegate, UITabl
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        if pack?.contents![indexPath.row].purposeType == "MAP"{
+        if pack?.contents![indexPath.row].title == "高齢者予防接種マップ"{
+            
+            let contentsTableviewController:ContentsTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsTableViewController")) as! ContentsTableViewController
+            var pack:Pack!
+                pack = MedicalSeniorVaccicationPack()
+                contentsTableviewController.pack = pack;
+            self.navigationController?.pushViewController(contentsTableviewController, animated: true);
+        }
+            
+        else if pack?.contents![indexPath.row].title == "歯科医院マップ"{
+            
+            let contentsTableviewController:ContentsTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsTableViewController")) as! ContentsTableViewController
+            var pack:Pack!
+            pack = MedicalDentalClinicPack()
+            contentsTableviewController.pack = pack;
+            self.navigationController?.pushViewController(contentsTableviewController, animated: true);
+        }
+        
+        else if pack?.contents![indexPath.row].purposeType == "MAP"{
             let contentsMapViewController:MapViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsMapViewController")) as! MapViewController
             contentsMapViewController.contentsItem = self.pack?.contents![indexPath.row]
             contentsMapViewController.navigationItem.title = self.pack?.contents![indexPath.row].title
