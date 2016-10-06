@@ -16,17 +16,23 @@ class RealmSupport {
     
     class func initalizeRealmObject(fileName:String){
         
-        print(realm.configuration.fileURL)
+//        print(realm.configuration.fileURL)
         
         let sections = CSVParser.parse(fileName)
-        for sectionsItem in sections{
+        for section in sections{
+            
+            let sectionItem = section as! NSArray
             
             //ここで分岐させるべきかも
 
-            initializeMapObject(fileName, sectionItem:sectionsItem as! NSArray)
+            initializeMapObject(fileName, sectionItem:sectionItem)
             
             if fileName.containsString("医療情報_高齢予防接種"){
-                initializeSeniorVaccination(fileName, sectionItem:sectionsItem as! NSArray)
+                initializeSeniorVaccination(fileName, sectionItem:sectionItem)
+            }
+            
+            if fileName.containsString("スーパー銭湯"){
+                initializeSuperSento(fileName, sectionItem: sectionItem)
             }
         }
     }
@@ -85,7 +91,7 @@ class RealmSupport {
         }
     }
     
-    class private func initializeSeniorVaccination(filename:String, sectionItem:NSArray){
+    class private func initializeSeniorVaccination(fileName:String, sectionItem:NSArray){
         
         let array = sectionItem
         let id:Int = array[0].integerValue
@@ -108,6 +114,34 @@ class RealmSupport {
         
         try! realm.write{
             realm.add(seniorVaccination, update: true)
+        }
+    }
+    
+    class  private func initializeSuperSento(fileName:String, sectionItem:NSArray){
+       
+        let array = sectionItem
+        let id:Int = array[0].integerValue
+        let charge = array[12].integerValue
+        let url = array[13]
+        let sentoItem = array[16]
+        let rental = array[17]
+        let special = array[18]
+        let open = array[19]
+        let close = array[20]
+        
+        let value = ["id":id,
+                     "charge":charge,
+                     "url":url,
+                     "sentoItem":sentoItem,
+                     "rental":rental,
+                     "special":special,
+                     "open":open,
+                     "close":close]
+        
+        let superSento = SuperSento(value:value)
+        
+        try! realm.write{
+            realm.add(superSento, update: true)
         }
     }
 }

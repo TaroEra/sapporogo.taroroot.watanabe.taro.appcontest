@@ -16,6 +16,8 @@
 		320874D71D95175100240A56 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320874D61D95175100240A56 /* SettingTableViewController.swift */; };
 		320874D91D951DD600240A56 /* ic_copyright@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320874D81D951DD600240A56 /* ic_copyright@2x.png */; };
 		320C28591D9173510064DBC5 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320C28581D9173510064DBC5 /* PDFViewController.swift */; };
+		321117721DA6103000E3CEF4 /* LinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321117711DA6103000E3CEF4 /* LinkCell.swift */; };
+		321117741DA6104000E3CEF4 /* LinkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321117731DA6104000E3CEF4 /* LinkCell.xib */; };
 		3219E8C71D922549009A3C66 /* UserDefaultSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */; };
 		3219E8C91D923A70009A3C66 /* ShelterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8C81D923A70009A3C66 /* ShelterItem.swift */; };
 		3219E8CB1D923D7E009A3C66 /* ShelterItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */; };
@@ -53,6 +55,7 @@
 		326383CA1D87DE8800DED761 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326383C91D87DE8800DED761 /* Accounts.framework */; };
 		326383CC1D87DE9000DED761 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326383CB1D87DE9000DED761 /* Social.framework */; };
 		327133451DA5D7A2006DF9DE /* SeniorVaccination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327133441DA5D7A2006DF9DE /* SeniorVaccination.swift */; };
+		327133471DA5F56C006DF9DE /* SuperSento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327133461DA5F56C006DF9DE /* SuperSento.swift */; };
 		328A9B5A1D992B12006203D6 /* ic_copyright_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B591D992B12006203D6 /* ic_copyright_black@2x.png */; };
 		328A9B741D99315D006203D6 /* ExtraPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A9B731D99315D006203D6 /* ExtraPack.swift */; };
 		32A52A511D9E221F0043403B /* 201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 32A52A3E1D9E221F0043403B /* 201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf */; };
@@ -148,6 +151,8 @@
 		320874D61D95175100240A56 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		320874D81D951DD600240A56 /* ic_copyright@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_copyright@2x.png"; path = "Images/ic_copyright@2x.png"; sourceTree = "<group>"; };
 		320C28581D9173510064DBC5 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		321117711DA6103000E3CEF4 /* LinkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkCell.swift; sourceTree = "<group>"; };
+		321117731DA6104000E3CEF4 /* LinkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinkCell.xib; sourceTree = "<group>"; };
 		3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultSupport.swift; sourceTree = "<group>"; };
 		3219E8C81D923A70009A3C66 /* ShelterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelterItem.swift; sourceTree = "<group>"; };
 		3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelterItemTableViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +192,7 @@
 		326383C91D87DE8800DED761 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		326383CB1D87DE9000DED761 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		327133441DA5D7A2006DF9DE /* SeniorVaccination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeniorVaccination.swift; sourceTree = "<group>"; };
+		327133461DA5F56C006DF9DE /* SuperSento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperSento.swift; sourceTree = "<group>"; };
 		328A9B591D992B12006203D6 /* ic_copyright_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_copyright_black@2x.png"; path = "Images/ic_copyright_black@2x.png"; sourceTree = "<group>"; };
 		328A9B731D99315D006203D6 /* ExtraPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraPack.swift; sourceTree = "<group>"; };
 		32A52A3E1D9E221F0043403B /* 201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf"; path = "CSV,PDF/ゴミ・資源/201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf"; sourceTree = "<group>"; };
@@ -314,6 +320,8 @@
 				32DAF9751D7AC02500BCABCF /* Main.storyboard */,
 				324A14721D9B463200E3592C /* ExtraCellView.xib */,
 				324A14741D9B47CF00E3592C /* ExtraCellView.swift */,
+				321117711DA6103000E3CEF4 /* LinkCell.swift */,
+				321117731DA6104000E3CEF4 /* LinkCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -355,6 +363,7 @@
 				3219E8C81D923A70009A3C66 /* ShelterItem.swift */,
 				324A147C1D9B786200E3592C /* DoyurinItem.swift */,
 				327133441DA5D7A2006DF9DE /* SeniorVaccination.swift */,
+				327133461DA5F56C006DF9DE /* SuperSento.swift */,
 			);
 			name = RealmObjects;
 			sourceTree = "<group>";
@@ -732,6 +741,7 @@
 				32A52A861D9E2BC60043403B /* 304_医療情報_高齢予防接種白石区.csv in Resources */,
 				320874CD1D9512A400240A56 /* ic_settings@2x.png in Resources */,
 				325409431D9134A60022A20E /* ic_link@2x.png in Resources */,
+				321117741DA6104000E3CEF4 /* LinkCell.xib in Resources */,
 				32D155AF1D92576100327805 /* ic_list@2x.png in Resources */,
 				324A14831D9B894700E3592C /* ic_user@2x.png in Resources */,
 				324A147F1D9B7DBB00E3592C /* noimage@2x.jpg in Resources */,
@@ -848,8 +858,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327133471DA5F56C006DF9DE /* SuperSento.swift in Sources */,
 				320C28591D9173510064DBC5 /* PDFViewController.swift in Sources */,
 				325162F71D8AA3FD0031E836 /* MapViewController.swift in Sources */,
+				321117721DA6103000E3CEF4 /* LinkCell.swift in Sources */,
 				325162E51D8A7C450031E836 /* NursingPack.swift in Sources */,
 				3219E8C71D922549009A3C66 /* UserDefaultSupport.swift in Sources */,
 				325162EF1D8A9AD30031E836 /* ContentsItem.swift in Sources */,
