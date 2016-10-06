@@ -1,29 +1,18 @@
 PODS:
-  - Realm (1.1.0):
-    - Realm/Headers (= 1.1.0)
-  - Realm/Headers (1.1.0)
-  - RealmSwift (1.1.0):
-    - Realm (= 1.1.0)
+  - Realm (2.0.2):
+    - Realm/Headers (= 2.0.2)
+  - Realm/Headers (2.0.2)
+  - RealmSwift (2.0.2):
+    - Realm (= 2.0.2)
   - Toast-Swift (1.4.0)
 
 DEPENDENCIES:
-  - RealmSwift (from `https://github.com/realm/realm-cocoa.git`, branch `master`)
+  - RealmSwift
   - Toast-Swift
 
-EXTERNAL SOURCES:
-  RealmSwift:
-    :branch: master
-    :git: https://github.com/realm/realm-cocoa.git
-    :submodules: true
-
-CHECKOUT OPTIONS:
-  RealmSwift:
-    :commit: 62cf723ed69b7646cab12717e28a32f07ba029d3
-    :git: https://github.com/realm/realm-cocoa.git
-
 SPEC CHECKSUMS:
-  Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
-  RealmSwift: 838058b2db95b12cb86bd0cf209df642c33fb60a
+  Realm: 0f5a194af0b7e6158b83db41b4ee1a00be7ddf1a
+  RealmSwift: 0eb5070d851cba7c66e841ca756d83609dc78bc8
   Toast-Swift: aa9f0120aa6f0b6186a1e7fce2797571be34d857
 
 COCOAPODS: 0.39.0

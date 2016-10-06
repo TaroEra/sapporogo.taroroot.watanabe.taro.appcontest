@@ -92,11 +92,11 @@ class RealmSupport {
         var influenza = false
         var pneumococcus = false
         
-        if (array[12] as! String) == "◯"{
+        if (array[12] as! String) != " "{
             influenza = true
         }
         
-        if(array[13] as! String) == "◯"{
+        if(array[13] as! String) != " "{
             pneumococcus = true
         }
         
