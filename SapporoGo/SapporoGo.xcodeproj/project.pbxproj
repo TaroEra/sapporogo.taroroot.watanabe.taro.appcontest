@@ -36,7 +36,7 @@
 		325162E71D8A7C620031E836 /* DisasterPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E61D8A7C620031E836 /* DisasterPack.swift */; };
 		325162E91D8A7C8A0031E836 /* Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162E81D8A7C8A0031E836 /* Pack.swift */; };
 		325162EF1D8A9AD30031E836 /* ContentsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162EE1D8A9AD30031E836 /* ContentsItem.swift */; };
-		325162F71D8AA3FD0031E836 /* ContentsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162F61D8AA3FD0031E836 /* ContentsMapViewController.swift */; };
+		325162F71D8AA3FD0031E836 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325162F61D8AA3FD0031E836 /* MapViewController.swift */; };
 		3253A1141D8B95E00081B1C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3253A1131D8B95E00081B1C2 /* AppDelegate.m */; };
 		3253A1161D8B96300081B1C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3253A1151D8B96300081B1C2 /* main.m */; };
 		3253A11D1D8BAB590081B1C2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253A11C1D8BAB590081B1C2 /* TabBarController.swift */; };
@@ -52,6 +52,7 @@
 		326383C81D87D1F400DED761 /* ContentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326383C71D87D1F400DED761 /* ContentsTableViewController.swift */; };
 		326383CA1D87DE8800DED761 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326383C91D87DE8800DED761 /* Accounts.framework */; };
 		326383CC1D87DE9000DED761 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326383CB1D87DE9000DED761 /* Social.framework */; };
+		327133451DA5D7A2006DF9DE /* SeniorVaccination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327133441DA5D7A2006DF9DE /* SeniorVaccination.swift */; };
 		328A9B5A1D992B12006203D6 /* ic_copyright_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 328A9B591D992B12006203D6 /* ic_copyright_black@2x.png */; };
 		328A9B741D99315D006203D6 /* ExtraPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A9B731D99315D006203D6 /* ExtraPack.swift */; };
 		32A52A511D9E221F0043403B /* 201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 32A52A3E1D9E221F0043403B /* 201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf */; };
@@ -167,7 +168,7 @@
 		325162E61D8A7C620031E836 /* DisasterPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterPack.swift; sourceTree = "<group>"; };
 		325162E81D8A7C8A0031E836 /* Pack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pack.swift; sourceTree = "<group>"; };
 		325162EE1D8A9AD30031E836 /* ContentsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsItem.swift; sourceTree = "<group>"; };
-		325162F61D8AA3FD0031E836 /* ContentsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsMapViewController.swift; sourceTree = "<group>"; };
+		325162F61D8AA3FD0031E836 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		3253A1121D8B95E00081B1C2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3253A1131D8B95E00081B1C2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3253A1151D8B96300081B1C2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -185,6 +186,7 @@
 		326383C71D87D1F400DED761 /* ContentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsTableViewController.swift; sourceTree = "<group>"; };
 		326383C91D87DE8800DED761 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		326383CB1D87DE9000DED761 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		327133441DA5D7A2006DF9DE /* SeniorVaccination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeniorVaccination.swift; sourceTree = "<group>"; };
 		328A9B591D992B12006203D6 /* ic_copyright_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_copyright_black@2x.png"; path = "Images/ic_copyright_black@2x.png"; sourceTree = "<group>"; };
 		328A9B731D99315D006203D6 /* ExtraPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraPack.swift; sourceTree = "<group>"; };
 		32A52A3E1D9E221F0043403B /* 201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf"; path = "CSV,PDF/ゴミ・資源/201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf"; sourceTree = "<group>"; };
@@ -295,7 +297,7 @@
 				3253A11C1D8BAB590081B1C2 /* TabBarController.swift */,
 				3257AB901D829D8D0036E6E8 /* HomeViewController.swift */,
 				326383C71D87D1F400DED761 /* ContentsTableViewController.swift */,
-				325162F61D8AA3FD0031E836 /* ContentsMapViewController.swift */,
+				325162F61D8AA3FD0031E836 /* MapViewController.swift */,
 				320C28581D9173510064DBC5 /* PDFViewController.swift */,
 				320874D61D95175100240A56 /* SettingTableViewController.swift */,
 				3219E8CA1D923D7E009A3C66 /* ShelterItemTableViewController.swift */,
@@ -352,6 +354,7 @@
 				3254093C1D9112EA0022A20E /* SapporoMedical.swift */,
 				3219E8C81D923A70009A3C66 /* ShelterItem.swift */,
 				324A147C1D9B786200E3592C /* DoyurinItem.swift */,
+				327133441DA5D7A2006DF9DE /* SeniorVaccination.swift */,
 			);
 			name = RealmObjects;
 			sourceTree = "<group>";
@@ -846,10 +849,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				320C28591D9173510064DBC5 /* PDFViewController.swift in Sources */,
-				325162F71D8AA3FD0031E836 /* ContentsMapViewController.swift in Sources */,
+				325162F71D8AA3FD0031E836 /* MapViewController.swift in Sources */,
 				325162E51D8A7C450031E836 /* NursingPack.swift in Sources */,
 				3219E8C71D922549009A3C66 /* UserDefaultSupport.swift in Sources */,
 				325162EF1D8A9AD30031E836 /* ContentsItem.swift in Sources */,
+				327133451DA5D7A2006DF9DE /* SeniorVaccination.swift in Sources */,
 				325162E11D8A7AF50031E836 /* AdminPack.swift in Sources */,
 				32A7FDEC1D9DEEA700845EFF /* MapObjectTableViewController.swift in Sources */,
 				3254093D1D9112EA0022A20E /* SapporoMedical.swift in Sources */,

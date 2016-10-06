@@ -11,7 +11,7 @@ import RealmSwift
 import MapKit
 import SafariServices
 
-class ContentsMapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     var contentsItem:ContentsItem?
     private var locationManager:CLLocationManager!

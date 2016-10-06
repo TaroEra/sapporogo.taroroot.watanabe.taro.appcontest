@@ -16,20 +16,22 @@ class RealmSupport {
     
     class func initalizeRealmObject(fileName:String){
         
-        let realm = try! Realm()
+        print(realm.configuration.fileURL)
         
         let sections = CSVParser.parse(fileName)
         for sectionsItem in sections{
             
             //ここで分岐させるべきかも
-            let mapObject = MapObject(value:createMapObjectValue(fileName, sectionItem:sectionsItem as! NSArray))
-            try! realm.write{
-                realm.add(mapObject, update: true)
+
+            initializeMapObject(fileName, sectionItem:sectionsItem as! NSArray)
+            
+            if fileName.containsString("医療情報_高齢予防接種"){
+                initializeSeniorVaccination(fileName, sectionItem:sectionsItem as! NSArray)
             }
         }
     }
     
-    class private func createMapObjectValue(fileName:String, sectionItem:NSArray) -> NSDictionary{
+    class private func initializeMapObject(fileName:String, sectionItem:NSArray){
         
         let array = sectionItem
         
@@ -76,6 +78,36 @@ class RealmSupport {
                       "address_number":addressNumber,
                       "phone_number":phoneNumber,
                       "fax_number":faxNumber]
-        return valule
+        
+        let mapObject = MapObject(value:valule)
+        try! realm.write{
+            realm.add(mapObject, update: true)
+        }
+    }
+    
+    class private func initializeSeniorVaccination(filename:String, sectionItem:NSArray){
+        
+        let array = sectionItem
+        let id:Int = array[0].integerValue
+        var influenza = false
+        var pneumococcus = false
+        
+        if (array[12] as! String) == "◯"{
+            influenza = true
+        }
+        
+        if(array[13] as! String) == "◯"{
+            pneumococcus = true
+        }
+        
+        let value = ["id":id,
+                     "influenza":influenza,
+                     "pneumococcus":pneumococcus]
+        
+        let seniorVaccination = SeniorVaccination(value:value)
+        
+        try! realm.write{
+            realm.add(seniorVaccination, update: true)
+        }
     }
 }

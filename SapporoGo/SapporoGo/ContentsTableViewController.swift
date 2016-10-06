@@ -79,7 +79,7 @@ class ContentsTableViewController: UIViewController, UITableViewDelegate, UITabl
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         if pack?.contents![indexPath.row].purposeType == "MAP"{
-            let contentsMapViewController:ContentsMapViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsMapViewController")) as! ContentsMapViewController
+            let contentsMapViewController:MapViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsMapViewController")) as! MapViewController
             contentsMapViewController.contentsItem = self.pack?.contents![indexPath.row]
             contentsMapViewController.navigationItem.title = self.pack?.contents![indexPath.row].title
             self.navigationController?.pushViewController(contentsMapViewController, animated: true)

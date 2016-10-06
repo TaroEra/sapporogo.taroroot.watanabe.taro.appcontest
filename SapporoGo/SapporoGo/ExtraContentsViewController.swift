@@ -60,7 +60,7 @@ class ExtraContentsViewController: UIViewController, UITableViewDelegate, UITabl
             //TODO：遷移
             
             if item.purposeType == "MAP"{
-                let contentsMapViewController:ContentsMapViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsMapViewController")) as! ContentsMapViewController
+                let contentsMapViewController:MapViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsMapViewController")) as! MapViewController
                 contentsMapViewController.contentsItem = item
                 contentsMapViewController.navigationItem.title = item.title!
                 self.navigationController?.pushViewController(contentsMapViewController, animated: true)
