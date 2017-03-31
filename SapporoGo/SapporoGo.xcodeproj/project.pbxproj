@@ -714,7 +714,7 @@
 		32DAF9611D7AC02400BCABCF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = com.era.watanabe.sapporo.go;
 				TargetAttributes = {
 					32DAF9681D7AC02400BCABCF = {
