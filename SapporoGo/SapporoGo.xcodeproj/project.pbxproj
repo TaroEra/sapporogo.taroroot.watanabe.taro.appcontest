@@ -134,7 +134,7 @@
 		32DAF97C1D7AC02500BCABCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DAF97A1D7AC02500BCABCF /* LaunchScreen.storyboard */; };
 		32DAF9871D7AC02500BCABCF /* SapporoGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DAF9861D7AC02500BCABCF /* SapporoGoTests.m */; };
 		32DAF9921D7AC02500BCABCF /* SapporoGoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DAF9911D7AC02500BCABCF /* SapporoGoUITests.m */; };
-		D2FCB61743471612DA32D74D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8042449990A08F3CF43B0572 /* Pods.framework */; };
+		E7B41D9480D878CC6FAF5DA7 /* Pods_SapporoGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89E2C6070567AC977673B4A /* Pods_SapporoGo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -292,9 +292,10 @@
 		32DAF98D1D7AC02500BCABCF /* SapporoGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SapporoGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DAF9911D7AC02500BCABCF /* SapporoGoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SapporoGoUITests.m; sourceTree = "<group>"; };
 		32DAF9931D7AC02500BCABCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66105B7C68A80D039D8D7B0E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8042449990A08F3CF43B0572 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD222BC5BCB8A176EDEE6A8B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		98F4B48BE00108CEE4288D57 /* Pods-SapporoGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SapporoGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SapporoGo/Pods-SapporoGo.debug.xcconfig"; sourceTree = "<group>"; };
+		A70D6342568AA9BAF384E0FC /* Pods-SapporoGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SapporoGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SapporoGo/Pods-SapporoGo.release.xcconfig"; sourceTree = "<group>"; };
+		D89E2C6070567AC977673B4A /* Pods_SapporoGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SapporoGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,7 +307,7 @@
 				326383CA1D87DE8800DED761 /* Accounts.framework in Frameworks */,
 				3257AB9B1D82ADF10036E6E8 /* CoreFoundation.framework in Frameworks */,
 				3257AB951D82A8BC0036E6E8 /* MapKit.framework in Frameworks */,
-				D2FCB61743471612DA32D74D /* Pods.framework in Frameworks */,
+				E7B41D9480D878CC6FAF5DA7 /* Pods_SapporoGo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +362,7 @@
 			children = (
 				325409131D90C2520022A20E /* 行政 */,
 				3254091B1D90C50C0022A20E /* 医療 */,
-				3254091C1D90C5F70022A20E /* ゴミ・資源 */,
+				3254091C1D90C5F70022A20E /* ゴミ・資源 */,
 				325409151D90C2A50022A20E /* 防災 */,
 				325409161D90C3510022A20E /* 介護 */,
 				328A9B711D992CF1006203D6 /* 育児 */,
@@ -461,7 +462,7 @@
 			name = "医療";
 			sourceTree = "<group>";
 		};
-		3254091C1D90C5F70022A20E /* ゴミ・資源 */ = {
+		3254091C1D90C5F70022A20E /* ゴミ・資源 */ = {
 			isa = PBXGroup;
 			children = (
 				32A52A3E1D9E221F0043403B /* 201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf */,
@@ -565,7 +566,7 @@
 				32DAF9901D7AC02500BCABCF /* SapporoGoUITests */,
 				32DAF96A1D7AC02400BCABCF /* Products */,
 				6A5A453E5B131B50ED39F08E /* Frameworks */,
-				FDA460A2326282108C678A0E /* Pods */,
+				98157C80B50E8B6E03792C0C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -636,15 +637,16 @@
 				326383C91D87DE8800DED761 /* Accounts.framework */,
 				3257AB9A1D82ADF10036E6E8 /* CoreFoundation.framework */,
 				8042449990A08F3CF43B0572 /* Pods.framework */,
+				D89E2C6070567AC977673B4A /* Pods_SapporoGo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FDA460A2326282108C678A0E /* Pods */ = {
+		98157C80B50E8B6E03792C0C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FD222BC5BCB8A176EDEE6A8B /* Pods.debug.xcconfig */,
-				66105B7C68A80D039D8D7B0E /* Pods.release.xcconfig */,
+				98F4B48BE00108CEE4288D57 /* Pods-SapporoGo.debug.xcconfig */,
+				A70D6342568AA9BAF384E0FC /* Pods-SapporoGo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -656,12 +658,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32DAF9961D7AC02500BCABCF /* Build configuration list for PBXNativeTarget "SapporoGo" */;
 			buildPhases = (
-				DB7A612271670E96941852DB /* Check Pods Manifest.lock */,
+				C3005C2A3717F45151761F28 /* [CP] Check Pods Manifest.lock */,
 				32DAF9651D7AC02400BCABCF /* Sources */,
 				32DAF9661D7AC02400BCABCF /* Frameworks */,
 				32DAF9671D7AC02400BCABCF /* Resources */,
-				D4DC19B41EEA64DCA6FA12D6 /* Embed Pods Frameworks */,
-				F8FC2169ADED8B2C4A18DCEB /* Copy Pods Resources */,
+				957E0718CDC54F6A355752FB /* [CP] Embed Pods Frameworks */,
+				483F92BB06BCD44B62450252 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -863,49 +865,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D4DC19B41EEA64DCA6FA12D6 /* Embed Pods Frameworks */ = {
+		483F92BB06BCD44B62450252 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SapporoGo/Pods-SapporoGo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DB7A612271670E96941852DB /* Check Pods Manifest.lock */ = {
+		957E0718CDC54F6A355752FB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SapporoGo/Pods-SapporoGo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3005C2A3717F45151761F28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F8FC2169ADED8B2C4A18DCEB /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1101,7 +1103,7 @@
 		};
 		32DAF9971D7AC02500BCABCF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD222BC5BCB8A176EDEE6A8B /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 98F4B48BE00108CEE4288D57 /* Pods-SapporoGo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1123,7 +1125,7 @@
 		};
 		32DAF9981D7AC02500BCABCF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66105B7C68A80D039D8D7B0E /* Pods.release.xcconfig */;
+			baseConfigurationReference = A70D6342568AA9BAF384E0FC /* Pods-SapporoGo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods.xcscheme</key>
+		<key>Pods-SapporoGo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>296AAE79E3FD69F5C551C7BA8D22EE89</key>
+		<key>09D5C7B29E14FD9163E81F0B1FE9E503</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2BE9090B0CD991446E87F0CC44AC5446</key>
+		<key>0A27E1AB345B4354BD9C96134B340407</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4269A9C28738F383C2612841268DD79B</key>
+		<key>153275211CF3F33FC4D2F9B8B4899192</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>62FA1DEC6A440A57946A37F3702BC449</key>
+		<key>B8079688186DF182163A7182B0DF1247</key>
 		<dict>
 			<key>primary</key>
 			<true/>
