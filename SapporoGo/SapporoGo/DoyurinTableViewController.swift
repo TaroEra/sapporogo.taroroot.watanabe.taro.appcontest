@@ -20,7 +20,7 @@ class DoyurinTableViewController: UIViewController, UITableViewDelegate, UITable
         UserDefaultSurpport.userPoint += 1
         UserDefaultSurpport.userTotalPoint += 1
         
-        self.view.makeToast("get 1pt", duration: 1.0, position:.Bottom)
+        self.view.makeToast("get 1pt", duration: 1.0, position:.bottom)
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -35,7 +35,7 @@ class DoyurinTableViewController: UIViewController, UITableViewDelegate, UITable
         for item in parseArray{
             let arrayItem = item as! NSArray
             
-            let id = arrayItem[0].integerValue
+            let id = (arrayItem[0] as! String).intValue
             let word = arrayItem[1]
             let kana_word = arrayItem[2]
             let mean = arrayItem[3]
@@ -52,34 +52,34 @@ class DoyurinTableViewController: UIViewController, UITableViewDelegate, UITable
         }
     }
     
-    @IBAction func onTapContentsLinkButton(sender: AnyObject) {
-        let safariViewController = SFSafariViewController(URL:NSURL(string:"http://www.pref.hokkaido.lg.jp/sr/dyr/doyurinka/goroku.htm")!)
+    @IBAction func onTapContentsLinkButton(_ sender: AnyObject) {
+        let safariViewController = SFSafariViewController(url:URL(string:"http://www.pref.hokkaido.lg.jp/sr/dyr/doyurinka/goroku.htm")!)
         self.navigationController?.pushViewController(safariViewController, animated: true)
     }
 
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let count = try! Realm().objects(DoyurinItem).count
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let count = try! Realm().objects(DoyurinItem.self).count
         return count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let realm = try! Realm()
         
         // 再利用するCellを取得する.
-        let cell = tableView.dequeueReusableCellWithIdentifier("DoyurinItemCell", forIndexPath: indexPath)
-        let results = realm.objects(DoyurinItem)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DoyurinItemCell", for: indexPath)
+        let results = realm.objects(DoyurinItem.self)
         cell.textLabel?.text = results[indexPath.row].word + "（" + results[indexPath.row].kana_word + "）"
         cell.detailTextLabel?.text = results[indexPath.row].mean
         return cell
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100 // 適当なセルの高さ
     }
     
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.0
     }
 }

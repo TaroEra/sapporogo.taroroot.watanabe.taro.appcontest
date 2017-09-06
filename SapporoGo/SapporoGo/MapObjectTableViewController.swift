@@ -18,7 +18,7 @@ class MapObjectTableViewController: UIViewController, UITableViewDelegate, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.registerNib(UINib(nibName: "LinkCell", bundle: nil), forCellReuseIdentifier: "LinkCell")
+        self.tableView.register(UINib(nibName: "LinkCell", bundle: nil), forCellReuseIdentifier: "LinkCell")
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -44,40 +44,40 @@ class MapObjectTableViewController: UIViewController, UITableViewDelegate, UITab
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sectionTitles[section]
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return sectionTitles.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("DetailCell")
-        cell!.textLabel?.font = UIFont.systemFontOfSize(14)
+        var cell = tableView.dequeueReusableCell(withIdentifier: "DetailCell")
+        cell!.textLabel?.font = UIFont.systemFont(ofSize: 14)
         
         //住所
         if indexPath.section == 0{
-            cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier:"")
+            cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier:"")
             if mapObject.address_number != " " {
-                cell!.textLabel?.font = UIFont.systemFontOfSize(12)
+                cell!.textLabel?.font = UIFont.systemFont(ofSize: 12)
                 cell!.textLabel?.text = "〒\(mapObject.address_number)"
             }
-            cell!.detailTextLabel?.font = UIFont.systemFontOfSize(14)
+            cell!.detailTextLabel?.font = UIFont.systemFont(ofSize: 14)
             cell!.detailTextLabel?.text = mapObject.address
         }
         
         //電話番号
         if indexPath.section == 1{
-            let linkCell = tableView.dequeueReusableCellWithIdentifier("LinkCell") as! LinkCell
+            let linkCell = tableView.dequeueReusableCell(withIdentifier: "LinkCell") as! LinkCell
             linkCell.textView?.text = mapObject.phone_number
             cell = linkCell
         }
         
         //FAX
         if indexPath.section == 2{
-            let linkCell = tableView.dequeueReusableCellWithIdentifier("LinkCell") as! LinkCell
+            let linkCell = tableView.dequeueReusableCell(withIdentifier: "LinkCell") as! LinkCell
             linkCell.textView?.text = mapObject.fax_number
             cell = linkCell
         }
@@ -85,7 +85,7 @@ class MapObjectTableViewController: UIViewController, UITableViewDelegate, UITab
         if mapObject.type == "予防接種_高齢"{
             
             let query = "id == " + String(mapObject.id.value!)
-            let seniorVaccination = RealmSupport.realm.objects(SeniorVaccination).filter(query).first
+            let seniorVaccination = RealmSupport.realm.objects(SeniorVaccination.self).filter(query).first
             
             if sectionTitles[indexPath.section]=="高齢者インフルエンザ"{
                 cell?.textLabel?.text = seniorVaccination!.influenza ? "◯" : "×"
@@ -99,13 +99,13 @@ class MapObjectTableViewController: UIViewController, UITableViewDelegate, UITab
         if mapObject.type == "スーパー銭湯"{
             
             let query = "id == " + String(mapObject.id.value!)
-            let superSento = RealmSupport.realm.objects(SuperSento).filter(query).first
+            let superSento = RealmSupport.realm.objects(SuperSento.self).filter(query).first
             
             if sectionTitles[indexPath.section]=="料金"{
                 cell?.textLabel?.text = String(superSento!.charge) + "円"
             }
             if sectionTitles[indexPath.section]=="URL"{
-                let linkCell = tableView.dequeueReusableCellWithIdentifier("LinkCell") as! LinkCell
+                let linkCell = tableView.dequeueReusableCell(withIdentifier: "LinkCell") as! LinkCell
                 linkCell.textView?.text = String(superSento!.url)
                 cell = linkCell
             }
@@ -128,7 +128,7 @@ class MapObjectTableViewController: UIViewController, UITableViewDelegate, UITab
         return cell!
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1;
     }
     

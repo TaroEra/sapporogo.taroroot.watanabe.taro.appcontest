@@ -10,29 +10,29 @@ import Foundation
 
 class CSVParser {
     
-    static func parse(fileName:String?)->NSArray{
+    static func parse(_ fileName:String?)->NSArray{
         
-        let csvFile = NSBundle.mainBundle().pathForResource(fileName, ofType:"csv")
+        let csvFile = Bundle.main.path(forResource: fileName, ofType:"csv")
         
-        let csvData:NSData?
+        let csvData:Data?
         do {
-            csvData = try NSData(contentsOfFile:csvFile!, options: NSDataReadingOptions.DataReadingMappedAlways)
+            csvData = try Data(contentsOf: URL(fileURLWithPath: csvFile!), options: NSData.ReadingOptions.alwaysMapped)
         }catch{
             csvData = nil
         }
-        let csv = String.init(data:csvData!, encoding: NSUTF16StringEncoding)
-        let scanner = NSScanner(string: csv!)
-        let chSet = NSCharacterSet.newlineCharacterSet()
+        let csv = String.init(data:csvData!, encoding: String.Encoding.utf16)
+        let scanner = Scanner(string: csv!)
+        let chSet = CharacterSet.newlines
         let sections = NSMutableArray()
         var line:NSString?
         
-        while !scanner.atEnd {
-            scanner.scanUpToCharactersFromSet(chSet, intoString: &line)
-            let array:NSArray = (line?.componentsSeparatedByString(","))!
-            sections .addObject(array)
-            scanner.scanCharactersFromSet(chSet, intoString:nil)
+        while !scanner.isAtEnd {
+            scanner.scanUpToCharacters(from: chSet, into: &line)
+            let array:NSArray = (line?.components(separatedBy: ","))! as NSArray
+            sections .add(array)
+            scanner.scanCharacters(from: chSet, into:nil)
         }
-        sections.removeObjectAtIndex(0)
+        sections.removeObject(at: 0)
         return sections
     }
 }

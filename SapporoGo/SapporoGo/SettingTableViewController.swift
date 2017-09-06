@@ -19,59 +19,59 @@ class SettingTableViewController: UIViewController, UITableViewDataSource, UITab
         
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.visibleViewController?.navigationItem.title = "設定"
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0{
-            let cell = tableView.dequeueReusableCellWithIdentifier("userNameCell")
+            let cell = tableView.dequeueReusableCell(withIdentifier: "userNameCell")
             cell?.textLabel?.text = "ユーザー名の変更"
             cell?.detailTextLabel?.text = UserDefaultSurpport.userName
             let image:UIImage!
             image = UIImage(named:"ic_user")
-            cell!.imageView!.image = image.resize(CGSizeMake(20, 20))
+            cell!.imageView!.image = image.resize(CGSize(width: 20, height: 20))
             return cell!
         }
         else if indexPath.row == 1{
-            let cell = tableView.dequeueReusableCellWithIdentifier("settingCell")
+            let cell = tableView.dequeueReusableCell(withIdentifier: "settingCell")
             cell?.textLabel?.text = "ライセンス情報"
             let image:UIImage!
             image = UIImage(named:"ic_copyright")
-            cell!.imageView!.image = image.resize(CGSizeMake(20, 20))
+            cell!.imageView!.image = image.resize(CGSize(width: 20, height: 20))
             return cell!
         }
         else{
             
-            let version: String! = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
-            let build: String! = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleVersion") as! String
+            let version: String! = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
+            let build: String! = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String
             
-            let cell = tableView.dequeueReusableCellWithIdentifier("versionCell")
+            let cell = tableView.dequeueReusableCell(withIdentifier: "versionCell")
             cell?.textLabel?.text = "バージョン"
             let image:UIImage!
             cell?.detailTextLabel?.text = "\(version)(\(build))"
             image = UIImage(named:"ic_info")
-            cell!.imageView!.image = image.resize(CGSizeMake(20, 20))
+            cell!.imageView!.image = image.resize(CGSize(width: 20, height: 20))
             return cell!
         }
         
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         
         if indexPath.row == 0{
             let alert:UIAlertController = UIAlertController(title:"ユーザー名の変更",
                                                             message: "ユーザー名を入力してください",
-                                                            preferredStyle: UIAlertControllerStyle.Alert)
+                                                            preferredStyle: UIAlertControllerStyle.alert)
             
             //textfiledの追加
-            alert.addTextFieldWithConfigurationHandler({(text:UITextField!) -> Void in})
+            alert.addTextField(configurationHandler: {(text:UITextField!) -> Void in})
             
             let textFields:Array<UITextField>? =  alert.textFields as Array<UITextField>?
             if textFields != nil {
@@ -82,7 +82,7 @@ class SettingTableViewController: UIViewController, UITableViewDataSource, UITab
             }
             
             let defaultAction:UIAlertAction = UIAlertAction(title: "OK",
-                                                            style: UIAlertActionStyle.Default,
+                                                            style: UIAlertActionStyle.default,
                                                             handler:{
                                                                 (action:UIAlertAction!) -> Void in
                                                                 let textFields:Array<UITextField>? =  alert.textFields as Array<UITextField>?
@@ -93,14 +93,14 @@ class SettingTableViewController: UIViewController, UITableViewDataSource, UITab
                                                                             textField.text = "ゲスト"
                                                                         }
                                                                         UserDefaultSurpport.userName = textField.text
-                                                                        self.tableView.cellForRowAtIndexPath(indexPath)?.detailTextLabel?.text = textField.text
+                                                                        self.tableView.cellForRow(at: indexPath)?.detailTextLabel?.text = textField.text
                                                                         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "HiraKakuProN-W6", size: 14)!]
                                                                     }
                                                                 }
             })
             alert.addAction(defaultAction)
             alert.view.setNeedsLayout()
-            presentViewController(alert, animated: true, completion: nil)
+            present(alert, animated: true, completion: nil)
         }
     }
 }

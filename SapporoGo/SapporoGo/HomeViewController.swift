@@ -13,14 +13,14 @@ import RealmSwift
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
-    private var selectedCellTiele:String = ""
+    fileprivate var selectedCellTiele:String = ""
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var userPointLabel: UILabel!
     
-    private var basicPacks:Array<Pack> = []
-    private var supportPacks:Array<Pack> = []
+    fileprivate var basicPacks:Array<Pack> = []
+    fileprivate var supportPacks:Array<Pack> = []
     
     @IBOutlet weak var userTitleLabel: UILabel!
     override func viewDidLoad() {
@@ -35,15 +35,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         changeprofileImage()
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.tabBarController?.tabBar.hidden = false
+        self.tabBarController?.tabBar.isHidden = false
         self.navigationController?.visibleViewController?.navigationItem.title = "ホーム"
         navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name:"HiraginoSans-W4", size: 14)!]
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         if !UserDefaultSurpport.UserTutorial{
@@ -53,12 +53,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             // Alert の場合
             let alert:UIAlertController = UIAlertController(title:"「即効！札幌市民」って？",
                                                             message: "このアプリは札幌に関する様々な情報を確認することができます。\n\n情報を閲覧するたびにポイントがたまり、それを使うことによってSPコンテンツにある情報を解禁することができます。\n\nたくさんの情報を閲覧し、札幌市民に必要な情報を入手しましょう",
-                                                            preferredStyle: UIAlertControllerStyle.Alert
+                                                            preferredStyle: UIAlertControllerStyle.alert
             )
             
             // Cancel 一つだけしか指定できない
             let cancelAction:UIAlertAction = UIAlertAction(title:"OK",
-                                                           style: UIAlertActionStyle.Cancel,
+                                                           style: UIAlertActionStyle.cancel,
                                                            handler:{
                                                             (action:UIAlertAction!) -> Void in
                                                             self.configureProfileLabel()
@@ -66,7 +66,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             )
             alert.addAction(cancelAction)
             alert.view.setNeedsLayout()
-            self.presentViewController(alert, animated: true, completion:nil)
+            self.present(alert, animated: true, completion:nil)
         }
         else{
             configureProfileLabel()
@@ -74,16 +74,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func changeprofileImage(){
-        if UserDefaultSurpport.profileImage === nil{
+        if UserDefaultSurpport.profileImage == nil{
             
         }
         else{
-            let fetchResult: PHFetchResult = PHAsset.fetchAssetsWithALAssetURLs([UserDefaultSurpport.profileImage!], options: nil)
+            let fetchResult: PHFetchResult = PHAsset.fetchAssets(withALAssetURLs: [UserDefaultSurpport.profileImage! as URL], options: nil)
             
             if fetchResult.firstObject != nil{
-                let asset: PHAsset = fetchResult.firstObject as! PHAsset
-                let manager = PHImageManager.defaultManager()
-                manager.requestImageForAsset(asset, targetSize: CGSize(width: 140, height: 140), contentMode: .AspectFill, options: nil) { (image, info) in
+                let asset: PHAsset = fetchResult.firstObject!
+                let manager = PHImageManager.default()
+                manager.requestImage(for: asset, targetSize: CGSize(width: 140, height: 140), contentMode: .aspectFill, options: nil) { (image, info) in
                     // imageをセットする
                     if image !== nil {
                         self.profileImageView.image = image
@@ -99,10 +99,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             //落ちます。
             let alert:UIAlertController = UIAlertController(title:"はじめましょう！！",
                                                             message: "ユーザー名を入力してください",
-                                                            preferredStyle: UIAlertControllerStyle.Alert)
+                                                            preferredStyle: UIAlertControllerStyle.alert)
             
             let defaultAction:UIAlertAction = UIAlertAction(title: "OK",
-                                                            style: UIAlertActionStyle.Default,
+                                                            style: UIAlertActionStyle.default,
                                                             handler:{
                                                                 (action:UIAlertAction!) -> Void in
                                                                 let textFields:Array<UITextField>? =  alert.textFields as Array<UITextField>?
@@ -124,10 +124,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             alert.addAction(defaultAction)
             
             //textfiledの追加
-            alert.addTextFieldWithConfigurationHandler({(text:UITextField!) -> Void in
+            alert.addTextField(configurationHandler: {(text:UITextField!) -> Void in
             })
             alert.view.setNeedsLayout()
-            self.presentViewController(alert, animated:true, completion: nil)
+            self.present(alert, animated:true, completion: nil)
         }else{
             userPointLabel.text = String(UserDefaultSurpport.userPoint)
             userTitleLabel.text = UserDefaultSurpport.userTitle
@@ -136,13 +136,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @IBAction func onTapEditButton(){
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary){
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary){
             // フォトライブラリの画像・写真選択画面を表示
             let imagePickerController = UIImagePickerController()
-            imagePickerController.sourceType = .PhotoLibrary
+            imagePickerController.sourceType = .photoLibrary
             imagePickerController.allowsEditing = true
             imagePickerController.delegate = self
-            presentViewController(imagePickerController, animated: true, completion: nil)
+            present(imagePickerController, animated: true, completion: nil)
         }
     }
     
@@ -150,26 +150,26 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var sections = ["基本パック", "特殊パック"] // セクション名を格納しておく
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
         return sections[section]
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if section == 0{return self.basicPacks.count;}
         if section == 1{return self.supportPacks.count;}
         return 0
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // 再利用するCellを取得する.
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         if(indexPath.section == 0){
             let pack:Pack = self.basicPacks[indexPath.row]
             cell.textLabel?.text = pack.name
@@ -181,10 +181,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         
-        let contentsTableviewController:ContentsTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsTableViewController")) as! ContentsTableViewController
+        let contentsTableviewController:ContentsTableViewController = (self.storyboard?.instantiateViewController(withIdentifier: "ContentsTableViewController")) as! ContentsTableViewController
         
         var pack:Pack!
         if(indexPath.section == 0){
@@ -198,10 +198,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     //この関数内でセクションの設定を行う
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let label : UILabel = UILabel()
         label.backgroundColor = UIColor(red:0/256, green:0/256, blue:0/256, alpha:0.1)
-        label.textColor = UIColor.whiteColor()
+        label.textColor = UIColor.white
         if(section == 0){
             label.text = sections[section]
         } else if (section == 1){
@@ -211,7 +211,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     //MARK : - UIImagePickerControllerDelegate
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         
         // 選択した画像・写真を取得し、imageViewに表示
         if let info = editingInfo, let editedImage = info[UIImagePickerControllerEditedImage] as? UIImage{
@@ -222,18 +222,18 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         changeprofileImage()
         // フォトライブラリの画像・写真選択画面を閉じる
-        picker.dismissViewControllerAnimated(true, completion: nil)
+        picker.dismiss(animated: true, completion: nil)
     }
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: AnyObject]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
         if info[UIImagePickerControllerOriginalImage] != nil {
             // 画像のパスを取得
-            let imageUrl = info[UIImagePickerControllerReferenceURL] as? NSURL
+            let imageUrl = info[UIImagePickerControllerReferenceURL] as? URL
             UserDefaultSurpport.profileImage = imageUrl!
         }
         
         changeprofileImage()
-        picker.dismissViewControllerAnimated(true, completion: nil)
+        picker.dismiss(animated: true, completion: nil)
         
     }
 }

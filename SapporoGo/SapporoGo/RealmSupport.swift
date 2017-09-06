@@ -14,7 +14,7 @@ class RealmSupport {
         return try! Realm()
     }
     
-    class func initalizeRealmObject(fileName:String){
+    class func initalizeRealmObject(_ fileName:String){
         
 //        print(realm.configuration.fileURL)
         
@@ -27,40 +27,40 @@ class RealmSupport {
 
             initializeMapObject(fileName, sectionItem:sectionItem)
             
-            if fileName.containsString("医療情報_高齢予防接種"){
+            if fileName.contains("医療情報_高齢予防接種"){
                 initializeSeniorVaccination(fileName, sectionItem:sectionItem)
             }
             
-            if fileName.containsString("スーパー銭湯"){
+            if fileName.contains("スーパー銭湯"){
                 initializeSuperSento(fileName, sectionItem: sectionItem)
             }
         }
     }
     
-    class private func initializeMapObject(fileName:String, sectionItem:NSArray){
+    class fileprivate func initializeMapObject(_ fileName:String, sectionItem:NSArray){
         
         let array = sectionItem
         
-        let id:Int = array[0].integerValue
+        let id:Int = (array[0] as AnyObject).integerValue
         let type = array[1]
         let name = array[2]
-        let latitude = array[3].doubleValue
-        let longitude = array[4].doubleValue
+        let latitude = (array[3] as AnyObject).doubleValue
+        let longitude = (array[4] as AnyObject).doubleValue
         
         var address = "北海道"
         
         let all_address = array[5] as! String
-        if all_address.containsString("札幌市"){
-            address = address.stringByAppendingString(all_address)
+        if all_address.contains("札幌市"){
+            address = address.appending(all_address)
         }
-        else if all_address.containsString("区"){
-            address = address.stringByAppendingString(array[7] as! String)
-            address = address.stringByAppendingString(all_address)
+        else if all_address.contains("区"){
+            address = address.appending(array[7] as! String)
+            address = address.appending(all_address)
         }
         else{
-            address = address.stringByAppendingString(array[7] as! String)
-            address = address.stringByAppendingString(array[6] as! String)
-            address = address.stringByAppendingString(all_address)
+            address = address.appending(array[7] as! String)
+            address = address.appending(array[6] as! String)
+            address = address.appending(all_address)
         }
         
         let addressNumber = array[8]
@@ -77,8 +77,8 @@ class RealmSupport {
         let valule = ["id":id,
                       "type":type,
                       "name":name,
-                      "latitude":latitude,
-                      "longitude":longitude,
+                      "latitude":latitude ?? 0.0,
+                      "longitude":longitude ?? 0.0,
                       "address":address,
                       "file_name":fileName,
                       "address_number":addressNumber,
@@ -91,10 +91,10 @@ class RealmSupport {
         }
     }
     
-    class private func initializeSeniorVaccination(fileName:String, sectionItem:NSArray){
+    class fileprivate func initializeSeniorVaccination(_ fileName:String, sectionItem:NSArray){
         
         let array = sectionItem
-        let id:Int = array[0].integerValue
+        let id:Int = (array[0] as AnyObject).integerValue
         var influenza = false
         var pneumococcus = false
         
@@ -108,7 +108,7 @@ class RealmSupport {
         
         let value = ["id":id,
                      "influenza":influenza,
-                     "pneumococcus":pneumococcus]
+                     "pneumococcus":pneumococcus] as [String : Any]
         
         let seniorVaccination = SeniorVaccination(value:value)
         
@@ -117,11 +117,11 @@ class RealmSupport {
         }
     }
     
-    class  private func initializeSuperSento(fileName:String, sectionItem:NSArray){
+    class  fileprivate func initializeSuperSento(_ fileName:String, sectionItem:NSArray){
        
         let array = sectionItem
-        let id:Int = array[0].integerValue
-        let charge = array[12].integerValue
+        let id:Int = (array[0] as AnyObject).integerValue
+        let charge = (array[12] as AnyObject).integerValue
         let url = array[13]
         let sentoItem = array[16]
         let rental = array[17]
@@ -130,7 +130,7 @@ class RealmSupport {
         let close = array[20]
         
         let value = ["id":id,
-                     "charge":charge,
+                     "charge":charge ?? 0,
                      "url":url,
                      "sentoItem":sentoItem,
                      "rental":rental,

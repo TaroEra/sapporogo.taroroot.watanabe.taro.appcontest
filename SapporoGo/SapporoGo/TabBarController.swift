@@ -15,7 +15,7 @@ class TabBarController: UITabBarController {
         super.viewDidLoad()
         
         self.selectedIndex = 0;
-        let backButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
+        let backButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
         navigationItem.backBarButtonItem = backButtonItem
     }
 }

@@ -125,6 +125,7 @@
 		32A52AA31D9E353C0043403B /* 905_エクストラ_公園トイレ中央区.csv in Resources */ = {isa = PBXBuildFile; fileRef = 32A52A9F1D9E353C0043403B /* 905_エクストラ_公園トイレ中央区.csv */; };
 		32A52AA51D9E4E970043403B /* RealmSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A52AA41D9E4E970043403B /* RealmSupport.swift */; };
 		32A7FDEC1D9DEEA700845EFF /* MapObjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7FDEB1D9DEEA700845EFF /* MapObjectTableViewController.swift */; };
+		32BACFAF1F5FE17000A5B718 /* String_extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BACFAE1F5FE17000A5B718 /* String_extention.swift */; };
 		32BB23B71D8BD3DB00F8C7F5 /* MapObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB23B61D8BD3DB00F8C7F5 /* MapObject.swift */; };
 		32D155AF1D92576100327805 /* ic_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D155AE1D92576100327805 /* ic_list@2x.png */; };
 		32D155B11D925FD800327805 /* ic_web@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D155B01D925FD800327805 /* ic_web@2x.png */; };
@@ -277,6 +278,7 @@
 		32A52A9F1D9E353C0043403B /* 905_エクストラ_公園トイレ中央区.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "905_エクストラ_公園トイレ中央区.csv"; path = "CSV,PDF/エクストラ/905_エクストラ_公園トイレ中央区.csv"; sourceTree = "<group>"; };
 		32A52AA41D9E4E970043403B /* RealmSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmSupport.swift; sourceTree = "<group>"; };
 		32A7FDEB1D9DEEA700845EFF /* MapObjectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapObjectTableViewController.swift; sourceTree = "<group>"; };
+		32BACFAE1F5FE17000A5B718 /* String_extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String_extention.swift; sourceTree = "<group>"; };
 		32BB23B61D8BD3DB00F8C7F5 /* MapObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapObject.swift; sourceTree = "<group>"; };
 		32D155AE1D92576100327805 /* ic_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_list@2x.png"; path = "Images/ic_list@2x.png"; sourceTree = "<group>"; };
 		32D155B01D925FD800327805 /* ic_web@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_web@2x.png"; path = "Images/ic_web@2x.png"; sourceTree = "<group>"; };
@@ -362,7 +364,7 @@
 			children = (
 				325409131D90C2520022A20E /* 行政 */,
 				3254091B1D90C50C0022A20E /* 医療 */,
-				3254091C1D90C5F70022A20E /* ゴミ・資源 */,
+				3254091C1D90C5F70022A20E /* ゴミ・資源 */,
 				325409151D90C2A50022A20E /* 防災 */,
 				325409161D90C3510022A20E /* 介護 */,
 				328A9B711D992CF1006203D6 /* 育児 */,
@@ -462,7 +464,7 @@
 			name = "医療";
 			sourceTree = "<group>";
 		};
-		3254091C1D90C5F70022A20E /* ゴミ・資源 */ = {
+		3254091C1D90C5F70022A20E /* ゴミ・資源 */ = {
 			isa = PBXGroup;
 			children = (
 				32A52A3E1D9E221F0043403B /* 201_01_ごみ分けガイド表紙・裏表紙（問合わせ先一覧）.pdf */,
@@ -523,6 +525,7 @@
 				3219E8C61D922549009A3C66 /* UserDefaultSupport.swift */,
 				32A52AA41D9E4E970043403B /* RealmSupport.swift */,
 				321117751DA6177600E3CEF4 /* LocationSupport.swift */,
+				32BACFAE1F5FE17000A5B718 /* String_extention.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -722,6 +725,7 @@
 					32DAF9681D7AC02400BCABCF = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = H26M8H35H6;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Manual;
 					};
 					32DAF9811D7AC02500BCABCF = {
@@ -932,6 +936,7 @@
 				325409411D91169B0022A20E /* CSVParser.swift in Sources */,
 				321117781DA61E6800E3CEF4 /* MedicalSeniorVaccicationPack.swift in Sources */,
 				3219E8CB1D923D7E009A3C66 /* ShelterItemTableViewController.swift in Sources */,
+				32BACFAF1F5FE17000A5B718 /* String_extention.swift in Sources */,
 				324A147D1D9B786200E3592C /* DoyurinItem.swift in Sources */,
 				324A14771D9B48BE00E3592C /* ExtraContentsItem.swift in Sources */,
 				324A147B1D9B737700E3592C /* DoyurinTableViewController.swift in Sources */,
@@ -1118,7 +1123,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = sapporogo;
 				SWIFT_OBJC_BRIDGING_HEADER = "SapporoGo/SapporoGo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1139,7 +1144,7 @@
 				PROVISIONING_PROFILE = "aaef1596-e495-4e9b-a9e4-feaf87297a10";
 				PROVISIONING_PROFILE_SPECIFIER = sapporogo;
 				SWIFT_OBJC_BRIDGING_HEADER = "SapporoGo/SapporoGo-Bridging-Header.h";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

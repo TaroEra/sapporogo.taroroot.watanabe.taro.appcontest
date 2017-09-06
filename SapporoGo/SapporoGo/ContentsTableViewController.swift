@@ -18,10 +18,10 @@ class ContentsTableViewController: UIViewController, UITableViewDelegate, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tabBarController?.tabBar.hidden = true
+        self.tabBarController?.tabBar.isHidden = true
         self.navigationItem.title = pack?.name
         
-        let backButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
+        let backButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
         navigationItem.backBarButtonItem = backButtonItem
         
         self.tableView.delegate = self
@@ -30,7 +30,7 @@ class ContentsTableViewController: UIViewController, UITableViewDelegate, UITabl
     
     //MARK: - tableViewDelegate
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if let pack = self.pack{
             return pack.contents!.count;
@@ -41,10 +41,10 @@ class ContentsTableViewController: UIViewController, UITableViewDelegate, UITabl
         
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // 再利用するCellを取得する.
-        let cell = tableView.dequeueReusableCellWithIdentifier("ContentsCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ContentsCell", for: indexPath)
         
         let contentsItem:ContentsItem = (pack?.contents![indexPath.row])!
         let image:UIImage!
@@ -71,16 +71,16 @@ class ContentsTableViewController: UIViewController, UITableViewDelegate, UITabl
         }
         
         if let image = image{
-            cell.imageView!.image = image.resize(CGSizeMake(20, 20))
+            cell.imageView!.image = image.resize(CGSize(width: 20, height: 20))
         }
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if pack?.contents![indexPath.row].title == "高齢者予防接種マップ"{
             
-            let contentsTableviewController:ContentsTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsTableViewController")) as! ContentsTableViewController
+            let contentsTableviewController:ContentsTableViewController = (self.storyboard?.instantiateViewController(withIdentifier: "ContentsTableViewController")) as! ContentsTableViewController
             var pack:Pack!
                 pack = MedicalSeniorVaccicationPack()
                 contentsTableviewController.pack = pack;
@@ -89,7 +89,7 @@ class ContentsTableViewController: UIViewController, UITableViewDelegate, UITabl
             
         else if pack?.contents![indexPath.row].title == "歯科医院マップ"{
             
-            let contentsTableviewController:ContentsTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsTableViewController")) as! ContentsTableViewController
+            let contentsTableviewController:ContentsTableViewController = (self.storyboard?.instantiateViewController(withIdentifier: "ContentsTableViewController")) as! ContentsTableViewController
             var pack:Pack!
             pack = MedicalDentalClinicPack()
             contentsTableviewController.pack = pack;
@@ -97,7 +97,7 @@ class ContentsTableViewController: UIViewController, UITableViewDelegate, UITabl
         }
         
         else if pack?.contents![indexPath.row].purposeType == "MAP"{
-            let contentsMapViewController:MapViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ContentsMapViewController")) as! MapViewController
+            let contentsMapViewController:MapViewController = (self.storyboard?.instantiateViewController(withIdentifier: "ContentsMapViewController")) as! MapViewController
             contentsMapViewController.contentsItem = self.pack?.contents![indexPath.row]
             contentsMapViewController.navigationItem.title = self.pack?.contents![indexPath.row].title
             self.navigationController?.pushViewController(contentsMapViewController, animated: true)
@@ -120,17 +120,17 @@ class ContentsTableViewController: UIViewController, UITableViewDelegate, UITabl
 
         }
         else if pack?.contents![indexPath.row].fileType == "pdf"{
-            let pdfViewController:PDFViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("PDFViewController")) as! PDFViewController
+            let pdfViewController:PDFViewController = (self.storyboard?.instantiateViewController(withIdentifier: "PDFViewController")) as! PDFViewController
             pdfViewController.contentsItem = pack?.contents![indexPath.row]
             pdfViewController.navigationItem.title = self.pack?.contents![indexPath.row].title
             self.navigationController?.pushViewController(pdfViewController, animated: true)
         }
         else if pack?.contents![indexPath.row].purposeType == "LIST"{
             
-            let contentsTableviewController:ShelterItemTableViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("ShelterItemTableViewController")) as! ShelterItemTableViewController
+            let contentsTableviewController:ShelterItemTableViewController = (self.storyboard?.instantiateViewController(withIdentifier: "ShelterItemTableViewController")) as! ShelterItemTableViewController
             contentsTableviewController.navigationItem.title = self.pack?.contents![indexPath.row].title
             self.navigationController?.pushViewController(contentsTableviewController, animated: true)
         }
-        self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        self.tableView.deselectRow(at: indexPath, animated: true)
     }
 }

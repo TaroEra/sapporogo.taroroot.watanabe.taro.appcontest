@@ -19,7 +19,7 @@ class ExtraCellView: UIView {
     @IBOutlet weak var lockImageView: UIImageView!
     @IBOutlet weak var pointLabel: UILabel!
     
-    override func drawRect(rect: CGRect) {
+    override func draw(_ rect: CGRect) {
         
         if let extraContentsItem = self.extraItem {
             

@@ -31,6 +31,6 @@ class ExtraContentsItem :ContentsItem{
                    contentsUrl: contentsUrl)
         
         self.point = point
-        self.isUnlock = UserDefaultSurpport.userDefoults.boolForKey(title!)
+        self.isUnlock = UserDefaultSurpport.userDefoults.bool(forKey: title!)
     }
 }

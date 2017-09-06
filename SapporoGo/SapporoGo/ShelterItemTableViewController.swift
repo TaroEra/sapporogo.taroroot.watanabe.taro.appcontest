@@ -10,16 +10,16 @@ import UIKit
 import RealmSwift
 
 class ShelterItemTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         UserDefaultSurpport.userPoint += 1
         UserDefaultSurpport.userTotalPoint += 1
-
-        self.view.makeToast("get 1pt", duration: 1.0, position:.Bottom)
+        
+        self.view.makeToast("get 1pt", duration: 1.0, position:.bottom)
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -33,8 +33,7 @@ class ShelterItemTableViewController: UIViewController, UITableViewDelegate, UIT
         let parseArray = CSVParser.parse("shelter_item")
         for item in parseArray{
             let arrayItem = item as! NSArray
-            
-            let id = arrayItem[0].integerValue
+            let id = (arrayItem[0] as! String).intValue
             let type = arrayItem[1]
             let name = arrayItem[2]
             let discription = arrayItem[3]
@@ -47,28 +46,28 @@ class ShelterItemTableViewController: UIViewController, UITableViewDelegate, UIT
         }
     }
     
-     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let count = try! Realm().objects(ShelterItem).count
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let count = try! Realm().objects(ShelterItem.self).count
         return count
     }
     
-     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let realm = try! Realm()
         
         // 再利用するCellを取得する.
-        let cell = tableView.dequeueReusableCellWithIdentifier("ShelterItemCell", forIndexPath: indexPath)
-        let results = realm.objects(ShelterItem)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ShelterItemCell", for: indexPath)
+        let results = realm.objects(ShelterItem.self)
         cell.textLabel?.text = results[indexPath.row].name
         cell.detailTextLabel?.text = results[indexPath.row].discription
         return cell
     }
     
-     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100 // 適当なセルの高さ
     }
     
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.0
     }
 }

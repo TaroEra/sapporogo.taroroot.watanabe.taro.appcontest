@@ -19,24 +19,24 @@ class PDFViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.contentsLinkButton.setTitle(contentsItem!.contentsName, forState: UIControlState.Normal)
+        self.contentsLinkButton.setTitle(contentsItem!.contentsName, for: UIControlState())
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         UserDefaultSurpport.userPoint += 1
         UserDefaultSurpport.userTotalPoint += 1
 
-        self.view.makeToast("get 1pt", duration: 1.0, position:.Bottom)
+        self.view.makeToast("get 1pt", duration: 1.0, position:.bottom)
         
         let pdfFileName = contentsItem!.fileName! + "." + contentsItem!.fileType!
-        let url:NSURL = NSBundle.mainBundle().URLForResource(pdfFileName, withExtension:nil)!
-        webView.loadRequest(NSURLRequest(URL:url))
+        let url:URL = Bundle.main.url(forResource: pdfFileName, withExtension:nil)!
+        webView.loadRequest(URLRequest(url:url))
     }
     
-    @IBAction func onTapContentsLinkButton(sender: AnyObject) {
-        let safariViewController = SFSafariViewController(URL:NSURL(string:contentsItem!.contentsUrl!)!)
+    @IBAction func onTapContentsLinkButton(_ sender: AnyObject) {
+        let safariViewController = SFSafariViewController(url:URL(string:contentsItem!.contentsUrl!)!)
         self.navigationController?.pushViewController(safariViewController, animated: true)
     }
 }

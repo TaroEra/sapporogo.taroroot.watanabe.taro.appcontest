@@ -10,13 +10,13 @@ import Foundation
 
 class ExtraPack: Pack {
     
-    static func isUnLock(userDefaultKey:String?) -> Bool{
+    static func isUnLock(_ userDefaultKey:String?) -> Bool{
         
-        if let isUnlock:Bool! = ((UserDefaultSurpport.userDefoults.objectForKey(userDefaultKey!) as? Bool) != nil)
+        if let isUnlock:Bool? = ((UserDefaultSurpport.userDefoults.object(forKey: userDefaultKey!) as? Bool) != nil)
         {
-            return isUnlock
+            return isUnlock!
         }
-        UserDefaultSurpport.userDefoults.setBool(false, forKey:userDefaultKey!)
+        UserDefaultSurpport.userDefoults.set(false, forKey:userDefaultKey!)
         return false
     }
     
